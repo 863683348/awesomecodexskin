@@ -1,0 +1,158 @@
+---
+import Base from '../layouts/Base.astro';
+import { BadgeCheck, Eye, Handshake, Megaphone, ArrowRight, BarChart3, MessageSquare, Target } from '@lucide/astro';
+---
+<Base
+  title="Advertise — reach Codex skin & theme users | Codex Skin Index"
+  description="Sponsor Codex Skin Index and reach developers personalizing OpenAI Codex. Clearly-labeled placements, honest rate card, UTM tracking and monthly reports."
+>
+  <div class="container-x max-w-5xl py-10">
+    <!-- Hero -->
+    <section>
+      <p class="mb-3 inline-flex w-fit items-center gap-2 rounded-t-pill border border-border px-3 py-1 text-xs text-muted">
+        <Megaphone size={14} /> Sponsor placements · clearly labeled · no paid organic results
+      </p>
+      <h1 class="font-display text-3xl font-semibold text-fg sm:text-4xl">Advertise on Codex Skin Index</h1>
+      <p class="mt-4 max-w-2xl text-muted">
+        Reach the developers and AI tool users who are personalizing OpenAI Codex — the exact
+        audience for MCP marketplaces, AI products, theme engines, and dev tools. Every placement
+        carries an explicit "Sponsored" label and stays visually distinct from organic listings.
+      </p>
+    </section>
+
+    <!-- Audience -->
+    <section class="mt-10">
+      <h2 class="text-xl font-semibold text-fg">Who you reach</h2>
+      <div class="mt-4 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-t-md border border-border bg-surface p-5">
+          <Target size={20} class="text-accent" />
+          <h3 class="mt-3 font-semibold text-fg">Developers &amp; AI power users</h3>
+          <p class="mt-1 text-sm text-muted">Codex Desktop and CLI users actively customizing their workspace — early adopters who buy and recommend tools.</p>
+        </div>
+        <div class="rounded-t-md border border-border bg-surface p-5">
+          <Eye size={20} class="text-accent" />
+          <h3 class="mt-3 font-semibold text-fg">Intent-driven traffic</h3>
+          <p class="mt-1 text-sm text-muted">Visitors arrive through specific searches like "codex skin" and "codex theme" — high-intent, in-market for customization.</p>
+        </div>
+        <div class="rounded-t-md border border-border bg-surface p-5">
+          <BadgeCheck size={20} class="text-accent" />
+          <h3 class="mt-3 font-semibold text-fg">Creators &amp; indie hackers</h3>
+          <p class="mt-1 text-sm text-muted">Skin authors, engine builders, and tool makers already sharing work across GitHub, X, and the Codex ecosystem.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Placements -->
+    <section class="mt-10">
+      <h2 class="text-xl font-semibold text-fg">Placements</h2>
+      <div class="mt-4 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-t-md border border-border bg-surface p-5">
+          <h3 class="font-semibold text-fg">Homepage banner</h3>
+          <p class="mt-1 text-sm text-muted">Logo, headline, and one-line pitch directly under the hero — seen by every visitor.</p>
+          <p class="mt-3 text-xs text-meta">Top of the index · 1200×120 logo + 2-line copy</p>
+        </div>
+        <div class="rounded-t-md border border-border bg-surface p-5">
+          <h3 class="font-semibold text-fg">Category sidebar</h3>
+          <p class="mt-1 text-sm text-muted">A compact card on category pages — contextually placed next to relevant skins.</p>
+          <p class="mt-3 text-xs text-meta">Sidebar · 160×160 logo + 1-line copy</p>
+        </div>
+        <div class="rounded-t-md border border-border bg-surface p-5">
+          <h3 class="font-semibold text-fg">Skin detail footer</h3>
+          <p class="mt-1 text-sm text-muted">A related-sponsor slot at the bottom of individual skin pages.</p>
+          <p class="mt-3 text-xs text-meta">Below content · compact strip</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="mt-10">
+      <h2 class="text-xl font-semibold text-fg">Rate card</h2>
+      <p class="mt-1 text-sm text-muted">
+        Early-bird pricing while the index grows — current rates are locked for the first year of sponsorship.
+      </p>
+      <div class="mt-4 overflow-x-auto rounded-t-md border border-border">
+        <table class="w-full min-w-[560px] text-left text-sm">
+          <thead class="bg-surface text-xs uppercase tracking-caps text-meta">
+            <tr>
+              <th class="px-4 py-3 font-medium">Placement</th>
+              <th class="px-4 py-3 font-medium">Monthly</th>
+              <th class="px-4 py-3 font-medium">Quarterly (−10%)</th>
+              <th class="px-4 py-3 font-medium">Annual (−30%)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border bg-surface">
+            <tr>
+              <td class="px-4 py-3 text-fg">Homepage banner</td>
+              <td class="px-4 py-3">$99</td>
+              <td class="px-4 py-3">$267</td>
+              <td class="px-4 py-3">$831</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-fg">Category sidebar</td>
+              <td class="px-4 py-3">$49</td>
+              <td class="px-4 py-3">$133</td>
+              <td class="px-4 py-3">$411</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 text-fg">Skin detail footer</td>
+              <td class="px-4 py-3">$29</td>
+              <td class="px-4 py-3">$79</td>
+              <td class="px-4 py-3">$243</td>
+            </tr>
+            <tr class="bg-surface-warm">
+              <td class="px-4 py-3 font-semibold text-fg">All placements bundle</td>
+              <td class="px-4 py-3 font-semibold">$149</td>
+              <td class="px-4 py-3 font-semibold">$403</td>
+              <td class="px-4 py-3 font-semibold">$1,251</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-meta">
+        Pilot programs available: try a 2-week slot at half price to validate clicks before committing.
+      </p>
+    </section>
+
+    <!-- Process -->
+    <section class="mt-10">
+      <h2 class="text-xl font-semibold text-fg">How it works</h2>
+      <div class="mt-4 grid gap-4 sm:grid-cols-4">
+        <div class="rounded-t-md border border-border bg-surface p-5">
+          <MessageSquare size={20} class="text-accent" />
+          <h3 class="mt-3 font-semibold text-fg">1 · Contact</h3>
+          <p class="mt-1 text-sm text-muted">Send a brief via the contact form — site URL, audience, budget.</p>
+        </div>
+        <div class="rounded-t-md border border-border bg-surface p-5">
+          <Handshake size={20} class="text-accent" />
+          <h3 class="mt-3 font-semibold text-fg">2 · Confirm</h3>
+          <p class="mt-1 text-sm text-muted">We agree on placement, artwork, UTM links, and duration.</p>
+        </div>
+        <div class="rounded-t-md border border-border bg-surface p-5">
+          <BarChart3 size={20} class="text-accent" />
+          <h3 class="mt-3 font-semibold text-fg">3 · Live &amp; track</h3>
+          <p class="mt-1 text-sm text-muted">Your slot goes live with click and impression tracking.</p>
+        </div>
+        <div class="rounded-t-md border border-border bg-surface p-5">
+          <Eye size={20} class="text-accent" />
+          <h3 class="mt-3 font-semibold text-fg">4 · Report &amp; renew</h3>
+          <p class="mt-1 text-sm text-muted">Monthly CTR and traffic report, easy renewal or rotation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="mt-12 rounded-t-lg border border-border bg-surface-warm p-8 text-center">
+      <h2 class="text-2xl font-semibold text-fg">Ready to sponsor?</h2>
+      <p class="mx-auto mt-2 max-w-xl text-sm text-muted">
+        Pick "Advertising / Sponsor slot" in the contact form and include your site URL, audience,
+        and budget range. We reply within 1–2 business days with the media kit.
+      </p>
+      <a
+        href="/contact"
+        class="mt-5 inline-flex items-center gap-2 rounded-t-pill bg-accent px-6 py-3 text-sm font-medium text-accent-on hover:bg-accent-hover"
+      >
+        Start the conversation <ArrowRight size={16} />
+      </a>
+    </section>
+  </div>
+</Base>

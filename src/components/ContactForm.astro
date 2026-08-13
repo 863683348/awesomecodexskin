@@ -1,0 +1,188 @@
+---
+import { Send, CircleCheck, TriangleAlert, Mail } from '@lucide/astro';
+
+// Web3Forms access key — same pattern as SubmitForm.
+// Set PUBLIC_WEB3FORMS_KEY in Vercel env (already configured there).
+// It is a public inbox identifier, not a secret, but we still ship it via env
+// to make rotation painless and to keep the access key out of git.
+const WEB3FORMS_KEY = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? 'REPLACE_WITH_YOUR_PUBLIC_WEB3FORMS_KEY';
+
+const topics = [
+  { value: 'advertising', label: 'Advertising / Sponsor slot' },
+  { value: 'partnership', label: 'Partnership / Cross-promo' },
+  { value: 'custom', label: 'Custom theme request' },
+  { value: 'press', label: 'Press / Media' },
+  { value: 'general', label: 'General inquiry' },
+  { value: 'other', label: 'Other' },
+];
+---
+<form id="contact-form" class="space-y-4" novalidate>
+  <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" />
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label class="field-label" for="c-name">Name *</label>
+      <input id="c-name" name="name" class="field-input" required autocomplete="name" />
+      <p id="err-name" class="mt-1 text-xs text-danger"></p>
+    </div>
+    <div>
+      <label class="field-label" for="c-email">Email *</label>
+      <input id="c-email" name="email" type="email" class="field-input" required autocomplete="email" />
+      <p id="err-email" class="mt-1 text-xs text-danger"></p>
+    </div>
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label class="field-label" for="c-topic">Topic *</label>
+      <select id="c-topic" name="topic" class="field-input" required>
+        {topics.map((t) => <option value={t.value}>{t.label}</option>)}
+      </select>
+      <p id="err-topic" class="mt-1 text-xs text-danger"></p>
+    </div>
+    <div>
+      <label class="field-label" for="c-company">Company / Website (optional)</label>
+      <input id="c-company" name="company" class="field-input" placeholder="acme.com" autocomplete="organization" />
+    </div>
+  </div>
+
+  <div>
+    <label class="field-label" for="c-message">Message *</label>
+    <textarea id="c-message" name="message" rows="6" class="field-input" required placeholder="Tell us what you're looking for — site stats, audience, budget range, timing."></textarea>
+    <p id="err-message" class="mt-1 text-xs text-danger"></p>
+  </div>
+
+  <div class="flex flex-col gap-3 pt-2 sm:flex-row">
+    <button type="submit" id="contact-btn" class="inline-flex items-center justify-center gap-2 rounded-t-pill bg-accent px-6 py-3 text-sm font-medium text-accent-on hover:bg-accent-hover">
+      <Send size={18} /> Send message
+    </button>
+    <a
+      href="mailto:hi@awesomecodexskin.com"
+      class="inline-flex items-center justify-center gap-2 rounded-t-pill border border-border px-6 py-3 text-sm text-fg hover:border-accent hover:text-accent"
+    >
+      <Mail size={18} /> Or email us directly
+    </a>
+  </div>
+
+  <p class="text-xs text-meta">
+    We usually reply within 1–2 business days. For skin submissions, please use the
+    <a href="/submit" class="text-accent hover:underline">Submit a skin</a> form instead.
+  </p>
+
+  <!-- status region -->
+  <div id="contact-status" class="hidden" role="alert"></div>
+</form>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('contact-status');
+  const btn = document.getElementById('contact-btn');
+  const WEB3FORMS_KEY = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? 'REPLACE_WITH_YOUR_PUBLIC_WEB3FORMS_KEY';
+
+  function setErr(id, msg) {
+    const el = document.getElementById('err-' + id);
+    if (el) el.textContent = msg || '';
+  }
+  function isEmail(v) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+  }
+
+  function validate() {
+    let ok = true;
+    const get = (id) => (document.getElementById(id) as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement)?.value?.trim() ?? '';
+    ['name', 'email', 'topic', 'message'].forEach((f) => setErr(f, ''));
+
+    if (!get('c-name')) { setErr('name', 'Name is required.'); ok = false; }
+    const email = get('c-email');
+    if (!email) { setErr('email', 'Email is required.'); ok = false; }
+    else if (!isEmail(email)) { setErr('email', 'Enter a valid email address.'); ok = false; }
+    if (!get('c-topic')) { setErr('topic', 'Please pick a topic.'); ok = false; }
+    if (!get('c-message')) { setErr('message', 'Message is required.'); ok = false; }
+    else if (get('c-message').length < 10) { setErr('message', 'Tell us a bit more (at least 10 characters).'); ok = false; }
+    return ok;
+  }
+
+  function showStatus(html, kind) {
+    if (!status) return;
+    status.className = 'mt-4 rounded-t-md border p-4 text-sm';
+    if (kind === 'success') {
+      status.classList.add('border-accent', 'bg-surface-warm', 'text-fg');
+    } else if (kind === 'error') {
+      status.classList.add('border-danger', 'bg-surface-warm', 'text-fg');
+    } else {
+      status.classList.add('border-border', 'bg-surface-warm', 'text-muted');
+    }
+    status.innerHTML = html;
+    status.classList.remove('hidden');
+  }
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!validate()) {
+      showStatus('Please fix the highlighted fields and try again.', 'error');
+      return;
+    }
+    const fd = new FormData(form as HTMLFormElement);
+    const topic = fd.get('topic') as string;
+    const topicLabel = (form.querySelector(`#c-topic option[value="${topic}"]`) as HTMLOptionElement)?.textContent ?? topic;
+    const payload: Record<string, unknown> = {
+      access_key: WEB3FORMS_KEY,
+      botcheck: '',
+      subject: `[${topicLabel}] from ${fd.get('name')}`,
+      from_name: 'Codex Skin Index — Contact',
+      name: fd.get('name'),
+      email: fd.get('email'),
+      topic,
+      topicLabel,
+      company: fd.get('company') || '',
+      message: fd.get('message'),
+      // Web3Forms auto-reply — sends a confirmation to the sender.
+      replyto: fd.get('email'),
+    };
+
+    if (btn) { (btn as HTMLButtonElement).disabled = true; btn.textContent = 'Sending…'; }
+    showStatus('Sending your message…', 'pending');
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (data.success) {
+        showStatus(
+          '<span class="inline-flex items-center gap-2"><strong>Message sent.</strong></span>' +
+          '<p class="mt-1">Thanks — we will get back to you within 1–2 business days.</p>',
+          'success'
+        );
+        form?.reset();
+      } else {
+        const quota = /quota|limit|exceeded|250/i.test(data.message || '');
+        if (quota) {
+          showStatus(
+            '<strong>Contact channel is full this month.</strong>' +
+            '<p class="mt-1">Please email us directly while we upgrade the plan.</p>' +
+            '<a href="mailto:hi@awesomecodexskin.com" class="mt-2 inline-flex items-center gap-1 text-accent hover:underline">hi@awesomecodexskin.com →</a>',
+            'error'
+          );
+        } else {
+          showStatus(
+            `<strong>Send failed.</strong><p class="mt-1">${data.message || 'Unknown error.'}</p>` +
+            '<button id="contact-retry-btn" class="mt-2 rounded-t-pill border border-border px-4 py-2 text-sm hover:border-accent hover:text-accent">Retry</button>',
+            'error'
+          );
+          document.getElementById('contact-retry-btn')?.addEventListener('click', () => form?.requestSubmit());
+        }
+      }
+    } catch {
+      showStatus(
+        '<strong>Network error.</strong><p class="mt-1">We could not reach the contact service. Email us directly instead.</p>' +
+        '<a href="mailto:hi@awesomecodexskin.com" class="mt-2 inline-flex items-center gap-1 text-accent hover:underline">hi@awesomecodexskin.com →</a>',
+        'error'
+      );
+    } finally {
+      if (btn) { (btn as HTMLButtonElement).disabled = false; btn.textContent = 'Send message'; }
+    }
+  });
+</script>

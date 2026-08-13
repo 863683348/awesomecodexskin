@@ -50,6 +50,7 @@
 - **ADR-003 锁定 Lucide**（`@lucide/astro`）
 - **ADR-004 提交入口无后端**（Web3Forms 250/月 + GitHub PR 双通道）
 - **ADR-005 双轨形态：GitHub 仓库 + Astro 网站**（仓库 `awesome-codex-skin-projects` 作权威源/外链飞轮，对标 alterhq/awesome-codex-pets-projects；网站作 SEO/变现载体；README 与网站互链）
+- **ADR-006 图片与媒体走独立 CDN（隔离 Vercel 计费）**（`docs/decisions/ADR-006-image-cdn-strategy.md`，Proposed 待选 A/B/C/D）：媒体与计算拆开，重图存 Cloudflare R2/Images 用 CDN 出图，Vercel 只跑生图计算；皮肤站纯静态不碰 Vercel 指标，Pet Generator 出图链路改 R2
 
 > 关于 openapi.yaml：本站纯静态无后端，无自有 API，不产出 openapi.yaml；唯一"端点"是第三方 Web3Forms 提交 URL（POST https://api.web3forms.com/submit + access_key 隐藏字段），字段契约在 ADR-004 / submit.astro 内联说明。
 

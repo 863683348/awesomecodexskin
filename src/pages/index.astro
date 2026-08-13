@@ -8,6 +8,7 @@ import SponsoredSlot from '../components/SponsoredSlot.astro';
 import SubmitCTA from '../components/SubmitCTA.astro';
 import EngineGrid from '../components/EngineGrid.astro';
 import EmptyState from '../components/EmptyState.astro';
+import { ArrowRight } from '@lucide/astro';
 import { featuredFirst, itemListJsonLd } from '../lib/skins.ts';
 import { SITE } from '../lib/site.ts';
 
@@ -48,6 +49,12 @@ const heroFeatured = featured.slice(0, 4);
           Submit a skin
         </a>
       </div>
+      <a
+        href="/advertise"
+        class="mt-5 inline-flex w-fit items-center gap-2 rounded-t-pill border border-border px-4 py-2 text-xs text-muted hover:border-accent hover:text-accent"
+      >
+        Advertise with us — reach Codex skinners <ArrowRight size={13} />
+      </a>
     </div>
 
     <div class="flex flex-col">
