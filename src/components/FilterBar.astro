@@ -1,0 +1,30 @@
+---
+import { ArrowDownUp } from '@lucide/astro';
+import { CATEGORIES } from '../lib/site.ts';
+interface Props {
+  showFeatured?: boolean;
+  defaultSort?: 'featured' | 'newest' | 'popular';
+}
+const { showFeatured = false, defaultSort = 'newest' } = Astro.props;
+---
+<div class="sticky top-16 z-30 border-b border-border bg-surface">
+  <div class="container-x flex flex-col gap-3 py-3 lg:flex-row lg:items-center lg:justify-between">
+    <div class="flex gap-2 overflow-x-auto pb-1 lg:pb-0" role="group" aria-label="Filter by category">
+      {CATEGORIES.map((c) => (
+        <label class="facet-chip" key={c.slug}>
+          <input type="checkbox" data-facet="category" value={c.slug} />
+          {c.label}
+        </label>
+      ))}
+    </div>
+    <div class="flex items-center gap-2">
+      <ArrowDownUp size={16} class="text-muted" />
+      <label class="sr-only" for="filter-sort">Sort</label>
+      <select id="filter-sort" data-sort class="field-input w-auto py-2">
+        {showFeatured && <option value="featured" selected={defaultSort === 'featured'}>Featured</option>}
+        <option value="newest" selected={defaultSort === 'newest'}>Newest</option>
+        <option value="popular" selected={defaultSort === 'popular'}>Popular</option>
+      </select>
+    </div>
+  </div>
+</div>

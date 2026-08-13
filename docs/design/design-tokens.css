@@ -1,0 +1,157 @@
+/* ============================================================
+   Codex Skin Index — Design Tokens (formal)
+   Source : UIUX §7 + ADR-003 (Lucide) + Spec §8
+   Author : 颜好看 (UI/UX Designer)
+   ------------------------------------------------------------
+   • Default theme = DARK. Applied via data-theme="dark" on
+     <html> by an inline boot script (sets + persists
+     localStorage) to avoid FOUC. :root below holds the LIGHT
+     base so [data-theme="light"] cleanly falls back to it.
+   • P0 rule: NO hardcoded colors except #fff / #000.
+     All color values live behind var(--token).
+   • Icons: Lucide only (16/20/24px). Never emoji.
+   ============================================================ */
+
+:root {
+  /* ---------- Surface (light base) ---------- */
+  --bg: #FAFAFA;
+  --surface: #FFFFFF;
+  --surface-warm: #F4F4F5;
+
+  /* ---------- Foreground ---------- */
+  --fg: #18181B;
+  --fg-2: #3F3F46;
+  --muted: #71717A;
+  --meta: #A1A1AA;
+
+  /* ---------- Border ---------- */
+  --border: #E4E4E7;
+  --border-soft: #F4F4F5;
+
+  /* ---------- Accent (single, teal) ---------- */
+  --accent: #0F766E;
+  --accent-hover: #115E59;
+  --accent-active: #134E4A;
+  --accent-on: #FFFFFF;
+
+  /* ---------- Semantic ---------- */
+  --success: #16A34A;
+  --warn: #D97706;
+  --danger: #DC2626;
+
+  /* ---------- Focus ring (light) ---------- */
+  --focus-ring: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent);
+
+  /* ---------- Typography ---------- */
+  --font-display: "Geist", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "Geist Mono", "JetBrains Mono", ui-monospace, monospace;
+
+  /* ---------- Radius ---------- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  /* ---------- Space (4px grid, indices 1–20) ---------- */
+  --space-1: 4px;   --space-2: 8px;   --space-3: 12px;  --space-4: 16px;  --space-5: 20px;
+  --space-6: 24px;  --space-7: 28px;  --space-8: 32px;  --space-9: 36px;  --space-10: 40px;
+  --space-11: 44px; --space-12: 48px; --space-13: 52px; --space-14: 56px; --space-15: 60px;
+  --space-16: 64px; --space-17: 68px; --space-18: 72px; --space-19: 76px; --space-20: 80px;
+
+  /* ---------- Motion ---------- */
+  --motion-fast: 150ms;
+  --motion-base: 200ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+
+  /* ---------- Layout ---------- */
+  --container-max: 1200px;
+}
+
+/* Explicit light selector (for clean theme switching) */
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+/* ---------- DARK (default) ---------- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #0A0A0B;
+  --surface: #141416;
+  --surface-warm: #141416;
+
+  --fg: #FAFAFA;
+  --fg-2: #D4D4D8;
+  --muted: #A1A1AA;
+  --meta: #71717A;
+
+  --border: #27272A;
+  --border-soft: rgba(255, 255, 255, 0.06);
+
+  --accent: #2DD4BF;
+  --accent-hover: #14B8A6;
+  --accent-active: #0D9488;
+  --accent-on: #04201D;
+
+  --success: #22C55E;
+  --warn: #F59E0B;
+  --danger: #EF4444;
+
+  --focus-ring: 0 0 0 3px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+/* ============================================================
+   Boot helper (place inline in <head> BEFORE paint):
+   <script>
+     (function(){
+       try {
+         var t = localStorage.getItem('theme');
+         if (!t) t = 'dark';                 // default = dark
+         document.documentElement.dataset.theme = t;
+       } catch(e){ document.documentElement.dataset.theme = 'dark'; }
+     })();
+   </script>
+   ============================================================ */
+
+/* ============================================================
+   Base resets that consume tokens (kept here so components
+   inherit without re-declaring color literals)
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  color: var(--fg);
+  background-color: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;            /* text-base */
+  line-height: 1.6;           /* leading-body */
+  letter-spacing: 0;           /* tracking-body */
+}
+
+/* Visible, token-driven focus (P0: never remove) */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-sm);
+}
+
+/* Honor reduced-motion (P0: motion_intensity=4, functional only) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

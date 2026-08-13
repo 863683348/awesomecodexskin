@@ -1,0 +1,273 @@
+---
+import { Send, CircleCheck, TriangleAlert, GitBranch } from '@lucide/astro';
+import { CATEGORIES, REPO_PR_URL } from '../lib/site.ts';
+
+// Web3Forms access key is injected at build time via an env var.
+// It is NOT a secret — it only identifies the inbox. Provide it in
+// `.env` as `PUBLIC_WEB3FORMS_KEY=your_key` (or deploy env). Astro only
+// exposes PUBLIC_*-prefixed vars to the client. Never hardcode a
+// fake secret here; the placeholder below makes the missing-key state obvious.
+const WEB3FORMS_KEY = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? 'REPLACE_WITH_YOUR_PUBLIC_WEB3FORMS_KEY';
+
+const platforms = [
+  { value: 'codex-desktop', label: 'Codex Desktop' },
+  { value: 'codex-cli', label: 'Codex CLI' },
+  { value: 'both', label: 'Both' },
+];
+const formats = [
+  { value: 'prompt', label: 'Prompt (copyable)' },
+  { value: 'tmtheme', label: 'tmTheme (CLI /theme)' },
+  { value: 'codedrobe-theme', label: 'codedrobe-theme (download)' },
+  { value: 'dreamskin-v1', label: 'Dream Skin preset' },
+  { value: 'manual', label: 'Manual (see source)' },
+];
+---
+<form id="submit-form" class="space-y-4" novalidate>
+  <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" />
+
+  <div>
+    <label class="field-label" for="f-name">Name *</label>
+    <input id="f-name" name="name" class="field-input" required />
+    <p id="err-name" class="mt-1 text-xs text-danger"></p>
+  </div>
+
+  <div>
+    <label class="field-label" for="f-author">Author *</label>
+    <input id="f-author" name="author" class="field-input" required />
+    <p id="err-author" class="mt-1 text-xs text-danger"></p>
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label class="field-label" for="f-category">Category *</label>
+      <select id="f-category" name="category" class="field-input">
+        {CATEGORIES.map((c) => <option value={c.slug}>{c.label}</option>)}
+      </select>
+      <p id="err-category" class="mt-1 text-xs text-danger"></p>
+    </div>
+    <div>
+      <label class="field-label" for="f-platform">Platform *</label>
+      <select id="f-platform" name="platform" class="field-input">
+        {platforms.map((p) => <option value={p.value}>{p.label}</option>)}
+      </select>
+    </div>
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label class="field-label" for="f-mood">Mood *</label>
+      <input id="f-mood" name="mood" class="field-input" placeholder="e.g. calm, neon" required />
+      <p id="err-mood" class="mt-1 text-xs text-danger"></p>
+    </div>
+    <div>
+      <label class="field-label" for="f-color">Accent color *</label>
+      <div class="flex items-center gap-3">
+        <input id="f-color" name="color" type="color" value="#2DD4BF" class="h-10 w-12 cursor-pointer rounded-t-sm border border-border bg-surface" />
+        <input id="f-color-hex" name="colorHex" class="field-input" value="#2DD4BF" maxlength="7" />
+      </div>
+      <p id="err-color" class="mt-1 text-xs text-danger"></p>
+    </div>
+  </div>
+
+  <div>
+    <label class="field-label" for="f-description">Description *</label>
+    <textarea id="f-description" name="description" rows="2" class="field-input" required></textarea>
+    <p id="err-description" class="mt-1 text-xs text-danger"></p>
+  </div>
+
+  <div>
+    <label class="field-label" for="f-installPrompt">Install prompt or command *</label>
+    <textarea id="f-installPrompt" name="installPrompt" rows="3" class="field-input font-mono text-sm" required></textarea>
+    <p id="err-installPrompt" class="mt-1 text-xs text-danger"></p>
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label class="field-label" for="f-installFormat">Install format</label>
+      <select id="f-installFormat" name="installFormat" class="field-input">
+        {formats.map((f) => <option value={f.value}>{f.label}</option>)}
+      </select>
+    </div>
+    <div>
+      <label class="field-label" for="f-sourceUrl">Source URL *</label>
+      <input id="f-sourceUrl" name="sourceUrl" type="url" class="field-input" placeholder="https://github.com/..." required />
+      <p id="err-sourceUrl" class="mt-1 text-xs text-danger"></p>
+    </div>
+  </div>
+
+  <div>
+    <label class="field-label" for="f-previewImage">Preview image URL (optional)</label>
+    <input id="f-previewImage" name="previewImage" type="url" class="field-input" placeholder="https://..." />
+  </div>
+
+  <label class="flex items-center gap-2 text-sm text-muted">
+    <input type="checkbox" name="paid_inclusion" value="yes" class="h-4 w-4 rounded-t-sm border border-border" />
+    Paid inclusion (reserved field — see review notes)
+  </label>
+
+  <div class="flex flex-col gap-3 pt-2 sm:flex-row">
+    <button type="submit" id="submit-btn" class="inline-flex items-center justify-center gap-2 rounded-t-pill bg-accent px-6 py-3 text-sm font-medium text-accent-on hover:bg-accent-hover">
+      <Send size={18} /> Submit skin
+    </button>
+    <a
+      href={REPO_PR_URL}
+      class="inline-flex items-center justify-center gap-2 rounded-t-pill border border-border px-6 py-3 text-sm text-fg hover:border-accent hover:text-accent"
+      rel="nofollow noopener"
+      target="_blank"
+    >
+      <GitBranch size={18} /> Prefer GitHub? Open a PR
+    </a>
+  </div>
+
+  <!-- status region -->
+  <div id="submit-status" class="hidden" role="alert"></div>
+</form>
+
+<script>
+  const form = document.getElementById('submit-form');
+  const status = document.getElementById('submit-status');
+  const btn = document.getElementById('submit-btn');
+  // access_key is a public inbox identifier, not a secret.
+  const WEB3FORMS_KEY = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? 'REPLACE_WITH_YOUR_PUBLIC_WEB3FORMS_KEY';
+  const PR_URL = REPO_PR_URL;
+  let attempts = 0;
+
+  function setErr(id, msg) {
+    const el = document.getElementById('err-' + id);
+    if (el) el.textContent = msg || '';
+  }
+  function isHex(v) {
+    return /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test(v);
+  }
+  function isUrl(v) {
+    try {
+      const u = new URL(v);
+      return u.protocol === 'http:' || u.protocol === 'https:';
+    } catch {
+      return false;
+    }
+  }
+
+  // keep hex + color picker in sync, force leading #
+  const colorPicker = document.getElementById('f-color');
+  const colorHex = document.getElementById('f-color-hex');
+  colorPicker?.addEventListener('input', () => {
+    if (colorHex) colorHex.value = colorPicker.value;
+  });
+  colorHex?.addEventListener('input', () => {
+    let v = colorHex.value.trim();
+    if (v && v[0] !== '#') v = '#' + v;
+    if (isHex(v) && colorPicker) colorPicker.value = v.length === 4
+      ? '#' + v.slice(1).split('').map((c) => c + c).join('')
+      : v;
+  });
+
+  function validate() {
+    let ok = true;
+    const get = (id) => (document.getElementById(id) as HTMLInputElement)?.value?.trim() ?? '';
+    const fields = ['name', 'author', 'mood', 'description', 'installPrompt', 'sourceUrl'];
+    fields.forEach((f) => setErr(f, ''));
+    setErr('color', '');
+
+    if (!get('f-name')) { setErr('name', 'Name is required.'); ok = false; }
+    if (!get('f-author')) { setErr('author', 'Author is required.'); ok = false; }
+    if (!get('f-mood')) { setErr('mood', 'Mood is required.'); ok = false; }
+    if (!get('f-description')) { setErr('description', 'Description is required.'); ok = false; }
+    if (!get('f-installPrompt')) { setErr('installPrompt', 'Install prompt is required.'); ok = false; }
+    const color = get('f-color-hex');
+    if (!isHex(color)) { setErr('color', 'Use a hex color like #1A2B3C.'); ok = false; }
+    const src = get('f-sourceUrl');
+    if (!isUrl(src)) { setErr('sourceUrl', 'Enter a valid absolute URL (https://…).'); ok = false; }
+    return ok;
+  }
+
+  function showStatus(html, kind) {
+    if (!status) return;
+    status.className = 'mt-4 rounded-t-md border p-4 text-sm';
+    if (kind === 'success') {
+      status.classList.add('border-accent', 'bg-surface-warm', 'text-fg');
+    } else if (kind === 'error') {
+      status.classList.add('border-danger', 'bg-surface-warm', 'text-fg');
+    } else {
+      status.classList.add('border-border', 'bg-surface-warm', 'text-muted');
+    }
+    status.innerHTML = html;
+    status.classList.remove('hidden');
+  }
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!validate()) {
+      showStatus('Please fix the highlighted fields and try again.', 'error');
+      return;
+    }
+    const fd = new FormData(form as HTMLFormElement);
+    const payload: Record<string, unknown> = {
+      access_key: WEB3FORMS_KEY,
+      botcheck: '',
+      subject: `New Codex Skin Submission: ${fd.get('name')}`,
+      from_name: 'Codex Skin Index',
+      name: fd.get('name'),
+      author: fd.get('author'),
+      category: fd.get('category'),
+      mood: fd.get('mood'),
+      color: fd.get('colorHex'),
+      platform: fd.get('platform'),
+      description: fd.get('description'),
+      installPrompt: fd.get('installPrompt'),
+      installFormat: fd.get('installFormat'),
+      sourceUrl: fd.get('sourceUrl'),
+      previewImage: fd.get('previewImage') || '',
+      paid_inclusion: fd.get('paid_inclusion') ? 'yes' : 'no',
+    };
+
+    if (btn) { (btn as HTMLButtonElement).disabled = true; btn.textContent = 'Submitting…'; }
+    showStatus('Submitting your skin…', 'pending');
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (data.success) {
+        showStatus(
+          '<span class="inline-flex items-center gap-2"><strong>Submitted — pending review.</strong></span>' +
+          '<p class="mt-1">Thanks — your skin is in the review queue. We will index it after a human check.</p>',
+          'success'
+        );
+        form?.reset();
+        if (colorHex) colorHex.value = '#2DD4BF';
+        if (colorPicker) colorPicker.value = '#2DD4BF';
+      } else {
+        attempts++;
+        const quota = /quota|limit|exceeded|250/i.test(data.message || '');
+        if (quota) {
+          showStatus(
+            '<strong>Submission channel is full this month.</strong>' +
+            '<p class="mt-1">Please open a GitHub PR instead — it is unlimited and keeps your contribution moving.</p>' +
+            `<a href="${PR_URL}" class="mt-2 inline-flex items-center gap-1 text-accent hover:underline" rel="nofollow noopener" target="_blank">Open a PR →</a>`,
+            'error'
+          );
+        } else {
+          showStatus(
+            `<strong>Submission failed.</strong><p class="mt-1">${data.message || 'Unknown error.'}</p>` +
+            '<button id="retry-btn" class="mt-2 rounded-t-pill border border-border px-4 py-2 text-sm hover:border-accent hover:text-accent">Retry</button>',
+            'error'
+          );
+          document.getElementById('retry-btn')?.addEventListener('click', () => form?.requestSubmit());
+        }
+      }
+    } catch {
+      attempts++;
+      showStatus(
+        '<strong>Network error.</strong><p class="mt-1">We could not reach the submission service. Try again, or open a GitHub PR.</p>' +
+        `<a href="${PR_URL}" class="mt-2 inline-flex items-center gap-1 text-accent hover:underline" rel="nofollow noopener" target="_blank">Open a PR →</a>`,
+        'error'
+      );
+    } finally {
+      if (btn) { (btn as HTMLButtonElement).disabled = false; btn.textContent = 'Submit skin'; }
+    }
+  });
+</script>

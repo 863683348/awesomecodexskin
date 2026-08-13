@@ -1,0 +1,30 @@
+---
+import { Sun, Moon } from '@lucide/astro';
+---
+<button
+  id="theme-toggle"
+  class="icon-btn text-muted hover:text-accent"
+  aria-label="Toggle light and dark theme"
+  aria-pressed="false"
+>
+  <Moon class="icon-moon" size={16} />
+  <Sun class="icon-sun" size={16} />
+</button>
+
+<script>
+  const btn = document.getElementById('theme-toggle');
+  function sync() {
+    const t = document.documentElement.dataset.theme;
+    btn?.setAttribute('aria-pressed', String(t === 'light'));
+  }
+  btn?.addEventListener('click', () => {
+    const cur = document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+    const next = cur === 'light' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = next;
+    try {
+      localStorage.setItem('theme', next);
+    } catch {}
+    sync();
+  });
+  sync();
+</script>

@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import FacetSidebar from '../../../components/FacetSidebar.astro';
+import SkinCard from '../../../components/SkinCard.astro';
+import EmptyState from '../../../components/EmptyState.astro';
+import SubmitCTA from '../../../components/SubmitCTA.astro';
+import { sortByNewest, itemListJsonLd } from '../../../lib/skins.ts';
+import { CATEGORIES, categoryLabel } from '../../../lib/site.ts';
+
+export async function getStaticPaths() {
+  const skins = await getCollection('skins');
+  return CATEGORIES.map((cat) => ({
+    params: { slug: cat.slug },
+    props: {
+      category: cat.slug,
+      meta: cat,
+      skins: skins.filter((s) => s.data.category === cat.slug),
+    },
+  }));
+}
+
+const { category, meta, skins } = Astro.props;
+const ordered = sortByNewest(skins);
+const jsonLd = itemListJsonLd(ordered.slice(0, 24), `Codex skins — ${meta.label}`);
+---
+<Base
+  title={`${meta.label} Codex skins`}
+  description={meta.blurb}
+  jsonLd={jsonLd}
+>
+  <div class="container-x grid gap-8 py-8 lg:grid-cols-[280px_1fr]">
+    <FacetSidebar lockCategory={category} defaultSort="newest" />
+
+    <section>
+      <nav class="mb-2 text-sm text-meta" aria-label="Breadcrumb">
+        <a href="/skins" class="hover:text-fg">Skins</a> / <span class="text-fg">{meta.label}</span>
+      </nav>
+      <div class="mb-6 flex items-baseline justify-between gap-4">
+        <div>
+          <h1 class="text-2xl font-semibold text-fg">{meta.label}</h1>
+          <p class="mt-1 max-w-2xl text-sm text-muted">{meta.blurb}</p>
+        </div>
+        <span class="text-sm text-muted"><span id="result-count">{ordered.length}</span> skins</span>
+      </div>
+
+      <div id="skin-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {ordered.map((s) => (
+          <SkinCard skin={s} />
+        ))}
+      </div>
+
+      <EmptyState variant="empty-index" />
+
+      <div class="mt-8">
+        <SubmitCTA heading="Don't see your skin?" body="This category is open for submissions. Get your skin indexed and linked from the GitHub repo." />
+      </div>
+    </section>
+  </div>
+</Base>
+
+<script>
+  import { initBrowse } from '../../../lib/browse-client.ts';
+  initBrowse({
+    grid: '#skin-grid',
+    resultCount: '#result-count',
+    empty: '#empty-state',
+    sort: '#facet-sort',
+    facetCategory: '[data-facet="category"]',
+    facetMood: '#facet-mood',
+    facetPlatform: '[data-facet="platform"]',
+    facetColor: '#facet-color',
+    lockCategory: undefined,
+    pageSize: 24,
+    sortDefault: 'newest',
+  });
+</script>

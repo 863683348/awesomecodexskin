@@ -1,0 +1,51 @@
+---
+import { ExternalLink } from '@lucide/astro';
+import { SITE } from '../lib/site.ts';
+import ThemeToggle from './ThemeToggle.astro';
+
+const nav = [
+  { label: 'Skins', href: '/skins', external: false },
+  { label: 'Categories', href: '/skins', external: false },
+];
+const sister = [
+  { label: 'Pets', href: 'https://awesomecodexpets.com' },
+  { label: 'Skin Generator', href: 'https://codexskingenerator.com' },
+];
+const path = Astro.url.pathname;
+---
+<header class="sticky top-0 z-40 border-b border-border bg-surface">
+  <div class="container-x flex h-16 items-center justify-between gap-4">
+    <a href="/" class="flex items-center gap-2 font-display text-lg font-semibold text-fg" aria-label={SITE.name}>
+      <span class="inline-flex h-7 w-7 items-center justify-center rounded-t-sm bg-accent text-accent-on" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg>
+      </span>
+      <span>Codex Skin Index</span>
+    </a>
+
+    <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
+      {nav.map((item) => (
+        <a
+          href={item.href}
+          class="rounded-t-sm px-3 py-2 text-sm text-muted hover:text-fg"
+          aria-current={path.startsWith(item.href) && item.href !== '/' ? 'page' : undefined}
+        >{item.label}</a>
+      ))}
+      {sister.map((item) => (
+        <a
+          href={item.href}
+          class="inline-flex items-center gap-1 rounded-t-sm px-3 py-2 text-sm text-muted hover:text-fg"
+          rel="nofollow noopener"
+          target="_blank"
+        >{item.label}<ExternalLink size={14} /></a>
+      ))}
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <ThemeToggle />
+      <a
+        href="/submit"
+        class="inline-flex items-center rounded-t-pill bg-accent px-4 py-2 text-sm font-medium text-accent-on hover:bg-accent-hover"
+      >Submit</a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,16 @@
+---
+import { Flag, ExternalLink } from '@lucide/astro';
+import { REPO_URL } from '../lib/site.ts';
+import type { Skin } from '../lib/skins.ts';
+
+interface Props {
+  skin: Skin;
+}
+const { skin } = Astro.props;
+const issueHref =
+  `${REPO_URL}/issues/new?title=${encodeURIComponent(`Fix/Suggestion: ${skin.data.name}`)}` +
+  `&body=${encodeURIComponent(`Skin: ${skin.data.name}\nSource: ${skin.data.sourceUrl}\n\nWhat needs fixing?`)}`;
+---
+<a href={issueHref} class="inline-flex items-center gap-1.5 text-sm text-muted hover:text-fg" rel="nofollow noopener" target="_blank">
+  <Flag size={16} /> Report or suggest a fix <ExternalLink size={14} />
+</a>

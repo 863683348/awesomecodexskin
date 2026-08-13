@@ -1,0 +1,19 @@
+---
+import { Search } from '@lucide/astro';
+interface Props {
+  placeholder?: string;
+  id?: string;
+}
+const { placeholder = 'Search skins, moods, engines…', id = 'site-search' } = Astro.props;
+---
+<div class="relative w-full">
+  <Search size={16} class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
+  <input
+    type="search"
+    id={id}
+    data-search
+    placeholder={placeholder}
+    aria-label="Search skins"
+    class="w-full rounded-t-pill border border-border bg-surface py-3 pl-10 pr-4 text-fg placeholder:text-meta focus:border-accent"
+  />
+</div>

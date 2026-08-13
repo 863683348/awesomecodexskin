@@ -1,0 +1,35 @@
+---
+import { Monitor, Terminal } from '@lucide/astro';
+---
+<div data-platform-tabs>
+  <div role="tablist" aria-label="Platform" class="mb-4 flex gap-2">
+    <button type="button" class="tab active inline-flex items-center gap-1.5" data-tab="desktop" aria-selected="true">
+      <Monitor size={16} /> Codex Desktop
+    </button>
+    <button type="button" class="tab inline-flex items-center gap-1.5" data-tab="cli" aria-selected="false">
+      <Terminal size={16} /> Codex CLI
+    </button>
+  </div>
+  <div data-panel="desktop"><slot name="desktop" /></div>
+  <div data-panel="cli" hidden><slot name="cli" /></div>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-platform-tabs]').forEach((root) => {
+    const tabs = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-tab]'));
+    const panels = Array.from(root.querySelectorAll<HTMLElement>('[data-panel]'));
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const key = tab.dataset.tab;
+        tabs.forEach((t) => {
+          const active = t === tab;
+          t.classList.toggle('active', active);
+          t.setAttribute('aria-selected', String(active));
+        });
+        panels.forEach((p) => {
+          p.hidden = p.dataset.panel !== key;
+        });
+      });
+    });
+  });
+</script>

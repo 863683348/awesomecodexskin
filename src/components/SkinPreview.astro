@@ -1,0 +1,34 @@
+---
+import { ImageOff } from '@lucide/astro';
+import type { Skin } from '../lib/skins.ts';
+
+interface Props {
+  skin: Skin;
+}
+const { skin } = Astro.props;
+const d = skin.data;
+const hasPreview = Boolean(d.previewImage);
+---
+<div class="relative overflow-hidden rounded-t-lg border border-border bg-surface" style={`--skin-color:${d.color}`}>
+  <div class="relative aspect-video w-full bg-surface-warm">
+    {hasPreview ? (
+      <img
+        src={d.previewImage}
+        alt={`${d.name} workspace preview`}
+        class="h-full w-full object-cover"
+        onerror={`this.style.display='none'; this.nextElementSibling.style.display='flex';`}
+      />
+    ) : null}
+    <div
+      class={`absolute inset-0 flex-col items-center justify-center gap-2 text-meta ${hasPreview ? 'hidden' : 'flex'}`}
+    >
+      <div
+        class="absolute inset-0 opacity-20"
+        style="background: var(--skin-color);"
+        aria-hidden="true"
+      ></div>
+      <ImageOff size={24} />
+      <span class="relative px-4 text-center text-sm">Source may have changed</span>
+    </div>
+  </div>
+</div>

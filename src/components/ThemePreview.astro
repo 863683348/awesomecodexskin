@@ -1,0 +1,99 @@
+---
+import { Eye, AlertTriangle } from '@lucide/astro';
+---
+<div class="grid gap-6 lg:grid-cols-2">
+  <div>
+    <label class="field-label" for="tp-json">Paste a theme.json</label>
+    <textarea
+      id="tp-json"
+      rows="12"
+      class="field-input font-mono text-sm"
+      placeholder={'{\n  "colors": {\n    "bg": "#0A0A0B",\n    "fg": "#FAFAFA",\n    "accent": "#2DD4BF"\n  }\n}'}
+    ></textarea>
+    <div class="mt-3 flex items-center gap-3">
+      <button id="tp-render" type="button" class="inline-flex items-center gap-2 rounded-t-pill bg-accent px-5 py-3 text-sm font-medium text-accent-on hover:bg-accent-hover">
+        <Eye size={18} /> Render
+      </button>
+      <span id="tp-error" class="hidden inline-flex items-center gap-1 text-sm text-warn"><AlertTriangle size={16} /> Invalid JSON</span>
+    </div>
+  </div>
+
+  <div>
+    <span class="field-label">Preview (sandboxed)</span>
+    <iframe
+      id="tp-frame"
+      sandbox="allow-scripts"
+      title="Theme preview"
+      class="mt-1 h-80 w-full rounded-t-md border border-border bg-surface"
+    ></iframe>
+  </div>
+</div>
+
+<script>
+  const ta = document.getElementById('tp-json') as HTMLTextAreaElement | null;
+  const btn = document.getElementById('tp-render');
+  const err = document.getElementById('tp-error');
+  const frame = document.getElementById('tp-frame') as HTMLIFrameElement | null;
+
+  function pick(obj: any, keys: string[], fallback: string): string {
+    for (const k of keys) {
+      if (obj && typeof obj[k] === 'string') return obj[k];
+    }
+    return fallback;
+  }
+
+  function render() {
+    if (!ta || !frame) return;
+    err?.classList.add('hidden');
+    let parsed: any = {};
+    try {
+      parsed = JSON.parse(ta.value);
+    } catch {
+      err?.classList.remove('hidden');
+      return;
+    }
+    const colors = parsed.colors || parsed;
+    const bg = pick(colors, ['bg', 'background', 'editor.background'], '#0A0A0B');
+    const fg = pick(colors, ['fg', 'foreground', 'editor.foreground'], '#FAFAFA');
+    const accent = pick(colors, ['accent', 'primary', 'terminal.ansiBlue'], '#2DD4BF');
+
+    const doc = `<!doctype html><html><head><meta charset="utf-8"><style>
+      * { box-sizing: border-box; margin: 0; }
+      body { background: ${bg}; color: ${fg}; font-family: ui-sans-serif, system-ui, sans-serif; height: 100vh; display: flex; flex-direction: column; }
+      .bar { height: 28px; display: flex; align-items: center; gap: 6px; padding: 0 10px; border-bottom: 1px solid ${fg}22; }
+      .dot { width: 10px; height: 10px; border-radius: 50%; background: ${fg}55; }
+      .body { flex: 1; display: flex; }
+      .side { width: 30%; border-right: 1px solid ${fg}22; padding: 10px; font-size: 12px; }
+      .file { padding: 4px 6px; border-radius: 6px; margin-bottom: 4px; }
+      .file.active { background: ${accent}22; color: ${accent}; }
+      .main { flex: 1; padding: 12px; font-family: ui-monospace, monospace; font-size: 12px; line-height: 1.7; }
+      .kw { color: ${accent}; }
+      .status { height: 24px; background: ${accent}; color: #04201D; display: flex; align-items: center; padding: 0 10px; font-size: 11px; }
+    </style></head><body>
+      <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <div class="body">
+        <div class="side">
+          <div class="file active">skins / aurora.md</div>
+          <div class="file">install.sh</div>
+          <div class="file">theme.json</div>
+        </div>
+        <div class="main">
+          <div><span class="kw">const</span> theme = {</div>
+          <div>&nbsp;&nbsp;bg: "${bg}",</div>
+          <div>&nbsp;&nbsp;fg: "${fg}",</div>
+          <div>&nbsp;&nbsp;accent: "${accent}"</div>
+          <div>};</div>
+        </div>
+      </div>
+      <div class="status">Codex · accent ${accent}</div>
+    </body></html>`;
+    frame.srcdoc = doc;
+  }
+
+  btn?.addEventListener('click', render);
+  // initial render with placeholder
+  if (ta && ta.value.trim() === '') {
+    ta.value = '{\n  "colors": {\n    "bg": "#0A0A0B",\n    "fg": "#FAFAFA",\n    "accent": "#2DD4BF"\n  }\n}';
+  }
+  render();
+</script>

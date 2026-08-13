@@ -1,0 +1,23 @@
+---
+import SkinCard from './SkinCard.astro';
+import type { Skin } from '../lib/skins.ts';
+
+interface Props {
+  skin: Skin;
+  all: Skin[];
+}
+const { skin, all } = Astro.props;
+const related = all
+  .filter((s) => s.id !== skin.id && s.data.category === skin.data.category)
+  .slice(0, 4);
+---
+{related.length > 0 && (
+  <section class="mt-12" aria-label="Related skins">
+    <h2 class="mb-4 text-xl font-semibold text-fg">More in this category</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {related.map((s) => (
+        <SkinCard skin={s} compact />
+      ))}
+    </div>
+  </section>
+)}

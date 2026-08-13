@@ -1,0 +1,134 @@
+{
+  "$schema": "codex-skin-index/design-tokens v1",
+  "$meta": {
+    "source": "UIUX §7 + ADR-003 (Lucide) + Spec §8",
+    "defaultTheme": "dark",
+    "themeApplication": "dark via data-theme=\"dark\" on <html> (boot script + localStorage); :root holds light base",
+    "noHardcodedColors": "All raw hex live only here as canonical token values. Every other doc references var(--token). Only #fff/#000 may appear as literals in code.",
+    "iconLibrary": "Lucide (@lucide/astro) — 16/20/24px, never emoji"
+  },
+
+  "color": {
+    "dark": {
+      "bg":            { "value": "#0A0A0B", "type": "color", "role": "A1-identity" },
+      "surface":       { "value": "#141416", "type": "color", "role": "A1-identity" },
+      "surface-warm":  { "value": "#141416", "type": "color", "role": "B-slot" },
+      "fg":            { "value": "#FAFAFA", "type": "color", "role": "A1-identity" },
+      "fg-2":          { "value": "#D4D4D8", "type": "color", "role": "B-slot" },
+      "muted":         { "value": "#A1A1AA", "type": "color", "role": "A1-identity" },
+      "meta":          { "value": "#71717A", "type": "color", "role": "B-slot" },
+      "border":        { "value": "#27272A", "type": "color", "role": "A1-identity" },
+      "border-soft":   { "value": "rgba(255,255,255,0.06)", "type": "color", "role": "B-slot" },
+      "accent":        { "value": "#2DD4BF", "type": "color", "role": "A1-identity" },
+      "accent-hover":  { "value": "#14B8A6", "type": "color", "role": "A2" },
+      "accent-active": { "value": "#0D9488", "type": "color", "role": "A2" },
+      "accent-on":     { "value": "#04201D", "type": "color", "role": "A2" },
+      "success":       { "value": "#22C55E", "type": "color", "role": "A2" },
+      "warn":          { "value": "#F59E0B", "type": "color", "role": "A2" },
+      "danger":        { "value": "#EF4444", "type": "color", "role": "A2" }
+    },
+    "light": {
+      "bg":            { "value": "#FAFAFA", "type": "color", "role": "A1-identity" },
+      "surface":       { "value": "#FFFFFF", "type": "color", "role": "A1-identity" },
+      "surface-warm":  { "value": "#F4F4F5", "type": "color", "role": "B-slot" },
+      "fg":            { "value": "#18181B", "type": "color", "role": "A1-identity" },
+      "fg-2":          { "value": "#3F3F46", "type": "color", "role": "B-slot" },
+      "muted":         { "value": "#71717A", "type": "color", "role": "A1-identity" },
+      "meta":          { "value": "#A1A1AA", "type": "color", "role": "B-slot" },
+      "border":        { "value": "#E4E4E7", "type": "color", "role": "A1-identity" },
+      "border-soft":   { "value": "#F4F4F5", "type": "color", "role": "B-slot" },
+      "accent":        { "value": "#0F766E", "type": "color", "role": "A1-identity" },
+      "accent-hover":  { "value": "#115E59", "type": "color", "role": "A2" },
+      "accent-active": { "value": "#134E4A", "type": "color", "role": "A2" },
+      "accent-on":     { "value": "#FFFFFF", "type": "color", "role": "A2" },
+      "success":       { "value": "#16A34A", "type": "color", "role": "A2" },
+      "warn":          { "value": "#D97706", "type": "color", "role": "A2" },
+      "danger":        { "value": "#DC2626", "type": "color", "role": "A2" }
+    }
+  },
+
+  "font": {
+    "family": {
+      "display": { "value": "\"Geist\", system-ui, sans-serif", "type": "fontFamily" },
+      "body":    { "value": "\"Inter\", system-ui, sans-serif", "type": "fontFamily" },
+      "mono":    { "value": "\"Geist Mono\", \"JetBrains Mono\", ui-monospace, monospace", "type": "fontFamily" }
+    },
+    "weight": {
+      "read":      { "value": "400", "type": "fontWeight" },
+      "emphasize": { "value": "510", "type": "fontWeight" },
+      "announce":  { "value": "600", "type": "fontWeight" }
+    },
+    "size": {
+      "xs":  { "value": "0.75rem", "type": "dimension" },
+      "sm":  { "value": "0.875rem", "type": "dimension" },
+      "base":{ "value": "1rem", "type": "dimension" },
+      "lg":  { "value": "1.125rem", "type": "dimension" },
+      "xl":  { "value": "1.25rem", "type": "dimension" },
+      "2xl": { "value": "1.5rem", "type": "dimension" },
+      "3xl": { "value": "2rem", "type": "dimension" },
+      "4xl": { "value": "2.5rem", "type": "dimension" }
+    },
+    "tracking": {
+      "display": { "value": "-0.02em", "type": "letterSpacing" },
+      "caps":    { "value": "0.08em", "type": "letterSpacing" },
+      "body":    { "value": "0", "type": "letterSpacing" }
+    },
+    "leading": {
+      "display": { "value": "1.15", "type": "lineHeight" },
+      "body":    { "value": "1.6", "type": "lineHeight" }
+    }
+  },
+
+  "radius": {
+    "sm":   { "value": "8px", "type": "dimension" },
+    "md":   { "value": "12px", "type": "dimension" },
+    "lg":   { "value": "16px", "type": "dimension" },
+    "pill": { "value": "9999px", "type": "dimension" }
+  },
+
+  "space": {
+    "1":  { "value": "4px", "type": "dimension" },
+    "2":  { "value": "8px", "type": "dimension" },
+    "3":  { "value": "12px", "type": "dimension" },
+    "4":  { "value": "16px", "type": "dimension" },
+    "5":  { "value": "20px", "type": "dimension" },
+    "6":  { "value": "24px", "type": "dimension" },
+    "7":  { "value": "28px", "type": "dimension" },
+    "8":  { "value": "32px", "type": "dimension" },
+    "9":  { "value": "36px", "type": "dimension" },
+    "10": { "value": "40px", "type": "dimension" },
+    "11": { "value": "44px", "type": "dimension" },
+    "12": { "value": "48px", "type": "dimension" },
+    "13": { "value": "52px", "type": "dimension" },
+    "14": { "value": "56px", "type": "dimension" },
+    "15": { "value": "60px", "type": "dimension" },
+    "16": { "value": "64px", "type": "dimension" },
+    "17": { "value": "68px", "type": "dimension" },
+    "18": { "value": "72px", "type": "dimension" },
+    "19": { "value": "76px", "type": "dimension" },
+    "20": { "value": "80px", "type": "dimension" }
+  },
+
+  "motion": {
+    "fast":         { "value": "150ms", "type": "duration" },
+    "base":         { "value": "200ms", "type": "duration" },
+    "ease-standard":{ "value": "cubic-bezier(0.2, 0, 0, 1)", "type": "cubicBezier" }
+  },
+
+  "breakpoint": {
+    "sm":  { "value": "640px", "type": "dimension" },
+    "md":  { "value": "768px", "type": "dimension" },
+    "lg":  { "value": "1024px", "type": "dimension" },
+    "xl":  { "value": "1280px", "type": "dimension" },
+    "2xl": { "value": "1536px", "type": "dimension" }
+  },
+
+  "container": {
+    "max": { "value": "1200px", "type": "dimension" }
+  },
+
+  "focus-ring": {
+    "dark":  { "value": "0 0 0 3px color-mix(in srgb, var(--accent) 40%, transparent)", "type": "shadow" },
+    "light": { "value": "0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent)", "type": "shadow" }
+  }
+}

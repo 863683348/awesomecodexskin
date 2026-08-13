@@ -1,0 +1,63 @@
+---
+import { ImageOff } from '@lucide/astro';
+---
+<aside class="lg:sticky lg:top-24">
+  <h2 class="mb-3 text-xs font-semibold tracking-caps uppercase text-meta">Live preview</h2>
+  <article class="skin-card overflow-hidden rounded-t-md border border-border bg-surface">
+    <div class="relative aspect-video w-full bg-surface-warm">
+      <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 text-meta">
+        <ImageOff size={24} />
+        <span class="px-4 text-center text-xs">Source may have changed</span>
+      </div>
+    </div>
+    <div class="p-4">
+      <div class="flex items-start justify-between gap-2">
+        <h3 id="lp-name" class="text-lg font-semibold text-fg">Your skin name</h3>
+        <span id="lp-dot" class="color-dot" style="--skin-color:#2DD4BF" aria-hidden="true"></span>
+      </div>
+      <p id="lp-desc" class="mt-1 text-sm text-muted">Your description appears here as you type.</p>
+      <div class="mt-3 flex flex-wrap gap-2">
+        <span id="lp-cat" class="rounded-t-pill border border-border px-2 py-0.5 text-xs text-muted">Category</span>
+        <span id="lp-mood" class="rounded-t-pill border border-border px-2 py-0.5 text-xs text-muted">mood</span>
+      </div>
+      <p id="lp-author" class="mt-3 text-xs text-meta">by author</p>
+    </div>
+  </article>
+</aside>
+
+<script>
+  const form = document.getElementById('submit-form');
+  if (form) {
+    const lpName = document.getElementById('lp-name');
+    const lpDesc = document.getElementById('lp-desc');
+    const lpCat = document.getElementById('lp-cat');
+    const lpMood = document.getElementById('lp-mood');
+    const lpAuthor = document.getElementById('lp-author');
+    const lpDot = document.getElementById('lp-dot');
+
+    function sync() {
+      const v = (id: string) =>
+        (document.getElementById(id) as HTMLInputElement | null)?.value?.trim() ?? '';
+      const selText = (id: string) => {
+        const el = document.getElementById(id) as HTMLSelectElement | null;
+        return el?.selectedOptions?.[0]?.textContent ?? '';
+      };
+      if (lpName) lpName.textContent = v('f-name') || 'Your skin name';
+      if (lpDesc) lpDesc.textContent = v('f-description') || 'Your description appears here as you type.';
+      if (lpCat) lpCat.textContent = selText('f-category') || 'Category';
+      if (lpMood) lpMood.textContent = v('f-mood') || 'mood';
+      if (lpAuthor) lpAuthor.textContent = 'by ' + (v('f-author') || 'author');
+      if (lpDot) {
+        let c = v('f-color-hex');
+        if (c && c[0] !== '#') c = '#' + c;
+        lpDot.style.setProperty('--skin-color', isHex(c) ? c : '#2DD4BF');
+      }
+    }
+    function isHex(x: string) {
+      return /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test(x);
+    }
+    form.addEventListener('input', sync);
+    form.addEventListener('change', sync);
+    sync();
+  }
+</script>

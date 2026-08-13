@@ -1,0 +1,56 @@
+---
+import { Copy, Check } from '@lucide/astro';
+interface Props {
+  text: string;
+  label?: string;
+  class?: string;
+  size?: number;
+}
+const { text, label = 'Copy', class: cls = '', size = 20 } = Astro.props;
+---
+<button
+  type="button"
+  class={`copy-btn inline-flex items-center gap-2 rounded-t-sm border border-border bg-surface px-3 py-2 text-sm text-fg hover:border-accent hover:text-accent ${cls}`}
+  aria-label={`${label} to clipboard`}
+>
+  <Copy class="copy-icon" size={size} />
+  <Check class="check-icon" size={size} />
+  <span class="copy-label">{label}</span>
+  <span class="sr-only" data-copy-text>{text}</span>
+</button>
+
+<script>
+  function wireCopy() {
+    document.querySelectorAll<HTMLButtonElement>('.copy-btn').forEach((btn) => {
+      if (btn.dataset.wired) return;
+      btn.dataset.wired = 'true';
+      btn.addEventListener('click', async () => {
+        const src = btn.querySelector<HTMLElement>('[data-copy-text]');
+        const text = src ? src.textContent ?? '' : '';
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          try {
+            document.execCommand('copy');
+          } catch {}
+          ta.remove();
+        }
+        const label = btn.querySelector('.copy-label');
+        btn.classList.add('is-copied');
+        if (label) label.textContent = 'Copied';
+        window.setTimeout(() => {
+          btn.classList.remove('is-copied');
+          if (label) label.textContent = 'Copy';
+        }, 2000);
+      });
+    });
+  }
+  wireCopy();
+  document.addEventListener('astro:page-load', wireCopy);
+</script>

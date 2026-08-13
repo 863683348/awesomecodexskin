@@ -1,0 +1,123 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import SearchBar from '../components/SearchBar.astro';
+import FilterBar from '../components/FilterBar.astro';
+import SkinCard from '../components/SkinCard.astro';
+import SponsoredSlot from '../components/SponsoredSlot.astro';
+import SubmitCTA from '../components/SubmitCTA.astro';
+import EngineGrid from '../components/EngineGrid.astro';
+import EmptyState from '../components/EmptyState.astro';
+import { featuredFirst, itemListJsonLd } from '../lib/skins.ts';
+import { SITE } from '../lib/site.ts';
+
+const all = await getCollection('skins');
+const featured = all.filter((s) => s.data.featured);
+const ordered = featuredFirst(all);
+const jsonLd = itemListJsonLd(featured.length ? featured : ordered.slice(0, 12));
+
+const heroFeatured = featured.slice(0, 4);
+---
+<Base
+  title="Codex Skin Index — Browse & install Codex Desktop and CLI skins"
+  description={SITE.description}
+  jsonLd={jsonLd}
+>
+  <!-- Asymmetric hero: left = intro + instant search; right = real featured previews -->
+  <section class="container-x grid gap-10 py-12 lg:grid-cols-[55%_45%] lg:py-16">
+    <div class="flex flex-col justify-center">
+      <p class="mb-3 inline-flex w-fit items-center gap-2 rounded-t-pill border border-border px-3 py-1 text-xs text-muted">
+        Neutral index · Not affiliated with OpenAI
+      </p>
+      <h1 class="font-display text-3xl font-semibold text-fg sm:text-4xl">
+        A neutral index of Codex skins, pets &amp; workspace mods — copy one prompt, reskin your workspace.
+      </h1>
+      <p class="mt-4 max-w-xl text-base text-muted">
+        Browse, compare, and reach every OpenAI Codex Desktop and CLI skin, theme engine, and
+        gallery from one neutral index. Filter by mood, color, and platform, then copy a single
+        install prompt.
+      </p>
+      <div class="mt-6 max-w-md">
+        <SearchBar />
+      </div>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a href="/skins" class="inline-flex items-center rounded-t-pill bg-accent px-5 py-3 text-sm font-medium text-accent-on hover:bg-accent-hover">
+          Browse all skins
+        </a>
+        <a href="/submit" class="inline-flex items-center rounded-t-pill border border-border px-5 py-3 text-sm text-fg hover:border-accent hover:text-accent">
+          Submit a skin
+        </a>
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <span class="mb-3 text-xs font-semibold tracking-caps uppercase text-meta">Featured</span>
+      {heroFeatured.length ? (
+        <div class="grid gap-4 sm:grid-cols-2">
+          {heroFeatured.map((s) => (
+            <SkinCard skin={s} compact />
+          ))}
+        </div>
+      ) : (
+        <div class="flex flex-1 items-center justify-center rounded-t-lg border border-border bg-surface-warm p-8 text-center text-sm text-muted">
+          Previews populate as the index grows.
+        </div>
+      )}
+    </div>
+  </section>
+
+  <FilterBar showFeatured defaultSort="featured" />
+
+  <section class="container-x py-8">
+    <div class="mb-4 flex items-center justify-between">
+      <h2 class="text-xl font-semibold text-fg">All skins</h2>
+      <span class="text-sm text-muted"><span id="result-count">{ordered.length}</span> skins</span>
+    </div>
+
+    <div id="skin-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {ordered.map((s) => (
+        <SkinCard skin={s} />
+      ))}
+    </div>
+
+    <EmptyState variant="no-results" />
+
+    <div class="mt-8 flex justify-center">
+      <button id="load-more" type="button" class="hidden rounded-t-pill border border-border px-6 py-3 text-sm text-fg hover:border-accent hover:text-accent">
+        Load more
+      </button>
+    </div>
+  </section>
+
+  <section class="container-x py-8">
+    <SponsoredSlot />
+  </section>
+
+  <section class="container-x py-8">
+    <h2 class="mb-4 text-xl font-semibold text-fg">Engines &amp; tools</h2>
+    <p class="mb-6 max-w-2xl text-sm text-muted">
+      The runtimes and managers behind the skins above. Each is an open-source project you install
+      once, then apply skins through.
+    </p>
+    <EngineGrid />
+  </section>
+
+  <section class="container-x py-8">
+    <SubmitCTA />
+  </section>
+</Base>
+
+<script>
+  import { initBrowse } from '../lib/browse-client.ts';
+  initBrowse({
+    grid: '#skin-grid',
+    resultCount: '#result-count',
+    empty: '#empty-state',
+    loadMore: '#load-more',
+    sort: '#filter-sort',
+    search: '#site-search',
+    facetCategory: '[data-facet="category"]',
+    pageSize: 24,
+    sortDefault: 'featured',
+  });
+</script>

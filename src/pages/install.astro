@@ -1,0 +1,101 @@
+---
+import Base from '../layouts/Base.astro';
+import Steps from '../components/Steps.astro';
+import PlatformTabs from '../components/PlatformTabs.astro';
+import CopyButton from '../components/CopyButton.astro';
+import { ShieldCheck, Download, Clipboard, Monitor } from '@lucide/astro';
+
+const steps = [
+  { title: 'Pick a skin', body: 'Browse the index and open any skin page. Note its category, platform, and the copyable install prompt.' },
+  { title: 'Copy the install prompt', body: 'On the skin page, click Copy next to the install prompt or command. The exact text is ready to paste.' },
+  { title: 'Apply it in Codex', body: 'Paste the prompt into Codex Desktop, or run the command in Codex CLI. The theme changes in place and is reversible.' },
+];
+
+const cliCommands = `# 1. Put a .tmTheme file where Codex CLI reads it
+mkdir -p ~/.codex/themes
+
+# 2. Select it from inside Codex CLI
+/theme <your-theme-name>`;
+
+const desktopPrompt = 'Codex, switch my workspace to the skin I provide and apply its palette as the active theme.';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to install a Codex skin',
+  step: steps.map((s, i) => ({
+    '@type': 'HowToStep',
+    position: i + 1,
+    name: s.title,
+    text: s.body,
+  })),
+};
+---
+<Base
+  title="Install a Codex skin — step-by-step guide"
+  description="How to install a Codex Desktop or Codex CLI skin: pick a skin, copy the prompt, and apply it. Includes safety boundary and restore steps."
+  jsonLd={jsonLd}
+>
+  <div class="container-x max-w-3xl py-10">
+    <h1 class="text-3xl font-semibold text-fg">Install a skin</h1>
+    <p class="mt-2 text-muted">Three steps from the index to a reskinned workspace, with a clear safety boundary.</p>
+
+    <div class="callout mt-6">
+      <ShieldCheck size={24} class="shrink-0 text-accent" />
+      <div>
+        <h2 class="font-semibold text-fg">Safety boundary</h2>
+        <p class="mt-1 text-sm text-muted">
+          Skins work over <code class="font-mono text-fg-2">127.0.0.1</code> loopback, never modify the
+          Codex app, never read your API key, and are reversible with one click. Stay local and review
+          each source before applying.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <Steps steps={steps} />
+    </div>
+
+    <h2 class="mt-10 text-xl font-semibold text-fg">Platform steps</h2>
+    <PlatformTabs>
+      <div slot="desktop" class="mt-4 space-y-4">
+        <p class="text-sm text-muted">
+          Codex Desktop skins apply through an engine preset or by pasting an agent prompt. Copy the
+          prompt from the skin page and paste it into Codex, or use your engine's "apply" button.
+        </p>
+        <div class="rounded-t-md border border-border bg-surface-warm p-4">
+          <div class="mb-2 flex items-center justify-between">
+            <span class="text-xs font-semibold tracking-caps uppercase text-meta">Sample agent prompt</span>
+            <CopyButton text={desktopPrompt} label="Copy" />
+          </div>
+          <pre class="overflow-x-auto font-mono text-sm text-fg"><code>{desktopPrompt}</code></pre>
+        </div>
+        <p class="text-sm text-muted">On macOS Apple Silicon and Windows, the same engine handles one-click restore.</p>
+      </div>
+      <div slot="cli" class="mt-4 space-y-4">
+        <p class="text-sm text-muted">
+          For Codex CLI, drop a <code class="font-mono text-fg-2">.tmTheme</code> into your themes
+          directory and select it with the <code class="font-mono text-fg-2">/theme</code> command.
+        </p>
+        <div class="rounded-t-md border border-border bg-surface-warm p-4">
+          <div class="mb-2 flex items-center justify-between">
+            <span class="text-xs font-semibold tracking-caps uppercase text-meta">CLI commands</span>
+            <CopyButton text={cliCommands} label="Copy" />
+          </div>
+          <pre class="overflow-x-auto font-mono text-sm text-fg"><code>{cliCommands}</code></pre>
+        </div>
+      </div>
+    </PlatformTabs>
+
+    <h2 class="mt-10 text-xl font-semibold text-fg">Troubleshooting &amp; recovery</h2>
+    <ul class="mt-4 space-y-3 text-sm text-muted">
+      <li class="flex gap-2"><Monitor size={16} class="mt-0.5 shrink-0 text-accent" /> <span><strong class="text-fg">Restore the default:</strong> use your engine's one-click restore, or run the source's restore command. Skins never overwrite official updates.</span></li>
+      <li class="flex gap-2"><Download size={16} class="mt-0.5 shrink-0 text-accent" /> <span><strong class="text-fg">Broken preview:</strong> if a source image is missing you'll see "Source may have changed" — the install prompt and link still work.</span></li>
+      <li class="flex gap-2"><Clipboard size={16} class="mt-0.5 shrink-0 text-accent" /> <span><strong class="text-fg">macOS quarantine:</strong> if a downloaded engine won't open, allow it in System Settings → Privacy &amp; Security, then retry.</span></li>
+    </ul>
+
+    <p class="mt-8 text-sm text-muted">
+      Prefer a longer walkthrough? Read the <a href="/tutorial" class="text-accent hover:underline">tutorials</a>.
+    </p>
+  </div>
+</Base>

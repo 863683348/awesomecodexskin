@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# build output
+dist/
+.output/
+.astro/
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env (keep the example)
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# project data — never publish (covers .workbuddy and any variant name)
+.workbuddy/
+.workb*/
+
+# separate repo: the curated index lives here, do not bundle
+repo/

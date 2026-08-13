@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import ThemePreview from '../../components/ThemePreview.astro';
+---
+<Base
+  title="Theme previewer — preview a Codex theme.json"
+  description="Paste a Codex theme.json and preview how it reskins a mock Codex workspace. Pure client-side, sandboxed."
+>
+  <div class="container-x max-w-5xl py-10">
+    <nav class="mb-2 text-sm text-meta" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-fg">Home</a> / <span class="text-fg">Tools</span> / <span class="text-fg">Theme previewer</span>
+    </nav>
+    <h1 class="text-3xl font-semibold text-fg">Theme previewer</h1>
+    <p class="mt-2 max-w-2xl text-muted">
+      Paste a <code class="font-mono text-fg-2">theme.json</code> to preview how it reskins a mock
+      Codex workspace. Everything runs in your browser inside a sandboxed frame; nothing is uploaded.
+    </p>
+    <div class="mt-8">
+      <ThemePreview />
+    </div>
+  </div>
+</Base>

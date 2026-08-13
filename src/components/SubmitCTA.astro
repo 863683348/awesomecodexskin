@@ -1,0 +1,25 @@
+---
+import { CirclePlus, ArrowRight } from '@lucide/astro';
+interface Props {
+  heading?: string;
+  body?: string;
+}
+const {
+  heading = 'Built a skin or run an engine?',
+  body = 'Get your skin indexed and linked from the GitHub repo. Submission is free and reviewed by a human.',
+} = Astro.props;
+---
+<section class="rounded-t-lg border border-border bg-surface-warm p-8">
+  <div class="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+    <div>
+      <h2 class="text-xl font-semibold text-fg">{heading}</h2>
+      <p class="mt-1 max-w-2xl text-sm text-muted">{body}</p>
+    </div>
+    <a
+      href="/submit"
+      class="inline-flex items-center gap-2 rounded-t-pill bg-accent px-5 py-3 text-sm font-medium text-accent-on hover:bg-accent-hover"
+    >
+      <CirclePlus size={20} /> Submit your skin <ArrowRight size={16} />
+    </a>
+  </div>
+</section>

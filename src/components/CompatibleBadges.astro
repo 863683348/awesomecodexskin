@@ -1,0 +1,27 @@
+---
+import { Monitor, Terminal } from '@lucide/astro';
+import type { Skin } from '../lib/skins.ts';
+
+interface Props {
+  skin: Skin;
+}
+const { skin } = Astro.props;
+const set = new Set(skin.data.compatibleWith);
+const items: { key: string; label: string; icon: any }[] = [];
+if (set.has('codex-desktop') || set.has('both')) {
+  items.push({ key: 'desktop', label: 'Codex Desktop', icon: Monitor });
+}
+if (set.has('codex-cli') || set.has('both')) {
+  items.push({ key: 'cli', label: 'Codex CLI', icon: Terminal });
+}
+---
+<div class="flex flex-wrap gap-2">
+  {items.map((it) => {
+    const Icon = it.icon;
+    return (
+      <span class="inline-flex items-center gap-1.5 rounded-t-pill border border-border px-3 py-1 text-sm text-muted">
+        <Icon size={16} /> {it.label}
+      </span>
+    );
+  })}
+</div>

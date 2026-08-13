@@ -1,0 +1,66 @@
+---
+import { Monitor, Terminal, ArrowDownUp } from '@lucide/astro';
+import { CATEGORIES } from '../lib/site.ts';
+interface Props {
+  lockCategory?: string;
+  defaultSort?: 'featured' | 'newest' | 'popular';
+}
+const { lockCategory, defaultSort = 'newest' } = Astro.props;
+---
+<aside class="lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto">
+  <div class="space-y-6 rounded-t-md border border-border bg-surface p-4">
+    <div>
+      <h2 class="mb-3 text-xs font-semibold tracking-caps uppercase text-meta">Category</h2>
+      <div class="flex flex-col gap-2">
+        {CATEGORIES.map((c) => (
+          <label class="facet-chip" key={c.slug}>
+            <input
+              type="checkbox"
+              data-facet="category"
+              value={c.slug}
+              disabled={lockCategory === c.slug}
+              checked={lockCategory === c.slug}
+            />
+            {c.label}
+          </label>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <label class="field-label" for="facet-mood">Mood</label>
+      <input id="facet-mood" type="text" data-facet="mood" placeholder="e.g. calm, neon" class="field-input" />
+    </div>
+
+    <div>
+      <label class="field-label" for="facet-color">Accent color</label>
+      <div class="flex items-center gap-3">
+        <input id="facet-color" type="color" data-facet="color" class="h-10 w-12 cursor-pointer rounded-t-sm border border-border bg-surface" />
+        <span class="text-xs text-meta">Match near this color</span>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="mb-3 text-xs font-semibold tracking-caps uppercase text-meta">Platform</h2>
+      <div class="flex flex-col gap-2">
+        <label class="facet-chip">
+          <input type="checkbox" data-facet="platform" value="codex-desktop" />
+          <Monitor size={16} /> Codex Desktop
+        </label>
+        <label class="facet-chip">
+          <input type="checkbox" data-facet="platform" value="codex-cli" />
+          <Terminal size={16} /> Codex CLI
+        </label>
+      </div>
+    </div>
+
+    <div>
+      <label class="field-label" for="facet-sort"><ArrowDownUp size={14} class="inline" /> Sort</label>
+      <select id="facet-sort" data-sort class="field-input">
+        {lockCategory === undefined && <option value="featured" selected={defaultSort === 'featured'}>Featured</option>}
+        <option value="newest" selected={defaultSort === 'newest'}>Newest</option>
+        <option value="popular" selected={defaultSort === 'popular'}>Popular</option>
+      </select>
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+import { ShieldCheck, ChevronDown } from '@lucide/astro';
+
+const faqs = [
+  {
+    q: 'Is applying a Codex skin safe?',
+    a: 'Skins style Codex at the visual layer only. The dominant engines inject CSS/JS into the running renderer over the Chrome DevTools Protocol bound to 127.0.0.1 (your own loopback address). They do not modify the Codex app bundle, do not touch your API key or provider config, and are fully reversible with a one-click restore.',
+  },
+  {
+    q: 'How do I install a skin?',
+    a: 'Open Codex, copy the install prompt from the skin page, and paste it into Codex Desktop or the Codex CLI. Most desktop skins also work through an engine preset or manager "apply" button. Each skin page lists the exact steps and the copyable prompt.',
+  },
+  {
+    q: 'Which platforms are supported — Desktop or CLI?',
+    a: 'Codex Desktop skins apply through an engine (preset or agent prompt). Codex CLI skins are syntax/terminal themes you drop in as a .tmTheme and select with the /theme command. Every skin page shows its compatible platforms as badges.',
+  },
+  {
+    q: 'A preview image looks broken — what happened?',
+    a: 'Each skin links to an external source that owns its artwork. If that source changes or removes the image, you will see a "Source may have changed" placeholder. The install prompt and source link still work; you can report the broken entry from the skin page.',
+  },
+  {
+    q: 'Can I go back to the default look?',
+    a: 'Yes. Every engine supports a restore step — either a one-click restore in the manager or a single command from the source. Skins never overwrite official Codex updates, so restoring returns you to a clean stock appearance.',
+  },
+  {
+    q: 'Are paid or sponsored skins clearly marked?',
+    a: 'Yes. Any sponsored placement on this site carries an explicit "Sponsored" label and is kept visually distinct from organic results. Organic listings are a neutral index with no payment required to be included.',
+  },
+  {
+    q: 'Do skins read my API key or prompts?',
+    a: 'No. Skinning is independent of API configuration and runs entirely on your machine over the loopback address. It does not read or transmit your API key, base URL, model settings, or any project data.',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+<Base
+  title="FAQ & install help — Codex Skin Index"
+  description="Answers to common questions about Codex skin safety, installation, platform support, restores, and sponsored listings."
+  jsonLd={jsonLd}
+>
+  <div class="container-x max-w-3xl py-10">
+    <h1 class="text-3xl font-semibold text-fg">FAQ &amp; install help</h1>
+    <p class="mt-2 text-muted">
+      Honest, specific answers about applying and managing Codex skins. For step-by-step
+      instructions, see the <a href="/install" class="text-accent hover:underline">install guide</a>
+      and <a href="/tutorial" class="text-accent hover:underline">tutorials</a>.
+    </p>
+
+    <div class="callout mt-6">
+      <ShieldCheck size={24} class="shrink-0 text-accent" />
+      <div>
+        <h2 class="font-semibold text-fg">Safety boundary</h2>
+        <p class="mt-1 text-sm text-muted">
+          A skin styles Codex visually only. Injection happens over <code class="font-mono text-fg-2">127.0.0.1</code>
+          (loopback), your official files are untouched, your API key is never read, and everything is
+          reversible. Always review a source before applying, and avoid running untrusted local programs
+          while a skin is active.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-8 divide-y divide-border">
+      {faqs.map((f) => (
+        <details class="group py-4" name="faq">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-fg">
+            <span class="font-medium">{f.q}</span>
+            <ChevronDown size={18} class="shrink-0 text-muted transition-transform group-open:rotate-180" />
+          </summary>
+          <p class="mt-3 text-sm text-muted">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</Base>

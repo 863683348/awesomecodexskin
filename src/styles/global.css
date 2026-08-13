@@ -1,0 +1,250 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+/* ------------------------------------------------------------
+   Token → Tailwind color mapping.
+   Only colors are mapped here (no hardcoded hex in components).
+   Fonts/radii are provided via the .font-* / .rounded-* helper
+   classes below to avoid circular var() references in @theme.
+   ------------------------------------------------------------ */
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-warm: var(--surface-warm);
+  --color-fg: var(--fg);
+  --color-fg-2: var(--fg-2);
+  --color-muted: var(--muted);
+  --color-meta: var(--meta);
+  --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-active: var(--accent-active);
+  --color-accent-on: var(--accent-on);
+  --color-success: var(--success);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+}
+
+/* Font helpers (avoid circular --font-* var collisions) */
+.font-display { font-family: var(--font-display); }
+.font-body { font-family: var(--font-body); }
+.font-mono { font-family: var(--font-mono); }
+
+/* Radius helpers */
+.rounded-t-sm { border-radius: var(--radius-sm); }
+.rounded-t-md { border-radius: var(--radius-md); }
+.rounded-t-lg { border-radius: var(--radius-lg); }
+.rounded-t-pill { border-radius: var(--radius-pill); }
+
+/* Layout container */
+.container-x {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+/* Headings use the display family + tight tracking */
+.font-display,
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+/* Caps label (tracking-caps 0.08em) */
+.tracking-caps { letter-spacing: 0.08em; }
+
+/* ---- CopyButton success states (icon swap) ---- */
+.copy-icon { display: inline-flex; }
+.check-icon { display: none; }
+.copy-btn.is-copied .copy-icon { display: none; }
+.copy-btn.is-copied .check-icon { display: inline-flex; }
+.copy-btn.is-copied { color: var(--success); }
+.copy-btn.is-copied .copy-label { color: var(--success); }
+
+/* ---- Focusable card link ring on keyboard focus ---- */
+a.card-link:focus-visible {
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-md);
+}
+
+/* ---- Stretched card link (whole card clickable; overlay stays above) ---- */
+.card-link { position: relative; }
+.card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.skin-card .overlay { position: relative; z-index: 2; }
+.skin-card .overlay a,
+.skin-card .overlay button { position: relative; z-index: 2; }
+
+/* skin color dot (business data, not UI chrome) */
+.color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-pill);
+  background-color: var(--skin-color, var(--muted));
+  border: 1px solid var(--border);
+  flex: none;
+}
+
+/* Facet chip (category / platform) — active = accent ring, never a fill */
+.facet-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.facet-chip input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  margin: 0;
+}
+.facet-chip:hover { border-color: var(--accent); }
+.facet-chip:has(input:checked) {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.facet-chip:has(input:focus-visible) {
+  box-shadow: var(--focus-ring);
+}
+
+/* Generic form field styling (token-driven) */
+.field-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--fg);
+  margin-bottom: var(--space-2);
+}
+.field-input {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--fg);
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+.field-input::placeholder { color: var(--meta); }
+.field-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--focus-ring);
+}
+
+/* Steps + tabs (install / tutorial) */
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  color: var(--accent-on);
+  font-weight: 600;
+  flex: none;
+}
+.tab {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.tab.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+/* Safety / callout box */
+.callout {
+  display: flex;
+  gap: var(--space-3);
+  border: 1px solid var(--border);
+  background: var(--surface-warm);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+
+
+/* ---- Skin card hover affordance (border accent + lift) ---- */
+.skin-card {
+  transition: transform var(--motion-fast) var(--ease-standard),
+              border-color var(--motion-fast) var(--ease-standard);
+}
+.skin-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ---- Active facet / category chip ring (not fill) ---- */
+.chip-active {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+/* ---- Skeleton shimmer (no emoji) ---- */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--surface-warm) 25%,
+    var(--border-soft) 37%,
+    var(--surface-warm) 63%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; }
+}
+
+/* Utility: visually hidden but accessible */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---- Theme toggle icon visibility by current theme ---- */
+.icon-moon { display: inline-flex; }
+.icon-sun { display: none; }
+:root[data-theme="dark"] .icon-moon { display: none; }
+:root[data-theme="dark"] .icon-sun { display: inline-flex; }
+
+/* ---- Focusable touch targets (>=44px) for icon-only buttons ---- */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: var(--radius-sm);
+}
+

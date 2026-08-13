@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import FacetSidebar from '../../components/FacetSidebar.astro';
+import SkinCard from '../../components/SkinCard.astro';
+import EmptyState from '../../components/EmptyState.astro';
+import SubmitCTA from '../../components/SubmitCTA.astro';
+import { sortByNewest, itemListJsonLd } from '../../lib/skins.ts';
+
+const all = await getCollection('skins');
+const ordered = sortByNewest(all);
+const jsonLd = itemListJsonLd(ordered.slice(0, 24));
+---
+<Base
+  title="All Codex skins — browse the full index"
+  description="Browse every Codex Desktop and CLI skin. Filter by category, mood, accent color, and platform, then sort by newest or popular."
+  jsonLd={jsonLd}
+>
+  <div class="container-x grid gap-8 py-8 lg:grid-cols-[280px_1fr]">
+    <FacetSidebar defaultSort="newest" />
+
+    <section>
+      <div class="mb-6 flex items-baseline justify-between gap-4">
+        <h1 class="text-2xl font-semibold text-fg">All skins</h1>
+        <span class="text-sm text-muted"><span id="result-count">{ordered.length}</span> skins</span>
+      </div>
+
+      <div id="skin-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {ordered.map((s) => (
+          <SkinCard skin={s} />
+        ))}
+      </div>
+
+      <EmptyState variant="no-results" />
+
+      <div class="mt-8 flex justify-center">
+        <button id="load-more" type="button" class="hidden rounded-t-pill border border-border px-6 py-3 text-sm text-fg hover:border-accent hover:text-accent">
+          Load more
+        </button>
+      </div>
+
+      <div class="mt-10">
+        <SubmitCTA />
+      </div>
+    </section>
+  </div>
+</Base>
+
+<script>
+  import { initBrowse } from '../../lib/browse-client.ts';
+  initBrowse({
+    grid: '#skin-grid',
+    resultCount: '#result-count',
+    empty: '#empty-state',
+    loadMore: '#load-more',
+    sort: '#facet-sort',
+    facetCategory: '[data-facet="category"]',
+    facetMood: '#facet-mood',
+    facetPlatform: '[data-facet="platform"]',
+    facetColor: '#facet-color',
+    pageSize: 24,
+    sortDefault: 'newest',
+  });
+</script>

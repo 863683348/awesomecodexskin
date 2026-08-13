@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import PromptGenerator from '../../components/PromptGenerator.astro';
+---
+<Base
+  title="Prompt generator — build a Codex reskin prompt"
+  description="Build a copy-paste reskin prompt from your preferences: name, category, mood, and accent color."
+>
+  <div class="container-x max-w-5xl py-10">
+    <nav class="mb-2 text-sm text-meta" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-fg">Home</a> / <span class="text-fg">Tools</span> / <span class="text-fg">Prompt generator</span>
+    </nav>
+    <h1 class="text-3xl font-semibold text-fg">Prompt generator</h1>
+    <p class="mt-2 max-w-2xl text-muted">
+      Build a copy-paste reskin prompt from your preferences, then copy it straight into Codex.
+      Pure client-side string templating — no backend.
+    </p>
+    <div class="mt-8">
+      <PromptGenerator />
+    </div>
+  </div>
+</Base>

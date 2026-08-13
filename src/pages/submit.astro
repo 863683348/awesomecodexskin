@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import SubmitForm from '../components/SubmitForm.astro';
+import LivePreview from '../components/LivePreview.astro';
+---
+<Base
+  title="Submit a Codex skin — get indexed and linked"
+  description="Submit a Codex Desktop or CLI skin to the neutral index. Free review, dual channel via Web3Forms or a GitHub PR. Paid inclusion is a reserved option."
+>
+  <div class="container-x grid gap-8 py-10 lg:grid-cols-[60%_40%]">
+    <section>
+      <h1 class="text-3xl font-semibold text-fg">Submit a skin</h1>
+      <p class="mt-2 max-w-xl text-muted">
+        Get your skin indexed and linked from the GitHub repo. Submission is free and reviewed by a
+        human before it goes live.
+      </p>
+      <div class="mt-6">
+        <SubmitForm />
+      </div>
+    </section>
+    <LivePreview />
+  </div>
+</Base>
