@@ -1,12 +1,30 @@
 ---
 import { GitBranch, Rss } from '@lucide/astro';
-import { SITE, REPO_URL, CATEGORIES } from '../lib/site.ts';
+import { SITE, REPO_URL } from '../lib/site.ts';
+import { makeT } from '../i18n/index.ts';
+import { type Locale, DEFAULT_LOCALE, localizedPath } from '../i18n/config.ts';
+
+interface Props {
+  locale?: Locale;
+}
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const t = makeT(locale);
 const year = new Date().getFullYear();
+const catLinks = [
+  ['dark-midnight', 'Dark & Midnight'],
+  ['light-airy', 'Light & Airy'],
+  ['anime-pop', 'Anime & Pop'],
+  ['neon-cyberpunk', 'Neon & Cyberpunk'],
+  ['nature-earthy', 'Nature & Earthy'],
+  ['retro-vintage', 'Retro & Vintage'],
+  ['pastel-soft', 'Pastel & Soft'],
+  ['mono-terminal', 'Mono & Terminal'],
+];
 ---
 <footer class="mt-20 border-t border-border bg-surface">
   <div class="container-x grid gap-10 py-12 md:grid-cols-4">
     <div class="md:col-span-1">
-      <div class="font-display text-lg font-semibold text-fg">Codex Skin Index</div>
+      <div class="font-display text-lg font-semibold text-fg">{SITE.name}</div>
       <p class="mt-2 text-sm text-muted">{SITE.tagline}</p>
       <div class="mt-4 flex items-center gap-3">
         <a href={REPO_URL} class="inline-flex items-center gap-1 text-sm text-muted hover:text-fg" rel="nofollow noopener" target="_blank">
@@ -19,33 +37,33 @@ const year = new Date().getFullYear();
     </div>
 
     <div>
-      <h2 class="text-xs font-semibold tracking-caps text-meta uppercase">Categories</h2>
+      <h2 class="text-xs font-semibold tracking-caps text-meta uppercase">{t('nav.categories')}</h2>
       <ul class="mt-3 space-y-2">
-        {CATEGORIES.map((c) => (
+        {catLinks.map(([slug, label]) => (
           <li>
-            <a href={`/skins/category/${c.slug}`} class="text-sm text-muted hover:text-fg">{c.label}</a>
+            <a href={localizedPath(`/skins/category/${slug}`, locale)} class="text-sm text-muted hover:text-fg">{label}</a>
           </li>
         ))}
       </ul>
     </div>
 
     <div>
-      <h2 class="text-xs font-semibold tracking-caps text-meta uppercase">Discover</h2>
+      <h2 class="text-xs font-semibold tracking-caps text-meta uppercase">{t('misc.search')}</h2>
       <ul class="mt-3 space-y-2">
-        <li><a href="/skins" class="text-sm text-muted hover:text-fg">All skins</a></li>
-        <li><a href="/install" class="text-sm text-muted hover:text-fg">How to install</a></li>
-        <li><a href="/tutorial" class="text-sm text-muted hover:text-fg">Tutorials</a></li>
-        <li><a href="/faq" class="text-sm text-muted hover:text-fg">FAQ &amp; safety</a></li>
-        <li><a href="/submit" class="text-sm text-muted hover:text-fg">Submit a skin</a></li>
-        <li><a href="/advertise" class="text-sm text-muted hover:text-fg">Advertise</a></li>
-        <li><a href="/contact" class="text-sm text-muted hover:text-fg">Contact</a></li>
-        <li><a href="/tools/theme-preview" class="text-sm text-muted hover:text-fg">Theme previewer</a></li>
-        <li><a href="/tools/prompt-generator" class="text-sm text-muted hover:text-fg">Prompt generator</a></li>
+        <li><a href={localizedPath('/skins', locale)} class="text-sm text-muted hover:text-fg">{t('skins.title').split(' — ')[0]}</a></li>
+        <li><a href={localizedPath('/install', locale)} class="text-sm text-muted hover:text-fg">{t('install.h1')}</a></li>
+        <li><a href={localizedPath('/tutorial', locale)} class="text-sm text-muted hover:text-fg">{t('tutorial.h1')}</a></li>
+        <li><a href={localizedPath('/faq', locale)} class="text-sm text-muted hover:text-fg">FAQ</a></li>
+        <li><a href={localizedPath('/submit', locale)} class="text-sm text-muted hover:text-fg">{t('submit.h1')}</a></li>
+        <li><a href={localizedPath('/advertise', locale)} class="text-sm text-muted hover:text-fg">{t('nav.advertise')}</a></li>
+        <li><a href={localizedPath('/contact', locale)} class="text-sm text-muted hover:text-fg">{t('nav.contact')}</a></li>
+        <li><a href={localizedPath('/tools/theme-preview', locale)} class="text-sm text-muted hover:text-fg">Theme previewer</a></li>
+        <li><a href={localizedPath('/tools/prompt-generator', locale)} class="text-sm text-muted hover:text-fg">Prompt generator</a></li>
       </ul>
     </div>
 
     <div>
-      <h2 class="text-xs font-semibold tracking-caps text-meta uppercase">Sister sites</h2>
+      <h2 class="text-xs font-semibold tracking-caps text-meta uppercase">{t('nav.sister.pets')}</h2>
       <ul class="mt-3 space-y-2">
         <li><a href="https://codexpetgenerator.com" class="text-sm text-muted hover:text-fg" rel="nofollow noopener" target="_blank">Codex Pets</a></li>
         <li><a href="https://codex-skin-studio.shop" class="text-sm text-muted hover:text-fg" rel="nofollow noopener" target="_blank">Skin Generator</a></li>
@@ -55,7 +73,7 @@ const year = new Date().getFullYear();
   </div>
   <div class="border-t border-border">
     <div class="container-x flex flex-wrap items-center justify-between gap-2 py-4 text-xs text-meta">
-      <span>© {year} {SITE.name} · EN</span>
+      <span>{t('footer.copyright', { year })}</span>
       <span>{SITE.domain}</span>
     </div>
   </div>

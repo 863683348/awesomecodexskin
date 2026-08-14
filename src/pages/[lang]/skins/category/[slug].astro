@@ -1,32 +1,39 @@
 ---
 import { getCollection } from 'astro:content';
-import Base from '../../../layouts/Base.astro';
-import FacetSidebar from '../../../components/FacetSidebar.astro';
-import SkinCard from '../../../components/SkinCard.astro';
-import EmptyState from '../../../components/EmptyState.astro';
-import SubmitCTA from '../../../components/SubmitCTA.astro';
-import { sortByNewest, itemListJsonLd } from '../../../lib/skins.ts';
-import { CATEGORIES, categoryLabel } from '../../../lib/site.ts';
+import Base from '../../../../layouts/Base.astro';
+import FacetSidebar from '../../../../components/FacetSidebar.astro';
+import SkinCard from '../../../../components/SkinCard.astro';
+import EmptyState from '../../../../components/EmptyState.astro';
+import SubmitCTA from '../../../../components/SubmitCTA.astro';
+import { sortByNewest, itemListJsonLd } from '../../../../lib/skins.ts';
+import { CATEGORIES, categoryLabel } from '../../../../lib/site.ts';
+import { SUPPORTED_LOCALES, type Locale, localizedPath } from '../../../../i18n/config.ts';
+import { makeT } from '../../../../i18n/index.ts';
 
 export async function getStaticPaths() {
   const skins = await getCollection('skins');
-  return CATEGORIES.map((cat) => ({
-    params: { slug: cat.slug },
-    props: {
-      category: cat.slug,
-      meta: cat,
-      skins: skins.filter((s) => s.data.category === cat.slug),
-    },
-  }));
+  return SUPPORTED_LOCALES.flatMap((lang) =>
+    CATEGORIES.map((cat) => ({
+      params: { lang, slug: cat.slug },
+      props: {
+        lang,
+        category: cat.slug,
+        meta: cat,
+        skins: skins.filter((s) => s.data.category === cat.slug),
+      },
+    }))
+  );
 }
 
-const { category, meta, skins } = Astro.props;
+const { category, meta, skins, lang = 'en' } = Astro.props as { category: string; meta: any; skins: any[]; lang?: Locale };
+const t = makeT(lang);
 const ordered = sortByNewest(skins);
 const jsonLd = itemListJsonLd(ordered.slice(0, 24), `Codex skins — ${meta.label}`);
 ---
 <Base
   title={`${meta.label} Codex skins`}
   description={meta.blurb}
+  locale={lang}
   jsonLd={jsonLd}
 >
   <div class="container-x grid gap-8 py-8 lg:grid-cols-[280px_1fr]">
@@ -34,19 +41,19 @@ const jsonLd = itemListJsonLd(ordered.slice(0, 24), `Codex skins — ${meta.labe
 
     <section>
       <nav class="mb-2 text-sm text-meta" aria-label="Breadcrumb">
-        <a href="/skins" class="hover:text-fg">Skins</a> / <span class="text-fg">{meta.label}</span>
+        <a href={localizedPath('/skins', lang)} class="hover:text-fg">{t('skin.breadcrumb.skins')}</a> / <span class="text-fg">{meta.label}</span>
       </nav>
       <div class="mb-6 flex items-baseline justify-between gap-4">
         <div>
           <h1 class="text-2xl font-semibold text-fg">{meta.label}</h1>
           <p class="mt-1 max-w-2xl text-sm text-muted">{meta.blurb}</p>
         </div>
-        <span class="text-sm text-muted"><span id="result-count">{ordered.length}</span> skins</span>
+        <span class="text-sm text-muted">{t('skins.count', { n: ordered.length })}</span>
       </div>
 
       <div id="skin-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {ordered.map((s) => (
-          <SkinCard skin={s} />
+          <SkinCard skin={s} locale={lang} />
         ))}
       </div>
 
@@ -60,7 +67,7 @@ const jsonLd = itemListJsonLd(ordered.slice(0, 24), `Codex skins — ${meta.labe
 </Base>
 
 <script>
-  import { initBrowse } from '../../../lib/browse-client.ts';
+  import { initBrowse } from '../../../../lib/browse-client.ts';
   initBrowse({
     grid: '#skin-grid',
     resultCount: '#result-count',

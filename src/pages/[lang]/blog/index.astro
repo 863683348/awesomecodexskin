@@ -1,7 +1,17 @@
 ---
 import { getCollection } from 'astro:content';
-import Base from '../../layouts/Base.astro';
+import Base from '../../../layouts/Base.astro';
 import { ArrowRight, CalendarDays } from '@lucide/astro';
+import { SUPPORTED_LOCALES, type Locale, localizedPath } from '../../../i18n/config.ts';
+import { makeT } from '../../../i18n/index.ts';
+import { SITE } from '../../../lib/site.ts';
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang = 'en' } = Astro.params as { lang?: Locale };
+const t = makeT(lang);
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
@@ -13,20 +23,21 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
   name: 'Codex Skin Index Blog',
-  description: 'Guides and roundups for Codex Desktop and CLI skins.',
-  url: 'https://awesomecodexskin.com/blog/',
+  description: t('blog.description'),
+  url: `${SITE.url}${localizedPath('/blog/', lang)}`,
   blogPost: posts.map((p) => ({
     '@type': 'BlogPosting',
     headline: p.data.title,
     description: p.data.description,
     datePublished: p.data.pubDate.toISOString(),
-    url: `https://awesomecodexskin.com/blog/${p.id}/`,
+    url: `${SITE.url}${localizedPath(`/blog/${p.id}/`, lang)}`,
   })),
 };
 ---
 <Base
-  title="Codex Skin Blog — guides, roundups & how-tos"
-  description="Guides, best-of roundups and how-tos for Codex Desktop and CLI skins. Learn to install, create and manage skins."
+  title={t('blog.title')}
+  description={t('blog.description')}
+  locale={lang}
   jsonLd={jsonLd}
 >
   <div class="container-x py-10">
@@ -34,10 +45,9 @@ const jsonLd = {
       <p class="mb-3 inline-flex w-fit items-center gap-2 rounded-t-pill border border-border px-3 py-1 text-xs text-muted">
         Guides &amp; roundups
       </p>
-      <h1 class="font-display text-3xl font-semibold text-fg sm:text-4xl">Codex Skin Blog</h1>
+      <h1 class="font-display text-3xl font-semibold text-fg sm:text-4xl">{t('blog.heading')}</h1>
       <p class="mt-3 text-base text-muted">
-        How to install, create and manage Codex Desktop &amp; CLI skins — plus the best-of
-        roundups from the index.
+        {t('blog.subtitle')}
       </p>
     </header>
 
@@ -62,11 +72,11 @@ const jsonLd = {
             ))}
           </div>
           <h2 class="mt-3 font-display text-lg font-semibold leading-snug text-fg group-hover:text-accent">
-            <a href={`/blog/${p.id}/`} class="after:absolute after:inset-0">{p.data.title}</a>
+            <a href={localizedPath(`/blog/${p.id}`, lang)} class="after:absolute after:inset-0">{p.data.title}</a>
           </h2>
           <p class="mt-2 text-sm text-muted">{p.data.description}</p>
           <span class="mt-4 inline-flex items-center gap-1 text-sm text-accent">
-            Read more <ArrowRight size={14} />
+            {t('blog.readMore')} <ArrowRight size={14} />
           </span>
         </article>
       ))}

@@ -1,19 +1,24 @@
 ---
 import { getCollection, render } from 'astro:content';
-import Base from '../../layouts/Base.astro';
+import Base from '../../../layouts/Base.astro';
 import { CalendarDays, ArrowLeft, ExternalLink } from '@lucide/astro';
-import { SITE } from '../../lib/site.ts';
-import { absolutePreview } from '../../lib/skins.ts';
+import { SITE } from '../../../lib/site.ts';
+import { absolutePreview } from '../../../lib/skins.ts';
+import { SUPPORTED_LOCALES, type Locale, localizedPath } from '../../../i18n/config.ts';
+import { makeT } from '../../../i18n/index.ts';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  return posts.map((post) => ({
-    params: { slug: post.id },
-    props: { post },
-  }));
+  return SUPPORTED_LOCALES.flatMap((lang) =>
+    posts.map((post) => ({
+      params: { lang, slug: post.id },
+      props: { post, lang },
+    }))
+  );
 }
 
-const { post } = Astro.props;
+const { post, lang = 'en' } = Astro.props as { post: any; lang?: Locale };
+const t = makeT(lang);
 const { Content } = await render(post);
 const d = post.data;
 
@@ -32,8 +37,8 @@ const jsonLd = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
-        { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE.url}/blog/` },
-        { '@type': 'ListItem', position: 3, name: d.title, item: `${SITE.url}/blog/${post.id}/` },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE.url}${localizedPath('/blog/', lang)}` },
+        { '@type': 'ListItem', position: 3, name: d.title, item: `${SITE.url}${localizedPath(`/blog/${post.id}/`, lang)}` },
       ],
     },
     {
@@ -44,7 +49,7 @@ const jsonLd = {
       dateModified: (d.updatedDate ?? d.pubDate).toISOString(),
       author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
       publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
-      mainEntityOfPage: `${SITE.url}/blog/${post.id}/`,
+      mainEntityOfPage: `${SITE.url}${localizedPath(`/blog/${post.id}/`, lang)}`,
       ...(d.coverImage ? { image: absolutePreview({ data: { previewImage: d.coverImage } } as any, SITE.url) } : {}),
     },
   ],
@@ -55,12 +60,13 @@ const jsonLd = {
   description={d.description}
   image={d.coverImage}
   type="article"
+  locale={lang}
   jsonLd={jsonLd}
 >
   <article class="container-x max-w-3xl py-10">
     <nav class="mb-6 text-sm text-meta" aria-label="Breadcrumb">
-      <a href="/blog" class="inline-flex items-center gap-1 hover:text-fg">
-        <ArrowLeft size={14} /> Blog
+      <a href={localizedPath('/blog', lang)} class="inline-flex items-center gap-1 hover:text-fg">
+        <ArrowLeft size={14} /> {t('blog.backToList')}
       </a>
     </nav>
 
@@ -93,11 +99,11 @@ const jsonLd = {
 
     {related.length > 0 && (
       <section class="mt-12 rounded-t-md border border-border bg-surface p-5">
-        <h2 class="text-sm font-semibold tracking-caps uppercase text-meta">Skins mentioned in this post</h2>
+        <h2 class="text-sm font-semibold tracking-caps uppercase text-meta">{t('blog.relatedSkins')}</h2>
         <div class="mt-4 grid gap-3 sm:grid-cols-2">
           {related.map((s) => (
             <a
-              href={`/skins/${s.id}/`}
+              href={localizedPath(`/skins/${s.id}`, lang)}
               class="group flex items-center gap-3 rounded-t-sm border border-border p-3 hover:border-accent"
             >
               {s.data.previewImage ? (
@@ -112,13 +118,13 @@ const jsonLd = {
               )}
               <span class="min-w-0">
                 <span class="block truncate text-sm font-semibold text-fg group-hover:text-accent">{s.data.name}</span>
-                <span class="block text-xs text-muted">{s.data.stats.installs.toLocaleString()} installs</span>
+                <span class="block text-xs text-muted">{t('skin.installs', { n: s.data.stats.installs.toLocaleString() })}</span>
               </span>
             </a>
           ))}
         </div>
         <p class="mt-4 text-sm text-muted">
-          Browse all <a href="/skins/" class="inline-flex items-center gap-1 text-accent hover:underline">skins <ExternalLink size={13} /></a>.
+          {t('blog.browseAllSkins')} <a href={localizedPath('/skins', lang)} class="inline-flex items-center gap-1 text-accent hover:underline">skins <ExternalLink size={13} /></a>.
         </p>
       </section>
     )}

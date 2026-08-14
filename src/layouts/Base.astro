@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import { SITE } from '../lib/site.ts';
+import { SUPPORTED_LOCALES, type Locale, DEFAULT_LOCALE, RTL_LOCALES, LOCALE_HREFLANG, stripLocale, localizedPath } from '../i18n/config.ts';
 
 interface Props {
   title: string;
@@ -10,19 +11,23 @@ interface Props {
   image?: string;
   type?: string;
   jsonLd?: object | object[];
+  locale?: Locale;
 }
 
-const { title, description, image, type = 'website', jsonLd } = Astro.props;
+const { title, description, image, type = 'website', jsonLd, locale = DEFAULT_LOCALE } = Astro.props;
 
-// canonical must be an absolute URL (Astro.site + pathname)
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+// Current path WITHOUT the locale prefix (e.g. /skins/clear-glass/)
+const cleanPath = stripLocale(Astro.url.pathname);
+// canonical: localized absolute URL
+const canonicalURL = new URL(localizedPath(cleanPath, locale), Astro.site);
 // OG image: skin detail pages pass previewImage; everything else uses the themed default
 const ogImage = image
-  ? new URL(image, Astro.site)
+  ? new URL(localizedPath(image, locale), Astro.site)
   : new URL('/og/default.svg', Astro.site);
+const isRTL = RTL_LOCALES.has(locale);
 ---
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} data-theme="dark">
   <head>
     <!-- Anti-FOUC boot script: set data-theme before first paint, persist choice -->
     <script is:inline>
@@ -45,6 +50,12 @@ const ogImage = image
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- hreflang alternates: one per supported locale, x-default = English root -->
+    {SUPPORTED_LOCALES.map((l) => (
+      <link rel="alternate" hreflang={LOCALE_HREFLANG[l]} href={new URL(localizedPath(cleanPath, l), Astro.site)} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={new URL(localizedPath(cleanPath, DEFAULT_LOCALE), Astro.site)} />
+
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -61,11 +72,11 @@ const ogImage = image
   </head>
   <body class="min-h-screen bg-bg text-fg font-body">
     <a href="#main" class="sr-only">Skip to content</a>
-    <Nav />
+    <Nav locale={locale} />
     <main id="main">
       <slot />
     </main>
-    <Footer />
+    <Footer locale={locale} />
 
     {jsonLd && (
       <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

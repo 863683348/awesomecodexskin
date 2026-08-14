@@ -1,13 +1,22 @@
 ---
-import Base from '../layouts/Base.astro';
-import Steps from '../components/Steps.astro';
+import Base from '../../layouts/Base.astro';
+import Steps from '../../components/Steps.astro';
 import { ShieldCheck, Wrench, CircleAlert } from '@lucide/astro';
+import { SUPPORTED_LOCALES, type Locale, localizedPath } from '../../i18n/config.ts';
+import { makeT } from '../../i18n/index.ts';
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang = 'en' } = Astro.params as { lang?: Locale };
+const t = makeT(lang);
 
 const steps = [
-  { title: 'Install an engine once', body: 'Clone or download a skin engine such as Codex Dream Skin, or use a manager like Codex Skin Manager. This is a one-time setup on your machine.' },
-  { title: 'Find a skin in the index', body: 'Browse categories or search by mood and color. Open the skin page to see its description, compatible platforms, and the exact install prompt.' },
-  { title: 'Copy and apply', body: 'Click Copy on the install prompt, paste it into Codex Desktop, or run the CLI command. The workspace updates immediately.' },
-  { title: 'Verify and keep the source', body: 'Confirm the new look, then bookmark the source link. If Codex updates and a skin breaks, re-run the source restore step to return to stock.' },
+  { title: t('tutorial.steps.1.title'), body: t('tutorial.steps.1.body') },
+  { title: t('tutorial.steps.2.title'), body: t('tutorial.steps.2.body') },
+  { title: t('tutorial.steps.3.title'), body: t('tutorial.steps.3.body') },
+  { title: t('tutorial.steps.4.title'), body: t('tutorial.steps.4.body') },
 ];
 
 // Engine comparison (from site.ts ENGINES, kept inline for the tutorial table)
@@ -30,7 +39,7 @@ const troubleshooting = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'How to apply a Codex skin — full tutorial',
+  name: t('tutorial.title'),
   step: steps.map((s, i) => ({
     '@type': 'HowToStep',
     position: i + 1,
@@ -40,21 +49,21 @@ const jsonLd = {
 };
 ---
 <Base
-  title="Codex skin tutorial — from engine to applied theme"
-  description="A fuller walkthrough for applying a Codex skin: install an engine, pick a skin, copy the prompt, apply, and restore."
+  title={t('tutorial.title')}
+  description={t('tutorial.description')}
+  locale={lang}
   jsonLd={jsonLd}
 >
   <div class="container-x max-w-3xl py-10">
-    <h1 class="text-3xl font-semibold text-fg">Tutorials</h1>
-    <p class="mt-2 text-muted">A longer walkthrough for applying your first Codex skin and keeping it reversible.</p>
+    <h1 class="text-3xl font-semibold text-fg">{t('tutorial.h1')}</h1>
+    <p class="mt-2 text-muted">{t('tutorial.subtitle')}</p>
 
     <div class="callout mt-6">
       <ShieldCheck size={24} class="shrink-0 text-accent" />
       <div>
-        <h2 class="font-semibold text-fg">Before you start</h2>
+        <h2 class="font-semibold text-fg">{t('tutorial.beforeStart')}</h2>
         <p class="mt-1 text-sm text-muted">
-          Skins style Codex at the visual layer only, over <code class="font-mono text-fg-2">127.0.0.1</code>.
-          No app files are modified and your API key is never touched.
+          {t('tutorial.beforeStartBody').replace('127.0.0.1', '<code class="font-mono text-fg-2">127.0.0.1</code>')}
         </p>
       </div>
     </div>
@@ -63,20 +72,20 @@ const jsonLd = {
       <Steps steps={steps} />
     </div>
 
-    <h2 class="mt-10 text-xl font-semibold text-fg">Tips</h2>
+    <h2 class="mt-10 text-xl font-semibold text-fg">{t('tutorial.tips')}</h2>
     <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-muted">
-      <li>Start with a featured skin — it is the most likely to apply cleanly through the engine's default preset.</li>
-      <li>Copy the exact prompt text; small edits can change what the engine applies.</li>
-      <li>Keep the source link handy so you can restore or re-apply after a Codex update.</li>
-      <li>Use the category and mood filters to narrow 100+ skins to a handful that fit your taste.</li>
+      <li>{t('tutorial.tips.1')}</li>
+      <li>{t('tutorial.tips.2')}</li>
+      <li>{t('tutorial.tips.3')}</li>
+      <li>{t('tutorial.tips.4')}</li>
     </ul>
 
     <div class="callout mt-10">
       <Wrench size={24} class="shrink-0 text-accent" />
       <div>
-        <h2 class="font-semibold text-fg">Choosing an engine</h2>
+        <h2 class="font-semibold text-fg">{t('tutorial.choosingEngine')}</h2>
         <p class="mt-1 text-sm text-muted">
-          The engine decides how skins are applied and which formats you can use. All are free and open source.
+          {t('tutorial.choosingEngineBody')}
         </p>
       </div>
     </div>
@@ -84,10 +93,10 @@ const jsonLd = {
       <table class="w-full text-left text-sm">
         <thead class="border-b border-border bg-surface">
           <tr>
-            <th class="px-4 py-3 font-semibold text-fg">Engine</th>
-            <th class="px-4 py-3 font-semibold text-fg">Platforms</th>
-            <th class="px-4 py-3 font-semibold text-fg">Install style</th>
-            <th class="hidden px-4 py-3 font-semibold text-fg md:table-cell">Notes</th>
+            <th class="px-4 py-3 font-semibold text-fg">{t('tutorial.engine.cols.engine')}</th>
+            <th class="px-4 py-3 font-semibold text-fg">{t('tutorial.engine.cols.platforms')}</th>
+            <th class="px-4 py-3 font-semibold text-fg">{t('tutorial.engine.cols.style')}</th>
+            <th class="hidden px-4 py-3 font-semibold text-fg md:table-cell">{t('tutorial.engine.cols.notes')}</th>
           </tr>
         </thead>
         <tbody class="divide-y divide-border">
@@ -106,8 +115,8 @@ const jsonLd = {
     <div class="callout mt-10">
       <CircleAlert size={24} class="shrink-0 text-accent" />
       <div>
-        <h2 class="font-semibold text-fg">Troubleshooting</h2>
-        <p class="mt-1 text-sm text-muted">The four most common issues and their fixes.</p>
+        <h2 class="font-semibold text-fg">{t('tutorial.troubleshooting')}</h2>
+        <p class="mt-1 text-sm text-muted">{t('tutorial.troubleshootingBody')}</p>
       </div>
     </div>
     <ul class="mt-4 space-y-4">
@@ -120,9 +129,9 @@ const jsonLd = {
     </ul>
 
     <p class="mt-8 text-sm text-muted">
-      Need the short version? See the <a href="/install" class="text-accent hover:underline">install guide</a>,
-      the <a href="/faq" class="text-accent hover:underline">FAQ</a>, or the
-      <a href="/blog/how-to-install-codex-skins/" class="text-accent hover:underline">full install blog post</a>.
+      Need the short version? See the <a href={localizedPath('/install', lang)} class="text-accent hover:underline">install guide</a>,
+      the <a href={localizedPath('/faq', lang)} class="text-accent hover:underline">FAQ</a>, or the
+      <a href={localizedPath('/blog/how-to-install-codex-skins', lang)} class="text-accent hover:underline">full install blog post</a>.
     </p>
   </div>
 </Base>

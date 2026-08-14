@@ -1,0 +1,38 @@
+---
+// LocaleSwitcher — dropdown to switch between supported languages.
+// Uses a plain <select> for reliability in a static site (no client JS state needed).
+import { SUPPORTED_LOCALES, type Locale, LOCALE_LABELS, stripLocale } from '../i18n/config.ts';
+import { Globe } from '@lucide/astro';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+// The current path without the locale prefix; the <select> navigates via /lang + path
+const cleanPath = stripLocale(Astro.url.pathname);
+
+function hrefFor(l: Locale): string {
+  if (l === 'en') return cleanPath;
+  return `/${l}${cleanPath}`;
+}
+---
+<div class="relative inline-flex items-center">
+  <Globe size={15} class="pointer-events-none absolute left-2.5 z-10 text-muted" aria-hidden="true" />
+  <select
+    aria-label="Language / 语言 / 言語"
+    class="appearance-none rounded-t-pill border border-border bg-surface py-1.5 pl-8 pr-8 text-xs font-medium text-fg hover:border-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+    onchange={`window.location.href = this.value;`}
+  >
+    {SUPPORTED_LOCALES.map((l) => (
+      <option value={hrefFor(l)} selected={l === locale}>
+        {LOCALE_LABELS[l]}
+      </option>
+    ))}
+  </select>
+  <svg
+    class="pointer-events-none absolute right-2.5 h-3 w-3 text-muted"
+    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+  >
+    <path d="m6 9 6 6 6-6" />
+  </svg>
+</div>

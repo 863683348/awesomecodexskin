@@ -2,27 +2,36 @@
 import { ExternalLink } from '@lucide/astro';
 import { SITE } from '../lib/site.ts';
 import ThemeToggle from './ThemeToggle.astro';
+import LocaleSwitcher from './LocaleSwitcher.astro';
+import { makeT } from '../i18n/index.ts';
+import { type Locale, DEFAULT_LOCALE, localizedPath } from '../i18n/config.ts';
+
+interface Props {
+  locale?: Locale;
+}
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const t = makeT(locale);
 
 const nav = [
-  { label: 'Skins', href: '/skins', external: false },
-  { label: 'Categories', href: '/skins/category/dark-midnight', external: false },
-  { label: 'Blog', href: '/blog', external: false },
-  { label: 'Advertise', href: '/advertise', external: false },
-  { label: 'Contact', href: '/contact', external: false },
+  { label: t('nav.skins'), href: localizedPath('/skins', locale) },
+  { label: t('nav.categories'), href: localizedPath('/skins/category/dark-midnight', locale) },
+  { label: t('nav.blog'), href: localizedPath('/blog', locale) },
+  { label: t('nav.advertise'), href: localizedPath('/advertise', locale) },
+  { label: t('nav.contact'), href: localizedPath('/contact', locale) },
 ];
 const sister = [
-  { label: 'Pets', href: 'https://codexpetgenerator.com' },
-  { label: 'Skin Generator', href: 'https://codex-skin-studio.shop' },
+  { label: t('nav.sister.pets'), href: 'https://codexpetgenerator.com' },
+  { label: t('nav.sister.skinGenerator'), href: 'https://codex-skin-studio.shop' },
 ];
 const path = Astro.url.pathname;
 ---
 <header class="sticky top-0 z-40 border-b border-border bg-surface">
   <div class="container-x flex h-16 items-center justify-between gap-4">
-    <a href="/" class="flex items-center gap-2 font-display text-lg font-semibold text-fg" aria-label={SITE.name}>
+    <a href={localizedPath('/', locale)} class="flex items-center gap-2 font-display text-lg font-semibold text-fg" aria-label={SITE.name}>
       <span class="inline-flex h-7 w-7 items-center justify-center rounded-t-sm bg-accent text-accent-on" aria-hidden="true">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg>
       </span>
-      <span>Codex Skin Index</span>
+      <span>{SITE.name}</span>
     </a>
 
     <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
@@ -44,11 +53,12 @@ const path = Astro.url.pathname;
     </nav>
 
     <div class="flex items-center gap-2">
+      <LocaleSwitcher locale={locale} />
       <ThemeToggle />
       <a
-        href="/submit"
+        href={localizedPath('/submit', locale)}
         class="inline-flex items-center rounded-t-pill bg-accent px-4 py-2 text-sm font-medium text-accent-on hover:bg-accent-hover"
-      >Submit</a>
+      >{t('nav.submit')}</a>
     </div>
   </div>
 </header>

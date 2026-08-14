@@ -1,16 +1,25 @@
 ---
 import { getCollection } from 'astro:content';
-import Base from '../layouts/Base.astro';
-import SearchBar from '../components/SearchBar.astro';
-import FilterBar from '../components/FilterBar.astro';
-import SkinCard from '../components/SkinCard.astro';
-import SponsoredSlot from '../components/SponsoredSlot.astro';
-import SubmitCTA from '../components/SubmitCTA.astro';
-import EngineGrid from '../components/EngineGrid.astro';
-import EmptyState from '../components/EmptyState.astro';
+import Base from '../../layouts/Base.astro';
+import SearchBar from '../../components/SearchBar.astro';
+import FilterBar from '../../components/FilterBar.astro';
+import SkinCard from '../../components/SkinCard.astro';
+import SponsoredSlot from '../../components/SponsoredSlot.astro';
+import SubmitCTA from '../../components/SubmitCTA.astro';
+import EngineGrid from '../../components/EngineGrid.astro';
+import EmptyState from '../../components/EmptyState.astro';
 import { ArrowRight } from '@lucide/astro';
-import { featuredFirst, itemListJsonLd } from '../lib/skins.ts';
-import { SITE } from '../lib/site.ts';
+import { featuredFirst, itemListJsonLd } from '../../lib/skins.ts';
+import { SITE } from '../../lib/site.ts';
+import { SUPPORTED_LOCALES, type Locale, localizedPath } from '../../i18n/config.ts';
+import { makeT } from '../../i18n/index.ts';
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang = 'en' } = Astro.params as { lang?: Locale };
+const t = makeT(lang);
 
 const all = await getCollection('skins');
 const featured = all.filter((s) => s.data.featured);
@@ -20,54 +29,53 @@ const jsonLd = itemListJsonLd(featured.length ? featured : ordered.slice(0, 12))
 const heroFeatured = featured.slice(0, 4);
 ---
 <Base
-  title="Codex Skin Index — Browse & install Codex Desktop and CLI skins"
-  description={SITE.description}
+  title={t('site.name') + ' — Browse & install Codex Desktop and CLI skins'}
+  description={t('site.description')}
+  locale={lang}
   jsonLd={jsonLd}
 >
   <!-- Asymmetric hero: left = intro + instant search; right = real featured previews -->
   <section class="container-x grid items-start gap-10 py-10 lg:grid-cols-[55%_45%] lg:py-12">
     <div class="flex flex-col">
       <p class="mb-3 inline-flex w-fit items-center gap-2 rounded-t-pill border border-border px-3 py-1 text-xs text-muted">
-        Neutral index · Not affiliated with OpenAI
+        {t('home.hero.badge')}
       </p>
       <h1 class="font-display text-3xl font-semibold leading-tight text-fg sm:text-4xl">
-        A neutral index of Codex skins, pets &amp; workspace mods — copy one prompt, reskin your workspace.
+        {t('home.hero.h1')}
       </h1>
       <p class="mt-4 max-w-xl text-base text-muted">
-        Browse, compare, and reach every OpenAI Codex Desktop and CLI skin, theme engine, and
-        gallery from one neutral index. Filter by mood, color, and platform, then copy a single
-        install prompt.
+        {t('home.hero.subtitle')}
       </p>
       <div class="mt-6 max-w-md">
         <SearchBar />
       </div>
       <div class="mt-4 flex flex-wrap gap-3">
-        <a href="/skins" class="inline-flex items-center rounded-t-pill bg-accent px-5 py-3 text-sm font-medium text-accent-on hover:bg-accent-hover">
-          Browse all skins
+        <a href={localizedPath('/skins', lang)} class="inline-flex items-center rounded-t-pill bg-accent px-5 py-3 text-sm font-medium text-accent-on hover:bg-accent-hover">
+          {t('home.hero.cta.browse')}
         </a>
-        <a href="/submit" class="inline-flex items-center rounded-t-pill border border-border px-5 py-3 text-sm text-fg hover:border-accent hover:text-accent">
-          Submit a skin
+        <a href={localizedPath('/submit', lang)} class="inline-flex items-center rounded-t-pill border border-border px-5 py-3 text-sm text-fg hover:border-accent hover:text-accent">
+          {t('home.hero.cta.submit')}
         </a>
       </div>
       <a
-        href="/advertise"
+        href={localizedPath('/advertise', lang)}
         class="mt-5 inline-flex w-fit items-center gap-2 rounded-t-pill border border-border px-4 py-2 text-xs text-muted hover:border-accent hover:text-accent"
       >
-        Advertise with us — reach Codex skinners <ArrowRight size={13} />
+        {t('home.hero.cta.advertise')} <ArrowRight size={13} />
       </a>
     </div>
 
     <div class="flex flex-col">
-      <span class="mb-3 text-xs font-semibold tracking-caps uppercase text-meta">Featured</span>
+      <span class="mb-3 text-xs font-semibold tracking-caps uppercase text-meta">{t('home.featured.label')}</span>
       {heroFeatured.length ? (
         <div class="grid gap-4 sm:grid-cols-2">
           {heroFeatured.map((s) => (
-            <SkinCard skin={s} compact />
+            <SkinCard skin={s} compact locale={lang} />
           ))}
         </div>
       ) : (
         <div class="flex flex-1 items-center justify-center rounded-t-lg border border-border bg-surface-warm p-8 text-center text-sm text-muted">
-          Previews populate as the index grows.
+          {t('home.featured.empty')}
         </div>
       )}
     </div>
@@ -77,13 +85,13 @@ const heroFeatured = featured.slice(0, 4);
 
   <section class="container-x py-8">
     <div class="mb-4 flex items-center justify-between">
-      <h2 class="text-xl font-semibold text-fg">All skins</h2>
-      <span class="text-sm text-muted"><span id="result-count">{ordered.length}</span> skins</span>
+      <h2 class="text-xl font-semibold text-fg">{t('home.section.allSkins')}</h2>
+      <span class="text-sm text-muted">{t('home.skimsCount', { n: ordered.length })}</span>
     </div>
 
     <div id="skin-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {ordered.map((s) => (
-        <SkinCard skin={s} />
+        <SkinCard skin={s} locale={lang} />
       ))}
     </div>
 
@@ -91,7 +99,7 @@ const heroFeatured = featured.slice(0, 4);
 
     <div class="mt-8 flex justify-center">
       <button id="load-more" type="button" class="hidden rounded-t-pill border border-border px-6 py-3 text-sm text-fg hover:border-accent hover:text-accent">
-        Load more
+        {t('home.loadMore')}
       </button>
     </div>
   </section>
@@ -101,10 +109,9 @@ const heroFeatured = featured.slice(0, 4);
   </section>
 
   <section class="container-x py-8">
-    <h2 class="mb-4 text-xl font-semibold text-fg">Engines &amp; tools</h2>
+    <h2 class="mb-4 text-xl font-semibold text-fg">{t('home.section.engines')}</h2>
     <p class="mb-6 max-w-2xl text-sm text-muted">
-      The runtimes and managers behind the skins above. Each is an open-source project you install
-      once, then apply skins through.
+      {t('home.section.engines.subtitle')}
     </p>
     <EngineGrid />
   </section>
@@ -115,7 +122,7 @@ const heroFeatured = featured.slice(0, 4);
 </Base>
 
 <script>
-  import { initBrowse } from '../lib/browse-client.ts';
+  import { initBrowse } from '../../lib/browse-client.ts';
   initBrowse({
     grid: '#skin-grid',
     resultCount: '#result-count',
