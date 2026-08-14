@@ -7,8 +7,17 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://awesomecodexskin.com',
   output: 'static',
-  trailingSlash: 'ignore',
-  integrations: [sitemap()],
+  // Always emit trailing slashes so sitemap URLs, canonical links and <a href>
+  // all share the same URL shape (avoids canonical/sitemap conflicts).
+  trailingSlash: 'always',
+  integrations: [
+    sitemap({
+      // One consolidated sitemap at /sitemap.xml (the conventional root path)
+      // instead of the default /sitemap-index.xml + /sitemap-0.xml split.
+      // Google, Bing and Yandex all look for /sitemap.xml first.
+      entryLimit: 50000,
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },

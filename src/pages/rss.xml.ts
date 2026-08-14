@@ -12,7 +12,7 @@ export async function GET(context: APIContext) {
     items: skins.map((s) => ({
       title: s.data.name,
       description: s.data.description,
-      link: `/skins/${s.id}`,
+      link: `/skins/${s.id}/`,
       pubDate: s.data.updatedAt,
     })),
   });

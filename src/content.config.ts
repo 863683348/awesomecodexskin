@@ -4,7 +4,9 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
-// 8 skin categories (slug values, must align with /skins/category/[slug])
+// 8 curated skin categories + 2 catch-alls (slug values, must align with /skins/category/[slug]).
+// `other` / `gaming` are used by community-imported skins that don't map cleanly to the
+// curated list; they keep the collection valid without forcing a wrong category.
 const categoryEnum = z.enum([
   'dark-midnight',    // Dark & Midnight
   'light-airy',       // Light & Airy
@@ -14,6 +16,8 @@ const categoryEnum = z.enum([
   'retro-vintage',    // Retro & Vintage
   'pastel-soft',      // Pastel & Soft
   'mono-terminal',    // Mono & Terminal
+  'other',            // catch-all for community imports (not yet curated)
+  'gaming',           // gaming / character-theme skins (e.g. Genshin)
 ]);
 
 // Platform enum (shared with compatibleWith)

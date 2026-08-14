@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://awesomecodexskin.com/sitemap-index.xml
+Sitemap: https://awesomecodexskin.com/sitemap.xml
