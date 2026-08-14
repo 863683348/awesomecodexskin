@@ -6,9 +6,10 @@ import InstallBlock from '../../components/InstallBlock.astro';
 import CompatibleBadges from '../../components/CompatibleBadges.astro';
 import RelatedSkins from '../../components/RelatedSkins.astro';
 import ReportLink from '../../components/ReportLink.astro';
-import { User, Download, Heart, CalendarDays, ExternalLink } from '@lucide/astro';
-import { operatingSystem } from '../../lib/skins.ts';
+import { User, Download, Heart, CalendarDays, ExternalLink, Check, Sparkles, MonitorSmartphone, HelpCircle } from '@lucide/astro';
+import { operatingSystem, absolutePreview } from '../../lib/skins.ts';
 import { categoryLabel, SITE } from '../../lib/site.ts';
+import { categoryBlurb, derivedFeatures, derivedBestFor, buildSkinFaq } from '../../lib/skin-content.ts';
 
 export async function getStaticPaths() {
   const skins = await getCollection('skins');
@@ -22,6 +23,12 @@ export async function getStaticPaths() {
 const { skin } = Astro.props;
 const { Content } = await render(skin);
 const d = skin.data;
+
+// Structured content: frontmatter values win, derived fallbacks guarantee depth.
+const features = d.features?.length ? d.features : derivedFeatures(skin);
+const bestFor = d.bestFor?.length ? d.bestFor : derivedBestFor(skin);
+const faq = d.faq?.length ? d.faq : buildSkinFaq(skin);
+const screenshot = absolutePreview(skin, SITE.url);
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -41,6 +48,7 @@ const jsonLd = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: operatingSystem(skin),
       softwareVersion: '1.0',
+      ...(screenshot ? { screenshot } : {}),
       downloadUrl: d.sourceUrl,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       aggregateRating: {
@@ -48,6 +56,22 @@ const jsonLd = {
         ratingValue: '0',
         ratingCount: String(d.stats.likes),
       },
+      review: [
+        {
+          '@type': 'Review',
+          author: { '@type': 'Organization', name: 'Codex Skin Index' },
+          reviewBody: `${d.name} is a ${d.mood} ${categoryLabel(d.category).toLowerCase()} skin for ${d.platform === 'codex-cli' ? 'Codex CLI' : 'Codex Desktop'}. ${d.description}`,
+          reviewRating: { '@type': 'Rating', ratingValue: '4', bestRating: '5' },
+        },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
     },
   ],
 };
@@ -55,6 +79,7 @@ const jsonLd = {
 <Base
   title={`${d.name} — Codex skin`}
   description={d.description}
+  image={d.previewImage}
   jsonLd={jsonLd}
 >
   <article class="container-x py-8">
@@ -72,6 +97,46 @@ const jsonLd = {
           <h2 class="text-sm font-semibold tracking-caps uppercase text-meta">About this skin</h2>
           <div class="prose-invert mt-3 max-w-none text-fg-2">
             <Content />
+          </div>
+        </div>
+
+        <div class="mt-6 rounded-t-md border border-border bg-surface p-5">
+          <h2 class="flex items-center gap-2 text-sm font-semibold tracking-caps uppercase text-meta">
+            <Sparkles size={15} /> Highlights
+          </h2>
+          <ul class="mt-3 grid gap-2 sm:grid-cols-2">
+            {features.map((f) => (
+              <li class="flex items-start gap-2 text-sm text-fg-2">
+                <Check size={15} class="mt-0.5 shrink-0 text-accent" />
+                <span>{f}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="mt-6 rounded-t-md border border-border bg-surface p-5">
+          <h2 class="flex items-center gap-2 text-sm font-semibold tracking-caps uppercase text-meta">
+            <MonitorSmartphone size={15} /> Best for
+          </h2>
+          <p class="mt-2 text-sm text-fg-2">{categoryBlurb(d.category)}</p>
+          <ul class="mt-3 flex flex-wrap gap-2">
+            {bestFor.map((b) => (
+              <li class="rounded-t-pill border border-border px-3 py-1 text-xs text-muted">{b}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="mt-6 rounded-t-md border border-border bg-surface p-5">
+          <h2 class="flex items-center gap-2 text-sm font-semibold tracking-caps uppercase text-meta">
+            <HelpCircle size={15} /> FAQ
+          </h2>
+          <div class="mt-3 space-y-4">
+            {faq.map((f) => (
+              <div>
+                <h3 class="text-sm font-semibold text-fg">{f.q}</h3>
+                <p class="mt-1 text-sm text-fg-2">{f.a}</p>
+              </div>
+            ))}
           </div>
         </div>
 

@@ -1,13 +1,30 @@
 ---
 import Base from '../layouts/Base.astro';
 import Steps from '../components/Steps.astro';
-import { ShieldCheck } from '@lucide/astro';
+import { ShieldCheck, Wrench, CircleAlert } from '@lucide/astro';
 
 const steps = [
   { title: 'Install an engine once', body: 'Clone or download a skin engine such as Codex Dream Skin, or use a manager like Codex Skin Manager. This is a one-time setup on your machine.' },
   { title: 'Find a skin in the index', body: 'Browse categories or search by mood and color. Open the skin page to see its description, compatible platforms, and the exact install prompt.' },
   { title: 'Copy and apply', body: 'Click Copy on the install prompt, paste it into Codex Desktop, or run the CLI command. The workspace updates immediately.' },
   { title: 'Verify and keep the source', body: 'Confirm the new look, then bookmark the source link. If Codex updates and a skin breaks, re-run the source restore step to return to stock.' },
+];
+
+// Engine comparison (from site.ts ENGINES, kept inline for the tutorial table)
+const engines = [
+  { name: 'Codex Dream Skin', platforms: 'macOS, Windows', style: 'Agent prompt / preset', note: 'Core open-source engine; local CDP injection, no app modification.' },
+  { name: 'Codex Skin Manager', platforms: 'macOS, Windows', style: 'Built-in manager', note: '14 built-in themes plus a theme creator and Codex Skill.' },
+  { name: 'Codex Themes (desktop)', platforms: 'macOS', style: '.codextheme import', note: 'Gallery and creator center at theme.codexguide.ai.' },
+  { name: 'ReTheme', platforms: 'macOS, Windows', style: 'Signed themes', note: 'Tauri-based; signed, updatable, community themes.' },
+  { name: 'Codex Themes CLI', platforms: 'Cross-platform', style: 'CLI /theme', note: 'Validate, preview, apply, rollback, export palettes.' },
+  { name: 'Codepilot', platforms: 'Cross-platform', style: 'Built-in TUI /skin', note: 'Codex CLI distribution with 16 built-in TUI skins.' },
+];
+
+const troubleshooting = [
+  { problem: 'Prompt applies but nothing visibly changes', fix: 'Confirm the engine is running and pointed at the right Codex window. Restart Codex Desktop, then re-apply.' },
+  { problem: 'Skin looks different from the preview', fix: 'Previews approximate the source palette. Check the source link for the exact theme file and version.' },
+  { problem: 'Codex updated and the skin stopped working', fix: 'Use the engine\'s restore-to-default option, then re-apply. Keeping the source link makes this a two-minute fix.' },
+  { problem: 'CLI /theme says no themes installed', fix: 'Run the port install script first, then reopen the CLI prompt. Some ports cache colors at startup.' },
 ];
 
 const jsonLd = {
@@ -51,12 +68,61 @@ const jsonLd = {
       <li>Start with a featured skin — it is the most likely to apply cleanly through the engine's default preset.</li>
       <li>Copy the exact prompt text; small edits can change what the engine applies.</li>
       <li>Keep the source link handy so you can restore or re-apply after a Codex update.</li>
-      <li>Use the category and mood filters to narrow 26+ skins to a handful that fit your taste.</li>
+      <li>Use the category and mood filters to narrow 100+ skins to a handful that fit your taste.</li>
+    </ul>
+
+    <div class="callout mt-10">
+      <Wrench size={24} class="shrink-0 text-accent" />
+      <div>
+        <h2 class="font-semibold text-fg">Choosing an engine</h2>
+        <p class="mt-1 text-sm text-muted">
+          The engine decides how skins are applied and which formats you can use. All are free and open source.
+        </p>
+      </div>
+    </div>
+    <div class="mt-4 overflow-x-auto rounded-t-md border border-border">
+      <table class="w-full text-left text-sm">
+        <thead class="border-b border-border bg-surface">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-fg">Engine</th>
+            <th class="px-4 py-3 font-semibold text-fg">Platforms</th>
+            <th class="px-4 py-3 font-semibold text-fg">Install style</th>
+            <th class="hidden px-4 py-3 font-semibold text-fg md:table-cell">Notes</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-border">
+          {engines.map((e) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-fg">{e.name}</td>
+              <td class="px-4 py-3 text-muted">{e.platforms}</td>
+              <td class="px-4 py-3 text-muted">{e.style}</td>
+              <td class="hidden px-4 py-3 text-muted md:table-cell">{e.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout mt-10">
+      <CircleAlert size={24} class="shrink-0 text-accent" />
+      <div>
+        <h2 class="font-semibold text-fg">Troubleshooting</h2>
+        <p class="mt-1 text-sm text-muted">The four most common issues and their fixes.</p>
+      </div>
+    </div>
+    <ul class="mt-4 space-y-4">
+      {troubleshooting.map((t) => (
+        <li class="rounded-t-md border border-border bg-surface p-4">
+          <h3 class="text-sm font-semibold text-fg">{t.problem}</h3>
+          <p class="mt-1 text-sm text-muted">{t.fix}</p>
+        </li>
+      ))}
     </ul>
 
     <p class="mt-8 text-sm text-muted">
-      Need the short version? See the <a href="/install" class="text-accent hover:underline">install guide</a>
-      or the <a href="/faq" class="text-accent hover:underline">FAQ</a>.
+      Need the short version? See the <a href="/install" class="text-accent hover:underline">install guide</a>,
+      the <a href="/faq" class="text-accent hover:underline">FAQ</a>, or the
+      <a href="/blog/how-to-install-codex-skins/" class="text-accent hover:underline">full install blog post</a>.
     </p>
   </div>
 </Base>

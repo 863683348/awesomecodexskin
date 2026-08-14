@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { ArrowRight, CalendarDays } from '@lucide/astro';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+const categories = [...new Set(posts.map((p) => p.data.category))];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: 'Codex Skin Index Blog',
+  description: 'Guides and roundups for Codex Desktop and CLI skins.',
+  url: 'https://awesomecodexskin.com/blog/',
+  blogPost: posts.map((p) => ({
+    '@type': 'BlogPosting',
+    headline: p.data.title,
+    description: p.data.description,
+    datePublished: p.data.pubDate.toISOString(),
+    url: `https://awesomecodexskin.com/blog/${p.id}/`,
+  })),
+};
+---
+<Base
+  title="Codex Skin Blog — guides, roundups & how-tos"
+  description="Guides, best-of roundups and how-tos for Codex Desktop and CLI skins. Learn to install, create and manage skins."
+  jsonLd={jsonLd}
+>
+  <div class="container-x py-10">
+    <header class="max-w-2xl">
+      <p class="mb-3 inline-flex w-fit items-center gap-2 rounded-t-pill border border-border px-3 py-1 text-xs text-muted">
+        Guides &amp; roundups
+      </p>
+      <h1 class="font-display text-3xl font-semibold text-fg sm:text-4xl">Codex Skin Blog</h1>
+      <p class="mt-3 text-base text-muted">
+        How to install, create and manage Codex Desktop &amp; CLI skins — plus the best-of
+        roundups from the index.
+      </p>
+    </header>
+
+    {categories.length > 1 && (
+      <nav class="mt-8 flex flex-wrap gap-2" aria-label="Blog categories">
+        {categories.map((c) => (
+          <span class="rounded-t-pill border border-border px-3 py-1 text-xs capitalize text-muted">{c}</span>
+        ))}
+      </nav>
+    )}
+
+    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {posts.map((p) => (
+        <article class="group relative rounded-t-md border border-border bg-surface p-5 transition-colors hover:border-accent">
+          <div class="flex items-center gap-2 text-xs text-meta">
+            <CalendarDays size={14} />
+            <time datetime={p.data.pubDate.toISOString().slice(0, 10)}>
+              {p.data.pubDate.toISOString().slice(0, 10)}
+            </time>
+            {p.data.tags.slice(0, 2).map((t) => (
+              <span class="rounded-t-pill border border-border px-2 py-0.5 capitalize text-muted">{t}</span>
+            ))}
+          </div>
+          <h2 class="mt-3 font-display text-lg font-semibold leading-snug text-fg group-hover:text-accent">
+            <a href={`/blog/${p.id}/`} class="after:absolute after:inset-0">{p.data.title}</a>
+          </h2>
+          <p class="mt-2 text-sm text-muted">{p.data.description}</p>
+          <span class="mt-4 inline-flex items-center gap-1 text-sm text-accent">
+            Read more <ArrowRight size={14} />
+          </span>
+        </article>
+      ))}
+    </div>
+  </div>
+</Base>

@@ -86,7 +86,44 @@ const skins = defineCollection({
         likes: z.number().int().min(0).default(0),
       })
       .default({ installs: 0, likes: 0 }),
+
+    // --- optional structured content (enriches the detail page, kills thin content) ---
+    // Key visual traits / highlights, e.g. ["Translucent panels", "High-key palette"]
+    features: z.array(z.string()).optional(),
+    // Use-case hints rendered as the "When to use" block, e.g. ["Daytime work", "Clean desktop"]
+    bestFor: z.array(z.string()).optional(),
+    // Optional 2-3 FAQ Q&A specific to this skin
+    faq: z
+      .array(
+        z.object({
+          q: z.string(),
+          a: z.string(),
+        })
+      )
+      .optional(),
   }),
 });
 
-export const collections = { skins };
+// Blog posts: long-tail informational content that feeds the skin index with
+// editorial depth (E-E-A-T) and captures "how to" / "best" style queries.
+const blog = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
+  schema: z.object({
+    title: z.string().min(1, { error: 'Post title is required' }),
+    description: z.string().min(1, { error: 'Meta description is required' }),
+    // ISO date of first publish (used for sorting + Article datePublished)
+    pubDate: z.coerce.date(),
+    // Updated date, defaults to pubDate
+    updatedDate: z.coerce.date().optional(),
+    // Topic tags rendered as chips, e.g. ["install", "cli"]
+    tags: z.array(z.string()).default([]),
+    // Category slug used for grouping on the blog index
+    category: z.string().default('guide'),
+    // Optional inline cover image (local /blog/... or absolute)
+    coverImage: z.string().optional(),
+    // Optional list of skin slugs this post recommends / links to
+    relatedSkins: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { skins, blog };
