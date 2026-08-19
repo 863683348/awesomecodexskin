@@ -1,6 +1,6 @@
 ---
-title: "Actualización del índice: Las categorías Retro y Pastel reciben sus primeros temas dedicados"
-description: "El índice añadió skins retro y pastel dedicadas esta semana — QQ2007 retro, Sakura Dawn Rosa, Pink Custom y amigos — llenando los últimos rincones vacíos del catálogo."
+title: "Actualización del índice: las categorías Retro y Pastel obtienen sus primeros temas dedicados"
+description: "Este índice ha incorporado esta semana skins retro y pastel dedicados: QQ2007 retro, Sakura Pink Dawn, Pink Custom y otros similares, completando así los últimos espacios vacíos del catálogo."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["index-update", "retro", "pastel", "new-skins"]
@@ -9,37 +9,37 @@ relatedSkins: ["qq2007-retro", "heige-qq2007-retro", "sakura-pink-dawn", "pink-c
 lang: "es"
 ---
 
-Las dos categorías más delgadas en el índice recibieron por primera vez atención real. **Retro-vintage** y **pastel-suave** estaban casi vacías; las importaciones de esta semana les dan una alineación inicial adecuada.
+Las dos categorías más delgadas del índice acaban de recibir su primera atención real. **Retro-vintage** y **pastel-suave** estaban casi vacías; las importaciones de esta semana dotan a ambas de una alineación inicial adecuada.
 
-## Retro-vintage: la revivificación de QQ2007
+## Retro-vintage: el renacimiento de QQ2007
 
-La ola retro está liderada por un pedazo de historia de internet: el tema QQ2007 — un paleta con nostalgia basada en el aspecto clásico de 2007. Llegaron dos entradas:
+La ola retro está liderada por una pieza de la historia de internet: el tema QQ2007, una paleta cargada de nostalgia inspirada en el aspecto clásico de la era 2007. Se incorporaron dos entradas:
 
-- [QQ2007 Retro](/skins/qq2007-retro/) — la recreación fiel.
+- [QQ2007 Retro](/skins/qq2007-retro/) — una recreación fiel.
 - [HeiGeAi QQ2007 Retro](/skins/heige-qq2007-retro/) — una variante con tonos ligeramente ajustados.
 
-Acompañado de [Solarized](/skins/solarized/), que tiene sus propios credenciales de estilo antiguo, la categoría retro ahora tiene tres opciones distintas en lugar de ser un pie de página.
+Junto con [Solarized](/skins/solarized/), que posee sus propias credenciales de estilo antiguo, la categoría retro ya cuenta con tres opciones distintas, en lugar de limitarse a ser una mera nota al pie.
 
-## Pastel-suave: temas suaves llegan
+## Pastel-suave: llegan temas suaves y delicados
 
-La esquina pastel también se completó con un trio limpio y suave:
+El rincón pastel también se ha completado con una terna limpia y suave:
 
-- [Sakura Dawn Rosa](/skins/sakura-pink-dawn/) — el pastel de flores de cerezo, inmediatamente el destacado de la categoría.
+- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) — el tono pastel de flor de cerezo, inmediatamente el referente destacado de la categoría.
 - [Pink Custom](/skins/pink-custom/) — un rosa más suave y personalizable.
-- [Hashimoto Arata](/skins/hashimoto-arata/) — una opción suave y baja saturación para personas que quieren pastel sin rosa.
+- [Hashimoto Arata](/skins/hashimoto-arata/) — una opción delicada y de baja saturación para quienes buscan un estilo pastel sin recurrir al rosa.
 
-Para los amantes de los temas claros, el pastel es el punto de entrada más amigable — bajo contraste por diseño, cómodo para los ojos en luz diurna. El [guía de luz vs oscuridad](/blog/codex-light-vs-dark-skins/) explica por qué eso importa.
+Para los aficionados a los temas claros, el estilo pastel constituye el punto de entrada más amigable: por diseño presenta bajo contraste y resulta cómodo para la vista bajo luz diurna. La [guía sobre temas claros frente a oscuros](/blog/codex-light-vs-dark-skins/) explica por qué esto es relevante.
 
-## ¿Por qué llenar categorías poco pobladas importa?
+## Por qué es importante rellenar categorías escasas
 
-Un índice es tan bueno como su categoría más débil. Cuando una categoría tiene una o dos entradas, la gente asume que el ecosistema no respalda ese estilo y pasa de largo. Ahora que retro y pastel tienen opciones reales, son buscables, comparables y descubribles — lo cual es el propósito principal de un índice curado.
+Un índice es tan bueno como su categoría más débil. Cuando una categoría contiene solo una o dos entradas, los usuarios asumen que el ecosistema no respalda ese estilo y pasan a otra cosa. Ahora que las categorías retro y pastel cuentan con opciones reales, se vuelven buscables, comparables y descubribles —lo cual es precisamente el objetivo fundamental de un índice cuidadosamente curado.
 
-## Qué significa esto para navegar
+## Qué significa esto para la navegación
 
-- La navegación de categorías de [índice de skins](/skins/) ahora tiene opciones significativas en todos los ocho grupos curados.
-- Los temas pastel y retro se combinan bien con el [guía de accesibilidad](/blog/codex-skin-accessibility-contrast/) — los skins de baja saturación suelen ser los más fáciles de comprobar contra los requisitos de contraste.
-- Ambas categorías siguen abiertas a más envíos. Si haces un tema retro o pastel, la [página de envío](/submit/) es el camino correcto.
+- El menú de categorías de la [lista de temas](/skins/) ahora ofrece opciones significativas en los ocho grupos curados.
+- Los temas pastel y retro combinan especialmente bien con la [guía de accesibilidad](/blog/codex-skin-accessibility-contrast/) — los temas de baja saturación suelen ser los más fáciles de evaluar respecto a los requisitos de contraste.
+- Ambas categorías siguen abiertas a nuevas contribuciones. Si creas un tema retro o pastel, la [página de envío](/submit/) es el canal adecuado.
 
 ## Próximamente
 
-El lugar restante delgado es la "otra" categoría — el recopilatorio para skins de la comunidad que no se ajustan claramente a las ocho curadas. La curación está trabajando en ello en lotes, y cada lote agrega más profundidad a las categorías reales. Vigila el [índice de skins](/skins/) para la próxima actualización.
+El único hueco restante es el contenedor «otros»: la categoría general para temas comunitarios que no encajan claramente en ninguno de los ocho grupos curados. La curación se está aplicando a este grupo por lotes, y cada lote añade mayor profundidad a las categorías principales. Sigue atento a la [lista de temas](/skins/) para la próxima actualización.

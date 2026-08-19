@@ -1,6 +1,6 @@
 ---
-title: "12 Anime & Game Skins von HeiGeAi: Dragon Ball bis Genshin"
-description: "Der HeiGeAi codex-skin-studio Repo hat 12 neue Anime- und Spielthemen beigetragen – Dragon Ball, Naruto, Genshin, Hatsune Miku und mehr. Hier ist die vollständige Liste."
+title: "12 Anime- und Gameskins von HeiGeAi: Von Dragon Ball bis Genshin"
+description: "Das HeiGeAi-Codex-Skin-Studio-Repository hat 12 neue Anime- und Spiel-Themes beigesteuert – darunter Dragon Ball, Naruto, Genshin, Hatsune Miku und mehr. Hier ist die vollständige Übersicht."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["anime", "gaming", "heigeai", "new-skins"]
@@ -9,31 +9,31 @@ relatedSkins: ["heige-dragon-ball-super-saiyan", "heige-genshin-night", "heige-n
 lang: "de"
 ---
 
-Der [HeiGeAi heige-codex-skin-studio](https://github.com/HeiGeAi/heige-codex-skin-studio)-Repository hat diese Woche 12 neue Skins in den Index geliefert, und wenn Sie ein Anime- oder Gaming-Fan sind, ist diese Serie für Sie.
+Das Repository [HeiGeAi heige-codex-skin-studio](https://github.com/HeiGeAi/heige-codex-skin-studio) hat diese Woche 12 neue Skins in den Index eingeführt – und falls Sie Fan von Anime oder Gaming sind, ist diese Sammlung genau das Richtige für Sie.
 
-## Die vollständige Liste
+## Die komplette Auswahl
 
-Die HeiGeAi-Sammlung umfasst die größten Fandoms in einem Zug:
+Die HeiGeAi-Sammlung umfasst mit einem Schlag die größten Fandoms:
 
-- **Dragon Ball** — [Super Saiyan](/skins/heige-dragon-ball-super-saiyan/) und das [Nimbus](/skins/heige-dragon-ball-nimbus/)-Wolken-Thema.
-- **Naruto** — [Naruto](/skins/heige-naruto/) bringt orange-zu-schwarze Energie in Ihre Arbeitsumgebung.
+- **Dragon Ball** — [Super Saiyan](/skins/heige-dragon-ball-super-saiyan/) und das Wolken-Thema [Nimbus](/skins/heige-dragon-ball-nimbus/).
+- **Naruto** — [Naruto](/skins/heige-naruto/) bringt energiegeladene Farben von Orange bis Schwarz in Ihren Arbeitsbereich.
 - **Genshin Impact** — zwei Stimmungen: [Genshin Dawn](/skins/heige-genshin-dawn/) (hell) und [Genshin Night](/skins/heige-genshin-night/) (dunkel).
-- **Hatsune Miku** — [Miku Future](/skins/heige-miku-future/) und [Miku 488137](/skins/heige-miku-488137/), die türkise Vocaloid-Palette in zwei Versionen.
-- **Wuthering Waves**, **Love and Deepspace** und einige weitere aus der animeverwandten Welt.
-- **Ehrenwerte Erwähnung:** [Dalao Smoke](/skins/heige-dalao-smoke/) — ein dunkles, stimmungsvolles Thema, das nicht auf einen Fandom angewiesen ist, um großartig zu sein.
+- **Hatsune Miku** — [Miku Future](/skins/heige-miku-future/) und [Miku 488137](/skins/heige-miku-488137/), zwei Varianten der türkisfarbenen Vocaloid-Palette.
+- **Wuthering Waves**, **Love and Deepspace** sowie einige weitere Titel aus der anime-nahen Welt.
+- **Ehrenvolle Erwähnung:** [Dalao Smoke](/skins/heige-dalao-smoke/) — ein stimmungsvolles dunkles Theme, das keinerlei Fandom-Verbindung benötigt, um hervorragend zu sein.
 
-## Was diese wertvoll macht
+## Warum sich diese Skins lohnen
 
-Anime-Skins sind normalerweise mehr als nur eine Farbänderung. Die HeiGeAi-Batch behandelt jedes Thema wie einen Charakter: Akzentfarben, die aus dem charakteristischen Aussehen des Charakters stammen, Hintergründe, die auf die Stimmung der Szene abgestimmt sind, und lesbare Syntaxfarben, die darauf liegen. [Genshin Night](/skins/heige-genshin-night/), zum Beispiel, ist ein wirklich nutzbares dunkles Thema und kein bloßer Fandom-Sticker.
+Anime-Skins sind meist mehr als nur eine einfache Farbpalette. Bei der HeiGeAi-Sammlung wird jedes Theme wie eine eigenständige Figur behandelt: Akzentfarben stammen direkt vom charakteristischen Erscheinungsbild der Figur, Hintergründe sind auf die jeweilige Stimmung einer Szene abgestimmt, und gut lesbare Syntax-Farben wurden sorgfältig darübergelegt. [Genshin Night](/skins/heige-genshin-night/) ist beispielsweise ein tatsächlich nutzbares dunkles Theme – kein bloßer Fan-Aufkleber.
 
-## Wo sie im Index passen
+## Einordnung im Index
 
-Diese landen in der Kategorie **anime-pop** neben den bestehenden Charakter-Skins — [Hatsune Miku](/skins/hatsune-miku/), [Dilraba](/skins/dilraba/) und den restlichen. Wenn Anime nicht Ihr Ding ist, bietet die Sammlung dennoch Wert: Mehrere der HeiGeAi-Themen sind starke dunkle Optionen, die sich problemlos in einer "einfach guten Themen"-Liste befinden könnten.
+Diese Skins werden in der Kategorie **anime-pop** geführt, gemeinsam mit bereits bestehenden Charakter-Skins wie [Hatsune Miku](/skins/hatsune-miku/), [Dilraba](/skins/dilraba/) und anderen. Falls Anime nichts für Sie ist, bietet die Sammlung dennoch Mehrwert: Mehrere HeiGeAi-Themes sind solide dunkle Optionen, die problemlos auch in einer „einfach gute Themes“-Liste Platz finden würden.
 
-## Wie man sie installiert
+## Installation
 
-Alle Skins in dieser Serie verwenden die Standard-Installationsmethoden aus dem [Installationsleitfaden](/blog/how-to-install-codex-skins/) — kopieren Sie den Prompt oder laden Sie die Theme-Datei herunter, je nach Format des Skins. Keine besondere Einrichtung erforderlich.
+Jeder Skin dieser Sammlung nutzt die standardisierten Installationsmethoden aus der [Installationsanleitung](/blog/how-to-install-codex-skins/) – entweder kopieren Sie die entsprechende Eingabeaufforderung oder laden die Theme-Datei herunter, je nach Format des jeweiligen Skins. Keine besondere Einrichtung erforderlich.
 
-## Was kommt als nächstes
+## Was als Nächstes kommt
 
-Der Index arbeitet durch die verbleibenden Community-Repositories, mit mehr Anime- und Spielthemen in der Warteschlange. Beobachten Sie den [Skin-Index](/skins/), um den nächsten Drop zu verfolgen, oder prüfen Sie den [Beste Anime-Skins-Überblick](/blog/best-anime-codex-skins/), um die Highlights dieser Serie an einem Ort zu sehen.
+Der Index arbeitet derzeit die verbleibenden Community-Repositories ab; weitere Anime- und Gaming-Themes stehen bereits in der Warteschlange. Halten Sie die [Skin-Übersicht](/skins/) im Auge für den nächsten Release – oder werfen Sie einen Blick auf das [Rundschau der besten Anime-Codex-Skins](/blog/best-anime-codex-skins/), um die herausragenden Vertreter dieser Sammlung an einem Ort zu sehen.

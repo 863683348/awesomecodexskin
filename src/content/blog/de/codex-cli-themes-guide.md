@@ -1,6 +1,6 @@
 ---
-title: "Codex CLI Themen: Wie man /theme und Terminal-Skins verwendet"
-description: "Alles über Codex CLI-Themen: Syntaxthemen wie Tokyo Night, Monokai Stone und Solarized installieren, den /theme-Befehl verwenden und Paletten mit CLI-Tools verwalten."
+title: "Codex-CLI-Themes: So verwenden Sie `/theme` und Terminal-Skins"
+description: "Alles über Codex-CLI-Themes: Installation von Syntax-Themes wie Tokyo Night, Monokai Stone und Solarized, Nutzung des `/theme`-Befehls sowie Verwaltung von Farbpaletten mit CLI-Tools."
 pubDate: "2026-08-14"
 updatedDate: "2026-08-14"
 tags: ["cli", "terminal", "themes", "syntax"]
@@ -9,65 +9,58 @@ relatedSkins: ["monokai-stone", "solarized", "bearded-tokyo-night", "amber-noctu
 lang: "de"
 ---
 
-STRICTE REGELN:
-1. Übersetze alle menschlich lesbaren Texte, Überschriften, Tabellen-Texte und Link-Texte.
-2. NIEMALS übersetzen: Codeblöcke, Inline-Code, Dateipfade, Shell-Befehle, URLs, Produktbezeichnungen (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), numerische/Versionstoken oder Hautanzeigen-Namen.
-3. Halte die Markdown-Struktur identisch: gleiche Überschriften, Listen, Tabellen, fette/Kursivschreibweise, Zitaten und Link-Ziele. Ein Link wie [Monokai Stone](/skins/monokai-stone/) behält seine /path/ URL unverändert; nur der sichtbare Text kann übersetzt werden.
-4. Halte jeglichen Roh-HTML/JSX genau so bei.
-5. Gib NUR den übersetzten Markdown-Text aus. Kein Vorwort, keine Notizen, keine Code-Fenster um die Antwort.
+Codex CLI verwendet nicht dasselbe Skin-System wie Codex Desktop. Anstelle visueller Oberflächenelemente ändern CLI-Themes die **Terminal-Farbpalette** – also Hintergrund-, Vordergrund- und Syntaxfarben –, sodass Ihre Eingabeaufforderung und Ausgabe im Terminal gut lesbar bleiben.
 
-Codex CLI verwendet nicht dasselbe Hautsystem wie Codex Desktop. Anstatt visueller Chrome ändern CLI-Hauts die **Terminal-Farbpalette** – Hintergrund, Vordergrund und Syntaxfarben – damit Ihr Prompt und Ihre Ausgabe im Terminal lesbar bleiben.
+## Der `/theme`-Befehl
 
-## Der /theme Befehl
-
-Der schnellste Weg, eine CLI-Haut zu verwenden, ist der eingebaute /theme Befehl:
+Der schnellste Weg, ein CLI-Theme zu verwenden, ist der integrierte `/theme`-Befehl:
 
 ```bash
 # in Codex CLI:
 /theme
 ```
 
-Dies listet installierte Hauts auf. Wählen Sie eine aus, um sie sofort anzuwenden.
+Dies listet die installierten Themes auf. Wählen Sie eines aus, um es sofort anzuwenden.
 
-## Installieren einer Syntaxhaut
+## Installation eines Syntax-Themes
 
-Syntaxhauts (wie Monokai Stone, Tokyo Night, Solarized) installieren sich über einen Skript, das die Palette in den Theme-Ordner von Codex CLI portiert:
+Syntax-Themes (wie Monokai Stone, Tokyo Night oder Solarized) werden über ein Skript installiert, das die Farbpalette in das Theme-Verzeichnis von Codex CLI überträgt:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh
-# dann:
+# danach:
 /theme Tokyo Night
 ```
 
-Das Bearded Theme Ports Repo enthält 50+ Bearded-Varianten – Solarized, Tokyo Night, Monokai Stone und mehr.
+Das Repository *Bearded Theme Ports* enthält über 50 Bearded-Varianten – darunter Solarized, Tokyo Night, Monokai Stone und viele mehr.
 
-## Verwalten von Hauts mit CLI-Tools
+## Verwaltung von Themes mit CLI-Tools
 
-Zwei Tools machen die CLI-Hautverwaltung schmerzlos:
+Zwei Tools erleichtern die Verwaltung von CLI-Themes erheblich:
 
-- **Codex Themes CLI** (`ychampion/codex-themes`) — Go CLI: Validieren, Vorschau, Anwenden, Rückgängig machen und Exportieren passender Terminal-Paletten. Ideal, wenn Sie möchten, dass Ihr Terminal und Codex CLI dieselbe Palette teilen.
-- **Codepilot** (`charzhu/codepilot`) — eine Codex CLI-Distribution mit integrierter TUI-Personalisierung:
+- **Codex Themes CLI** (`ychampion/codex-themes`) – Go-basiertes CLI: Validierung, Vorschau, Anwendung, Rückgängigmachen und Export kompatibler Terminal-Paletten. Ideal, wenn Sie dieselbe Farbpalette sowohl in Ihrem Terminal als auch in Codex CLI nutzen möchten.
+- **Codepilot** (`charzhu/codepilot`) – eine Codex CLI-Distribution mit integrierter TUI-Personalisierung:
 
 ```bash
 npm i -g @charzhu/codepilot
-# dann führen Sie /skin im TUI aus, um eine eingebaute Haut auszuwählen
+# danach /skin innerhalb der TUI ausführen, um ein integriertes Theme auszuwählen
 ```
 
-Codepilot verfügt über 16 eingebaute TUI-Hauts (Hintergrund + Oberflächenfarben).
+Codepilot enthält 16 integrierte TUI-Skins (Hintergrund- + Oberflächenfarben).
 
-## Beliebte CLI-Hauts im Index
+## Beliebte CLI-Themes im Index
 
-| Haut | Stil | Installieren |
+| Skin | Stil | Installation |
 |---|---|---|
 | [Monokai Stone](/skins/monokai-stone/) | Klassische Syntax-Palette | `/theme Monokai Stone` |
 | [Solarized](/skins/solarized/) | Ikonische Retro-Palette | `/theme Solarized` |
-| [Tokyo Night](/skins/bearded-tokyo-night/) | Dunkelblauer Tokyo Night | `/theme Tokyo Night` |
-| [amber-nocturne](/skins/amber-nocturne/) | Warm-dunkler Terminal-Identität | `codex-theme apply amber-nocturne` |
+| [Tokyo Night](/skins/bearded-tokyo-night/) | Dunkelblaues Tokyo Night | `/theme Tokyo Night` |
+| [amber-nocturne](/skins/amber-nocturne/) | Warm-dunkle Terminal-Identität | `codex-theme apply amber-nocturne` |
 
-## Problembehebung
+## Fehlerbehebung
 
-- **`/theme` sagt, keine Hauts installiert** – Führen Sie zunächst das Installations-Skript aus, dann öffnen Sie den Prompt erneut.
-- **Palette sieht falsch aus** – Starten Sie Codex CLI nach dem Anwenden neu; einige Ports speichern Farben beim Start.
-- **Möchten Sie, dass Ihr Terminal übereinstimmt** – Verwenden Sie den Export des Codex Themes CLI, um dieselbe Palette in Ihre Terminal-Profildatei zu schreiben.
+- **`/theme` meldet „keine Themes installiert“** – führen Sie zunächst das Installations-Skript aus und öffnen Sie die Eingabeaufforderung neu.
+- **Die Palette sieht falsch aus** – starten Sie Codex CLI nach der Anwendung neu; einige Portierungen cachen Farben beim Start.
+- **Sie möchten, dass Ihr Terminal dieselbe Palette nutzt** – verwenden Sie den Export-Befehl von Codex Themes CLI, um die gleiche Palette in Ihr Terminal-Profil zu schreiben.
 
-Alle [Mono & Terminal-Hauts](/skins/category/mono-terminal/) durchsuchen oder mit dem [Installationsleitfaden](/blog/how-to-install-codex-skins/) beginnen.
+Durchsuchen Sie alle [Mono- & Terminal-Skins](/skins/category/mono-terminal/) oder beginnen Sie mit der [Installationsanleitung](/blog/how-to-install-codex-skins/).

@@ -1,6 +1,6 @@
 ---
-title: "7 Configuraciones para Cuidado de los Ojos para Codificación Nocturna en Codex"
-description: "La programación de noche cansa más los ojos que el trabajo diurno. Estos 7 ajustes: baja saturación, luz azul débil, brillo adecuado, además de las skins de Codex oscuras que superan la prueba."
+title: "7 ajustes para el cuidado ocular al programar de noche en Codex"
+description: "Programar de noche fatiga más los ojos que trabajar durante el día. Estos 7 ajustes —baja saturación, luz azul reducida y brillo adecuado—, junto con los temas oscuros de Codex que superan la prueba."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["eye-care", "night", "dark", "settings"]
@@ -9,45 +9,45 @@ relatedSkins: ["gothic-void-expedition", "amber-nocturne", "cyber-neon", "mythic
 lang: "es"
 ---
 
-Dos horas de programación nocturna dejan mis ojos más secos que un día completo en la oficina. La pantalla es la misma. La diferencia es tu cuerpo: después de la noche, tus pupilas están más dilatadas, tu cerebro interpreta el rectángulo brillante como "mañana", y tu frecuencia de parpadeo disminuye un tercio. Elegir la piel de Codex adecuada es una de las soluciones más económicas para los tres problemas.
+Dos horas de programación nocturna dejan mis ojos más secos que una jornada laboral completa en la oficina. La pantalla es la misma. La diferencia está en tu cuerpo: tras la puesta de sol, tus pupilas se dilatan, tu cerebro interpreta el rectángulo brillante como «mañana» y tu frecuencia de parpadeo disminuye un tercio. Elegir la piel de Codex adecuada es una de las soluciones más económicas para los tres problemas.
 
-No se trata de ir completamente a oscuras "porque los temas oscuros son mejores". Se trata de tres números: **luminancia, saturación y relación de luz azul**. Establezca estos correctamente y sus ojos dejarán de negociar con la pantalla.
+Esto no trata de adoptar un tema oscuro al 100 % «porque los temas oscuros son mejores». Se trata de tres valores numéricos: **luminancia, saturación y proporción de luz azul**. Ajustarlos correctamente hace que tus ojos dejen de negociar con la pantalla.
 
-## Los tres números que realmente importan
+## Los tres valores que realmente importan
 
-- **Luminancia de fondo**: el negro puro (#000000) es peor de lo que la mayoría piensa — fuerza el máximo contraste contra todo lo demás en la pantalla y causa halación alrededor del texto brillante. Un gris muy oscuro (#111–#1A) se lee más cómodamente.
-- **Saturación**: colores acentuados vívidos son aceptables en dosis pequeñas, pero un interfaz completo con azules y rojos saturados hace que el ojo busque enfoque. Las skins nocturnas deben ser principalmente desaturadas con uno o dos acentos restringidos.
-- **Relación de luz azul**: los temas oscuros con tonos cálidos (ámbar, naranja-marrón, amarillo suave) transmiten "noche" al sistema circadiano mucho más suavemente que un tema frío azul.
+- **Luminancia del fondo**: el negro puro (#000000) es peor de lo que muchas personas creen: obliga a un contraste máximo frente a todo lo demás en pantalla y provoca halos alrededor del texto brillante. Un gris muy oscuro (#111–#1A) resulta más cómodo para la lectura.
+- **Saturación**: los colores de acento vivos están bien en pequeñas dosis, pero una interfaz completa llena de azules y rojos saturados obliga al ojo a buscar constantemente el punto de enfoque. Las pieles nocturnas deben ser mayoritariamente desaturadas, con uno o dos acentos contenidos.
+- **Proporción de luz azul**: los temas oscuros con tonos cálidos (ámbar, marrón anaranjado, amarillo suave) indican «tarde/noche» a tu sistema circadiano de forma mucho más suave que un tema frío azulado.
 
-Una piel es un filtro, no solo decoración. Si falla en estos tres aspectos, ninguna cantidad de gafas externas de luz azul compensa por completo.
+Una piel es un filtro, no meramente una decoración. Si falla en estos tres aspectos, ni siquiera unas gafas externas bloqueadoras de luz azul lograrán compensarlo por completo.
 
-## La lista de verificación de 7 configuraciones
+## Lista de comprobación: 7 ajustes clave
 
-Pásese por estas una vez, y estará listo por un año:
+Realiza estos pasos una sola vez y estarás listo para todo el año:
 
-1. **Pase a una piel oscura, pero no a negro puro.** Busque fondos alrededor de `#111`–`#1A1A1A`, no `#000000`. En este índice, [Gothic Void Expedition](/skins/gothic-void-expedition/) es un buen punto de partida — su configuración predeterminada incorporada utiliza un negro cercano que mantiene baja la halación.
-2. **Limite la saturación de los acentos.** Máximo uno o dos acentos. [Cyber Neon](/skins/cyber-neon/) es el extremo tentador; guardarlo para el día, no para la medianoche.
-3. **Prefiera neutros cálidos después de las 21:00.** [Amber Nocturne](/skins/amber-nocturne/) existe exactamente para esto — una base marrón ámbar que permanece legible sin gritar "luz azul" a tu cerebro.
-4. **Disminuya la luminosidad de la interfaz de Codex si su motor lo permite.** Algunos motores escalan todo el paleta; una reducción del 10-15% suele ser el punto óptimo.
-5. **Ajuste su editor a su terminal.** Una paleta desigual obliga a tus ojos a readaptarse cada vez que cambias de ventana. Mismo grupo de tonos, luminancia cercana, listo.
-6. **Habilite el modo noche del sistema / f.lux encima de la piel.** La piel maneja los colores de la interfaz; la capa del sistema calienta toda la pantalla. Son complementarios, no alternativos.
-7. **Verifique su frecuencia de parpadeo — en serio.** Un recordatorio de `20-20-20` (cada 20 minutos, mira a 20 pies de distancia, durante 20 segundos) hace más que cualquier tema. La calidad de la piel y los descansos para parpadear son las dos mitades de la solución.
+1. **Cambia a una piel oscura, pero no al negro puro.** Busca fondos alrededor de `#111`–`#1A1A1A`, no `#000000`. En este índice, [Gothic Void Expedition](/skins/gothic-void-expedition/) es un buen punto de partida: su configuración predeterminada integrada usa un casi-negro que mantiene los halos al mínimo.
+2. **Limita la saturación de los acentos.** Máximo uno o dos acentos. [Cyber Neon](/skins/cyber-neon/) representa el extremo tentador; resérvalo para el día, no para la medianoche.
+3. **Prefiere neutros cálidos después de las 21:00.** [Amber Nocturne](/skins/amber-nocturne/) existe precisamente para esto: una base ámbar-marrón que permanece legible sin gritarle «¡luz azul!» a tu cerebro.
+4. **Reduce el brillo de la interfaz de Codex si tu motor lo permite.** Algunos motores escalan toda la paleta; una reducción del 10–15 % suele ser el punto óptimo.
+5. **Ajusta el tema de tu editor para que coincida con el de tu terminal.** Una paleta desajustada obliga a tus ojos a readaptarse cada vez que cambias entre paneles. Misma familia de tonos y luminancia similar: listo.
+6. **Activa el modo nocturno del sistema operativo / f.lux encima de la piel.** La piel gestiona los colores de la interfaz; la capa del sistema operativo calienta toda la pantalla. Son complementarias, no alternativas.
+7. **Revisa tu frecuencia de parpadeo — en serio.** Un recordatorio `20-20-20` (cada 20 minutos, mira a 6 metros de distancia durante 20 segundos) tiene más impacto que cualquier tema. La calidad de la piel y las pausas para parpadear constituyen las dos mitades de la solución.
 
-## Por qué las skins oscuras melancólicas pasan la prueba
+## Por qué las pieles oscuras con atmósfera superan esta prueba
 
-[Mythic Guardian Noir](/skins/mythic-guardian-noir/) y otras entradas de noche oscura en este índice comparten una característica: mantienen la luminancia baja y constante en todos los paneles, por lo que tu pupila no se reajusta constantemente. Esta consistencia — no "qué tan cool parece el tema" — es lo que hace que una piel sea segura para la noche.
+[Mythic Guardian Noir](/skins/mythic-guardian-noir/) y otras entradas oscuras de medianoche de este índice comparten una característica: mantienen una luminancia baja y constante en todos los paneles, de modo que tu pupila no tenga que readaptarse continuamente. Esa coherencia —no «qué tan impresionante luce el tema»— es lo que convierte a una piel en segura para la noche.
 
-Una prueba buena: apague las luces de la habitación, abra una piel y entrecierre los ojos. Si el panel lateral y el área de código parecen una superficie, la piel está haciendo su trabajo. Si el panel lateral brilla como un letrero, pase a otra.
+Una buena prueba: atenúa la iluminación ambiental, abre una piel y entrecierra los ojos. Si la barra lateral y el área de código parecen una única superficie, la piel está cumpliendo su función. Si la barra lateral brilla como un rótulo luminoso, sigue adelante.
 
 ## Preguntas frecuentes rápidas
 
-**¿Es siempre peor un tema claro por la noche?**
-No siempre, pero generalmente. El problema es el área superficial brillante grande, no la "temperatura" del tema. Un tema claro con bajo contraste es aceptable; un tema blanco a plena potencia a las 2 de la mañana es lo más difícil para tus ojos.
+**¿Es siempre peor usar un tema claro por la noche?**  
+No siempre, pero sí habitualmente. El problema radica en la enorme superficie brillante, no en la «temperatura» del tema. Un tema claro atenuado y de bajo contraste es aceptable; un tema blanco a máxima intensidad a las 2:00 de la madrugada es lo más agresivo para tus ojos.
 
-**¿Necesito gafas bloqueadoras de luz azul si mi tema es cálido?**
-La piel es solo el comienzo, no la cura. Los temas cálidos reducen la dosis de luz azul; las gafas y el modo noche del sistema la reducen aún más. Combínalos si programas tarde todas las noches.
+**¿Necesito gafas bloqueadoras de luz azul si mi piel ya es cálida?**  
+La piel es un primer paso, no una cura definitiva. Los temas cálidos reducen la dosis de luz azul; las gafas y el modo nocturno del sistema operativo la reducen aún más. Combínalos si programas hasta tarde todas las noches.
 
-**¿Puedo simplemente copiar una de estas pieles y ajustarla?**
-Sí — ese es el camino más rápido. Toma [Amber Nocturne](/skins/amber-nocturne/) o [Gothic Void Expedition](/skins/gothic-void-expedition/), reduce la saturación y guárdala como tu configuración "modo noche".
+**¿Puedo simplemente copiar una de estas pieles y personalizarla?**  
+Sí: esa es la vía más rápida. Toma [Amber Nocturne](/skins/amber-nocturne/) o [Gothic Void Expedition](/skins/gothic-void-expedition/), reduce su saturación y guárdala como tu propio preajuste «modo noche».
 
-Elija una de las pieles oscuras anteriores, aplique las siete configuraciones una vez, y sus sesiones de programación a las 2 de la mañana dejarán de costarte el día siguiente. Navegue por el índice completo de [pieles](/skins/) para más opciones oscuras, o revise nuestro [tutorial](/tutorial/) si desea construir su propio paleta nocturna desde cero.
+Elige una de las pieles oscuras anteriores, aplica los siete ajustes una sola vez y tus sesiones de programación a las 2:00 dejarán de costarte la mañana siguiente. Explora el [índice completo de pieles](/skins/) para más opciones oscuras, o consulta nuestro [tutorial](/tutorial/) si deseas crear tu propia paleta nocturna desde cero.

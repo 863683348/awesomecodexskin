@@ -1,6 +1,6 @@
 ---
-title: "5 Melhores Skins de Anime e Pop Codex para um Ambiente de Trabalho Divertido"
-description: "Ilumine seu Codex Desktop com skins de anime e cultura pop — Hatsune Miku, temas de personagens e paletas divertidas com prompts de instalação em um clique."
+title: "5 Melhores Skins Codex de Anime e Pop para um Ambiente de Trabalho Divertido"
+description: "Ilumine seu Codex Desktop com skins de anime e cultura pop — Hatsune Miku, temas de personagens e paletas divertidas, com instalação em um clique."
 pubDate: "2026-08-14"
 updatedDate: "2026-08-14"
 tags: ["anime", "pop", "best-of", "fun"]
@@ -9,61 +9,61 @@ relatedSkins: ["hatsune-miku", "dilraba", "cartethyia", "asuka-eva02"]
 lang: "pt"
 ---
 
-Não é necessário que o trabalho pareça um IDE corporativo. Temas de anime e cultura pop trazem personalidade ao Codex Desktop — e como são apenas paletas de cores mais uma imagem de prévia, são tão fáceis de alternar quanto qualquer outro tema.
+O trabalho não precisa parecer um IDE corporativo. Skins de anime e cultura pop trazem personalidade ao Codex Desktop — e, como são apenas paletas de cores mais uma imagem de visualização, são tão fáceis de alternar quanto qualquer outro tema.
 
-## 1. Hatsune Miku — energia vocaloid azul-verde
+## 1. Hatsune Miku — energia vocalóide azul-esverdeada
 
-O tema de anime mais instalado no índice. Azuis-esverdeados em um fundo limpo com um toque de personalidade vocaloid.
-
-```text
-Codex, aplique o tema 'Hatsune Miku' — energia vocaloid azul-verde para meu ambiente de trabalho.
-```
-
-- **Humor:** Anime & Pop · energético · **2.500+ instalações**
-- [Ver tema](/skins/hatsune-miku/)
-
-## 2. Cartethyia, Sanctum do Vento e Mar — fantasia etérea
-
-Um tema de personagem de jogo da coleção integrada do Codex Skin Manager. Tons leves e etéreos com um toque de fantasia.
+A skin de anime mais instalada no índice. Tons de azul-esverdeado em uma base limpa, com um toque de personalidade vocalóide.
 
 ```text
-No Codex Skin Manager, aplique o tema 'Cartethyia, Sanctum do Vento e Mar' integrado ao seu ambiente de trabalho.
+Codex, aplique a skin 'Hatsune Miku' — energia vocalóide azul-esverdeada para meu workspace.
 ```
 
-- **Humor:** Anime & Pop · etéreo
-- [Ver tema](/skins/cartethyia/)
+- **Clima:** Anime & Pop · energético · **+2.500 instalações**
+- [Ver skin](/skins/hatsune-miku/)
 
-## 3. Dilraba — conceito de celebridade divertido
+## 2. Cartethyia, Wind-Tide Sanctum — santuário etéreo do vento
 
-Um tema de conceito de celebridade feito por fãs no codex-skin.dev. Divertido e leve, com um toque de cultura pop.
+Uma skin inspirada em personagem de jogo da coleção embutida do Codex Skin Manager. Tons arejados e etéreos, com um toque de fantasia.
 
 ```text
-No codex-skin.dev, copie o prompt de instalação 'Dilraba' no Codex para aplicar este tema de conceito de fã.
+No Codex Skin Manager, aplique o tema embutido 'Cartethyia, Wind-Tide Sanctum' ao seu workspace.
 ```
 
-- **Humor:** Anime & Pop · divertido
-- [Ver tema](/skins/dilraba/)
+- **Clima:** Anime & Pop · etéreo
+- [Ver skin](/skins/cartethyia/)
+
+## 3. Dilraba — conceito lúdico de celebridade
+
+Uma skin de conceito de celebridade feita por fãs, disponível em codex-skin.dev. Lúdica e leve, com um toque de cultura pop.
+
+```text
+Em codex-skin.dev, copie o comando de instalação da skin 'Dilraba' e cole-o no Codex para aplicar esse conceito criado por fãs.
+```
+
+- **Clima:** Anime & Pop · lúdico
+- [Ver skin](/skins/dilraba/)
 
 ## 4. Asuka (Evangelion) — energia de personagem mecha
 
-Uma paleta inspirada em personagens com a energia confiante e audaciosa de sua matéria-prima. Parte de uma família crescente de Eva no índice.
+Uma paleta inspirada em personagem, com a energia ousada e confiante de sua fonte original. Parte de uma crescente família de skins de Evangelion no índice.
 
-- **Humor:** Anime & Pop
-- [Ver tema](/skins/asuka-eva02/)
+- **Clima:** Anime & Pop
+- [Ver skin](/skins/asuka-eva02/)
 
-## 5. Aurora Rosa Sakura — alternativa suave de tons pastel
+## 5. Sakura Pink Dawn — alternativa suave em tons pastel
 
-Não é estritamente anime, mas a escolha ideal quando você quer sensações suaves de tons pastel que combinam bem com wallpapers de anime.
+Não é estritamente uma skin de anime, mas é a escolha preferida quando você busca vibrações pastel suaves que combinam bem com wallpapers de anime.
 
 ```text
-Codex, mude meu ambiente de trabalho para o preset 'Sakura Pink Dawn' — um tema rosa sakura suave.
+Codex, mude meu workspace para o preset de engine 'Sakura Pink Dawn' — um tema suave em rosa sakura.
 ```
 
-- **Humor:** Pastel & Suave · gentil
-- [Ver tema](/skins/sakura-pink-dawn/)
+- **Clima:** Pastel & Suave · delicado
+- [Ver skin](/skins/sakura-pink-dawn/)
 
-## Instale em um clique
+## Instale em um único clique
 
-Todos os temas de anime aqui se instalam copiando o prompt da página de detalhes no Codex. Novo em skins? Leia [como instalar skins do Codex](/blog/how-to-install-codex-skins/).
+Toda skin de anime listada aqui é instalada copiando o comando de instalação da página detalhada correspondente e colando-o no Codex. É sua primeira vez usando skins? Leia [como instalar skins do Codex](/blog/how-to-install-codex-skins/).
 
-Navegue todos os [temas de Anime & Pop](/skins/category/anime-pop/) ou o [índice completo](/skins/).
+Navegue por todas as [skins Anime & Pop](/skins/category/anime-pop/) ou pelo [índice completo](/skins/).

@@ -1,6 +1,6 @@
 ---
-title: "Como Alterar o Tema no Codex CLI: /theme e Paletas de Terminal"
-description: "Guia passo a passo para alterar o tema no Codex CLI — o comando /theme, instalação de paletas de sintaxe como Tokyo Night e Monokai Stone, e personalização do seu terminal."
+title: "Como alterar o tema no Codex CLI: /theme e paletas de terminal"
+description: "Guia passo a passo para alterar o tema no Codex CLI — o comando `/theme`, instalação de paletas de sintaxe como Tokyo Night e Monokai Stone, e correspondência com seu terminal."
 pubDate: "2026-08-19"
 updatedDate: "2026-08-19"
 tags: ["cli", "themes", "how-to", "terminal"]
@@ -9,72 +9,65 @@ relatedSkins: ["monokai-stone-cli", "tokyo-night-cli", "solarized-cli", "amber-n
 lang: "pt"
 ---
 
-REGRAS RIGOROSAS:
-1. Traduza todo o texto legível por humanos, títulos, texto de tabelas e texto de links.
-2. NUNCA traduza: blocos de código, código inline, caminhos de arquivos, comandos de shell, URLs, nomes de produtos (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), tokens numéricos/versão ou nomes de skins.
-3. Mantenha a estrutura de markdown idêntica: mesmos títulos, listas, tabelas, negrito/itálico, citações e destinos de links. Um link como [Monokai Stone](/skins/monokai-stone/) mantém seu caminho /path/ inalterado; apenas o texto visível pode ser traduzido.
-4. Mantenha qualquer HTML/JSX bruto exatamente como está.
-5. Saída APENAS o corpo traduzido do markdown. Nenhum pré-ambiente, nenhuma nota, nenhuma marcação de código em volta da resposta.
+Alterar o tema no Codex CLI é um processo diferente do usado no Codex Desktop. Em vez de alterar elementos visuais, um tema do Codex CLI substitui a **paleta de cores do terminal** — ou seja, as cores de fundo, de primeiro plano e de sintaxe — para garantir que seu prompt, sugestões automáticas e saída permaneçam legíveis no shell.
 
-Alterar o tema no Codex CLI é um processo diferente do Codex Desktop. Em vez de chrome visual, um tema do Codex CLI troca a **paleta de cores do terminal** — fundo, primeiro plano e cores de sintaxe — para que seu prompt, autocompletions e saída permaneçam legíveis no shell.
+Abaixo está o fluxo completo, desde o comando único `/theme` até a instalação de novas paletas.
 
-Aqui está o fluxo completo, desde o alternador de uma única linha `/theme` até instalar novas paletas.
+## A maneira mais rápida: `/theme`
 
-## O caminho mais rápido: /theme
-
-O Codex CLI vem com um comando de tema integrado. Abra um prompt e digite:
+O Codex CLI inclui um comando interno de tema. Abra um prompt e digite:
 
 ```bash
 /theme
 ```
 
-Isso lista todos os temas atualmente instalados. Pressione as teclas de seta (ou digite o nome) para aplicar um instantaneamente — sem necessidade de reiniciar. Se você instalou um tema de sintaxe como Tokyo Night, ele aparece nesta lista com o nome exato:
+Isso lista todos os temas atualmente instalados. Use as setas (ou digite o nome exato) para aplicar um tema imediatamente — sem necessidade de reiniciar. Se você instalou um tema de sintaxe como Tokyo Night, ele aparecerá nessa lista com seu nome exato:
 
 ```bash
 /theme Tokyo Night
 ```
 
-## Instale uma nova paleta primeiro
+## Primeiro, instale uma nova paleta
 
-`/theme` só mostra temas que você já instalou. As paletas de sintaxe (Tokyo Night, Monokai Stone, Solarized) são instaladas a partir de um script que porta a paleta para o diretório de temas do Codex CLI:
+O comando `/theme` só mostra temas que já foram instalados. Paletas de sintaxe (como Tokyo Night, Monokai Stone e Solarized) são instaladas por meio de um script que importa a paleta para o diretório de temas do Codex CLI:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh
-# depois liste e aplique:
+# em seguida, liste e aplique:
 /theme
 ```
 
-O repositório Bearded Theme Ports contém mais de 50 variantes — Solarized, Tokyo Night, Monokai Stone e mais — então você pode testar várias paletas em segundos.
+O repositório Bearded Theme Ports oferece mais de 50 variações — incluindo Solarized, Tokyo Night, Monokai Stone e muitas outras — permitindo testar diversas paletas em segundos.
 
-## Use um gerenciador de tema para rollback e sincronização do terminal
+## Use um gerenciador de temas para desfazer alterações e sincronizar com o terminal
 
-Se você muda de temas frequentemente, um gerenciador de CLI remove o palpite:
+Se você altera temas com frequência, um gerenciador CLI elimina a necessidade de adivinhações:
 
-- **Codex Themes CLI** (`ychampion/codex-themes`) — CLI Go que pode **validar, visualizar, aplicar, reverter e exportar** uma paleta correspondente para o seu perfil de terminal. Aplique com `codex-theme apply <name>`; volte com um único comando.
-- **Codepilot** (`charzhu/codepilot`) — uma distribuição do Codex CLI com uma interface de usuário baseada em texto (TUI):
+- **Codex Themes CLI** (`ychampion/codex-themes`) — uma CLI em Go capaz de **validar, visualizar, aplicar, reverter e exportar** uma paleta compatível para o perfil do seu terminal. Aplique com `codex-theme apply <nome>`; volte ao tema anterior com um único comando.
+- **Codepilot** (`charzhu/codepilot`) — uma distribuição do Codex CLI com uma interface TUI integrada:
 
 ```bash
 npm i -g @charzhu/codepilot
-# execute /skin dentro da TUI para escolher uma das 16 skins integradas
+# execute /skin dentro da TUI para escolher entre 16 skins embutidas
 ```
 
 ## Alinhe seu terminal e editor
 
-Uma paleta fica melhor quando terminal, CLI e editor compartilham a mesma. Com o Codex Themes CLI, você exporta as mesmas cores para o seu perfil de terminal, então o shell e o Codex CLI coincidem após uma aplicação. Combine-o com um tema de editor portado (por exemplo, Tokyo Night no VS Code) para um ambiente consistente.
+Uma paleta tem melhor aparência quando terminal, CLI e editor a compartilham. Com o Codex Themes CLI, você exporta as mesmas cores para o perfil do seu terminal, fazendo com que o shell e o Codex CLI fiquem perfeitamente alinhados após uma única aplicação. Combine isso com um tema de editor portado (por exemplo, Tokyo Night no VS Code) para obter um ambiente de trabalho consistente.
 
-## Referência rápida: paletas populares do CLI
+## Referência rápida: paletas populares para CLI
 
 | Skin | Estilo | Aplicar |
 |---|---|---|
 | [Monokai Stone (CLI)](/skins/monokai-stone-cli/) | Paleta clássica de sintaxe | `/theme Monokai Stone` |
-| [Tokyo Night (CLI)](/skins/tokyo-night-cli/) | Azul escuro, baixa luminosidade | `/theme Tokyo Night` |
-| [Solarized (CLI)](/skins/solarized-cli/) | Paleta retro icônica | `/theme Solarized` |
-| [Amber Nocturne (CLI)](/skins/amber-nocturne-cli/) | Identidade de terminal quente-escuro | `codex-theme apply amber-nocturne-cli` |
+| [Tokyo Night (CLI)](/skins/tokyo-night-cli/) | Azul escuro, baixo brilho | `/theme Tokyo Night` |
+| [Solarized (CLI)](/skins/solarized-cli/) | Paleta retrô icônica | `/theme Solarized` |
+| [Amber Nocturne (CLI)](/skins/amber-nocturne-cli/) | Identidade terminal quente-escura | `codex-theme apply amber-nocturne-cli` |
 
 ## Solução de problemas
 
-- **O tema não aparece no `/theme`** — execute o script de instalação primeiro, depois reabra o prompt.
-- **As cores parecem erradas após a mudança** — reinicie o Codex CLI; algumas portas armazenam em cache as cores na inicialização.
-- **Quer a mesma paleta no shell** — use a exportação do Codex Themes CLI para escrever a paleta no seu perfil de terminal.
+- **O tema não aparece em `/theme`** — execute primeiro o script de instalação e, em seguida, reabra o prompt.
+- **As cores parecem incorretas após a troca** — reinicie o Codex CLI; algumas versões armazenam em cache as cores na inicialização.
+- **Quer usar a mesma paleta no shell** — use o comando *export* do Codex Themes CLI para gravar a paleta no perfil do seu terminal.
 
-Navegue por todos os [Temas Mono & Terminal](/skins/category/mono-terminal/), ou leia o [guia completo sobre temas do CLI](/blog/codex-cli-themes-guide/) para obter a imagem completa.
+Explore todas as [skins Mono & Terminal](/skins/category/mono-terminal/), ou leia o [guia completo de temas para CLI](/blog/codex-cli-themes-guide/) para obter uma visão completa.

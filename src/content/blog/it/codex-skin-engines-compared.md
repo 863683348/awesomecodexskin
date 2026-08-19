@@ -1,6 +1,6 @@
 ---
-title: "Motori di Temi Codex confrontati: Dream Skin vs Skin Manager vs ReTheme vs CLI vs Codepilot"
-description: "Cinque modi per personalizzare Codex, un confronto chiaro. Quale motore fa al caso tuo — stile di installazione, supporto per i preset, piattaforme e quanto è facile passare o disinstallare."
+title: "Confronto dei motori per skin Codex: Dream Skin vs Skin Manager vs ReTheme vs CLI vs Codepilot"
+description: "Cinque modi per personalizzare Codex, un confronto chiaro. Quale motore fa al caso tuo: stile di installazione, supporto per preset, piattaforme supportate e facilità di cambio o disinstallazione."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["engines", "comparison", "tools"]
@@ -9,72 +9,72 @@ relatedSkins: ["clear-glass", "gothic-void-expedition", "monokai-stone", "cyber-
 lang: "it"
 ---
 
-Esistono cinque metodi principali per applicare una skin a Codex, e funzionano in modo completamente diverso. Scegliere il metodo sbagliato può farti combattere per settimane. Scegliere il giusto ti permetterà di riskinizzare in dieci secondi. Questo confronto mette tutti i cinque a confronto così puoi scegliere in un solo momento.
+Esistono cinque modalità principali per applicare una skin a Codex, e funzionano in modo completamente diverso. Scegli quella sbagliata e dovrai combatterci per settimane. Scegli quella giusta e il cambio di skin richiederà dieci secondi. Questo confronto mette tutte e cinque le opzioni a confronto diretto, così potrai scegliere in un’unica lettura.
 
-## I cinque motori in breve
+## Le cinque motori a colpo d’occhio
 
 | Motore | Piattaforme | Stile di installazione | Ideale per |
 |---|---|---|---|
-| Codex Dream Skin | macOS, Windows | Prompt dell'agente / preset | Persone che vogliono zero configurazione |
-| Codex Skin Manager | macOS, Windows | Interfaccia utente del gestore integrato | Persone che vogliono un selettore visivo |
-| ReTheme | macOS, Windows | Temi della comunità firmati | Persone che vogliono temi curati e verificati |
-| Codex Themes CLI | Cross-platform | Comando CLI `/theme` | Utenti del terminale |
-| Codepilot | Cross-platform (npm) | TUI integrato `/skin` | Utenti esperti che vivono nel terminale |
+| Codex Dream Skin | macOS, Windows | Prompt dell’agente / preset | Chi desidera zero configurazione |
+| Codex Skin Manager | macOS, Windows | Interfaccia grafica integrata | Chi preferisce un selettore visuale |
+| ReTheme | macOS, Windows | Temi comunitari firmati | Chi cerca temi curati e verificati |
+| Codex Themes CLI | Multi-piattaforma | Comando CLI `/theme` | Utenti terminal-oriented |
+| Codepilot | Multi-piattaforma (npm) | TUI integrata `/skin` | Utenti avanzati che vivono nel terminale |
 
-## Codex Dream Skin - l'opzione "incolla semplicemente"
+## Codex Dream Skin — l’opzione “basta incollare”
 
-Dream Skin (dal progetto Fei-Away, che ha anche scritto diverse skin in questo indice) installa le skin da un prompt in linguaggio naturale. Copi una frase come "applica il tema Clear Glass chiaro", la incollate e il motore applica la palette. Nessun file da gestire, nessun comando da imparare.
+Dream Skin (progetto Fei-Away, che ha realizzato anche diversi temi presenti in questo indice) installa le skin partendo da un prompt in linguaggio naturale. Copi una frase come “applica il tema chiaro Clear Glass”, la incolli e il motore applica la palette corrispondente. Niente file da gestire, niente comandi da imparare.
 
-**Punti di forza:** percorso più veloce per un nuovo look; i preset sono salvati quindi puoi ripristinare i default con un clic.
-**Punti deboli:** meno preciso delle temi basati sui file — stai descrivendo un aspetto, non caricando una specifica.
+**Punti di forza:** la via più rapida per cambiare aspetto; i preset sono salvati, quindi puoi ripristinare le impostazioni predefinite con un solo clic.  
+**Punti deboli:** meno preciso rispetto ai temi basati su file — descrivi un aspetto, non carichi una specifica tecnica.
 
-## Codex Skin Manager - il selettore visivo
+## Codex Skin Manager — il selettore visuale
 
-Un manager desktop con una galleria integrata: sfoglia, anteprima, applica, torna indietro. È il più vicino all'"app store per skin". Se ti piace passare attraverso le anteprime prima di confermare, questo è il tuo motore.
+Un’applicazione desktop dotata di galleria integrata: naviga, anteprima, applica, annulla. È la soluzione più vicina a uno “store di skin”. Se ti piace sfogliare le anteprime prima di confermare la scelta, questo è il motore che fa per te.
 
-**Punti di forza:** anteprima visiva prima di applicare; ideale per utenti non tecnici.
-**Punti deboli:** copre solo la sua galleria; importare file di terze parti è più ingombrante rispetto agli strumenti CLI.
+**Punti di forza:** anteprima visuale prima dell’applicazione; ideale per utenti non tecnici.  
+**Punti deboli:** copre esclusivamente la propria galleria; importare file di terze parti è meno agevole rispetto agli strumenti CLI.
 
-## ReTheme - l'opzione curata
+## ReTheme — l’opzione curata
 
-ReTheme distribuisce temi della comunità firmati, il che significa che ogni tema è stato recensito prima di raggiungerti. Minore rischio di file danneggiati o malevoli, a costo di una catalogo più piccolo.
+ReTheme distribuisce temi comunitari firmati, ovvero ogni tema viene revisionato prima di essere reso disponibile. Ciò riduce il rischio di file danneggiati o malevoli, ma comporta un catalogo più ristretto.
 
-**Punti di forza:** sicurezza e cura; i temi firmati si installano pulitamente.
-**Punti deboli:** selezione più ristretta rispetto agli ecosistemi open source.
+**Punti di forza:** sicurezza e curatela; i temi firmati si installano senza problemi.  
+**Punti deboli:** selezione più limitata rispetto agli ecosistemi open source.
 
-## Codex Themes CLI - il classico del terminale
+## Codex Themes CLI — il classico da terminale
 
-L'approccio CLI (come ychampion/codex-themes, che porta temi come Tokyo Night e Monokai Stone) tratta le skin come un pacchetto che installi e cambia con un comando: `/theme monokai-stone`. È veloce, scriptabile e si integra bene con i file dot.
+L’approccio CLI (come ychampion/codex-themes, che porta temi quali Tokyo Night e Monokai Stone) tratta le skin come pacchetti da installare e attivare tramite comando: `/theme monokai-stone`. È veloce, scriptabile e si integra perfettamente con i tuoi dotfile.
 
-**Punti di forza:** scriptabile; controllabile in versione; lo stesso flusso di lavoro dei tuoi altri strumenti CLI.
-**Punti deboli:** nessuna anteprima visiva integrata; onboarding più impegnativo per gli utenti non esperti del terminale.
+**Punti di forza:** scriptabilità; controllo delle versioni; stesso flusso di lavoro degli altri strumenti CLI.  
+**Punti deboli:** nessuna anteprima visuale integrata; curva di apprendimento più ripida per chi non usa abitualmente il terminale.
 
-## Codepilot - lo strumento potente TUI
+## Codepilot — lo strumento avanzato TUI
 
-Codepilot (installabile tramite npm) porta un gestore completo TUI con comandi `/skin`, validazione, anteprima e rollback, oltre all'esportazione della palette del terminale. È il più completo tra le opzioni terminali.
+Codepilot (installabile tramite npm) offre un completo gestore TUI per le skin, con comandi `/skin`, validazione, anteprima, annullamento e possibilità di esportare la palette del terminale. È la soluzione più ricca di funzionalità tra quelle orientate al terminale.
 
-**Punti di forza:** validazione, anteprima, rollback e esportazione della palette in un unico strumento; cross-platform.
-**Punti deboli:** più componenti mobili rispetto al CLI semplice; troppo per chi vuole solo una skin.
+**Punti di forza:** validazione, anteprima, annullamento ed esportazione della palette in un unico strumento; multi-piattaforma.  
+**Punti deboli:** maggiore complessità rispetto alla semplice CLI; eccessivo se hai bisogno di un solo tema.
 
-## Quale dovresti scegliere?
+## Quale scegliere?
 
-- **Vogliamo un bel look velocemente:** Dream Skin.
-- **Preferisci passare attraverso le anteprime:** Codex Skin Manager.
-- **Ti preoccupi di temi verificati e firmati:** ReTheme.
-- **Vivi nel terminale, vuoi scriptabilità:** Codex Themes CLI.
-- **Vuoi lo strumento potente completo:** Codepilot.
+- **Vuoi un aspetto gradevole, subito:** Dream Skin.  
+- **Preferisci navigare tra le anteprime con il mouse:** Codex Skin Manager.  
+- **Ti interessa la sicurezza dei temi verificati e firmati:** ReTheme.  
+- **Vivi nel terminale e vuoi scriptabilità:** Codex Themes CLI.  
+- **Cerchi lo strumento avanzato completo:** Codepilot.
 
-Tutti i cinque motori sono compatibili con le skin in questo indice — la maggior parte delle skin qui è distribuita come prompt o file di tema che qualsiasi motore può consumare. Inizia con una skin che ami, come [Clear Glass](/skins/clear-glass/) o [Gothic Void Expedition](/skins/gothic-void-expedition/), e scegli il motore che corrisponde al tuo modo di lavorare.
+Tutti e cinque i motori sono compatibili con le skin presenti in questo indice — la maggior parte di esse è distribuita come prompt o come file tema, entrambi utilizzabili da qualunque motore. Inizia con una skin che ti piace, ad esempio [Clear Glass](/skins/clear-glass/) o [Gothic Void Expedition](/skins/gothic-void-expedition/), e scegli il motore che meglio si adatta al tuo stile di lavoro.
 
 ## Domande frequenti rapide
 
-**Posso eseguire due motori contemporaneamente?**
-Sì, ma mantieni uno come gestore attivo. Due motori che scrivono preset nello stesso momento possono sovrascriversi. Scegliene uno principale, usa gli altri solo per importazione.
+**Posso eseguire due motori contemporaneamente?**  
+Sì, ma mantieni uno solo come gestore attivo. Due motori che scrivono i preset contemporaneamente potrebbero sovrascriversi a vicenda. Scegli un motore principale e usa gli altri esclusivamente per importare temi.
 
-**I motori funzionano con tutte le skin?**
-Non sempre. I motori basati su prompt hanno bisogno di un prompt; i motori basati su file hanno bisogno del formato file corrispondente. Il campo "formato di installazione" della skin ti dice quale motore è destinato.
+**I motori funzionano con tutte le skin?**  
+Non sempre. I motori basati su prompt richiedono un prompt testuale; quelli basati su file necessitano del formato di file corrispondente. Il campo “formato di installazione” nella scheda di ogni skin indica quale motore supporta.
 
-**Quale motore ha la biblioteca di temi più grande?**
-Gli ecosistemi open source — i preset di Dream Skin e le porte CLI — hanno i cataloghi più grandi perché chiunque può contribuire. I gestori curati hanno biblioteche più piccole ma più sicure.
+**Quale motore dispone della libreria di temi più ampia?**  
+Gli ecosistemi open source — i preset di Dream Skin e le versioni CLI — offrono i cataloghi più estesi, poiché chiunque può contribuire. I gestori curati hanno librerie più piccole, ma più sicure.
 
-Scegli il tuo motore in base al tuo flusso di lavoro, non alla moda. Poi naviga nell'[indice completo delle skin](/skins/) — ogni pagina dettagliata di una skin ti dice quale formato di installazione utilizza, quindi non scaricherai mai il file sbagliato. Nuovo a tutto questo? Inizia con la [guida all'installazione](/blog/how-to-install-codex-skins/).
+Scegli il motore in base al tuo flusso di lavoro, non sulla base del clamore mediatico. Poi esplora l’[intero indice di skin](/skins/) — ogni pagina dettagliata indica il formato di installazione utilizzato, così non scaricherai mai più il file sbagliato. Se sei nuovo di tutto questo, inizia con la [guida all’installazione](/blog/how-to-install-codex-skins/).

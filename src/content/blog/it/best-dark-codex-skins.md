@@ -1,6 +1,6 @@
 ---
-title: "Migliori skins Codex scure per la programmazione notturna (2026)"
-description: "I migliori temi dark per Codex Desktop e CLI per le sessioni notturne — palette gotiche, temi cyberpunk neon e classici terminali, con promemoria di installazione inclusi."
+title: "Le migliori skin scure per Codex per la programmazione notturna (2026)"
+description: "Le migliori skin scure per Codex Desktop e CLI per le sessioni notturne — palette gotiche, temi cyberpunk al neon e classici per il terminale, con istruzioni di installazione incluse."
 pubDate: "2026-08-14"
 updatedDate: "2026-08-14"
 tags: ["dark", "best-of", "night", "themes"]
@@ -9,63 +9,63 @@ relatedSkins: ["gothic-void-expedition", "cyber-neon", "monokai-stone", "mythic-
 lang: "it"
 ---
 
-UNO STILE OSCURO DI QUALITÀ FA MOLTO PIÙ CHE SEMBRARE COOL — riduce l'affaticamento visivo, mantiene il contrasto confortevole di notte e ti aiuta a concentrarti nascondendo lo schermo del browser. Ecco i migliori temi oscuri Codex nell'indice, classificati per installazioni e umore.
+Un buon tema scuro fa molto di più che apparire accattivante: riduce l’affaticamento visivo, mantiene un contrasto confortevole durante la notte e aiuta a concentrarsi nascondendo il disordine dell’interfaccia del browser. Ecco i migliori temi scuri per Codex presenti nell’indice, ordinati in base al numero di installazioni e all’atmosfera evocata.
 
-## 1. Gothic Void Expedition — preset predefinito integrato
+## 1. Gothic Void Expedition — il preset predefinito integrato
 
-Il preset predefinito del motore dimostra che uno stile scuro non significa privo di vita. Un palette con orizzonte di cattedrale e blu scuro, è la scelta più sicura se desideri un aspetto scuro curato senza cercare un preset.
-
-```text
-Codex, cambia il mio ambiente di lavoro al preset 'Gothic Void Expedition' da Codex Dream Skin — un tema scuro fantascientifico con orizzonte di cattedrale.
-```
-
-- **Umore:** Scuro & Notte · solenne
-- **Installazioni:** 2.100+
-- [Visualizza tema](/skins/gothic-void-expedition/)
-
-## 2. Mythic Guardian Noir — palette guardian noir
-
-Estratto dal pacchetto di temi open source di ChannelerH, questo tema abbinerà superfici quasi nere a toni di evidenziazione smorzati — un ottimo compromesso tra nero puro e scuri colorati.
+Il preset predefinito del motore dimostra che “scuro” non significa necessariamente “privo di vita”. Una tavolozza solenne ispirata a un orizzonte cattedrale, con neri blu profondi, rappresenta la scelta più sicura se si desidera un aspetto scuro raffinato senza dover cercare un preset esterno.
 
 ```text
-Codex, applica il tema 'Mythic Guardian Noir' dalla raccolta codex-skin-packs di ChannelerH — una palette guardian noir scura.
+Codex, imposta il mio workspace sul preset 'Gothic Void Expedition' di Codex Dream Skin — un tema scuro da fantascienza solenne, ispirato all’orizzonte di una cattedrale.
 ```
 
-- **Umore:** Scuro & Notte · misterioso
-- [Visualizza tema](/skins/mythic-guardian-noir/)
+- **Atmosfera:** Scuro & Mezzanotte · solenne  
+- **Installazioni:** oltre 2.100  
+- [Visualizza il tema](/skins/gothic-void-expedition/)
 
-## 3. Cyber Neon — energia cyberpunk neon
+## 2. Mythic Guardian Noir — tavolozza guardian noir
 
-Se "scuro" per te significa neon su nero, Cyber Neon lo offre: evidenziazioni magenta vivaci su carbone profondo. Ideale per desktop che fanno un'impressione e sensazioni future del terminale.
+Tratto dal pacchetto di skin aperto *ChannelerH*, questo tema abbina superfici quasi nere a tonalità di evidenziazione smorzate: un ottimo compromesso tra il nero puro e i temi scuri colorati.
 
 ```text
-Codex, cambia il mio ambiente di lavoro al preset 'Cyber Neon' del motore — un tema cyberpunk neon.
+Codex, applica il tema 'Mythic Guardian Noir' dalla collezione *ChannelerH codex-skin-packs* — una tavolozza scura in stile guardian noir.
 ```
 
-- **Umore:** Neon & Cyberpunk · vivace
-- [Visualizza tema](/skins/cyber-neon/)
+- **Atmosfera:** Scuro & Mezzanotte · misteriosa  
+- [Visualizza il tema](/skins/mythic-guardian-noir/)
 
-## 4. Monokai Stone — la classica del terminale
+## 3. Cyber Neon — energia cyberpunk al neon
 
-La palette sintassi amata di Monokai Stone, portata su Codex CLI. Perfetto per workflow basati sul terminale dove la chiarezza della sintassi è più importante del chrome.
+Se per voi “scuro” significa neon su fondo nero, *Cyber Neon* è la scelta perfetta: evidenziazioni vivide in magenta su carbone profondo. Ideale per desktop d’impatto e per chi ama l’atmosfera futuristica dei terminal.
+
+```text
+Codex, imposta il mio workspace sul preset engine 'Cyber Neon' — un tema cyberpunk al neon.
+```
+
+- **Atmosfera:** Neon & Cyberpunk · vibrante  
+- [Visualizza il tema](/skins/cyber-neon/)
+
+## 4. Monokai Stone — il classico da terminale
+
+La celebre tavolozza sintattica *Monokai Stone*, adattata a Codex CLI. Perfetta per flussi di lavoro orientati al terminale, dove la chiarezza della sintassi conta più dell’aspetto dell’interfaccia.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh
-# poi in Codex CLI esegui:
+# quindi, da Codex CLI, esegui:
 /theme Monokai Stone
 ```
 
-- **Umore:** Mono & Terminale · chiaro
-- [Visualizza tema](/skins/monokai-stone/)
+- **Atmosfera:** Mono & Terminale · nitida  
+- [Visualizza il tema](/skins/monokai-stone/)
 
-## Cosa rende un tema oscuri Codex "buono"?
+## Cosa rende un tema scuro per Codex “buono”?
 
-- **Contrasto senza bagliori:** sfondo scuro, ma luminanza del testo sufficientemente alta per la leggibilità.
-- **Disciplina degli accenti:** uno o due colori di accentazione (verdanzulo, magenta, ambra) utilizzati con moderazione.
-- **Comfort di notte:** evita il #000 puro — i neri leggermente tinti riducono l'effetto di saturazione sui display OLED e IPS.
+- **Contrasto senza abbagliamento:** sfondo scuro, ma luminanza del testo sufficientemente alta per garantire leggibilità.  
+- **Disciplina negli accenti:** uno o due colori di evidenziazione (turchese, magenta, ambra) utilizzati con parsimonia.  
+- **Comfort notturno:** evitare il nero puro (#000); neri leggermente colorati riducono l’effetto di aloni sia sui display OLED che su quelli IPS.
 
-## Installa uno di questi in un solo passaggio
+## Installa uno di questi temi in un solo passaggio
 
-Apri la pagina dettagli del tema, copia il prompt di installazione, incollalo in Codex. Guarda la [guida completa all'installazione](/blog/how-to-install-codex-skins/) se sei nuovo nell'uso dei temi Codex.
+Apri la pagina dettagliata del tema, copia il comando di installazione, incollalo in Codex. Se sei nuovo ai temi Codex, consulta la [guida completa all’installazione](/blog/how-to-install-codex-skins/).
 
-Esplora tutti i [temi Scuro & Notte](/skins/category/dark-midnight/) o l'intero [indice dei temi](/skins/).
+Esplora tutti i [temi Scuro & Mezzanotte](/skins/category/dark-midnight/) oppure l’[indice completo dei temi](/skins/).

@@ -1,6 +1,6 @@
 ---
-title: "Beste Donkere Codex Velvets voor Nachtcoderen (2026)"
-description: "De beste donkere Codex Desktop- en CLI-huiden voor late nacht sessies — gotische kleurpaletten, neon cyberpunk-thema's en terminal klassiekers, met installatie-instructies erin."
+title: "Beste donkere Codex-skins voor nachtcoderen (2026)"
+description: "De beste donkere Codex Desktop- en CLI-skins voor late-avondsessies — gotische kleurenpaletten, neon-cyberpunkthema’s en klassieke terminalthema’s, inclusief installatie-instructies."
 pubDate: "2026-08-14"
 updatedDate: "2026-08-14"
 tags: ["dark", "best-of", "night", "themes"]
@@ -9,63 +9,63 @@ relatedSkins: ["gothic-void-expedition", "cyber-neon", "monokai-stone", "mythic-
 lang: "nl"
 ---
 
-Een goede donkere thema doet meer dan er cool uitzien — het vermindert oogvermoeienis, houdt de contrast comfortabel 's nachts en helpt je te focussen door de browser-chrome rommel te verbergen. Hier zijn de beste donkere Codex skins in de index, gerangschikt op installaties en stemming.
+Een goede donkere thema doet meer dan er gewoon cool uitzien — het vermindert oogvermoeidheid, houdt het contrast comfortabel ’s nachts en helpt je om je te concentreren door de overvolle browser-chrome weg te laten. Hieronder vind je de beste donkere Codex-skins uit de index, gerangschikt op aantal installaties en sfeer.
 
-## 1. Gothic Void Expedition — het ingebouwde standaard
+## 1. Gothic Void Expedition — het ingebouwde standaardthema
 
-Het engine's standaardinstelling bewijst dat donker niet betekent levenloos. Een solide kathedraal-horizon kleurenpalet met diepe blauw-zwart, het is de veiligste keuze als je een gepolijste donkere look wilt zonder op zoek te gaan naar een instelling.
-
-```text
-Codex, verander mijn werkplek naar het 'Gothic Void Expedition' instelling van Codex Dream Skin — een donkere sciencefiction thema met kathedraal-horizon.
-```
-
-- **Stemming:** Donker & Middernacht · ernstig
-- **Installaties:** 2.100+
-- [Bekijk thema](/skins/gothic-void-expedition/)
-
-## 2. Mythic Guardian Noir — guardian noir kleurenpalet
-
-Ontleend aan het ChannelerH open skin pack, dit thema combineert bijna zwarte oppervlakken met gedempte accentkleuren — een uitstekende middenweg tussen zuivere zwarte en gekleurde donkere themes.
+De standaardvoorinstelling van de engine bewijst dat ‘donker’ niet hoeft te betekenen ‘levenloos’. Een plechtige kathedraal-achtige horizonpalet met diepe blauwzwarten tinten: de veiligste keuze als je een gepolijste donkere uitstraling wilt zonder naar een voorinstelling te hoeven zoeken.
 
 ```text
-Codex, pas het 'Mythic Guardian Noir' thema toe vanuit de ChannelerH codex-skin-packs collectie — een donker guardian noir kleurenpalet.
+Codex, schakel mijn werkruimte over naar de voorinstelling 'Gothic Void Expedition' uit Codex Dream Skin — een plechtig kathedraal-achtig donker sciencefiction-thema.
 ```
 
-- **Stemming:** Donker & Middernacht · mysterieus
-- [Bekijk thema](/skins/mythic-guardian-noir/)
+- **Sfeer:** Donker & Middernacht · plechtig  
+- **Installaties:** 2.100+  
+- [Bekijk skin](/skins/gothic-void-expedition/)
 
-## 3. Cyber Neon — neon cyberpunk energie
+## 2. Mythic Guardian Noir — guardian-noir-palet
 
-Als "donker" voor jou betekent neon op zwart, dan levert Cyber Neon dit: krachtige magenta accenten op diepe koolzwarte achtergronden. Ideaal voor statement desktops en terminal-futuristische sfeer.
+Afkomstig uit het open skin-pakket van ChannelerH, combineert deze skin bijna-zwarte oppervlakken met gedempte accentkleuren — een uitstekend middenweg tussen zuiver zwart en gekleurde donkere thema’s.
 
 ```text
-Codex, verander mijn werkplek naar het 'Cyber Neon' engine instelling — een neon cyberpunk thema.
+Codex, pas het thema 'Mythic Guardian Noir' toe uit de codex-skin-packs-verzameling van ChannelerH — een donker guardian-noir-palet.
 ```
 
-- **Stemming:** Neon & Cyberpunk · levendig
-- [Bekijk thema](/skins/cyber-neon/)
+- **Sfeer:** Donker & Middernacht · mysterieus  
+- [Bekijk skin](/skins/mythic-guardian-noir/)
 
-## 4. Monokai Stone — de terminal klassieker
+## 3. Cyber Neon — neon-cyberpunk-energie
 
-Het geliefde Monokai Stone syntax kleurenpalet, overgezet naar Codex CLI. Perfect voor terminal-first workflows waar syntaxis duidelijkheid belangrijker is dan chrome.
+Als ‘donker’ voor jou neon op zwart betekent, dan levert Cyber Neon precies dat: levendige magenta-accenten op een diepe houtskoolachtige achtergrond. Ideaal voor opvallende desktops en terminal-toekomstgevoelens.
+
+```text
+Codex, schakel mijn werkruimte over naar de engine-standaardvoorinstelling 'Cyber Neon' — een neon-cyberpunk-thema.
+```
+
+- **Sfeer:** Neon & Cyberpunk · levendig  
+- [Bekijk skin](/skins/cyber-neon/)
+
+## 4. Monokai Stone — de terminalklassieker
+
+Het geliefde Monokai Stone-syntaxpalet, geporteerd naar Codex CLI. Perfect voor workflows waarbij de terminal centraal staat en syntaxisduidelijkheid belangrijker is dan browser-chrome.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh
-# vervolgens in Codex CLI uitvoeren:
+# voer vervolgens in Codex CLI uit:
 /theme Monokai Stone
 ```
 
-- **Stemming:** Mono & Terminal · helder
-- [Bekijk thema](/skins/monokai-stone/)
+- **Sfeer:** Mono & Terminal · scherp  
+- [Bekijk skin](/skins/monokai-stone/)
 
-## Wat maakt een donkere Codex skin "goed"?
+## Wat maakt een donkere Codex-skin ‘goed’?
 
-- **Contrast zonder glinstering:** donkere achtergrond, maar tekst lichtsterkte gehouden hoog genoeg voor leesbaarheid.
-- **Accent discipline:** één of twee accentkleuren (blauwgroen, magenta, amber) gebruikt spaarzaam.
-- **Comfort 's nachts:** vermijd zuivere #000 — licht getinte zwarte tonen verminderen halatie op OLED en IPS schermen.
+- **Contrast zonder schittering:** donkere achtergrond, maar tekstluminantie voldoende hoog om goed leesbaar te blijven.  
+- **Terughoudend gebruik van accenten:** één of twee accentkleuren (bijv. teegroen, magenta, amber) worden beheerst ingezet.  
+- **Comfort ’s nachts:** vermijd zuiver #000 — licht getinte zwarte tinten verminderen halatie-effecten zowel op OLED als op IPS-schermen.
 
-## Installeer een van deze in één stap
+## Installeer eender welke van deze skins in één stap
 
-Open de detailpagina van het thema, kopieer de installatie prompt, plak deze in Codex. Zie de [volledige installatie gids](/blog/how-to-install-codex-skins/) als je nieuw bent met Codex skins.
+Open de detailpagina van de skin, kopieer de installatieprompt en plak deze in Codex. Raadpleeg de [volledige installatiehandleiding](/blog/how-to-install-codex-skins/) als je nieuw bent met Codex-skins.
 
-Blader door alle [Donker & Middernacht themes](/skins/category/dark-midnight/) of de volledige [themaindex](/skins/).
+Blader door alle [Donkere & Middernacht-skins](/skins/category/dark-midnight/) of de volledige [skin-index](/skins/).

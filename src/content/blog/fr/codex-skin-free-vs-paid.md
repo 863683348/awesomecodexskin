@@ -1,6 +1,6 @@
 ---
-title: "Gratuit vs Payant Codex Skins : Ce que vous obtenez réellement"
-description: "La plupart des thèmes Codex sont gratuits. Les payants promettent un raffinement, un support et une exclusivité. Voici ce que l'argent achète vraiment, et quand le gratuit est réellement suffisant."
+title: "Gratuit vs payant : ce que vous obtenez réellement avec les skins Codex"
+description: "La plupart des skins Codex sont gratuits. Les versions payantes promettent un meilleur fini, un support technique et de l’exclusivité. Voici ce que vous achetez réellement avec cet argent, et quand une version gratuite suffit pleinement."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["free", "paid", "pricing"]
@@ -9,59 +9,59 @@ relatedSkins: ["sakura-pink-dawn", "berry-light-journal", "hatsune-miku", "amber
 lang: "fr"
 ---
 
-ÉCONOMISEZ DE L'ARGENT : la meilleure peau Codex que vous pouvez installer maintenant est presque certainement gratuite. Parmi les 99 peaux dans cet index, la majorité sont open-source ou gratuites à utiliser. Des peaux payantes existent, et ce n'est pas un escroquerie — mais vous devriez savoir exactement ce que vous payez avant d'ouvrir votre portefeuille.
+Laissez-moi vous faire économiser de l’argent : le meilleur skin Codex que vous pouvez installer dès maintenant est presque certainement gratuit. Parmi les 99 skins répertoriés dans cet index, la grande majorité sont open source ou libres d’utilisation. Des skins payants existent, et ils ne constituent pas une arnaque — mais vous devez savoir exactement ce que vous achetez avant d’ouvrir votre portefeuille.
 
-## Ce que les peaux Codex gratuites vous offrent
+## Ce que vous offre un skin Codex gratuit
 
-Les peaux gratuites proviennent de trois sources : des dépôts open-source (comme la collection Wangnov, la plus grande source unique dans cet index), des auteurs d'engines qui livrent leurs propres préconfigurations, et des galeries communautaires. Ce qu'elles ont toutes en commun :
+Les skins gratuits proviennent de trois sources : des dépôts open source (comme la collection Wangnov, la plus importante source unique de cet index), des auteurs de moteurs qui fournissent leurs propres préréglages, et des galeries communautaires. Ce qu’ils ont tous en commun :
 
-- Le thème complet — couleurs, prompts, ou fichiers de thème, pleinement utilisables.
-- Maintenance communautaire — les bogues sont corrigés par qui s'en soucie.
-- Aucun risque — si vous ne l'aimez pas, vous désinstallez et vous ne perdez rien.
+- Le thème complet — couleurs, invites ou fichiers de thème — entièrement fonctionnel.
+- Une maintenance communautaire — les bogues sont corrigés par ceux qui s’en soucient.
+- Aucun risque — si vous n’aimez pas le skin, vous le désinstallez sans perdre un centime.
 
-Une peau gratuite comme [Sakura Pink Dawn](/skins/sakura-pink-dawn/) ou [Hatsune Miku](/skins/hatsune-miku/) est un produit complet et soigné. Il n'y a rien de "essai" à son sujet.
+Un skin gratuit comme [Sakura Pink Dawn](/skins/sakura-pink-dawn/) ou [Hatsune Miku](/skins/hatsune-miku/) est un produit complet et soigné. Il ne s’agit en aucun cas d’une version « d’essai ».
 
-## Ce que les peaux Codex payantes ajoutent réellement
+## Ce que les skins Codex payants ajoutent réellement
 
-Les peaux payantes (généralement quelques dollars) comprennent généralement quatre éléments que les peaux gratuites ne garantissent pas :
+Les skins payants (généralement quelques dollars) regroupent typiquement quatre éléments que les skins gratuits ne garantissent pas :
 
-1. **Mises à jour garanties.** Une peau commerciale promet une compatibilité avec les mises à jour de l'engine ; une peau gratuite dépend du bon vouloir de la communauté.
-2. **Support.** Un email ou un Discord où l'auteur répond à vos questions d'installation.
-3. **Exclusivité.** La palette n'est pas dans chaque galerie, donc votre espace de travail ressemble moins à un modèle.
-4. **Correspondance cohérente entre plusieurs outils.** De nombreux packs payants incluent la même palette pour Codex, votre terminal et votre éditeur — le travail de synchronisation est fait pour vous.
+1. **Des mises à jour garanties.** Un skin commercial promet une compatibilité avec les mises à jour du moteur ; un skin gratuit dépend de la bienveillance communautaire.
+2. **Un support.** Une adresse e-mail ou un serveur Discord où l’auteur répond à vos questions d’installation.
+3. **Une exclusivité.** La palette n’apparaît pas dans toutes les galeries, ce qui rend votre espace de travail moins générique.
+4. **Une cohérence entre plusieurs outils.** De nombreux packs payants proposent la même palette pour Codex, votre terminal et votre éditeur — le travail de synchronisation est déjà effectué.
 
-Cet dernier point est la seule fonctionnalité pour laquelle j'achèterais vraiment : une palette professionnellement alignée sur chaque surface sur laquelle vous codez. [Berry (journal clair)](/skins/berry-light/) dans cet index montre à quel point il est difficile de créer une palette claire bien alignée — faire cela manuellement sur quatre outils est un vrai travail.
+Ce dernier point est la seule fonctionnalité pour laquelle je paierais réellement : une palette professionnelle harmonisée sur chaque interface où vous codez. [Berry (light journal)](/skins/berry-light/) dans cet index illustre à quel point il est laborieux de concevoir une palette claire bien équilibrée — l’adapter manuellement à quatre outils représente un véritable travail.
 
-## Quand la version gratuite suffit
+## Quand un skin gratuit suffit
 
-- Vous voulez une bonne peau pour vous-même.
-- Vous êtes prêt à corriger ou à remplacer une peau lorsqu'une engine est mise à jour.
-- Vous aimez parcourir les galeries et essayer de nouveaux looks mensuellement.
+- Vous souhaitez un seul bon skin pour vous-même.
+- Vous acceptez de corriger ou de remplacer un skin après une mise à jour du moteur.
+- Vous aimez parcourir les galeries et tester de nouveaux looks chaque mois.
 
-La version gratuite n'est pas un compromis ici. L'écosystème open-source pour les peaux Codex est jeune mais sain, et les dépôts communautaires sont actifs.
+Ici, « gratuit » n’est pas un compromis. L’écosystème open source des skins Codex est encore jeune, mais en pleine santé, et les dépôts communautaires sont actifs.
 
-## Quand la version payante vaut le coup
+## Quand un skin payant vaut le coup
 
-- Vous recouvrez toute une équipe et avez besoin de cohérence + support.
-- Vous voulez un pack Codex+terminal+éditeur correspondant et ne souhaitez pas le faire vous-même.
-- Vous utilisez un moteur niche où les peaux communautaires sont rares — un thème commercial pourrait être votre seule option soignée.
+- Vous appliquez un nouveau skin à toute une équipe et avez besoin de cohérence + de support.
+- Vous recherchez un pack intégré Codex + terminal + éditeur, sans vouloir le configurer vous-même.
+- Vous utilisez un moteur spécialisé pour lequel les skins communautaires sont rares — un thème commercial pourrait alors être votre seule option polie.
 
-## Comment vérifier le prix d'une peau avant de l'installer
+## Comment vérifier le prix d’un skin avant installation
 
-Chaque page de détail d'une peau dans cet index indique sa source et son auteur. Les dépôts open-source sont gratuits par définition. Pour les peaux payantes, vérifiez le site source avant d'installer — et évitez tout ce qui exige un paiement pour un preset de base. C'est un schéma à éviter.
+Chaque page de détail de skin dans cet index indique sa source et son auteur. Par définition, les dépôts open source sont gratuits. Pour les skins payants, consultez le site source avant installation — et évitez tout ce qui exige un paiement pour un préréglage basique. Ce schéma mérite d’être évité.
 
 ## FAQ rapide
 
-**Les peaux Codex payantes sont-elles de meilleure qualité ?**
-Pas automatiquement. La qualité des peaux dépend de la discipline de la palette et de la maintenance, ce que les projets open-source gratuits ont souvent en abondance. Le paiement vous offre des garanties, pas nécessairement des couleurs meilleures.
+**Les skins Codex payants sont-ils de meilleure qualité ?**  
+Pas automatiquement. La qualité d’un skin repose sur la rigueur de sa palette et sa maintenance — des qualités que de nombreux projets open source possèdent largement. Un skin payant vous achète des garanties, pas nécessairement de meilleures couleurs.
 
-**Puis-je obtenir un remboursement si une peau payante ne fonctionne pas ?**
-Cela dépend du magasin — la plupart des boutiques de thèmes commerciaux proposent un remboursement de 14 jours. Vérifiez avant d'acheter.
+**Puis-je obtenir un remboursement si un skin payant ne fonctionne pas ?**  
+Cela dépend de la boutique — la plupart des boutiques commerciales de thèmes offrent un délai de remboursement de 14 jours. Vérifiez avant d’acheter.
 
-**Les peaux gratuites fonctionnent-elles avec des engines payantes ?**
-Généralement oui. Une peau est du contenu ; une engine est le logiciel qui l'applique. Les peaux gratuites s'appliquent correctement dans des engines payantes comme la version pro de Dream Skin, sauf si l'engine bloque artificiellement les imports.
+**Les skins gratuits fonctionnent-ils avec les moteurs payants ?**  
+Généralement oui. Un skin est du contenu ; un moteur est le logiciel qui l’applique. Les skins gratuits s’appliquent parfaitement dans des moteurs payants comme la version Pro de Dream Skin, sauf si le moteur verrouille artificiellement les importations.
 
-**Quelles peaux gratuites devrais-je commencer par ?**
-L'[index complet](/skins/) en compte des dizaines. Essayez [Sakura Pink Dawn](/skins/sakura-pink-dawn/) pour une teinte pastel douce, [Berry (clair)](/skins/berry-light-journal/) pour un look clair, ou [Amber Nocturne](/skins/amber-nocturne/) pour un thème sombre chaud. Toutes gratuites, toutes complètes.
+**Quels skins gratuits devrais-je essayer en premier ?**  
+L’[index complet](/skins/) en propose des dizaines. Essayez [Sakura Pink Dawn](/skins/sakura-pink-dawn/) pour des tons pastel doux, [Berry (light)](/skins/berry-light-journal/) pour un look clair et épuré, ou [Amber Nocturne](/skins/amber-nocturne/) pour un thème sombre chaleureux. Tous sont gratuits et complets.
 
-Commencez gratuitement. Payez uniquement lorsque vous avez besoin de garanties, de support ou d'un pack multi-outils correspondant que vous ne souhaitez pas assembler vous-même. Parcourez l'[index de peaux](/skins/) pour voir à quel point la qualité est déjà gratuite, ou lisez le [guide d'installation](/blog/how-to-install-codex-skins/) pour faire fonctionner votre première peau.
+Commencez par le gratuit. Ne payez que lorsque vous avez besoin de garanties, de support ou d’un pack multi-outils harmonisé que vous ne souhaitez pas assembler vous-même. Parcourez l’[index des skins](/skins/) pour constater la quantité impressionnante de qualité déjà disponible gratuitement, ou lisez le [guide d’installation](/blog/how-to-install-codex-skins/) pour installer votre premier skin.

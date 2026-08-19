@@ -1,6 +1,6 @@
 ---
-title: "Fei-Away Dream Skin : 7 Préréglages indexés, Mise à jour du moteur"
-description: "Le projet Fei-Away Codex-Dream-Skin a contribué 7 présélections de prompts à l'index. Plus un récapitulatif des évolutions dans le monde du moteur de skins Codex ce mois-ci."
+title: "Peau Fei-Away Dream : 7 préréglages indexés, mise à jour du moteur"
+description: "Le projet Fei-Away Codex-Dream-Skin a contribué 7 préréglages de prompt à l’index. En complément, un tour d’horizon des nouveautés dans le monde du moteur de skins Codex ce mois-ci."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["dream-skin", "engine", "updates"]
@@ -9,36 +9,36 @@ relatedSkins: ["cyra-sacred-radiance", "dasiming-soul-passage", "jensen-infinite
 lang: "fr"
 ---
 
-Le projet [Fei-Away Codex-Dream-Skin](https://github.com/Fei-Away/Codex-Dream-Skin) — l'un des moteurs de thèmes Codex les plus actifs — a apporté 7 présélections de prompts à l'index cette semaine. Si vous avez toujours été curieux de la personnalisation basée sur les prompts, c'est le moment idéal pour jeter un œil.
+Le projet [Fei-Away Codex-Dream-Skin](https://github.com/Fei-Away/Codex-Dream-Skin) — l’un des moteurs de thèmes Codex open source les plus actifs — a contribué cette semaine 7 préréglages de prompts à l’index. Si vous vous êtes déjà demandé ce qu’était le « skinning basé sur les prompts », c’est le moment idéal pour y jeter un œil.
 
-## Nouveautés de Fei-Away
+## Ce qui est nouveau chez Fei-Away
 
-Les sept nouvelles présélections montrent toute la gamme du moteur Dream Skin, allant d'apparences professionnelles propres à des thèmes entièrement stylisés :
+Ces sept nouveaux préréglages illustrent toute la diversité offerte par le moteur Dream Skin, allant de looks professionnels épurés à des thèmes entièrement stylisés :
 
-- [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) — un thème lumineux et orienté vers la lumière.
-- [Dasiming Soul Passage](/skins/dasiming-soul-passage/) — une option sombre et atmosphérique.
-- [Jensen Infinite Compute](/skins/jensen-infinite-compute/) — une palette stylisée technologiquement.
-- Plus quatre autres couvrant le spectre entre eux.
+- [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) — un thème lumineux, orienté clair.  
+- [Dasiming Soul Passage](/skins/dasiming-soul-passage/) — une option sombre et atmosphérique.  
+- [Jensen Infinite Compute](/skins/jensen-infinite-compute/) — une palette aux accents technologiques.  
+- Plus quatre autres couvrant l’ensemble du spectre entre ces trois approches.
 
-Les sept sont installés avec la méthode Dream Skin : copiez le prompt, collez-le dans Codex, c'est terminé. La [comparaison des moteurs](/blog/codex-skin-engines-compared/) explique pourquoi c'est le chemin d'installation le plus rapide dans l'écosystème.
+Les sept préréglages s’installent selon la méthode Dream Skin : copiez le prompt, collez-le dans Codex, c’est terminé. La [comparaison des moteurs](/blog/codex-skin-engines-compared/) explique pourquoi il s’agit du chemin d’installation le plus rapide de tout l’écosystème.
 
-## Aperçu général des moteurs
+## Bilan général des moteurs
 
-Au-delà de Fei-Away, quelques choses bougent dans le monde des moteurs :
+Au-delà de Fei-Away, plusieurs évolutions sont en cours dans l’univers des moteurs :
 
-- **Codepilot** continue d'apporter des améliorations TUI — la validation et l'export de palette sont les fonctionnalités principales. Consultez la [comparaison CLI](/blog/codex-themes-cli-vs-codepilot/) pour voir comment cela se compare.
-- **Codex Themes CLI** (ychampion) poursuit l'adaptation des classiques de terminal ; les ports Tokyo Night présents dans cet index proviennent de cette ligne.
-- **Bearded Theme Ports** (vufly) ont ajouté davantage d'imports tmtheme, ce qui permet aux thèmes de terminal comme Tokyo Night de continuer à arriver dans Codex.
+- **Codepilot** continue de livrer des améliorations de son interface TUI — les fonctionnalités phares étant désormais la validation des thèmes et l’exportation des palettes. Pour comparer ses performances avec celles des autres outils, consultez la [comparaison CLI](/blog/codex-themes-cli-vs-codepilot/).  
+- **Codex Themes CLI** (ychampion) poursuit la portabilité de classiques du terminal ; les versions Tokyo Night présentes dans cet index proviennent précisément de ce travail.  
+- **Bearded Theme Ports** (vufly) a ajouté davantage d’importations au format `tmtheme`, ce qui permet aux thèmes terminaux comme Tokyo Night de continuer à affluer vers Codex.
 
-## Pourquoi les présélections de prompts comptent
+## Pourquoi les préréglages de prompts comptent
 
-Les présélections sont le chemin « essayez-le en cinq secondes ». Au lieu de télécharger un fichier et de configurer un moteur, vous coller une seule phrase. Le compromis est la précision — un prompt est une description, pas une spécification — ce que couvre en profondeur la [comparaison de format](/blog/codex-theme-file-vs-prompt-preset/). Pour explorer rapidement des ambiances, rien ne vaut cela.
+Les préréglages constituent le chemin « essayez-le en cinq secondes ». Plutôt que de télécharger un fichier puis de configurer un moteur, vous collez une seule phrase. Le compromis porte sur la précision : un prompt est une description, pas une spécification — ce point est traité en profondeur dans la [comparaison des formats](/blog/codex-theme-file-vs-prompt-preset/). Pour explorer rapidement différentes ambiances, rien ne vaut cette approche.
 
-## Comment essayer les présélections Dream Skin
+## Comment essayer les préréglages Dream Skin
 
-1. Ouvrez la page d'un thème de présélection — [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) ou [Dasiming Soul Passage](/skins/dasiming-soul-passage/) fonctionnent bien.
-2. Copiez le prompt d'installation.
-3. Collez-le dans Codex avec le moteur Dream Skin activé.
-4. C'est fini — revenez au preset par défaut quand vous le souhaitez.
+1. Ouvrez la page d’un préréglage — [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) ou [Dasiming Soul Passage](/skins/dasiming-soul-passage/) constituent d’excellents points de départ.  
+2. Copiez le prompt d’installation.  
+3. Collez-le dans Codex, avec le moteur Dream Skin activé.  
+4. C’est terminé — revenez à tout moment au préréglage par défaut si besoin.
 
-L'écosystème de moteurs s'organise clairement : les moteurs basés sur les prompts pour la rapidité, les gestionnaires basés sur les fichiers pour la précision, les outils CLI pour les utilisateurs de terminal. Chaque nouvelle contribution comme celle-ci de Fei-Away rend l'écosystème un peu plus complet. Parcourez l'[index de thèmes](/skins/) pour voir toutes les nouvelles présélections.
+L’écosystème des moteurs prend progressivement une forme claire : moteurs basés sur les prompts pour la rapidité, gestionnaires basés sur les fichiers pour la précision, outils CLI dédiés aux utilisateurs du terminal. Chaque nouvelle contribution, comme ce lot de préréglages de Fei-Away, rend l’écosystème un peu plus complet. Parcourez l’[index des thèmes](/skins/) pour découvrir tous les nouveaux préréglages.

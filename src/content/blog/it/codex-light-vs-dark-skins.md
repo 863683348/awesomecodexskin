@@ -1,6 +1,6 @@
 ---
-title: "Luci vs Ombre Codex Skins: Scegli in base a come lavori"
-description: "Scuro per la concentrazione intensa, chiaro per la luce del giorno e le dimostrazioni — ma non è così semplice. Luminosità, illuminazione della stanza, dimensione dello schermo e quali skin di Codex si adattano a ciascuna situazione."
+title: "Temi Codex chiari vs scuri: scegli in base al tuo modo di lavorare"
+description: "Scuro per la concentrazione intensa, chiaro per la luce diurna e le demo — ma non è così semplice. Luminanza, illuminazione ambientale, dimensione dello schermo e quali skin Codex si adattano a ciascuno scenario."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["light", "dark", "choosing"]
@@ -9,61 +9,54 @@ relatedSkins: ["berry-light-journal", "clear-glass", "gothic-void-expedition", "
 lang: "it"
 ---
 
-Le regole rigorose:
-1. Traduci tutta la prosa leggibile da umani, intestazioni, testo delle tabelle e testo dei collegamenti.
-2. MAI tradurre: blocchi di codice, codice inline, percorsi di file, comandi della shell, URL, nomi di prodotti (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), token numerici/versioni, o nomi di temi visualizzati.
-3. Mantieni la struttura markdown identica: stesse intestazioni, elenchi, tabelle, grassetto/italic, citazioni, e destinazioni dei collegamenti. Un collegamento come [Monokai Stone](/skins/monokai-stone/) mantiene invariato il percorso /path/; solo il testo visibile può essere tradotto.
-4. Mantieni qualsiasi HTML/JSX grezzo esattamente come è.
-5. Fornisci SOLO il corpo del markdown tradotto. Nessun preambolo, nessuna nota, nessun fence di codice intorno alla risposta.
+Il dibattito tra temi chiari e scuri è la controversia più antica nell’estetica da sviluppatore, e la risposta è la stessa di molte altre questioni estetiche: dipende. Ma «dipende» è inutile senza criteri concreti. Ecco i fattori reali da considerare, e quali skin Codex presenti in questo indice si adattano a ciascuno scenario.
 
-La battaglia tra chiaro e scuro è l'argomento più antico nell'estetica degli sviluppatori, e la risposta è la stessa di quasi tutti gli argomenti estetici: dipende. Ma "dipende" non è utile senza criteri. Ecco i veri fattori, e quali temi Codex in questa index si adattano a ciascun scenario.
+## La scienza reale, in breve
 
-## La scienza reale, brevemente
+- **I temi scuri** riducono la luminosità dello schermo, il che aiuta in ambienti poco illuminati e per chi è sensibile alle superfici troppo brillanti. L’eccezione: in un ambiente molto luminoso, uno schermo scuro riflette più bagliori e può rendere la lettura del testo più difficoltosa.
+- **I temi chiari**, invece, riflettono la luce ambientale anziché contrastarla, quindi spesso risultano più leggibili alla luce del giorno. L’eccezione: una superficie bianca intensa in una stanza buia affatica notevolmente la vista.
+- **Il nero puro non è un alleato**, né in modalità chiara né in quella scura: uno sfondo `#000` causa effetti di alone (halation); inoltre, del testo bianco puro su sfondo nero puro è effettivamente meno leggibile rispetto a una combinazione con grigi scuri.
 
-- **I temi scuri** riducono la luminosità dello schermo, il che aiuta in stanze con poca luce e per le persone sensibili alle superfici luminose. Il problema: in una stanza luminosa, uno schermo scuro riflette più bagliore e può rendere il testo più difficile da leggere.
-- **I temi chiari** riflettono la luce ambientale invece di combatterla, quindi spesso leggono meglio durante il giorno. Il problema: una superficie bianca brillante in una stanza buia è faticosa per gli occhi.
-- **Il nero puro non è tuo amico** in nessun modo — i fondi `#000` creano un effetto di halation; il testo bianco su nero è realmente peggiore per la leggibilità rispetto a una coppia di grigi scuri.
+Regola empirica: **adegua la luminanza del tuo tema a quella della stanza in cui lavori.** Ambiente luminoso → tema chiaro. Ambiente scuro → tema scuro. È lo stesso principio per cui gli smartphone dispongono di modalità automatica chiara/scuro.
 
-La regola generale: **abbinare la luminanza del tema a quella della stanza.** Stanza luminosa → tema chiaro. Stanza oscura → tema scuro. È la stessa ragione per cui i telefonini hanno mode automatiche di luce/scuro.
+## Skin Codex scure: ideali per
 
-## Temi Codex scuri: ideali per
+- **Sessioni di concentrazione intensa di notte.** Un tema scuro come [Gothic Void Expedition](/skins/gothic-void-expedition/) evita che lo schermo domini il tuo campo visivo periferico.
+- **Uffici con scarsa illuminazione.** Stesso ragionamento.
+- **Sensibilità alla luce blu.** I temi scuri caldi — [Amber Nocturne](/skins/amber-nocturne/) ne è un buon esempio — sono più delicati sugli occhi la sera rispetto a quelli freddi.
 
-- **Sessioni di concentrazione profonda di notte.** Un tema scuro come [Gothic Void Expedition](/skins/gothic-void-expedition/) tiene lo schermo lontano dalla tua visione periferica.
-- **Uffici con poca luce.** Stessa ragione.
-- **Sensibilità alla luce blu.** Temi scuri caldi — [Amber Nocturne](/skins/amber-nocturne/) è un buon esempio — sono più gentili sugli occhi serali rispetto a quelli freddi.
+**Attenzione:** i temi scuri in ambienti luminosi. Se lavori vicino a una finestra, uno schermo scuro si trasforma in uno specchio.
 
-**Attenzione:** i temi scuri in stanze luminose. Se sei vicino a una finestra, uno schermo scuro diventa uno specchio.
+## Skin Codex chiare: ideali per
 
-## Temi Codex chiari: ideali per
+- **Lavoro diurno, vicino a finestre.** [Berry (light journal)](/skins/berry-light-journal/) o [Clear Glass](/skins/clear-glass/) offrono una lettura nitida alla luce naturale.
+- **Screenshot e dimostrazioni.** I temi chiari si fotografano meglio e appaiono più “predefiniti” agli osservatori.
+- **Persone con astigmatismo.** Molti riferiscono minore affaticamento visivo con i temi chiari, poiché i bordi del testo risultano più definiti su uno sfondo luminoso.
 
-- **Giornata, vicino alle finestre.** [Berry (light journal)](/skins/berry-light-journal/) o [Clear Glass](/skins/clear-glass/) leggono bene contro la luce del giorno.
-- **Screenshot e dimostrazioni.** I temi chiari fotografano meglio e sembrano più "default" per gli spettatori.
-- **Persone con astigmatismo.** Molti riferiscono meno stanchezza agli occhi con i temi chiari perché i bordi del testo sono più definiti su un fondo luminoso.
-
-**Attenzione:** i temi chiari in stanze buie. Bianco al massimo della luminosità alle 2 del mattino è la cosa più dura sugli occhi, tranne fissare una lampadina.
+**Attenzione:** i temi chiari in ambienti bui. Una luminosità massima bianca alle 2 del mattino è tra le cose più faticose per gli occhi, subito dopo fissare direttamente una lampada.
 
 ## La configurazione ibrida
 
-Non devi necessariamente scegliere. La migliore configurazione per la maggior parte delle persone:
+Non sei obbligato a scegliere una sola opzione. La soluzione migliore per la maggior parte degli utenti è:
 
-- **Default diurno:** un tema chiaro come [Clear Glass](/skins/clear-glass/).
-- **Default notturno:** un tema scuro come [Gothic Void Expedition](/skins/gothic-void-expedition/).
-- **Cambia** quando la stanza cambia — o automatizzalo con la modalità notturna del sistema operativo se il tuo motore supporta il tema basato sul tempo.
+- **Tema predefinito diurno:** un tema chiaro come [Clear Glass](/skins/clear-glass/).
+- **Tema predefinito notturno:** un tema scuro come [Gothic Void Expedition](/skins/gothic-void-expedition/).
+- **Cambia tema** quando cambia l’illuminazione ambientale — oppure automatizza il passaggio tramite la modalità notturna del sistema operativo, se il tuo editor supporta il cambio automatico basato sull’orario.
 
-Questo è ciò che fa il tuo telefono ogni giorno. Il tuo editor può farlo anche lui.
+È esattamente ciò che fa ogni giorno il tuo smartphone. Anche il tuo editor può farlo.
 
-## Domande frequenti rapide
+## FAQ rapida
 
-**Il modo scuro è meglio per la durata della batteria?**
-Su schermi OLED, leggermente — pixel scuri consumano meno energia. Su LCD (la maggior parte dei monitor desktop), praticamente nessuna differenza.
+**La modalità scura migliora l’autonomia della batteria?**  
+Sugli schermi OLED, leggermente — i pixel neri consumano meno energia. Sugli schermi LCD (la maggior parte dei monitor desktop), invece, la differenza è praticamente nulla.
 
-**I temi scuri sono migliori per la programmazione in generale?**
-Non c'è consenso scientifico. Dipende dalle preferenze e dalla luce ambiente. La credenza che "scuro = professionale" è culturale, non fisiologica.
+**I temi scuri sono migliori per la programmazione in generale?**  
+Non esiste un consenso scientifico. Si tratta soprattutto di preferenze personali e di condizioni d’illuminazione ambientale. La convinzione che «scuro = professionale» è culturale, non fisiologica.
 
-**Posso usare un tema chiaro ma mantenere i pannelli scuri?**
-Puoi, ma una luminanza mista è la peggior delle due situazioni — i tuoi occhi si riacclimateranno costantemente. Scegli un lato, o un tema progettato come sistema chiaro completo come [Berry (light)](/skins/berry-light-journal/).
+**Posso usare una skin chiara ma mantenere pannelli scuri?**  
+Puoi farlo, ma una miscela di luminanze è il peggio di entrambi i mondi: i tuoi occhi devono continuamente riadattarsi. Scegli un’unica impostazione coerente, oppure un tema progettato come sistema chiaro integrato, come [Berry (light)](/skins/berry-light-journal/).
 
-**Qual è la scelta migliore se ne posso avere solo una?**
-Un tema scuro equilibrato — [Gothic Void Expedition](/skins/gothic-void-expedition/) — perché lo scuro funziona nella maggior parte delle stanze, e puoi abbinarlo alla luminosità della modalità notturna del sistema operativo. Se sei principalmente in luce naturale, scegli [Clear Glass](/skins/clear-glass/) invece.
+**Qual è la scelta migliore se posso avere un solo tema?**  
+Un tema scuro bilanciato — [Gothic Void Expedition](/skins/gothic-void-expedition/) — perché funziona bene nella maggior parte degli ambienti, e può essere abbinato alla regolazione automatica della luminosità della modalità notturna del sistema operativo. Se lavori prevalentemente alla luce del giorno, opta invece per [Clear Glass](/skins/clear-glass/).
 
-Abbinare il tema alla stanza, non alla tendenza. Chiaro per la luce del giorno e per le demo, scuro per le notti e la concentrazione, e la configurazione ibrida se vuoi entrambi. Esplora l'[intero indice dei temi](/skins/) — è organizzato per categorie chiare e scure, quindi la scelta è facile — o leggi la [guida per la cura degli occhi](/blog/codex-skin-night-eye-care/) per le impostazioni che contano in ogni caso.
+Adatta il tuo tema all’ambiente in cui ti trovi, non a una tendenza. Temi chiari per la luce del giorno e le dimostrazioni, temi scuri per le ore notturne e la concentrazione, e una configurazione ibrida se desideri entrambe le opzioni. Esplora l’[intero indice di skin](/skins/): è organizzato per categorie chiare e scure, così la scelta sarà immediata — oppure consulta la [guida alla cura degli occhi](/blog/codex-skin-night-eye-care/) per scoprire quali impostazioni contano davvero, indipendentemente dalla tua scelta.

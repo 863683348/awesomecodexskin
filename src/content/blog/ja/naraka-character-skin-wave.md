@@ -1,6 +1,6 @@
 ---
-title: "ナラカ＆三國志テーマ：新キャラクタースキン波"
-description: "新しいキャラクタースキンの波がインデックスに登場しました — ナラカ武俠シリーズ、三国志、西遊記など。注目すべきリストとその魅力についてご紹介します。"
+title: "ナルカ＆三国志テーマ：新キャラクタースキン第1弾"
+description: "新鮮なキャラクタースキンの波がインデックスに到着しました——『ナルカ・ウーシャ』シリーズ、『三国志』、『西遊記』など。注目すべきスキン一覧とその魅力についてご紹介します。"
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["character", "naraka", "three-kingdoms", "new-skins"]
@@ -9,40 +9,40 @@ relatedSkins: ["naraka-wanxiang-cangdi-fourfold-axis", "three-kingdoms", "journe
 lang: "ja"
 ---
 
-キャラクタースキンがCodexエコシステムで注目を集めています。今週の新着は、**Naraka Wuxiaシリーズ** — Naraka: Bladepointの宇宙をテーマにした完全なテーマセット — に加え、三国志、西遊記、修練小説をインスピレーションにしたエントリも含まれます。
+キャラクタースキンが、Codex エコシステムで注目を集めています。今週の新着スキンは、『ナルカ：ブレードポイント』の世界観をテーマにした **ナルカ武俠シリーズ** — 完全なテーマセット — に加え、『三国志』『西遊記』、そして修練小説（cultivation novel）をモチーフにした作品群です。
 
-## Narakaシリーズ
+## ナルカシリーズ
 
-[Naraka Wuxia](/skins/naraka-wanxiang-cangdi-fourfold-axis/)ファミリーがヘッドライナーです — ゲームの派閥や場所にちなんで名付けられた、暗く雰囲気のあるテーマの一連のセットです:
+[ナルカ武俠](/skins/naraka-wanxiang-cangdi-fourfold-axis/) ファミリーが本波の目玉です。ゲーム内の部族や舞台をモチーフにした、統一感のあるダークで雰囲気豊かなテーマ群です：
 
-- [Cangdi Fourfold Axis](/skins/naraka-wanxiang-cangdi-fourfold-axis/)
-- [Five Aspects](/skins/naraka-wanxiang-five-aspects/)
-- [Kuishi Mountain Seal](/skins/naraka-wanxiang-kuishi-mountain-seal/)
-- [Minghuo Abyssal Tide](/skins/naraka-wanxiang-minghuo-abyssal-tide/)
-- [Shuojin Thunder Forge](/skins/naraka-wanxiang-shuojin-thunder-forge/)
-- [Yuyan Ember Prison](/skins/naraka-wanxiang-yuyan-ember-prison/)
+- [蒼帝四象軸](/skins/naraka-wanxiang-cangdi-fourfold-axis/)
+- [五相](/skins/naraka-wanxiang-five-aspects/)
+- [魁石山封印](/skins/naraka-wanxiang-kuishi-mountain-seal/)
+- [明火深淵潮](/skins/naraka-wanxiang-minghuo-abyssal-tide/)
+- [朔金雷鍛](/skins/naraka-wanxiang-shuojin-thunder-forge/)
+- [羽炎焔獄](/skins/naraka-wanxiang-yuyan-ember-prison/)
 
-特筆すべき点は、このシリーズが共通のデザイン言語を持っているということです — 深い暗色の背景、武術をインスピレーションにしたアクセントカラー、高いテキストのコントラスト — そのため、このインデックスで唯一、すべてのメンバーが同じコレクションの一員であると感じられるテーマ*ファミリー*の一つです。
+特筆すべき点：このシリーズは共通のデザイン言語を持ち、濃いダークバックグラウンド、武術を連想させるアクセントカラー、高いテキストコントラストを特徴としています。そのため、本インデックスにおける「テーマファミリー」の中でも、各スキンが明らかに同一コレクションの一員であると感じられる数少ない例の一つです。
 
-## 文学的な波
+## 文学的波
 
-Narakaとともに、インデックスには古典的な中国文学のテーマが追加されました:
+ナルカシリーズに並行して、中国古典文学を題材にしたテーマも追加されました：
 
-- [Three Kingdoms](/skins/three-kingdoms/) — 有名な3人の英雄をパレットとして。
-- [Journey to the West](/skins/journey-to-west/) — 明るく冒険的な。
-- [Han Li Mortal Path](/skins/han-li-mortal-path/) — 修練小説をインスピレーションにした暗いテーマ。
-- [Tianhai Vajra Thunder Temple](/skins/tianhai-vajra-thunder-temple/) および同様の精神的ファンタジー系のいくつか。
+- [三国志](/skins/three-kingdoms/) — 古典的英雄三人組をパレットとして表現。
+- [西遊記](/skins/journey-to-west/) — 明るく冒険心に満ちたトーン。
+- [韓立凡人之路](/skins/han-li-mortal-path/) — 修練小説をモチーフにしたダークテーマ。
+- [天海金剛雷寺](/skins/tianhai-vajra-thunder-temple/) をはじめ、同様の精神性・ファンタジー路線のスキンがさらに数点。
 
-## キャラクターテーマがワークスペースで機能する理由
+## なぜキャラクター系テーマがワークスペースに適しているのか
 
-良いキャラクタースキンは単に顔写真をパレットに貼り付けるだけではありません — キャラクターのアイデンティティをカラーパイロットに変換します: 三国志の戦士には大胆な赤、雷 forgeにはクールな水色、牢獄テーマには燃えるオレンジ。その結果、読みやすく、個性あるワークスペースになります。[Shuojin Thunder Forge](/skins/naraka-wanxiang-shuojin-thunder-forge/)はその良い例です — 大きなアイデンティティを持ちながら、機能的なダークテーマです。
+優れたキャラクタースキンは、単にパレットにキャラクターの肖像画を貼り付けているだけではありません。むしろ、そのキャラクターのアイデンティティを色彩心理学へと翻訳しています：『三国志』の武将には力強い赤、『雷鍛』にはクールなティール、『焔獄』には灰燼色のオレンジなど。その結果、個性豊かでありながら読みやすさを損なわないワークスペースが実現します。[朔金雷鍛](/skins/naraka-wanxiang-shuojin-thunder-forge/) はその好例です — 強烈なアイデンティティを持ちつつ、実用性の高いダークテーマとして機能しています。
 
-## それらがインデックス内でどこにあるか
+## インデックス内での分類
 
-この波の多くは、以前のHeiGeAiバッチと同じく、**アニメ・ポップ**および**ゲーム**カテゴリにあります。キャラクターテーマの全体像を知りたい場合は、[最高のアニメスキン](/blog/best-anime-codex-skins/)のまとめがエントリーポイントです。
+今回の新着スキンの多くは、既存の HeiGeAi バッチと同様に、**アニメポップ**および**ゲーム**カテゴリーに配置されています。キャラクタースキンの全体像を把握したい場合は、[最高のアニメ系 Codex スキン](/blog/best-anime-codex-skins/) のまとめ記事からご覧になるのがおすすめです。
 
-## インストールノート
+## インストールに関する注意点
 
-これらのスキンは標準的なインストール形式に従っています — 各詳細ページで、プロンプト、テーマファイル、またはCLI仕様であるかどうかを確認してください。すべての3つについてカバーしている[インストールガイド](/blog/how-to-install-codex-skins/)をご覧ください。
+これらのスキンは標準的なインストール形式に従って提供されています。各詳細ページにて、プロンプト形式、テーマファイル形式、または CLI 仕様のいずれかを確認してください。すべての形式に対応したインストール手順は、[インストールガイド](/blog/how-to-install-codex-skins/) に記載されています。
 
-特にNarakaファミリーはゲームを知らない人でもチェックする価値があります — これは協調されたマルチスキンコレクションの珍しい例であり、一貫性が際立っています。フルウェーブを確認するには、[スキンインデックス](/skins/)を参照してください。
+特にナルカファミリーは、ゲームをプレイしていない方にもぜひご覧いただきたい一例です。複数のスキンが意図的に統一されたコンセプトで制作された珍しいケースであり、その一貫性が際立っています。最新の全スキンを閲覧するには、[スキンインデックス](/skins/) をご参照ください。

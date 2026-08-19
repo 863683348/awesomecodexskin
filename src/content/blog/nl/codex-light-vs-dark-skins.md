@@ -1,6 +1,6 @@
 ---
-title: "Licht vs Donker Codex Themes: Kies op Manier van Werken"
-description: "Donker voor diepe focus, licht voor daglicht en demonstraties — maar het is niet zo eenvoudig. Luminantie, ruimtelicht, schermgrootte en welke Codex-thema's passen bij elke situatie."
+title: "Licht versus donker: Codex-skins kiezen op basis van jouw werkwijze"
+description: "Donker voor diepe concentratie, licht voor daglicht en demonstraties — maar het is niet zo eenvoudig. Lichtsterkte, ruimteverlichting, schermgrootte en welke Codex-skins bij elk scenario passen."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["light", "dark", "choosing"]
@@ -9,54 +9,54 @@ relatedSkins: ["berry-light-journal", "clear-glass", "gothic-void-expedition", "
 lang: "nl"
 ---
 
-De licht- versus donkere discussie is de oudste argumentatie in ontwikkelaarsesthetiek, en het antwoord is hetzelfde als de meeste esthetische discussies: het hangt ervan af. Maar "het hangt ervan af" is nutteloos zonder criteria. Hier zijn de echte factoren, en welke Codex-thema's in deze index elk scenario passen.
+Het licht-tegen-donker-debat is het oudste argument in de esthetiek van ontwikkelaars, en het antwoord is hetzelfde als bij de meeste esthetische kwesties: het hangt ervan af. Maar “het hangt ervan af” is nutteloos zonder duidelijke criteria. Hieronder vind je de werkelijke factoren, en welke Codex-skins uit deze index bij elk scenario passen.
 
-## De echte wetenschap, kort
+## De werkelijke wetenschap, kort samengevat
 
-- **Donkere thema's** verminderen het schermlicht, wat helpt in donkere kamers en voor mensen die gevoelig zijn voor heldere oppervlakken. Het nadeel: in een heldere kamer reflecteert een donker scherm meer glinstering en kan het lezen van tekst moeilijker maken.
-- **Lichte thema's** reflecteren omgevingslicht in plaats van er tegen te vechten, dus ze lezen vaak beter bij daglicht. Het nadeel: een helder wit oppervlak in een donkere kamer is hard op de ogen.
-- **Zwart is geen vriend** in beide modi — `#000` achtergronden veroorzaken halatatie; witte tekst op zwart is echt slechter voor leesbaarheid dan een donker-grijze combinatie.
+- **Donkere thema’s** verlagen de schermhelderheid, wat helpt in donkere ruimtes en voor mensen die gevoelig zijn voor felle oppervlakken. Het nadeel: in een felverlichte ruimte reflecteert een donker scherm meer spiegelglans, waardoor tekst moeilijker leesbaar wordt.
+- **Lichte thema’s** reflecteren omgevingslicht in plaats van ertegen te vechten, dus ze zijn vaak beter leesbaar bij daglicht. Het nadeel: een felwit oppervlak in een donkere ruimte belast de ogen sterk.
+- **Zuiver zwart is geen vriend** in beide modi — `#000`-achtergronden veroorzaken halo-effecten; zuiver witte tekst op een zuiver zwarte achtergrond is daadwerkelijk minder leesbaar dan een combinatie van donkergrijs en lichtgrijs.
 
-Het algemene regel: **pas de helderheid van je thema aan bij de helderheid van je kamer.** Heldere kamer → licht thema. Donkere kamer → donker thema. Het is hetzelfde reden waarom telefoons automatische licht/donkere modi hebben.
+De vuistregel: **pas de luminantie van je thema aan aan de luminantie van je ruimte.** Felle ruimte → licht thema. Donkere ruimte → donker thema. Dat is dezelfde reden waarom smartphones automatische licht/donker-modi hebben.
 
-## Donkere Codex-thema's: het beste voor
+## Donkere Codex-skins: ideaal voor
 
-- **Diepe focus sessies 's nachts.** Een donker thema zoals [Gothic Void Expedition](/skins/gothic-void-expedition/) houdt het scherm niet van je perifere zicht.
-- **Donkere kantoren.** Dezelfde redenering.
-- **Gevoeligheid voor blauw licht.** Warme donkere thema's — [Amber Nocturne](/skins/amber-nocturne/) is een goed voorbeeld — zijn zachter voor avondogen dan koele.
+- **Diepe concentratiesessies ’s nachts.** Een donker thema zoals [Gothic Void Expedition](/skins/gothic-void-expedition/) voorkomt dat het scherm je perifere zicht overheerst.
+- **Kantoren met weinig licht.** Dezelfde redenering geldt hier ook.
+- **Gevoeligheid voor blauw licht.** Warme donkere thema’s — [Amber Nocturne](/skins/amber-nocturne/) is een goed voorbeeld — zijn zachter voor de ogen ’s avonds dan koelere varianten.
 
-**Let op:** donkere thema's in heldere kamers. Als je naast een raam zit, wordt een donker scherm tot een spiegel.
+**Let op:** donkere thema’s in felverlichte ruimtes. Als je naast een raam zit, verandert een donker scherm in een spiegel.
 
-## Licht Codex-thema's: het beste voor
+## Lichtere Codex-skins: ideaal voor
 
-- **Daglicht, dichtbij ramen.** [Berry (licht journal)](/skins/berry-light-journal/) of [Clear Glass](/skins/clear-glass/) lezen schoon tegen daglicht.
-- **Schermafbeeldingen en demonstraties.** Licht thema's fotograferen beter en voelen zich meer "standaard" voor kijkers.
-- **Mensen met astigmatisme.** Veel rapporteren minder oogvermoeidheid met lichte thema's omdat teksten scherper zijn tegen een helder achtergrond.
+- **Daglicht, dicht bij ramen.** [Berry (light journal)](/skins/berry-light-journal/) of [Clear Glass](/skins/clear-glass/) zijn helder en leesbaar tegen de achtergrond van daglicht.
+- **Screenshots en demonstraties.** Lichtere thema’s fotograferen beter en geven een ‘standaard’-indruk aan kijkers.
+- **Mensen met astigmatisme.** Velen melden minder oogvermoeidheid bij lichte thema’s, omdat tekstranden scherper zijn tegen een lichte achtergrond.
 
-**Let op:** lichte thema's in donkere kamers. Volle helderheid wit op 2 uur 's nachts is het ergste voor je ogen, kort van staren naar een lamp.
+**Let op:** lichte thema’s in donkere ruimtes. Volledige witte helderheid om twee uur ’s ochtends is bijna net zo belastend voor je ogen als rechtstreeks naar een lamp kijken.
 
-## Het hybride systeem
+## De hybride instelling
 
-Je hoeft niet te kiezen. Het beste systeem voor de meeste mensen:
+Je hoeft niet te kiezen. De beste instelling voor de meeste mensen is:
 
-- **Daginstelling:** een licht thema zoals [Clear Glass](/skins/clear-glass/).
-- **Nachtinstelling:** een donker thema zoals [Gothic Void Expedition](/skins/gothic-void-expedition/).
-- **Schakel** wanneer de kamer verandert – of automatiser het met de nachtmode van je OS als je engine ondersteuning biedt voor thema op tijd.
+- **Standaard overdag:** een licht thema zoals [Clear Glass](/skins/clear-glass/).
+- **Standaard ’s nachts:** een donker thema zoals [Gothic Void Expedition](/skins/gothic-void-expedition/).
+- **Wissel** wanneer de verlichting in de ruimte verandert — of automatiseer dit via de nachtmodus van je besturingssysteem, indien je editor ondersteuning biedt voor tijdgebonden thema’s.
 
-Dit doet je telefoon elke dag. Je editor kan dat ook.
+Dit is precies wat je telefoon elke dag doet. Jouw editor kan dat ook.
 
 ## Snelle FAQ
 
-**Is donkere modus beter voor batterijduur?**
-Op OLED-schermen, ietsje – donkere pixels gebruiken minder energie. Op LCD (meeste desktopmonitors), praktisch geen verschil.
+**Is donkere modus beter voor de batterijduur?**  
+Op OLED-schermen: lichtelijk — donkere pixels gebruiken minder energie. Op LCD-schermen (de meeste desktopmonitoren): vrijwel geen verschil.
 
-**Zijn donkere thema's beter voor programmeren in het algemeen?**
-Geen wetenschappelijke consensus. Het is voorkeur plus kamerlicht. De "donker = pro" overtuiging is cultureel, niet fysiologisch.
+**Zijn donkere thema’s over het algemeen beter voor programmeren?**  
+Er is geen wetenschappelijke consensus. Het is een kwestie van persoonlijke voorkeur gecombineerd met de verlichting van je omgeving. Het idee dat “donker = professioneel” is cultureel bepaald, niet fysiologisch.
 
-**Kan ik een licht thema gebruiken maar donkere panelen behouden?**
-Je kunt, maar gemengde helderheid is het ergste van beide wereld – je ogen heradapteer constant. Kies één kant, of een thema dat ontworpen is als een cohesief licht systeem zoals [Berry (licht)](/skins/berry-light-journal/).
+**Kan ik een lichte skin gebruiken, maar donkere panelen behouden?**  
+Dat kan wel, maar gemengde luminantie is het slechtste van beide werelden — je ogen moeten zich voortdurend opnieuw aanpassen. Kies één kant, of een thema dat bewust als cohesief licht systeem is ontworpen, zoals [Berry (light)](/skins/berry-light-journal/).
 
-**Wat is de beste keuze als ik maar één kan hebben?**
-Een gebalanceerd donker thema – [Gothic Void Expedition](/skins/gothic-void-expedition/) – omdat donker werkt in de meeste kamers, en je kunt het combineren met de nachtmode van je OS. Als je voornamelijk in daglicht bent, maak het dan [Clear Glass](/skins/clear-glass/) in plaats daarvan.
+**Wat is de beste keuze als ik maar één skin mag kiezen?**  
+Een evenwichtig donker thema — [Gothic Void Expedition](/skins/gothic-void-expedition/) — omdat donker in de meeste ruimtes werkt, en je het kunt combineren met de nachtmodus van je besturingssysteem voor aanpassing van de helderheid. Als je voornamelijk overdag werkt, kies dan [Clear Glass](/skins/clear-glass/).
 
-Pas je thema aan bij je kamer, niet bij een trend. Licht voor daglicht en demonstraties, donker voor nachten en focus, en het hybride systeem als je beide wilt. Blader door de [volledige themaindex](/skins/) – het is gecategoriseerd per licht en donker zodat de keuze makkelijk is – of lees de [oogzorggids](/blog/codex-skin-night-eye-care/) voor de instellingen die belangrijk zijn.
+Pas je thema aan aan je ruimte, niet aan een trend. Licht voor daglicht en demonstraties, donker voor ’s avonds en concentratie, en de hybride instelling als je beide nodig hebt. Bekijk de [volledige skin-index](/skins/) — deze is ingedeeld in lichte en donkere categorieën, zodat de keuze eenvoudig is — of lees de [oogverzorgingsgids](/blog/codex-skin-night-eye-care/) voor de instellingen die in beide gevallen belangrijk zijn.

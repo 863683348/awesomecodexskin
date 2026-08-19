@@ -1,6 +1,6 @@
 ---
-title: "¿Los temas de Codex ralentizan a Codex? 3 ajustes para un inicio más rápido"
-description: "Un tema es solo colores, pero algunos ajustes sí que añaden retraso al inicio. Estos son los que realmente afectan al rendimiento, los que no y tres ajustes para mantener a Codex rápido."
+title: "¿Ralentizan las skins de Codex a Codex? 3 ajustes para un inicio más rápido"
+description: "Un tema son simplemente colores, pero algunas configuraciones sí que añaden retraso al inicio. Aquí te explicamos qué afecta realmente al rendimiento, qué no y tres ajustes para mantener Codex ágil."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["performance", "startup", "tweaks"]
@@ -9,45 +9,45 @@ relatedSkins: ["monokai-stone-cli", "clear-glass", "gothic-void-expedition"]
 lang: "es"
 ---
 
-Un tema es una configuración, no código. Los valores de color en sí mismos no cuestan nada en tiempo de ejecución. Pero la gente sí informa que Codex se siente más lento después de instalar varios temas, y no lo están imaginando. La demora suele venir de tres lugares — ninguno de ellos son los colores.
+Una skin es una configuración, no código. Los valores de color en sí mismos no tienen ningún coste en tiempo de ejecución. Sin embargo, algunas personas informan que Codex se siente más lento tras instalar varias temáticas, y no lo están imaginando. El retraso suele provenir de tres lugares: ninguno de ellos tiene que ver con los colores.
 
-Esto es lo que realmente te cuesta rendimiento, lo que no y las tres mejoras que mantienen el inicio de Codex ágil.
+A continuación te explicamos qué afecta realmente al rendimiento, qué no lo hace y cuáles son las tres optimizaciones que mantienen el arranque de Codex ágil.
 
-## Lo que un tema sí y no cuesta
+## Qué cuesta y qué no cuesta una skin
 
-Cuando Codex inicia, carga tu configuración, tu motor y el tema activo. Un único archivo de tema es solo unas cuantas cadenas — leerlo toma microsegundos. Así que un *tema instalado* no puede ralentizar significativamente nada.
+Cuando Codex se inicia, carga tu configuración, tu motor y la temática activa. Un único archivo de skin contiene solo unas pocas cadenas de texto; su lectura lleva microsegundos. Por tanto, una *única skin instalada* no puede ralentizar significativamente nada.
 
-Lo que *sí* puede añadir tiempo real: un motor de tema que escanea una gran biblioteca de temas instalados, valida cada uno o realiza comprobaciones de red. La cantidad de temas importa más que el propio tema.
+Lo que sí puede añadir tiempo real: que el motor de skins escanee una biblioteca enorme de temáticas instaladas, valide cada una de ellas o realice comprobaciones en red. El número de temáticas instaladas importa más que la propia temática.
 
-## Las tres mejoras
+## Las tres optimizaciones
 
-### 1. Reduce tu biblioteca de temas instalados
+### 1. Reduce tu biblioteca de temáticas instaladas
 
-Cada tema instalado es algo que tu motor podría escanear, indexar o listar en un selector. Si has estado recopilando temas durante meses, es posible que tengas docenas que nunca usas. Mantén 3-5: uno oscuro, uno claro, uno para terminal. Archiva el resto como archivos en disco (son solo texto) en lugar de dejarlos instalados. [Monokai Stone (CLI)](/skins/monokai-stone-cli/) como el tema principal más uno claro de respaldo como [Clear Glass](/skins/clear-glass/) cubre a casi todos.
+Cada temática instalada es algo que tu motor podría escanear, indexar o listar en un selector. Si llevas meses recopilando skins, es posible que tengas decenas que nunca usas. Quédate con 3–5: una oscura, una clara y una para terminal. Archiva el resto como archivos en disco (son simplemente texto), en lugar de dejarlas instaladas. [Monokai Stone (CLI)](/skins/monokai-stone-cli/) como temática principal diaria, junto con una alternativa clara como [Clear Glass](/skins/clear-glass/), cubre a casi todos los usuarios.
 
-### 2. Ten cuidado con motores que "llaman a casa"
+### 2. Ten cuidado con los motores que «llaman a casa»
 
-Algunos motores de tema verifican actualizaciones o descargan vistas previas al iniciar. Esa llamada de red puede añadir segundos notables en un arranque frío, especialmente en una VPN o con una conexión mala. Si tu motor tiene un modo "sin conexión" o una opción "desactivar comprobación de actualizaciones", actívalo. Los temas en sí no necesitan la red — solo la comprobación de actualizaciones.
+Algunos motores de temáticas comprueban actualizaciones o recuperan vistas previas al iniciar. Esta llamada a la red puede añadir varios segundos en un arranque frío, especialmente si usas una VPN o tienes una mala conexión. Si tu motor dispone de un modo «sin conexión» o una opción para «deshabilitar la comprobación de actualizaciones», actívala. Las propias skins no necesitan conexión a internet: solo la comprobación de actualizaciones la requiere.
 
 ### 3. Prueba con una configuración mínima
 
-Si Codex se siente lento y sospechas de los temas, haz una prueba limpia: renombra tu configuración a un respaldo, inicia Codex con solo el tema predeterminado y cronómetralo. Luego agrega tus favoritos uno por uno, cronometrando cada uno. Esto aisla si es realmente los temas o si era algo más en tu configuración desde el principio. La mayoría de las veces, es algo más.
+Si Codex se siente lento y sospechas que el problema está en las temáticas, haz un experimento limpio: renombra tu archivo de configuración como copia de seguridad, inicia Codex únicamente con la temática por defecto y mide su tiempo de arranque. Luego ve añadiendo tus temáticas favoritas una a una, midiendo el tiempo en cada caso. Esto te permitirá determinar si el problema proviene realmente de las temáticas o si, por el contrario, se debe a otro elemento de tu configuración. En la mayoría de los casos, el problema radica en otra parte.
 
-## Qué NO preocuparse
+## Qué NO debes preocuparte
 
-- **Oscuro vs claro:** ninguna diferencia de rendimiento. [Gothic Void Expedition](/skins/gothic-void-expedition/) inicia exactamente tan rápido como cualquier tema claro.
-- **Gradientes o imágenes complejos en un tema:** solo es un problema si tu motor vuelve a renderizarlos en cada frame; para un espacio de trabajo estático, negligible.
-- **Cambiar de temas con frecuencia:** cambiar cuesta unos milisegundos, no segundos. Mantén tus favoritos instalados.
+- **Tema oscuro frente a claro:** no hay ninguna diferencia de rendimiento. [Gothic Void Expedition](/skins/gothic-void-expedition/) se inicia exactamente tan rápido como cualquier tema claro.
+- **Degradados complejos o imágenes en una skin:** solo suponen un problema si tu motor las vuelve a renderizar en cada fotograma; para un entorno estático, su impacto es despreciable.
+- **Cambiar frecuentemente de tema:** el cambio cuesta unos pocos milisegundos, no segundos. Mantén instaladas tus temáticas favoritas.
 
 ## Preguntas frecuentes rápidas
 
-**¿Desinstalar temas libera memoria?**
-Muy poco — los archivos de tema son pequeños. La mayor ventaja es menos cosas para que el motor escanee al inicio.
+**¿Desinstalar temáticas libera memoria?**  
+Solo marginalmente: los archivos de temática son muy pequeños. La ventaja mayor es reducir el número de elementos que el motor debe escanear al inicio.
 
-**Mi motor escanea toda mi carpeta de temas. ¿Puedo detener eso?**
-Revisa la configuración del motor; muchos permiten que apunte a una carpeta específica o desactive el escaneo de la biblioteca. Si no, mover los temas no utilizados fuera de la carpeta vigilada funciona.
+**Mi motor escanea toda mi carpeta de skins. ¿Puedo evitarlo?**  
+Revisa la configuración del motor: muchos permiten especificar una carpeta concreta o desactivar el escaneo de la biblioteca. Si no es posible, mover las skins no utilizadas fuera de la carpeta observada también funciona.
 
-**¿Un tema más ligero es más rápido en máquinas de baja gama?**
-No hay diferencia significativa. Renderizar texto en un fondo oscuro o claro es la misma operación. Las ganancias de las tres mejoras anteriores superan con creces cualquier elección de tema.
+**¿Es más rápida una skin ligera en equipos de gama baja?**  
+No hay ninguna diferencia significativa. Representar texto sobre un fondo oscuro o claro es la misma operación. Las mejoras obtenidas con las tres optimizaciones anteriores superan ampliamente cualquier efecto derivado de la elección de una temática.
 
-La demora al iniciar por temas casi siempre es "demasiados temas instalados + comprobaciones de actualización", nunca "el color es incorrecto". Reduce a unos pocos favoritos como [Monokai Stone](/skins/monokai-stone-cli/), desactiva las comprobaciones automáticas de actualización y cronometra tu inicio frío — probablemente lo verás disminuir. Navega el [índice completo](/skins/) si aún estás buscando tus pocos temas favoritos, o lee la [guía de instalación](/blog/how-to-install-codex-skins/) para configurarlos limpiamente.
+El retraso al iniciar causado por las temáticas casi siempre se debe a «demasiadas temáticas instaladas + comprobaciones automáticas de actualización», nunca a «el color está mal elegido». Reduce tu colección a unas pocas favoritas como [Monokai Stone](/skins/monokai-stone-cli/), desactiva las comprobaciones automáticas de actualización y mide tu tiempo de arranque frío: probablemente notarás una mejora notable. Explora el [índice completo](/skins/) si aún estás buscando tus temáticas definitivas, o consulta la [guía de instalación](/blog/how-to-install-codex-skins/) para configurarlas correctamente.

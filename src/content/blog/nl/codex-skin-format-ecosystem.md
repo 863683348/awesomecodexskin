@@ -1,6 +1,6 @@
 ---
-title: "Codex Huidvormen Vergelijking: codedrobe vs codextheme vs tmtheme vs preset"
-description: "Vier huidformaten, vier engines, een ecosysteem. Welk formaat is het meest draagbaar, welk is in verval, en hoe converteert u er tussen wanneer u dat nodig heeft."
+title: "Vergelijking van Codex-skinformaten: codedrobe versus codextheme versus tmtheme versus preset"
+description: "Vier skinformaten, vier engines, één ecosysteem. Welk formaat is het meest draagbaar, welk formaat verdwijnt, en hoe converteer je ertussen als dat nodig is."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["formats", "ecosystem", "compatibility"]
@@ -9,65 +9,65 @@ relatedSkins: ["monokai-stone", "solarized", "tokyo-night-ychampion", "vivid-pur
 lang: "nl"
 ---
 
-De wereld van Codex-thema's is jong, wat betekent dat de formaten nog steeds stabiliseren. Op dit moment zijn er vier formaten in omloop, en ze zijn niet allemaal compatibel. Het begrijpen ervan bespaart je het downloaden van een bestand dat je engine niet kan lezen.
+De wereld van Codex-skins is jong, wat betekent dat de formaten nog in ontwikkeling zijn. Op dit moment circuleren vier formaten, en ze zijn niet allemaal onderling compatibel. Een goed begrip van deze formaten bespaart u de moeite om een bestand te downloaden dat uw engine niet kan lezen.
 
 ## De vier formaten
 
-| Formaat | Familie van engines | Ladenmechanisme | Portabiliteit |
+| Formaat | Enginefamilie | Laadmechanisme | Draagbaarheid |
 |---|---|---|---|
-| `.codedrobe-theme` | Codedrobe-stijl gallerijen (codexskins.org) | Bestandsimport | Gemiddeld — enkele engines lezen het |
-| `.codextheme` | Bureaubeheerders (Codex Themes desktop) | Bestandsimport | Gemiddeld |
-| `tmtheme` | CLI-thema's (bearded, terminal syntaxthema's) | CLI `/theme` | Hoog — hetzelfde als editorthema's |
-| `preset` | Prompt engines (Dream Skin) | Natuurlijke taalprompt | Laag — engine-specifieke formulering |
+| `.codedrobe-theme` | Galerijen in Codedrobe-stijl (codexskins.org) | Bestandsimport | Gemiddeld — een paar engines ondersteunen dit formaat |
+| `.codextheme` | Desktopbeheerders (Codex Themes voor desktop) | Bestandsimport | Gemiddeld |
+| `tmtheme` | CLI-themepoorten (bearded, terminal syntax-thema’s) | CLI `/theme` | Hoog — identiek aan editorthema’s |
+| `preset` | Promptengines (Dream Skin) | Natuurlijke-taalprompt | Laag — engine-specifieke formulering |
 
-## `.codedrobe-theme` — het galerijstandaard
+## `.codedrobe-theme` — de galerijstandaard
 
-Gebruikt door gallerijen zoals codexskins.org om klaar gemaakte thema-bestanden te distribueren. Als je "Download .codedrobe-theme" ziet, weet je wat je krijgt. Ondersteund door enkele bureauengines; importeren gebeurt meestal met één klik.
+Gebruikt door galeries zoals codexskins.org om kant-en-klaar gemaakte themabestanden te verspreiden. Als u ‘Download .codedrobe-theme’ ziet staan, dan is dit het bestand dat u ontvangt. Ondersteund door een aantal desktopengines; importeren gebeurt meestal met één klik.
 
-**Goed voor:** het verkrijgen van een opgemaakt, ontwerpergemaakt thema zonder configuratie.
-**Let op:** het is niet universeel — controleer of je engine dit exacte bestandstype leest.
+**Handig voor:** het verkrijgen van een afgewerkt, door een ontwerper gemaakt thema zonder enige configuratie.
+**Let op:** het is niet universeel — controleer of uw engine deze exacte extensie ondersteunt.
 
-## `.codextheme` — het bureaubeheerderformaat
+## `.codextheme` — het desktopbeheerderformaat
 
-Het formaat dat wordt gebruikt door bureauthemabeheerders (vooral Codex Themes voor desktop). Structuurmatig gelijk aan `.codedrobe-theme`, soms in de praktijk verwisselbaar, maar engines accepteren niet altijd beide.
+Het formaat dat wordt gebruikt door desktopthemabeheerders (met name Codex Themes voor desktop). Structureel vergelijkbaar met `.codedrobe-theme`, soms in de praktijk uitwisselbaar, maar engines accepteren beide formaten niet altijd.
 
-**Goed voor:** bureaugebruikers met een beheerder geïnstalleerd.
+**Handig voor:** desktopgebruikers met een geïnstalleerde beheerder.
 **Let op:** naamoverlapping met `.codedrobe-theme` — de extensies lijken op elkaar, maar zijn niet gegarandeerd compatibel.
 
-## `tmtheme` — het CLI-werkpaard
+## `tmtheme` — de CLI-werkpaard
 
-Terminal-thema-formaat dat naar Codex CLI is geport (de Bearded-ports in deze index zijn het duidelijkste voorbeeld). Dit is hetzelfde formaatfamilie als TextMate/editor syntaxthema's, dus de ecologie is groot — elk tmtheme-gebaseerd kleurenpalet kan via een portscript in Codex CLI terechtkomen.
+Een terminalthemaformaat dat is geporteerd naar Codex CLI (de Bearded-poorten in deze index zijn het duidelijkste voorbeeld). Dit behoort tot dezelfde formaatfamilie als TextMate/editor-syntaxthema’s, waardoor het ecosysteem enorm is — elk tmtheme-gebaseerd palet kan via een portscript in Codex CLI worden geïmporteerd.
 
-**Goed voor:** CLI-gebruikers die het grootste mogelijke palet willen.
-**Let op:** tmtheme-bestanden definiëren syntaxkleuren, niet altijd de volledige UI-oppervlakte — je kunt extra configuratie nodig hebben voor panelen en chrome.
+**Handig voor:** CLI-gebruikers die toegang willen tot het grootst mogelijke paletaanbod.
+**Let op:** tmtheme-bestanden definiëren syntaxkleuren, niet altijd het volledige UI-oppervlak — u hebt mogelijk extra configuratie nodig voor panelen en chrome.
 
 ## `preset` — het promptformaat
 
-Geen bestand eigenlijk: een natuurlijke taalbeschrijving die een promptengine zoals Dream Skin interpreteert. "Een warme ambernachtthema, lage saturatie" is een preset. Het leeft in de opgeslagen presetlijst van de engine.
+Geen bestand op zich: een beschrijving in natuurlijke taal die door een promptengine zoals Dream Skin wordt geïnterpreteerd. ‘Een warm amber nachtthema met lage verzadiging’ is een preset. Het bevindt zich in de opgeslagen presetlijst van de engine.
 
-**Goed voor:** snelheid en iteratie.
-**Let op:** geen portabiliteit. Een preset heeft alleen betekenis binnen de engine die die formulering begrijpt.
+**Handig voor:** snelheid en iteratie.
+**Let op:** geen draagbaarheid. Een preset heeft alleen betekenis binnen de engine die die specifieke formulering begrijpt.
 
-## Hoe te converteren tussen formaten
+## Hoe u tussen formaten kunt converteren
 
-- **tmtheme ↔ preset:** niet direct te converteren — één is een specificatie, één is een beschrijving. Herformuleer de beschrijving vanaf het palet.
-- **tmtheme → .codextheme:** vaak haalbaar met een klein script, aangezien beide gestructureerde kleurspecificaties zijn. Veel CLI-ports begonnen zo.
-- **codedrobe ↔ codextheme:** soms drop-in; test beide extensies als je engine ze accepteert.
+- **tmtheme ↔ preset:** niet direct omzetbaar — het ene is een specificatie, het andere een beschrijving. Herschrijf de beschrijving op basis van het palet.
+- **tmtheme → .codextheme:** vaak haalbaar met een klein script, aangezien beide gestructureerde kleurspecificaties zijn. Veel CLI-poorten zijn op deze manier begonnen.
+- **codedrobe ↔ codextheme:** soms direct inzetbaar; test beide extensies als uw engine beide accepteert.
 
-Het algemene regel: **gestructureerde formaten (tmtheme, codedrobe, codextheme) zijn meer interoperabel dan prozaformaten (preset).** Als je een themabibliotheek bouwt die jarenlang blijft bestaan, kies dan voor gestructureerde formaten.
+De algemene regel: **gestructureerde formaten (tmtheme, codedrobe, codextheme) zijn beter onderling bruikbaar dan prozaformaten (preset).** Als u een skinbibliotheek bouwt die jarenlang blijft bestaan, kiest u best voor gestructureerde formaten.
 
 ## Snelle FAQ
 
-**Welk formaat is het "officiële" Codex-formaat?**
-Er is nog geen officiële vorm. Het ecosysteem beslist via gebruik; tmtheme-familie CLI-ports hebben het meeste momentum, presets hebben de meeste gebruikers.
+**Welk formaat is het ‘officiële’ Codex-formaat?**  
+Er is er nog geen. Het ecosysteem bepaalt dit op basis van gebruik; tmtheme-gebaseerde CLI-poorten hebben momenteel de meeste momentum, terwijl promptpresets het grootst aantal gebruikers hebben.
 
-**Zal uiteindelijk één formaat winnen?**
-Waarschijnlijk een gestructureerd formaat — dat is hoe editorthema's zich ontwikkelden. Maar prompts verdwijnen niet; ze dienen het "probeer het snel" gebruikscase.
+**Zal uiteindelijk één formaat de overhand krijgen?**  
+Waarschijnlijk een gestructureerd formaat — zo is het ook gegaan met editorthema’s. Maar prompts verdwijnen niet; zij dienen het gebruiksscenario ‘probeer het snel’.
 
-**Wat moet ik downloaden voor maximale compatibiliteit?**
-CLI-natuurlijke thema's zoals [Monokai Stone](/skins/monokai-stone/) of [Solarized](/skins/solarized/) die als tmtheme/CLI-specificaties worden geleverd — ze importeren in de breedste set tools. [Tokyo Night](/skins/tokyo-night-ychampion/) en [Vivid Purple (CLI)](/skins/vivid-purple-cli/) zijn ook sterke, breed geporteerde keuzes.
+**Welk formaat moet ik downloaden voor maximale compatibiliteit?**  
+CLI-natuurlijke thema’s zoals [Monokai Stone](/skins/monokai-stone/) of [Solarized](/skins/solarized/), die als tmtheme/CLI-specificaties worden geleverd — zij kunnen in het breedste scala aan tools worden geïmporteerd. Ook [Tokyo Night](/skins/tokyo-night-ychampion/) en [Vivid Purple (CLI)](/skins/vivid-purple-cli/) zijn sterke, veelgeporteerde keuzes.
 
-**Hoe weet je welk formaat een thema gebruikt?**
-Elke detailpagina van een thema in deze index vermeldt zijn installatieformaat — dat is de teller. Koppel het aan je engine voordat je downloadt.
+**Hoe weet ik welk formaat een skin gebruikt?**  
+Elke skin-detailpagina in deze index vermeldt het installatieformaat — dat is het signaal. Vergelijk het met uw engine voordat u downloadt.
 
-Formaten zijn hinder, geen functies. Kies gestructureerde formaten voor je permanente bibliotheek, prompts voor exploratie, en laat elke themadetailpagina je vertellen welk formaat je aan het werken bent. Blader door de [thema-index](/skins/), of bekijk de [enginesvergelijking](/blog/codex-skin-engines-compared/) voor het software dat elk formaat leest.
+Formaten zijn wrijving, geen functies. Kies gestructureerde formaten voor uw permanente bibliotheek, prompts voor exploratie, en laat elke skin-detailpagina u vertellen met welk formaat u te maken hebt. Blader door de [skinindex](/skins/), of bekijk de [vergelijking van engines](/blog/codex-skin-engines-compared/) om te zien welke software elk formaat ondersteunt.

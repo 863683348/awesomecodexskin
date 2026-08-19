@@ -1,6 +1,6 @@
 ---
-title: "Codex Skin Index erreicht 99 Skins: Wangnov-Sammlung überschreitet 50"
-description: "Der Index erreichte eine Meilenstein diese Woche – 99 Skins indiziert, mehr als die Hälfte aus der Wangnov-Open-Source-Sammlung. Was neu ist, was kategorisiert wurde und was kommt."
+title: "Codex-Skin-Index erreicht 99 Skins: Wangnov-Sammlung überschreitet 50"
+description: "Der Index hat diese Woche eine Meilenstein-Marke erreicht – 99 Skins wurden erfasst, mehr als die Hälfte stammt aus der Open-Source-Sammlung von Wangnov. Was ist neu, was wurde kategorisiert und was steht noch bevor?"
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["milestone", "index-update", "community"]
@@ -9,33 +9,33 @@ relatedSkins: ["amber-dusk", "celestial-court", "monokai-stone", "gothic-void-ex
 lang: "de"
 ---
 
-Der Codex Skin Index hat diese Woche 99 indizierte Skins erreicht – und der größte Einzelspender ist die Wangnov-Open-Source-Sammlung, die nun mehr als die Hälfte aller Einträge im Katalog ausmacht.
+Der Codex-Skin-Index hat diese Woche die Marke von 99 indizierten Skins überschritten – und der mit Abstand größte Beitrag stammt aus der Open-Source-Sammlung „Wangnov“, die mittlerweile mehr als die Hälfte aller Einträge im Katalog ausmacht.
 
-## Was sich diese Woche verändert hat
+## Was sich diese Woche geändert hat
 
-- **99 Skins live**, gegenüber 26 vor ein paar Wochen.
-- **Wangnov/awesome-codex-skins überschritt 50 Skins** – die größte einzelne Quelle im Index, die dunkle, helle, Terminal- und Charakterthemen abdeckt.
-- **Kategorieabdeckung abgeschlossen** für die acht kuratierten Gruppen: dark-midnight, light-airy, anime-pop, neon-cyberpunk, nature-earthy, retro-vintage, pastel-soft und mono-terminal.
-- **Datenbereinigung** entfernte 16 nicht-Skin-Einträge (Tutorialseiten und versehentlich als Skins importierte Markdown-Dateien) – der Katalog enthält nun nur noch echte Themen.
+- **99 Skins online**, verglichen mit 26 vor einigen Wochen.  
+- **Wangnov/awesome-codex-skins hat die Marke von 50 Skins überschritten** – die umfangreichste einzelne Quelle im Index, mit Themen für dunkle, helle, Terminal- und Zeichensatz-basierte Oberflächen.  
+- **Die Kategorisierung ist nun vollständig** für die acht kuratierten Gruppen: dark-midnight, light-airy, anime-pop, neon-cyberpunk, nature-earthy, retro-vintage, pastel-soft und mono-terminal.  
+- **Datenbereinigung**: 16 nicht-themenspezifische Einträge (Tutorialseiten und verstreute Markdown-Dateien, die versehentlich als Skins importiert worden waren) wurden entfernt – der Katalog enthält nun ausschließlich echte Themes.
 
 ## Die Wangnov-Sammlung im Kontext
 
-Der [Wangnov awesome-codex-skins](https://github.com/Wangnov/awesome-codex-skins)-Repo ist das nächste dem Community-Themenmarkt von Codex. Seine 50+ Skins in diesem Index beinhalten:
+Das Repository [Wangnov awesome-codex-skins](https://github.com/Wangnov/awesome-codex-skins) ist das, was Codex derzeit am ehesten als Community-Themenmarkt bietet. Zu den über 50 Skins dieser Sammlung im Index zählen:
 
-- Klassische Farbpaletten wie [Monokai Stone](/skins/monokai-stone/) und [Gothic Void Expedition](/skins/gothic-void-expedition/).
-- Leichte und luftige Optionen wie [Amber Dusk](/skins/amber-dusk/).
-- Kulturelle und Fantasy-Themen wie [Celestial Court](/skins/celestial-court/).
+- Klassische Farbpaletten wie [Monokai Stone](/skins/monokai-stone/) und [Gothic Void Expedition](/skins/gothic-void-expedition/).  
+- Helle und luftige Optionen wie [Amber Dusk](/skins/amber-dusk/).  
+- Kulturelle und Fantasy-Themen wie [Celestial Court](/skins/celestial-court/).  
 
-Alle installieren sich auf die gleiche Weise – der [Installationsleitfaden](/blog/how-to-install-codex-skins/) deckt jede Methode ab.
+Alle lassen sich auf dieselbe Weise installieren – die [Installationsanleitung](/blog/how-to-install-codex-skins/) beschreibt alle gängigen Methoden.
 
-## Was kommt als nächstes
+## Was als Nächstes kommt
 
-- **Mehr Community-Imports** aus anderen großen Quellen (HeiGeAi, Anime- und Spiel-thematische Repos).
-- **Bessere Kategorisierung** des „anderer“-Buckets – Skins, die noch nicht zu den acht kuratierten Gruppen passen.
-- **Best-of-Runden pro Kategorie**, damit Sie nicht 99 Seiten durchsuchen müssen, um einen guten dunklen Thema zu finden.
+- **Weitere Community-Importe** aus anderen wichtigen Quellen (z. B. HeiGeAi sowie Repos mit Anime- und Spiel-Themen).  
+- **Verbesserte Klassifizierung** der Kategorie „other“ – für Skins, die noch keiner der acht kuratierten Gruppen zugeordnet werden können.  
+- **Kategoriebezogene „Best-of“-Übersichten**, damit Sie nicht durch alle 99 Seiten blättern müssen, um ein gutes Dark-Theme zu finden.
 
-## Wie man die neuen Skins durchstöbert
+## Wie Sie die neuen Skins durchsuchen
 
-Der [Skin-Index](/skins/) verfügt jetzt über eine Kategorienavigation – springen Sie direkt zu dunklen, hellen, Anime-, Neon- oder Terminal-Themen anstatt den ganzen Katalog zu scrollen. Auf jeder Skin-Seite wird immer noch deren Installationsformat, Farbpalette und kompatible Plattform angezeigt.
+Die [Skin-Übersicht](/skins/) verfügt nun über eine Kategorienavigationsleiste – springen Sie direkt zu Dark-, Light-, Anime-, Neon- oder Terminal-Themes, statt den gesamten Katalog zu durchscrollen. Auf jeder Skin-Seite sind weiterhin Format, Farbpalette und kompatible Plattform angegeben.
 
-Das Meilenstein-99-Skin-Ziel ist eine schöne runde Zahl, aber das echte Signal ist das Wachstum des Ökosystems: neue Repos, neue Autoren, neue Formate jede Woche. Der Index wird dies weiter verfolgen. Wenn Sie ein Codex-Skin veröffentlicht haben, ist die [Einreichseite](/submit/) der Weg, ihn aufzulisten.
+Die Marke von 99 Skins ist zwar eine schöne runde Zahl, doch das eigentliche Signal ist das Wachstum des Ökosystems: Jede Woche entstehen neue Repositories, neue Autor:innen und neue Formate. Der Index wird dies kontinuierlich verfolgen. Falls Sie selbst einen Codex-Skin veröffentlicht haben, führt die [Einsendeseite](/submit/) zum Eintrag in den Index.

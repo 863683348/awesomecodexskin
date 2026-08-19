@@ -1,6 +1,6 @@
 ---
-title: "Fei-Away Dream Huid: 7 Voorinstellingen Geïndexeerd, Engine Update Overzicht"
-description: "Het Fei-Away Codex-Dream-Skin project heeft 7 prompt voorinstellingen bijgedragen aan de index. Plus een overzicht van wat er dit maand beweegt in de wereld van de Codex huidmotor."
+title: "Fei-Away Dream-skin: 7 vooraf ingestelde opties geïndexeerd, overzicht van engine-updates"
+description: "Het Fei-Away Codex-Dream-Skin-project heeft 7 promptvoorinstellingen aan de index bijgedragen. Plus een overzicht van wat er deze maand in de wereld van de Codex-skin-engine gebeurt."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["dream-skin", "engine", "updates"]
@@ -9,36 +9,36 @@ relatedSkins: ["cyra-sacred-radiance", "dasiming-soul-passage", "jensen-infinite
 lang: "nl"
 ---
 
-De [Fei-Away Codex-Dream-Skin](https://github.com/Fei-Away/Codex-Dream-Skin) project — een van de meest actieve open-source Codex-huidenmotoren — heeft deze week 7 prompt-voorinstellingen bijgedragen aan de index. Als je nieuwsgierig bent geweest naar promptgebaseerde huiden, is dit een goed moment om er eens naar te kijken.
+Het project [Fei-Away Codex-Dream-Skin](https://github.com/Fei-Away/Codex-Dream-Skin) — een van de meest actieve open-source Codex-skin-engines — heeft deze week 7 promptvoorinstellingen aan de index toegevoegd. Als u al langer geïnteresseerd bent in op prompts gebaseerde skinning, dan is dit een goed moment om eens te kijken.
 
 ## Wat is er nieuw van Fei-Away
 
-De zeven nieuwe voorinstellingen tonen het bereik van de Dream Skin-engine, van nette professionele uitstralen tot volledig gestileerde thema's:
+De zeven nieuwe voorinstellingen laten het bereik van de Dream Skin-engine zien, van schone, professionele uitstralingen tot volledig gestileerde thema’s:
 
-- [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) — een helder, lichtgericht thema.
-- [Dasiming Soul Passage](/skins/dasiming-soul-passage/) — een donker, atmosferisch optie.
-- [Jensen Infinite Compute](/skins/jensen-infinite-compute/) — een technisch gestyled kleurenpalet.
-- Plus vier andere die het spectrum tussen hen bedekken.
+- [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) — een stralend, lichtgericht thema.  
+- [Dasiming Soul Passage](/skins/dasiming-soul-passage/) — een donkere, sfeervolle optie.  
+- [Jensen Infinite Compute](/skins/jensen-infinite-compute/) — een technisch geïnspireerde kleurenpalet.  
+- Plus nog vier andere die het spectrum tussen deze stijlen afdekken.
 
-Alle zeven installeren met de Dream Skin-methode: kopieer de prompt, plak deze in Codex, klaar. De [engines vergelijking](/blog/codex-skin-engines-compared/) verklaart waarom dat de snelste installatiepad in het ecosysteem is.
+Alle zeven worden geïnstalleerd via de Dream Skin-methode: kopieer de prompt, plak hem in Codex — klaar. De [vergelijking van engines](/blog/codex-skin-engines-compared/) legt uit waarom dit het snelste installatiepad in het ecosysteem is.
 
-## Overzicht van de bredere engine
+## De bredere engine-overzichtsupdate
 
-Naast Fei-Away bewegen er een paar dingen in de wereld van de engines:
+Naast Fei-Away gebeurt er ook elders in de engine-wereld wat:
 
-- **Codepilot** blijft TUI verbeteringen leveren — validatie en kleurenpalet export zijn de hoofdkenmerken. Zie de [CLI vergelijking](/blog/codex-themes-cli-vs-codepilot/) voor hoe het zich opstelt.
-- **Codex Themes CLI** (ychampion) blijft terminal klassiekers porten; de Tokyo Night ports in deze index komen hieruit voort.
-- **Bearded Theme Ports** (vufly) heeft meer tmtheme importen toegevoegd, wat de manier is waarop terminalthema's zoals Tokyo Night voortduren in Codex.
+- **Codepilot** blijft TUI-updates uitbrengen — validatie en paletexport zijn de belangrijkste nieuwe functies. Bekijk de [CLI-vergelijking](/blog/codex-themes-cli-vs-codepilot/) om te zien hoe het zich verhoudt tot andere tools.  
+- **Codex Themes CLI** (ychampion) zet de portering van klassieke terminalthema’s voort; de Tokyo Night-ports in deze index komen uit deze reeks.  
+- **Bearded Theme Ports** (vufly) heeft meer tmtheme-imports toegevoegd, waardoor terminalthema’s zoals Tokyo Night continu naar Codex kunnen stromen.
 
-## Waarom prompt-voorinstellingen belangrijk zijn
+## Waarom promptvoorinstellingen belangrijk zijn
 
-Voorinstellingen zijn de "probeer het in vijf seconden" pad. In plaats van een bestand te downloaden en een engine te configureren, plak je maar één zin. Het gedoe is precisie — een prompt is een beschrijving, geen specificatie — wat de [format vergelijking](/blog/codex-theme-file-vs-prompt-preset/) in detail bespreekt. Voor het snel verkennen van stemmingen, is er niets beters.
+Voorinstellingen vormen het pad ‘probeer het in vijf seconden’. In plaats van een bestand te downloaden en een engine te configureren, plakt u één zin. Het nadeel is precisie — een prompt is een beschrijving, geen exacte specificatie — wat uitgebreid wordt besproken in de [formaatvergelijking](/blog/codex-theme-file-vs-prompt-preset/). Voor het snel verkennen van sferen of stemmingen is er niets beters.
 
-## Hoe je Dream Skin voorinstellingen kunt proberen
+## Hoe u Dream Skin-voorinstellingen kunt uitproberen
 
-1. Open de pagina van een voorinstellingshuid — [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) of [Dasiming Soul Passage](/skins/dasiming-soul-passage/) werkt goed.
-2. Kopieer de installatieprompt.
-3. Plak het in Codex met de Dream Skin-engine actief.
-4. Klaar — schakel terug naar de standaardvoorinstelling wanneer je wilt.
+1. Open de pagina van een voorinstellings-skin — [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) of [Dasiming Soul Passage](/skins/dasiming-soul-passage/) zijn goede keuzes.  
+2. Kopieer de installatieprompt.  
+3. Plak deze in Codex met de Dream Skin-engine actief.  
+4. Klaar — u kunt op elk gewenst moment terugkeren naar de standaardvoorinstelling.
 
-Het engine-ecosysteem ontwikkelde zich naar een duidelijke vorm: prompt-engines voor snelheid, bestandsgebaseerde managers voor precisie, CLI-tools voor terminalgebruikers. Elke nieuwe bijdrage zoals deze batch van Fei-Away maakt het ecosysteem iets completer. Blader door de [huidenindex](/skins/) om alle nieuwe voorinstellingen te zien.
+Het engine-ecosysteem neemt langzaam een duidelijke vorm aan: prompt-engines voor snelheid, op bestanden gebaseerde managers voor precisie, en CLI-tools voor terminalgebruikers. Elke nieuwe bijdrage zoals deze reeks van Fei-Away maakt het ecosysteem een beetje completer. Blader door de [skin-index](/skins/) om alle nieuwe voorinstellingen te bekijken.

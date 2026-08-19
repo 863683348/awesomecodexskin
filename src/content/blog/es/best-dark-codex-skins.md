@@ -1,6 +1,6 @@
 ---
-title: "Mejores skins de Codex oscuros para programación nocturna (2026)"
-description: "Los mejores skins de Codex Desktop y CLI para sesiones nocturnas tardías — paletas góticas, temas cyberpunk con neones y clásicos de terminal, con promociones de instalación incluidas."
+title: "Las mejores skins oscuras de Codex para programar de noche (2026)"
+description: "Las mejores skins oscuras para Codex Desktop y CLI para sesiones nocturnas — paletas góticas, temas neón cyberpunk y clásicos de terminal, con instrucciones de instalación incluidas."
 pubDate: "2026-08-14"
 updatedDate: "2026-08-14"
 tags: ["dark", "best-of", "night", "themes"]
@@ -9,70 +9,63 @@ relatedSkins: ["gothic-void-expedition", "cyber-neon", "monokai-stone", "mythic-
 lang: "es"
 ---
 
-REGLAS ESTRICTAS:
-1. Traduce todo el texto legible por humanos, títulos, texto de tablas y texto de enlaces.
-2. NUNCA traduzcas: bloques de código, código en línea, rutas de archivos, comandos de shell, URLs, nombres de productos (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), tokens numéricos/versiones o nombres de skins visibles.
-3. Mantén la estructura de markdown idéntica: mismos títulos, listas, tablas, negrita/itálica, citas, y destinos de enlaces. Un enlace como [Monokai Stone](/skins/monokai-stone/) mantiene su URL /path/ sin cambios; solo el texto visible puede ser traducido.
-4. Mantén cualquier HTML/JSX sin modificar.
-5. Salida SOLO el cuerpo del markdown traducido. Sin introducción, sin notas, sin marcos de código alrededor de la respuesta.
+Un buen tema oscuro hace más que verse genial: reduce la fatiga visual, mantiene un contraste cómodo durante la noche y te ayuda a concentrarte al ocultar el desorden de la interfaz del navegador. A continuación, presentamos los mejores temas oscuros para Codex disponibles en el índice, ordenados por número de instalaciones y atmósfera.
 
-Un buen tema oscuro hace más que parecer cool — reduce la fatiga visual, mantiene el contraste cómodo por la noche y ayuda a concentrarse ocultando el desorden del navegador. Estos son los mejores temas oscuros de Codex en el índice, clasificados por instalaciones y estado de ánimo.
+## 1. Gothic Void Expedition — el valor predeterminado integrado
 
-## 1. Gothic Void Expedition — el predeterminado integrado
-
-El ajuste predeterminado del motor demuestra que lo oscuro no significa sin vida. Una paleta de horizonte catedral con azules profundos, es la elección más segura si quieres una apariencia oscura pulida sin buscar un ajuste.
+El ajuste predeterminado del motor demuestra que «oscuro» no significa «sin vida». Con una paleta solemne inspirada en catedrales y horizontes, basada en tonos azul-negro profundos, es la opción más segura si buscas un aspecto oscuro pulido sin tener que buscar entre múltiples ajustes predefinidos.
 
 ```text
-Codex, cambia mi espacio de trabajo al ajuste 'Gothic Void Expedition' de Codex Dream Skin — un tema oscuro de ciencia ficción con horizonte catedral.
+Codex, cambia mi área de trabajo al ajuste predefinido 'Gothic Void Expedition' de Codex Dream Skin — un tema oscuro de ciencia ficción con atmósfera solemne inspirada en catedrales y horizontes.
 ```
 
-- **Estado de ánimo:** Oscuro & Nocturno · solemne
-- **Instalaciones:** 2.100+
+- **Atmósfera:** Oscuro y Medianoche · solemne  
+- **Instalaciones:** 2.100+  
 - [Ver tema](/skins/gothic-void-expedition/)
 
 ## 2. Mythic Guardian Noir — paleta guardian noir
 
-Extraído del paquete de skins abierto ChannelerH, este combina superficies casi negras con tonos de resaltado apagados — un gran equilibrio entre negro puro y oscuras coloreadas.
+Extraído del paquete abierto de temas *ChannelerH*, este tema combina superficies casi negras con tonos de resalte apagados: un excelente punto intermedio entre el negro puro y los tonos oscuros con color.
 
 ```text
-Codex, aplica el tema 'Mythic Guardian Noir' de la colección channelerh codex-skin-packs — una paleta guardian noir oscura.
+Codex, aplica el tema 'Mythic Guardian Noir' de la colección *ChannelerH codex-skin-packs* — una paleta oscura guardian noir.
 ```
 
-- **Estado de ánimo:** Oscuro & Nocturno · misterioso
+- **Atmósfera:** Oscuro y Medianoche · misteriosa  
 - [Ver tema](/skins/mythic-guardian-noir/)
 
-## 3. Cyber Neon — energía cyberpunk neon
+## 3. Cyber Neon — energía cyberpunk neón
 
-Si para ti "oscuro" significa neón sobre negro, Cyber Neon lo entrega: resaltados magenta vibrantes sobre carbón profundo. Ideal para escritorios llamativos y sensación futura de terminal.
+Si para ti «oscuro» significa neón sobre fondo negro, *Cyber Neon* lo cumple: resaltados magenta intensos sobre un carbón profundo. Ideal para escritorios impactantes y ambientes futuristas tipo terminal.
 
 ```text
-Codex, cambia mi espacio de trabajo al ajuste 'Cyber Neon' del motor — un tema cyberpunk neon.
+Codex, cambia mi área de trabajo al ajuste predefinido del motor 'Cyber Neon' — un tema cyberpunk neón.
 ```
 
-- **Estado de ánimo:** Neon & Cyberpunk · vibrante
+- **Atmósfera:** Neón y Cyberpunk · vibrante  
 - [Ver tema](/skins/cyber-neon/)
 
-## 4. Monokai Stone — la clásica terminal
+## 4. Monokai Stone — el clásico de las terminales
 
-La paleta de sintaxis Monokai Stone, portada a Codex CLI. Perfecta para flujos de trabajo orientados a terminal donde la claridad de la sintaxis importa más que el chrome.
+La popular paleta de sintaxis *Monokai Stone*, adaptada a Codex CLI. Perfecta para flujos de trabajo centrados en la terminal, donde la claridad sintáctica importa más que la estética de la interfaz.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh
-# luego en Codex CLI ejecuta:
+# luego, en Codex CLI ejecuta:
 /theme Monokai Stone
 ```
 
-- **Estado de ánimo:** Mono & Terminal · claro
+- **Atmósfera:** Mono y Terminal · nítida  
 - [Ver tema](/skins/monokai-stone/)
 
-## ¿Qué hace que un tema oscuro de Codex sea "bueno"?
+## ¿Qué hace que un tema oscuro para Codex sea «bueno»?
 
-- **Contraste sin brillo:** fondo oscuro, pero luminancia de texto suficientemente alta para ser legible.
-- **Disciplina en los acentos:** uno o dos colores de acento (verde azulado, magenta, ámbar) usados con moderación.
-- **Comodidad por la noche:** evita el #000 puro — negros ligeramente tintados reducen la halación en OLED e IPS.
+- **Contraste sin deslumbramiento:** fondo oscuro, pero con luminancia del texto suficientemente alta para garantizar legibilidad.  
+- **Disciplina en los acentos:** uno o dos colores de acento (verde azulado, magenta, ámbar) utilizados con moderación.  
+- **Confort nocturno:** evita el negro puro (#000); los negros ligeramente matizados reducen el efecto de halación tanto en pantallas OLED como en IPS.
 
 ## Instala cualquiera de estos en un solo paso
 
-Abre la página de detalles del tema, copia el mensaje de instalación, pégalo en Codex. Consulta la [guía completa de instalación](/blog/how-to-install-codex-skins/) si eres nuevo en los temas de Codex.
+Abre la página de detalles del tema, copia la instrucción de instalación y pégala en Codex. Si eres nuevo en los temas de Codex, consulta la [guía completa de instalación](/blog/how-to-install-codex-skins/).
 
-Explora todos los [Temas Oscuros & Nocturnos](/skins/category/dark-midnight/) o el índice completo de [temas](/skins/).
+Explora todos los [temas Oscuros y Medianoche](/skins/category/dark-midnight/) o el [índice completo de temas](/skins/).

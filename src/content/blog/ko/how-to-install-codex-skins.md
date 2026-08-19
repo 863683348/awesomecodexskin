@@ -1,6 +1,6 @@
 ---
-title: "Codex 스킨 설치 방법 (데스크탑 및 CLI): 완전 가이드"
-description: "Codex 데스크톱 및 CLI 스킨 설치 단계별 가이드 — 복사-붙여넣기 프롬프트, Dream Skin과 같은 테마 엔진, CLI 테마, 전환 또는 제거 방법. macOS 및 Windows 지원."
+title: "Codex 스킨 설치 방법(데스크톱 및 CLI): 완전한 가이드"
+description: "Codex Desktop 및 CLI 스킨 설치를 위한 단계별 안내서 — 복사-붙여넣기 가능한 명령어, Dream Skin과 같은 테마 엔진, CLI 테마, 테마 전환 및 제거 방법을 포함합니다. macOS 및 Windows를 지원합니다."
 pubDate: "2026-08-14"
 updatedDate: "2026-08-14"
 tags: ["install", "guide", "desktop", "cli", "themes"]
@@ -9,79 +9,79 @@ relatedSkins: ["clear-glass", "gothic-void-expedition", "monokai-stone", "hatsun
 lang: "ko"
 ---
 
-Codex 스킨을 사용하면 OpenAI Codex Desktop 및 Codex CLI를 재설정하여 작업 공간이 당신의 취향에 맞게 조정됩니다. 야간 세션용 어두운 저광량 팔레트, 낮 시간용 파스텔 표면, 또는 단순히 즐거움을 위한 네온 스타일 등 다양한 옵션이 있습니다.
+Codex 스킨을 사용하면 OpenAI Codex Desktop 및 Codex CLI의 외관을 새롭게 꾸며, 작업 공간을 본인의 취향에 맞출 수 있습니다 — 밤 시간에 어울리는 어두운 저조도 팔레트, 낮 시간에 적합한 파스텔 톤의 표면, 혹은 단순히 재미를 위한 네온 스타일까지 가능합니다.
 
-이 가이드는 하나의 복사 설치 프롬프트부터 CLI 테마 관리자에 이르기까지 Codex 스킨을 설치하는 모든 방법을 다룹니다.
+이 가이드에서는 Codex 스킨을 설치하는 모든 방법을 다룹니다. 한 번의 복사-붙여넣기로 설치하는 방식부터 CLI 기반 테마 관리 도구를 활용하는 방식까지 모두 포함됩니다.
 
-## 간단한 버전
+## 간단한 요약
 
-이 인덱스에 있는 대부분의 스킨은 동일한 방식으로 설치됩니다:
+이 인덱스에 등록된 대부분의 스킨은 동일한 방식으로 설치됩니다:
 
-1. 원하는 스킨을 선택하고 상세 페이지를 열어주세요.
-2. 설치 프롬프트를 복사하거나 (.codedrobe-theme 스킨의 경우 테마 파일을 다운로드합니다).
-3. 프롬프트를 Codex Desktop에 붙여넣거나 Codex CLI에서 명령어를 실행합니다.
-4. 테마 엔진이 즉시 팔레트를 적용합니다 — 대부분의 엔진에서는 재시작이 필요 없습니다.
+1. 원하는 스킨을 선택하고 해당 상세 페이지를 엽니다.  
+2. 설치 프롬프트를 복사하거나(또는 `.codedrobe-theme` 형식의 스킨의 경우 테마 파일을 다운로드합니다).  
+3. 복사한 프롬프트를 Codex Desktop에 붙여넣거나, Codex CLI에서 명령어를 실행합니다.  
+4. 테마 엔진이 즉시 팔레트를 적용합니다 — 대부분의 엔진에서는 재시작이 필요하지 않습니다.
 
-그냥 그렇습니다. 스킨은 코드가 아닌 설정이므로 전환은 빠르고 되돌릴 수 있습니다.
+이것으로 끝입니다. 스킨은 코드가 아닌 설정 파일이므로, 전환 속도가 빠르고 언제든지 되돌릴 수 있습니다.
 
-## 방법 1: 복사-붙여넣기 설치 (가장 빠름)
+## 방법 1: 복사-붙여넣기 설치 프롬프트(가장 빠름)
 
-대부분의 Codex 스킨 — 특히 [Codex Dream Skin](https://github.com/Fei-Away/Codex-Dream-Skin)에서 제공하는 오픈소스 주입 엔진의 엔진 사전설정 — 자연어 프롬프트 하나로 설치됩니다.
+대부분의 Codex 스킨 — 특히 오픈소스 주입 엔진인 [Codex Dream Skin](https://github.com/Fei-Away/Codex-Dream-Skin)에서 제공하는 엔진 프리셋 — 은 단 하나의 자연어 프롬프트로 설치할 수 있습니다.
 
-어떤 스킨의 상세 페이지에서 **설치 프롬프트** 박스에는 다음과 같은 바로 붙여넣을 수 있는 지침이 포함되어 있습니다:
+모든 스킨 상세 페이지에서 **설치 프롬프트** 상자에는 다음과 같은 바로 붙여넣을 수 있는 지시문이 포함되어 있습니다:
 
 ```text
-Codex, 'Clear Glass' 라이트 테마를 적용하세요 — 작업 공간용 깨끗한 유리 표면입니다.
+Codex, apply the 'Clear Glass' light theme — a clean glassy low-distraction surface for my workspace.
 ```
 
-이를 복사하고 Codex를 열어 붙여넣으세요. 엔진은 프롬프트를 읽고 테마에 정의된 팔레트, 테두리 및 강조 색상을 적용합니다.
+해당 문장을 복사한 후 Codex를 열고 붙여넣습니다. 엔진이 이 프롬프트를 해석하여, 해당 테마에 정의된 팔레트, 테두리, 강조 색상 등을 즉시 적용합니다.
 
-> **팁:** 프롬프트가 사전설정을 적용한다면, 엔진은 이를 저장하여 나중에 한 번 클릭으로 기본값으로 돌아갈 수 있습니다.
+> **참고:** 프롬프트가 프리셋을 적용하는 경우, 엔진은 이를 저장하므로 나중에 한 번의 클릭으로 기본 설정으로 되돌릴 수 있습니다.
 
-## 방법 2: 테마 파일(.codedrobe-theme) 다운로드
+## 방법 2: 테마 파일 다운로드(`.codedrobe-theme`)
 
-일부 스킨은 .codedrobe-theme 파일로 제공됩니다. 이러한 경우:
+일부 스킨은 다운로드 가능한 `.codedrobe-theme` 파일 형태로 제공됩니다. 이 경우 다음 절차를 따르세요:
 
-1. 스킨 페이지에서 **Download .codedrobe-theme**를 클릭하세요.
-2. 편리한 위치에 파일을 저장합니다.
-3. Codex Desktop에서 파일을 열어주세요 — 지원되는 엔진은 테마를 자동으로 가져옵니다.
+1. 스킨 페이지에서 **Download .codedrobe-theme** 버튼을 클릭합니다.  
+2. 파일을 원하는 위치에 저장합니다.  
+3. Codex Desktop에서 해당 파일을 열면, 지원되는 엔진이 자동으로 테마를 가져옵니다.
 
-이 방법은 codexskins.org와 같은 갤러리에서 준비된 테마 파일을 호스팅할 때 일반적입니다.
+이 방식은 codexskins.org와 같이 사전 제작된 테마 파일을 호스팅하는 갤러리에서 일반적으로 사용됩니다.
 
-## 방법 3: 명령어로 CLI 테마 설치
+## 방법 3: CLI 테마 설치 명령어 사용
 
-Codex CLI 테마는 다른 설치 경로를 사용합니다. `tmtheme` 설치 형식(예: Bearded Theme Ports)을 가진 스킨은 다음 명령어로 설치됩니다:
+Codex CLI 테마는 다른 설치 경로를 따릅니다. `tmtheme` 설치 형식을 사용하는 스킨(예: Bearded Theme Ports)은 단 하나의 명령어로 설치할 수 있습니다:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh
-# 그런 다음 Codex CLI에서 다음을 실행하세요:
+# 이후 Codex CLI에서 다음 명령어 실행:
 /theme Tokyo Night
 ```
 
-[Codepilot](https://github.com/charzhu/codepilot)와 같은 도구들은 Codex Themes CLI([https://github.com/ychampion/codex-themes](https://github.com/ychampion/codex-themes))를 사용하여 CLI 테마를 관리해줍니다 — 유효성 검사, 미리보기, 적용, 롤백 및 일치하는 터미널 팔레트 내보내기를 수행할 수 있습니다.
+[Codex Themes CLI](https://github.com/ychampion/codex-themes)나 [Codepilot](https://github.com/charzhu/codepilot)과 같은 도구는 CLI 테마를 자동으로 관리해 줍니다 — 유효성 검사, 미리보기, 적용, 롤백, 그리고 일치하는 터미널 팔레트 내보내기까지 지원합니다.
 
 ## 어떤 엔진이 스킨을 지원하나요?
 
 | 엔진 | 플랫폼 | 설치 방식 |
 |---|---|---|
-| Codex Dream Skin | macOS, Windows | 에이전트 프롬프트 / 사전설정 |
+| Codex Dream Skin | macOS, Windows | 에이전트 프롬프트 / 프리셋 |
 | Codex Skin Manager | macOS, Windows | 내장 관리자 |
-| Codex Themes (데스크탑) | macOS | .codextheme 가져오기 |
+| Codex Themes (desktop) | macOS | `.codextheme` 파일 가져오기 |
 | ReTheme | macOS, Windows | 서명된 커뮤니티 테마 |
-| Codex Themes CLI | 크로스플랫폼 | CLI `/theme` |
-| Codepilot | 크로스플랫폼 (npm) | 내장 TUI `/skin` |
+| Codex Themes CLI | 크로스플랫폼 | CLI `/theme` 명령어 |
+| Codepilot | 크로스플랫폼 (npm) | 내장 TUI `/skin` 명령어 |
 
-## 스킨을 교체하거나 되돌리는 방법
+## 스킨 전환 또는 기본값으로 되돌리기
 
-- **사전설정 엔진 (Dream Skin 등):** 엔진은 기본 사전설정을 유지합니다 — 일반적으로 "기본값 복원" 버튼을 통해 원래 모양으로 돌아갑니다.
-- **CLI:** `/theme`은 설치된 테마 목록을 보여줍니다; 다른 이름으로 명령어를 다시 실행하여 교체할 수 있습니다.
-- **테마 파일:** 이전 `.codedrobe-theme`를 다시 가져오거나 엔진의 기본값을 다시 실행합니다.
+- **프리셋 기반 엔진(Dream Skin 등):** 엔진이 기본 프리셋을 유지하므로, 일반적으로 “기본값 복원” 버튼을 클릭하면 원래 외관으로 돌아갑니다.  
+- **CLI:** `/theme` 명령어로 설치된 테마 목록을 확인할 수 있으며, 다른 이름을 지정해 다시 실행하면 즉시 전환됩니다.  
+- **테마 파일:** 이전에 사용했던 `.codedrobe-theme` 파일을 다시 가져오거나, 엔진의 기본 설정을 재실행하면 됩니다.
 
-## 시작하기에 좋은 인기 있는 스킨
+## 시작하기 좋은 인기 스킨들
 
-- [Gothic Void Expedition](/skins/gothic-void-expedition/) — 엔진의 내장 어두운 기본값입니다.
-- [Clear Glass](/skins/clear-glass/) — 낮 시간용 유리 표면입니다.
-- [Monokai Stone](/skins/monokai-stone/) — 고전적인 CLI 팔레트입니다.
-- [Hatsune Miku](/skins/hatsune-miku/) — 파란색과 초록색의 보컬로이드 에너지입니다.
+- [Gothic Void Expedition](/skins/gothic-void-expedition/) — 엔진 내장 어두운 기본 스킨  
+- [Clear Glass](/skins/clear-glass/) — 낮 시간에 어울리는 깨끗한 유리 질감의 밝은 스킨  
+- [Monokai Stone](/skins/monokai-stone/) — 전통적인 CLI 팔레트  
+- [Hatsune Miku](/skins/hatsune-miku/) — 청록색 계열의 보컬로이드 에너지 스킨  
 
-100개 이상의 스킨이 더 있는 [전체 인덱스](/skins/)를 탐색하거나, 엔진 수준의 설정 세부 정보를 위해我们的 [튜토리얼](/tutorial/)을 읽어보세요.
+[전체 인덱스](/skins/)에서 100개 이상의 추가 스킨을 둘러보거나, 엔진 수준의 설정 세부 정보는 [튜토리얼](/tutorial/)을 참고하세요.

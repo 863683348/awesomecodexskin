@@ -1,6 +1,6 @@
 ---
-title: "Temi Codex CLI vs Codepilot: Strumenti per la Pelle del Terminale Recensiti"
-description: "Entrambi gli strumenti inseriscono comandi /theme-style nel terminale. Uno è un CLI leggero, l'altro un TUI completo. Comandi, convalida, esportazione della palette e chi dovrebbe usare quale."
+title: "Temi Codex CLI contro Codepilot: recensione degli strumenti per skin del terminale"
+description: "Entrambi gli strumenti inseriscono i comandi `/theme-style` nel tuo terminale. Uno è un CLI essenziale, l’altro una TUI completa. Comandi, convalida, esportazione della palette e indicazioni su chi dovrebbe utilizzare quale strumento."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["cli", "codepilot", "terminal", "tools"]
@@ -9,71 +9,71 @@ relatedSkins: ["monokai-stone-cli", "solarized-cli", "tokyo-night-cli", "bearded
 lang: "it"
 ---
 
-Gli utenti del terminale applicano i temi Codex con comandi, non con gallerie. I due nomi che continuano a comparire sono **Codex Themes CLI** (da ychampion/codex-themes) e **Codepilot** (installabile via npm). Entrambi ti danno un comando `/theme` o `/skin` nel terminale, ma sono stati realizzati per tipi diversi di utenti. Ecco il confronto onesto.
+Gli utenti terminali personalizzano Codex tramite comandi, non tramite gallerie. I due nomi che ricorrono più spesso sono **Codex Themes CLI** (dal repository ychampion/codex-themes) e **Codepilot** (installabile tramite npm). Entrambi ti forniscono un comando `/theme` o `/skin` nel terminale — ma sono progettati per tipologie diverse di utenti. Ecco un confronto onesto.
 
-## In breve
+## A colpo d’occhio
 
 | | Codex Themes CLI | Codepilot |
 |---|---|---|
-| Tipo | CLI leggero | Gestore TUI completo |
-| Installazione | Script curl / repo | npm |
+| Tipo | CLI essenziale | Gestore completo con interfaccia TUI |
+| Installazione | Script curl / repository | npm |
 | Comando principale | `/theme <nome>` | `/skin` |
-| Convalida | Base | Convalida integrata |
-| Anteprima | Nessuna anteprima visiva | Supporto per l'anteprima |
-| Rollback | Manuale | Rollback integrato |
-| Esportazione della palette del terminale | Limitata | Sì |
+| Validazione | Di base | Validazione integrata |
+| Anteprima | Nessuna anteprima visuale | Supporto per l’anteprima |
+| Ripristino | Manuale | Ripristino integrato |
+| Esportazione della tavolozza del terminale | Limitata | Sì |
 
-## Codex Themes CLI: l'approccio minimalista
+## Codex Themes CLI: il minimalista
 
-Codex Themes CLI è l'approccio classico: installi un tema e lo cambi con `/theme monokai-stone`. È un diretto discendente del flusso di lavoro dei temi VS Code / tmux — un comando, un tema, senza cerimonie.
-
-**Punti di forza:**
-- **Scriptabile.** I comandi `/theme` si adattano ai script shell e alle configurazioni dotfiles.
-- **Prevedibile.** Un comando fa una cosa sola; nessun menu da navigare.
-- **Leggero.** Non viene installato nulla in più rispetto ai file del tema.
-
-**Punti deboli:**
-- **Nessuna anteprima.** Devi effettuare il commit prima di vederlo.
-- **Gestione manuale.** Rimuovere i temi o riparare uno rotto è compito tuo.
-- **Convalida minima.** Un tema malformato fallisce al momento dell'applicazione, non durante l'installazione.
-
-## Codepilot: lo strumento potente TUI
-
-Codepilot è un gestore completo per i temi del terminale: un TUI dove puoi elencare, convalidare, anteprima, applicare, ripristinare e esportare le palette. È più simile a "un gestore di temi che vive nel tuo terminale" che a "un comando per i temi".
+Codex Themes CLI rappresenta l’approccio classico: installi un tema e lo attivi con `/theme monokai-stone`. È un diretto discendente del flusso di lavoro dei temi per VS Code e tmux — un solo comando, un solo tema, niente fronzoli.
 
 **Punti di forza:**
-- **Convalida prima dell'applicazione.** I temi non funzionanti vengono rilevati presto.
-- **Rollback integrato.** Hai sbagliato un tema? Un comando ti riporta indietro.
-- **Esportazione delle palette.** Genera palette corrispondenti per terminale e editor da un tema Codex — un vero vantaggio per gli appassionati di sincronizzazione.
-- **Cross-platform tramite npm."
+- **Scriptabile.** I comandi `/theme` si integrano facilmente in script shell e configurazioni dotfiles.
+- **Prevedibile.** Un comando esegue una sola azione; nessun menu da navigare.
+- **Leggero.** Non viene installato nulla oltre ai file del tema.
 
 **Punti deboli:**
-- **Più componenti in movimento.** Installazione più pesante, più concetti da imparare.
-- **Eccessivo per chi usa un solo tema.** Se usi sempre lo stesso tema, il TUI diventa cerimoniale.
+- **Nessuna anteprima.** Devi confermare prima di vedere il risultato.
+- **Gestione manuale.** Rimuovere temi o correggere un tema danneggiato è compito tuo.
+- **Validazione minima.** Un tema malformato fallisce al momento dell’applicazione, non durante l’installazione.
+
+## Codepilot: lo strumento avanzato TUI
+
+Codepilot è un gestore completo di skin per terminale: un’interfaccia TUI che permette di elencare, validare, visualizzare in anteprima, applicare, ripristinare e esportare le tavolozze cromatiche. È più simile a «un gestore di skin che vive nel tuo terminale» che a «un semplice comando per i temi».
+
+**Punti di forza:**
+- **Validazione prima dell’applicazione.** I temi difettosi vengono individuati precocemente.
+- **Ripristino integrato.** Hai commesso un errore con un tema? Basta un comando per tornare indietro.
+- **Esportazione della tavolozza.** Genera automaticamente tavolozze coerenti per terminale e editor partendo da una skin Codex — un vero vantaggio per chi cura la sincronizzazione tra ambienti.
+- **Multi-piattaforma grazie a npm.**
+
+**Punti deboli:**
+- **Più componenti.** Installazione più pesante e maggiori concetti da apprendere.
+- **Eccessivo per chi usa un solo tema.** Se utilizzi sempre la stessa skin, l’interfaccia TUI diventa pura formalità.
 
 ## Quale scegliere?
 
-- **Vivi nei dotfiles e vuoi strumenti minimi:** Codex Themes CLI. Si adatta alla filosofia Unix — un comando, componibile.
-- **Gestisci diversi temi e desideri delle protezioni:** Codepilot. La convalida e il rollback si pagano la prima volta che un tema si rompe.
-- **Vuoi palette corrispondenti tra terminale e editor:** Codepilot. La funzione di esportazione è il fattore differenziatore.
-- **Sei su una macchina condivisa/CI:** Codex Themes CLI — scriptabile e con poche dipendenze.
+- **Se vivi nei tuoi dotfiles e preferisci strumenti minimi:** scegli Codex Themes CLI. Si allinea alla filosofia Unix — un comando, componibile.
+- **Se gestisci diversi temi e desideri garanzie di sicurezza:** scegli Codepilot. Validazione e ripristino si ripagano già al primo tema rotto.
+- **Se vuoi sincronizzare tavolozze tra terminale ed editor:** scegli Codepilot. La funzione di esportazione è il vero fattore differenziante.
+- **Se lavori su macchine condivise o CI:** scegli Codex Themes CLI — scriptabile e con poche dipendenze.
 
-## La questione delle palette
+## La questione della tavolozza
 
-Questo è davvero il punto di divergenza. Se sincronizzare il tuo tema Codex con la tua palette del terminale è importante per te, l'esportazione di Codepilot è un vantaggio reale — genera i colori del terminale dal tuo tema Codex invece di dover mappare a mano gli hex. [Monokai Stone (CLI)](/skins/monokai-stone-cli/) o [Solarized (CLI)](/skins/solarized-cli/) sono ottime opzioni per provare questa funzione, poiché le versioni native CLI si applicano facilmente attraverso entrambi gli strumenti.
+Questo è il vero bivio. Se per te è importante sincronizzare la tua skin Codex con la tavolozza del terminale, l’esportazione di Codepilot rappresenta un vero vantaggio — genera automaticamente i colori del terminale partendo dalla tua skin Codex, senza dover mappare manualmente i codici esadecimali. [Monokai Stone (CLI)](/skins/monokai-stone-cli/) o [Solarized (CLI)](/skins/solarized-cli/) sono ottime candidate per provare questa funzionalità, dato che le versioni native CLI si applicano correttamente con entrambi gli strumenti.
 
-## Domande frequenti rapide
+## FAQ rapida
 
-**Posso usare entrambi?**
-Sì — gestiscono temi in formati compatibili (configurazioni CLI). Basta non farli funzionare contemporaneamente come applicatori attivi.
+**Posso usare entrambi?**  
+Sì — gestiscono temi in formati compatibili (configurazioni CLI). Evita però di eseguirli contemporaneamente come applicatori attivi.
 
-**Qualcuno supporta i file tmtheme?**
-Entrambi gestiscono formati standard per i temi CLI; il supporto per l'importazione di tmtheme varia. Controlla la documentazione del repository per il tuo specifico file tema.
+**Entrambi supportano i file tmtheme?**  
+Entrambi gestiscono i formati standard per temi CLI; il supporto all’importazione di file tmtheme varia. Consulta la documentazione del repository per il tipo specifico di file tema che stai utilizzando.
 
-**Quale è migliore per i principianti nel terminale?**
-Codepilot, grazie alla convalida e all'anteprima. Il TUI ti guida; il CLI leggero presuppone che tu sappia cosa stai facendo.
+**Quale è più adatto ai principianti del terminale?**  
+Codepilot, grazie alla validazione e all’anteprima. L’interfaccia TUI ti guida passo dopo passo; la CLI essenziale presuppone invece che tu sappia già cosa stai facendo.
 
-**Funzionano su macOS e Windows?**
-Codex Themes CLI copre le piattaforme supportate dai suoi port; Codepilot è basato su npm e cross-platform.
+**Funzionano su macOS e Windows?**  
+Codex Themes CLI supporta le piattaforme coperte dalle sue versioni portate; Codepilot, essendo basato su npm, è multi-piattaforma.
 
-Se vuoi qualcosa leggero e scriptabile, vai su Codex Themes CLI. Se vuoi convalida, anteprima ed esportazione delle palette, vai su Codepilot. In ogni caso, abbinalo a un buon tema nativo CLI come [Tokyo Night (CLI)](/skins/tokyo-night-cli/) o [Bearded Tokyo Night](/skins/bearded-tokyo-night/), e consulta la [guida alla sincronizzazione del terminale](/blog/codex-skin-terminal-sync/) per completare la configurazione.
+Se preferisci leggerezza e scriptabilità, scegli Codex Themes CLI. Se invece cerchi validazione, anteprima ed esportazione della tavolozza, scegli Codepilot. In ogni caso, abbinarlo a una buona skin nativa CLI come [Tokyo Night (CLI)](/skins/tokyo-night-cli/) o [Bearded Tokyo Night](/skins/bearded-tokyo-night/) e consultare la [guida alla sincronizzazione con il terminale](/blog/codex-skin-terminal-sync/) ti permetterà di completare la configurazione in modo ottimale.

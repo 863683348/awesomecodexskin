@@ -1,6 +1,6 @@
 ---
-title: "7 Configurações de Cuidado com os Olhos para Codificação Noturna no Codex"
-description: "Codificação noturna cansa os olhos mais do que o trabalho durante o dia. Essas 7 configurações — baixa saturação, baixa luz azul, brilho adequado — mais os temas Codex escuros que passam no teste."
+title: "7 Configurações para Cuidado dos Olhos ao Programar à Noite no Codex"
+description: "Codificar à noite cansa mais os olhos do que trabalhar durante o dia. Essas 7 configurações — baixa saturação, luz azul fraca e brilho adequado —, além dos temas escuros do Codex que passam nesse teste."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["eye-care", "night", "dark", "settings"]
@@ -9,45 +9,45 @@ relatedSkins: ["gothic-void-expedition", "amber-nocturne", "cyber-neon", "mythic
 lang: "pt"
 ---
 
-Duas horas de programação à noite deixam meus olhos mais secos do que um dia inteiro de trabalho no escritório. A tela é a mesma. A diferença está no seu corpo: após o pôr do sol, suas pupilas estão mais dilatadas, seu cérebro interpreta o retângulo brilhante como "manhã", e sua taxa de piscar diminui em um terço. Escolher a pele certa do Codex é uma das formas mais baratas de resolver os três problemas.
+Duas horas de programação noturna deixam meus olhos mais ressecados do que um dia inteiro de trabalho no escritório. A tela é a mesma. A diferença está no seu corpo: após o pôr do sol, suas pupilas se dilatam, seu cérebro interpreta o retângulo brilhante como “manhã”, e sua taxa de piscadas cai em um terço. Escolher o tema Codex certo é uma das soluções mais acessíveis para os três problemas ao mesmo tempo.
 
-Isso não se trata de ir totalmente para o escuro "porque temas escuros são melhores". Trata-se dos três números: **luminância, saturação e proporção de luz azul**. Defina-os corretamente e seus olhos deixam de negociar com a tela.
+Isso não se trata de adotar um tema totalmente escuro “porque temas escuros são melhores”. Trata-se de três números: **luminância, saturação e proporção de luz azul**. Ajuste-os corretamente e seus olhos deixarão de negociar com a tela.
 
 ## Os três números que realmente importam
 
-- **Luminância de fundo**: preto puro (#000000) é pior do que a maioria das pessoas pensa — força o contraste máximo contra tudo o que estiver na tela e causa halação ao redor do texto brilhante. Um cinza muito escuro (#111–#1A) é mais confortável.
-- **Saturação**: cores de destaque vívidas são aceitáveis em pequenas doses, mas um UI todo cheio de azuis e vermelhos saturados faz os olhos procurarem foco. Temas noturnos devem ser principalmente desaturados com um ou dois acents restritos.
-- **Proporção de luz azul**: temas escuros com tons quentes (âmbar, laranja-marrom, amarelo suave) sinalizam "noite" ao seu sistema circadiano de forma muito mais suave do que um tema azul frio.
+- **Luminância de fundo**: preto puro (#000000) é pior do que a maioria imagina — força contraste máximo contra todos os demais elementos na tela e causa halos ao redor do texto brilhante. Um cinza muito escuro (#111–#1A) é muito mais confortável para a leitura.
+- **Saturação**: cores de destaque vivas são aceitáveis em pequenas doses, mas uma interface inteira repleta de tons azuis e vermelhos saturados obriga os olhos a buscar constantemente o foco. Temas noturnos devem ser majoritariamente dessaturados, com apenas um ou dois destaques contidos.
+- **Proporção de luz azul**: temas escuros com tons quentes (âmbar, laranja-avermelhado, amarelo suave) sinalizam “noite” ao seu sistema circadiano de forma muito mais suave do que um tema frio azulado.
 
-Uma pele é um filtro, não apenas decoração. Se ela falhar nesses três pontos, nenhum número de óculos de bloqueio de luz azul compensa completamente.
+Um tema é um filtro, não mera decoração. Se ele falhar nesses três critérios, nem mesmo óculos externos bloqueadores de luz azul conseguem compensar totalmente essa falha.
 
-## Checklist das 7 configurações
+## Lista de verificação com 7 configurações
 
-Percorra essas configurações uma vez, e você estará pronto por um ano:
+Execute essas etapas uma única vez e estará pronto por um ano inteiro:
 
-1. **Mude para uma pele escura, mas não para o preto total.** Procure fundos em torno de `#111`–`#1A1A1A`, não `#000000`. Nesse índice, [Gothic Void Expedition](/skins/gothic-void-expedition/) é um bom ponto de partida — seu padrão interno usa um quase-preto que mantém a halação baixa.
-2. **Limite a saturação dos acents.** Máximo de um ou dois acents. [Cyber Neon](/skins/cyber-neon/) é o extremo tentador; reserve-o para o dia, não para a meia-noite.
-3. **Prefira tons neutros quentes após as 21h.** [Amber Nocturne](/skins/amber-nocturne/) foi feito exatamente para isso — um fundo âmbar-marrom que permanece legível sem gritar "luz azul" para o seu cérebro.
-4. **Reduza a luminosidade da interface do Codex, se o seu engine permitir.** Alguns engines escalam toda a paleta; uma redução de 10–15% geralmente é o ponto ideal.
-5. **Alinhe seu editor com o terminal.** Uma paleta desalinhada força seus olhos a se readaptarem sempre que você muda de painel. Mesma família de tons, luminância próxima, pronto.
-6. **Ative o modo noturno do sistema / f.lux sobre a pele.** A pele cuida das cores da interface; a camada do sistema aquece toda a tela. Elas são complementares, não alternativas.
-7. **Verifique sua taxa de piscar — sério.** Um lembrete de `20-20-20` (a cada 20 minutos, olhe para 20 pés de distância, por 20 segundos) faz mais do que qualquer tema. Qualidade da pele e pausas para piscar são as duas metades da solução.
+1. **Mude para um tema escuro, mas não preto puro.** Busque fundos em torno de `#111`–`#1A1A1A`, não `#000000`. Neste índice, [Gothic Void Expedition](/skins/gothic-void-expedition/) é uma boa referência — seu padrão embutido usa um quase-preto que mantém os halos em níveis baixos.
+2. **Limite a saturação dos destaques.** Máximo de um ou dois destaques. [Cyber Neon](/skins/cyber-neon/) representa o extremo tentador; reserve-o para o dia, não para a meia-noite.
+3. **Prefira neutros quentes após as 21h.** [Amber Nocturne](/skins/amber-nocturne/) foi criado exatamente para isso — uma base âmbar-avermelhada que permanece legível sem gritar “luz azul” para o seu cérebro.
+4. **Reduza o brilho da interface do Codex, se seu mecanismo suportar.** Alguns mecanismos escalonam toda a paleta; uma redução de 10–15% geralmente representa o ponto ideal.
+5. **Alinhe o tema do seu editor com o do seu terminal.** Paletas desalinhadas forçam seus olhos a readaptarem-se toda vez que você alterna entre painéis. Mesma família de matizes, luminância próxima — pronto.
+6. **Ative o modo noturno do sistema operacional / f.lux além do tema.** O tema cuida das cores da interface; a camada do SO aquece toda a tela. São complementares, não alternativas.
+7. **Verifique sua taxa de piscadas — sério mesmo.** Um lembrete `20-20-20` (a cada 20 minutos, olhe para algo a 6 metros de distância por 20 segundos) faz mais do que qualquer tema. Qualidade do tema e pausas para piscar são as duas metades dessa solução.
 
-## Por que temas escuros melancólicos passam no teste
+## Por que temas escuros com atmosfera passam nesse teste
 
-[Mythic Guardian Noir](/skins/mythic-guardian-noir/) e outros temas escuros noturnos nesse índice compartilham uma característica: mantêm a luminância baixa e consistente em todos os painéis, então sua pupila não precisa se ajustar constantemente. Essa consistência — não "quão legal o tema parece" — é o que torna uma pele segura para a noite.
+[Mythic Guardian Noir](/skins/mythic-guardian-noir/) e outras entradas “escuro-midnight” deste índice compartilham uma característica: mantêm a luminância baixa e consistente entre os painéis, de modo que sua pupila não precise se readaptar constantemente. Essa consistência — e não “quão impressionante o tema parece” — é o que torna um tema seguro para uso noturno.
 
-Um teste simples: apague as luzes do ambiente, abra uma pele e faça cara de cego. Se o lado esquerdo e a área de código parecem uma superfície, a pele está fazendo seu trabalho. Se o lado esquerdo brilha como um letreiro, siga em frente.
+Um bom teste: reduza a iluminação do ambiente, abra um tema e franza os olhos. Se a barra lateral e a área de código parecerem uma única superfície, o tema está funcionando corretamente. Se a barra lateral brilhar como um letreiro, siga em frente.
 
 ## Perguntas frequentes rápidas
 
-**Temas claros à noite sempre são piores?**
-Não sempre, mas normalmente. O problema é a área brilhante grande, não a "temperatura" do tema. Um tema claro com baixo contraste é aceitável; um tema branco com alta luminosidade às 2h da manhã é o mais difícil para seus olhos.
+**Um tema claro à noite é sempre pior?**  
+Não necessariamente, mas geralmente sim. O problema está na grande área superficial brilhante, não na “temperatura” do tema. Um tema claro com brilho reduzido e baixo contraste é perfeitamente aceitável; um tema branco em pleno brilho às 2h da manhã é o que mais agride seus olhos.
 
-**Preciso de óculos de bloqueio de luz azul se minha pele for quente?**
-A pele é apenas o começo, não a cura. Temas quentes reduzem a dose de luz azul; óculos e modo noturno do sistema reduzem ainda mais. Use-os se você programar todas as noites.
+**Preciso usar óculos bloqueadores de luz azul se meu tema for quente?**  
+O tema é um ponto de partida, não uma cura definitiva. Temas quentes reduzem a dose de luz azul; óculos e o modo noturno do SO a reduzem ainda mais. Combine-os se você programa até tarde todas as noites.
 
-**Posso copiar uma dessas skins e ajustá-la?**
-Sim — é o caminho mais rápido. Pegue [Amber Nocturne](/skins/amber-nocturne/) ou [Gothic Void Expedition](/skins/gothic-void-expedition/), reduza a saturação e salve-a como seu "modo noturno" personalizado.
+**Posso simplesmente copiar um desses temas e ajustá-lo?**  
+Sim — esse é o caminho mais rápido. Pegue [Amber Nocturne](/skins/amber-nocturne/) ou [Gothic Void Expedition](/skins/gothic-void-expedition/), reduza a saturação e salve como seu próprio predefinido “modo noturno”.
 
-Escolha uma das skins escuras acima, aplique as sete configurações uma vez, e suas sessões de programação às 2h da manhã deixam de custar o dia seguinte. Explore o índice completo de [peles](/skins/) para mais opções escuras, ou confira nosso [tutorial](/tutorial/) se quiser construir sua própria paleta noturna do zero.
+Escolha um dos temas escuros acima, aplique as sete configurações uma única vez e suas sessões de programação às 2h da manhã deixarão de custar-lhe o dia seguinte. Explore o [índice completo de temas](/skins/) para mais opções escuras, ou consulte nosso [tutorial](/tutorial/) se quiser criar sua própria paleta noturna do zero.

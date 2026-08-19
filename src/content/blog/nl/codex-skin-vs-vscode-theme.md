@@ -1,6 +1,6 @@
 ---
-title: "Codex skins versus VS Code thema's: moeten ze overeenkomen?"
-description: "Je codeert in VS Code en Codex naast elkaar, en de kleurpaletten botsen. Een Codex-thema aanpassen aan je VS Code-thema - of niet - en hoe je ze in minuten kunt synchroniseren."
+title: "Codex-skins versus VS Code-thema’s: Moeten ze overeenkomen?"
+description: "U programmeert in VS Code en Codex naast elkaar, en de kleurenpaletten botsen. Hoe u uw Codex-look kunt afstemmen op uw VS Code-thema — of juist niet — en hoe u ze in minuten kunt synchroniseren."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["vscode", "matching", "palette"]
@@ -9,59 +9,52 @@ relatedSkins: ["monokai-stone", "solarized", "cyber-neon", "clear-glass"]
 lang: "nl"
 ---
 
-STRICTE REGELS:
-1. Vertaal alle menselijke leesbare proza, kopjes, tabeltekst en linktekst.
-2. NOOIT vertalen: codeblokken, inline code, bestandspaden, shellcommando's, URLs, productnamen (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), numerieke/version tokens, of huidennamen.
-3. Houd de markdown-structuur identiek: dezelfde koppen, lijsten, tabellen, bold/italic, blockquotes, en linkbestemmingen. Een link zoals [Monokai Stone](/skins/monokai-stone/) behoudt zijn /pad/ URL ongewijzigd; alleen het zichtbare tekst kan worden vertaald.
-4. Houd elke ruwe HTML/JSX precies zo.
-5. Geef ALLEEN de vertaalde markdown-tekst weer. Geen voorwoord, geen opmerkingen, geen codevouchers om het antwoord te omringen.
+Als u net als ik bent, leeft u niet alleen in Codex. VS Code is de plek waar de helft van uw code wordt geschreven. En wekenlang droegen mijn twee editors verschillende ‘outfits’: donkerblauwe Codex en warmgrijze VS Code. Elke contextwisseling veroorzaakte een mini-kleurenconflict. Daarom ben ik dieper ingegaan op de vraag of het daadwerkelijk uitmaakt om ze op elkaar af te stemmen — en hoe dat snel kan.
 
-Als je zoals ik bent, woon je niet alleen in Codex. VS Code is waar de helft van je code plaatsvindt. En wekenlang droegen mijn twee editors verschillende kleding – donkerblauw Codex, warm grijs VS Code. Elke contextswitch was een klein kleurconflict. Dus ik heb onderzocht of het daadwerkelijk belangrijk is, en hoe je het snel kunt doen.
+## Maakt het daadwerkelijk uit om ze op elkaar af te stemmen?
 
-## Maakt het echt uit?
+**Voor concentratie: ja, licht.** Uw ogen moeten zich opnieuw aanpassen wanneer de achtergrondkleur en -helderheid tussen applicaties verschuiven. Het is geen productiviteitsbreker, maar bij tientallen wisselingen per dag vormt het een lichte, continue belasting.
 
-**Voor focus: ja, licht.** Je ogen herstellen zich wanneer de achtergrondkleur en helderheid tussen apps veranderen. Het is geen productiviteitsverlies, maar over tientallen switches per dag is het een laag aandeel.
+**Voor screenshots en demo’s: ja, zichtbaar.** Niets roept zo sterk de indruk van ‘onafgewerkt’ als een screenshot waarbij editor en terminal geen gedeelde kleurenpalet gebruiken.
 
-**Voor screenshots en demos: ja, zichtbaar.** Er is niets dat "onopgeschoeid" roept als een screenshot waar de editor en terminal geen palet delen.
+**Voor het gevoel van ‘één werkruimte’ in uw brein: ja.** Wanneer editors dezelfde stijl hebben, voelen de tools als één geïntegreerd systeem, in plaats van drie losse applicaties.
 
-**Voor het gevoel van "zelfde werkplek": ja.** Editors met hetzelfde thema maken de tools gevoel als één systeem in plaats van drie verschillende apps.
+## Het eerlijke antwoord: het is prettig, maar niet essentieel
 
-## Het eerlijke antwoord: het is fijn, niet kritisch
+Laten we het niet overdrijven. Afstemmen is een ‘polish’-verbetering, geen functionele vereiste. Als u nooit screenshots deelt en u zich niets aantrekt van kleurverschillen, kunt u dit helemaal overslaan. Maar als u het wel wilt, is het eenvoudig en snel te realiseren.
 
-Laten we het niet overschatten. Het is een polish win, geen functionele. Als je nooit screenshots deelt en de kleurveranderingen niet erg vindt, kun je dit volledig overslaan. Maar als je het wilt, is het goedkoop.
+## Hoe u ze in minuten op elkaar afstemt
 
-## Hoe kun je ze binnen minuten aanpassen?
+**Optie 1 — kies een thema dat in beide werelden bestaat.**  
+De snelle route: kies een kleurenpalet dat zowel voor VS Code als voor Codex beschikbaar is. [Monokai Stone](/skins/monokai-stone/) en [Solarized](/skins/solarized/) zijn de meest voor de hand liggende keuzes — beide hebben VS Code-thema’s met exact dezelfde naam, dus u stelt hetzelfde palet in beide applicaties in met slechts twee klikken. Ook [Cyber Neon](/skins/cyber-neon/) heeft verwante VS Code-thema’s.
 
-**Optie 1 — kies een thema dat in beide werelden bestaat.**
-De snelle weg: kies een palet dat naar beide VS Code en Codex is geport. [Monokai Stone](/skins/monokai-stone/) en [Solarized](/skins/solarized/) zijn de duidelijke kandidaten — beiden hebben VS Code-thema's met hetzelfde naam, dus je stelt hetzelfde palet in beide apps met twee klikken in. [Cyber Neon](/skins/cyber-neon/) heeft ook VS Code-cousins.
+**Optie 2 — pas helderheid en tint handmatig aan.**  
+Als uw favoriete Codex-skin geen VS Code-equivalent heeft, kunt u toch het ‘gevoel’ overnemen:  
+- Dezelfde achtergrondfamilie (beide donker, of beide koel of beide warm).  
+- Dezelfde voorgrondtemperatuur.  
+- Dezelfde accentkleur voor selectie en cursor.  
 
-**Optie 2 — handmatig match luminantie en toon.**
-Als je favoriete Codex-thema geen VS Code-tweeling heeft, match het *gevoel*:
-- Dezelfde achtergrondfamilie (beide donker, beide koel of beide warm).
-- Dezelfde voorgrondtemperatuur.
-- Dezelfde accentkleur voor selectie/cursor.
+U hoeft geen exacte hexwaarden te matchen — een helderheidsverschil van maximaal ~10% en behoud van dezelfde tintfamilie is vaak al voldoende om het kleurenconflict te laten verdwijnen.
 
-Je hebt geen hex-gelijkheid nodig — binnen ~10% luminantie en dezelfde toonfamilie is voldoende voor het conflict te verdwijnen.
+**Optie 3 — laat een tool het genereren.**  
+Als u een terminalgerichte manager zoals Codepilot gebruikt, kan de palet-exportfunctie dienen als basis voor een aangepast VS Code-thema gebaseerd op een Codex-skin. Niet ‘één-klik’, maar vrij dichtbij.
 
-**Optie 3 — laat een tool het genereren.**
-Als je een terminalgerichte manager gebruikt zoals Codepilot, kan zijn paletexport een VS Code-thema seeden vanuit een Codex-thema. Niet één-klik, maar dichtbij.
+## En wat is er met de terminal in het midden?
 
-## Wat over de terminal in het midden?
-
-Het aanpassen is een driewegs spel: Codex, VS Code en je terminal. Het goede nieuws is dat hetzelfde palet meestal ook terminalportages heeft. [Monokai Stone](/skins/monokai-stone/) en [Solarized](/skins/solarized/) hebben CLI-varianten direct in deze index — zie de [terminal sync gids](/blog/codex-skin-terminal-sync/) voor de volledige methode.
+Afstemmen is een driehoekspel: Codex, VS Code én uw terminal. Het goede nieuws is dat dezelfde paletten vaak ook beschikbaar zijn voor terminals. [Monokai Stone](/skins/monokai-stone/) en [Solarized](/skins/solarized/) leveren CLI-varianten direct via deze index — zie de [terminal-sync-gids](/blog/codex-skin-terminal-sync/) voor de volledige methode.
 
 ## Snelle FAQ
 
-**Is het vreemd om verschillende thema's voor verschillende tools te gebruiken?**
-Nee. Veel mensen gebruiken bewust een donkere editor en een lichte terminal voor contrast. Het vraagstuk is of *jij* het conflict voelt; als je het niet doet, hoef je het niet te herstellen.
+**Is het raar om verschillende thema’s te gebruiken voor verschillende tools?**  
+Nee. Veel mensen gebruiken bewust een donkere editor en een lichte terminal voor contrast. De vraag is of *u* het kleurenconflict zelf merkt; als dat niet zo is, hoeft u niets te veranderen.
 
-**Heeft het aanpassen invloed op prestaties?**
-Nee. Het is cosmetisch.
+**Heeft afstemming invloed op prestaties?**  
+Geen enkele. Het is puur cosmetisch.
 
-**Beste alomvattende keuze voor aanpassing?**
-[Monokai Stone](/skins/monokai-stone/) — het is in deze index als een thema, heeft CLI-varianten en er bestaat een VS Code-thema. Een palet, drie tools.
+**Welk thema is het beste voor algemene afstemming?**  
+[Monokai Stone](/skins/monokai-stone/) — het staat in deze index als skin, heeft CLI-varianten, én er bestaat een officieel VS Code-thema. Één palet, drie tools.
 
-**Wat als je een licht Codex-thema gebruikt?**
-Zelfde regels omgedraaid: kies een licht VS Code-thema met dezelfde temperatuur. [Clear Glass](/skins/clear-glass/) werkt goed met elk schoon licht VS Code-thema.
+**Wat als ik een lichte Codex-skin gebruik?**  
+Dezelfde regels, maar dan omgekeerd: kies een licht VS Code-thema met dezelfde temperatuur. [Clear Glass](/skins/clear-glass/) werkt uitstekend samen met elke scherpe, lichte VS Code-thema.
 
-Pas het aan als het je stoort, sla het over als het niet doet — het is een polish move, geen vereiste. Wanneer je het aanpast, begin met een dubbelwereldpalet zoals [Monokai Stone](/skins/monokai-stone/) of [Solarized](/skins/solarized/) en je bent klaar in twee klikken. Blader door de [thema-index](/skins/) voor meer opties, of de [formatgids](/blog/codex-skin-format-ecosystem/) als je wilt begrijpen hoe de bestanden werken.
+Stem af als het u storend lijkt, sla het over als het u niets uitmaakt — het is een ‘polish’-aanpassing, geen vereiste. Als u wel wilt afstemmen, begin dan met een tweewereld-palet zoals [Monokai Stone](/skins/monokai-stone/) of [Solarized](/skins/solarized/) en u bent in twee klikken klaar. Bekijk de [skin-index](/skins/) voor meer opties, of de [formaatgids](/blog/codex-skin-format-ecosystem/) als u wilt begrijpen hoe de bestanden werken.

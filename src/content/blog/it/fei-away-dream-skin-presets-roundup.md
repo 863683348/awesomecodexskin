@@ -1,6 +1,6 @@
 ---
-title: "Fei-Away Dream Skin: 7 Preimpostazioni Indicizzate, Riepilogo Aggiornamento Motore"
-description: "Il progetto Fei-Away Codex-Dream-Skin ha contribuito 7 preset di prompt all'indice. Inoltre un riepilogo di ciò che sta muovendosi nel mondo del motore per skin Codex di questo mese."
+title: "Fei-Away Dream Skin: 7 preset indicizzati, aggiornamento dell’engine"
+description: "Il progetto Fei-Away Codex-Dream-Skin ha contribuito con 7 preset di prompt all’indice. Inoltre, un riepilogo delle novità nell’ambito del motore di skin Codex questo mese."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["dream-skin", "engine", "updates"]
@@ -9,36 +9,36 @@ relatedSkins: ["cyra-sacred-radiance", "dasiming-soul-passage", "jensen-infinite
 lang: "it"
 ---
 
-Il progetto [Fei-Away Codex-Dream-Skin](https://github.com/Fei-Away/Codex-Dream-Skin) — uno dei motori per temi Codex open source più attivi — ha contribuito 7 preset di prompt all'indice questa settimana. Se sei curioso sui temi basati sui prompt, questo è un buon momento per dare un'occhiata.
+Il progetto [Fei-Away Codex-Dream-Skin](https://github.com/Fei-Away/Codex-Dream-Skin) — uno dei motori per skin Codex open source più attivi — ha contribuito questa settimana con 7 preset di prompt all’indice. Se sei sempre stato curioso riguardo alla personalizzazione delle skin basata sui prompt, questo è un ottimo momento per dare un’occhiata.
 
-## Cosa di nuovo da Fei-Away
+## Novità da Fei-Away
 
-I sette nuovi preset mostrano la gamma del motore Dream Skin, da aspetti professionali puliti a temi completamente stilizzati:
+I sette nuovi preset mostrano l’ampia gamma di possibilità offerte dal motore Dream Skin, passando da aspetti puliti e professionali a temi completamente stilizzati:
 
-- [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) — un tema luminoso con una preferenza per le tonalità chiare.
-- [Dasiming Soul Passage](/skins/dasiming-soul-passage/) — un'opzione scura e atmosferica.
-- [Jensen Infinite Compute](/skins/jensen-infinite-compute/) — un palette stilizzata tecnologicamente.
-- Plus quattro altri che coprono lo spettro tra questi.
+- [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) — un tema luminoso, orientato alla luce.
+- [Dasiming Soul Passage](/skins/dasiming-soul-passage/) — un’opzione scura e atmosferica.
+- [Jensen Infinite Compute](/skins/jensen-infinite-compute/) — una tavolozza ispirata al mondo tecnologico.
+- Più altri quattro che coprono lo spettro intermedio tra questi estremi.
 
-Tutti i sette si installano con il metodo Dream Skin: copia il prompt, incollalo in Codex, finito. La [comparazione tra motori](/blog/codex-skin-engines-compared/) spiega perché è il percorso di installazione più veloce nell'ecosistema.
+Tutti e sette si installano con il metodo Dream Skin: copia il prompt, incollalo in Codex, ed è fatta. Il confronto tra motori ([engines comparison](/blog/codex-skin-engines-compared/)) spiega perché questo sia il percorso di installazione più rapido nell’intero ecosistema.
 
-## Panoramica generale degli engine
+## Panoramica aggiornata dei motori
 
-Oltre a Fei-Away, alcune cose si stanno muovendo nel mondo degli engine:
+Oltre a Fei-Away, stanno accadendo alcune cose interessanti nel mondo dei motori:
 
-- **Codepilot** continua a rilasciare miglioramenti per TUI — validazione e esportazione della palette sono le funzionalità principali. Guarda la [comparazione CLI](/blog/codex-themes-cli-vs-codepilot/) per vedere come si confronta.
-- **Codex Themes CLI** (ychampion) continua a portare classiche terminali; le porte Tokyo Night in questo indice provengono da questa linea.
-- **Bearded Theme Ports** (vufly) ha aggiunto ulteriori import tmtheme, che è il modo in cui i temi terminali come Tokyo Night continuano a fluire in Codex.
+- **Codepilot** continua a rilasciare miglioramenti per la sua interfaccia testuale (TUI): le funzionalità principali sono la validazione e l’esportazione delle tavolozze. Per un confronto dettagliato con altri strumenti, vedi l’articolo [CLI comparison](/blog/codex-themes-cli-vs-codepilot/).
+- **Codex Themes CLI** (ychampion) prosegue nella portabilità di classici temi terminal: le versioni di Tokyo Night presenti in questo indice provengono proprio da questa linea di sviluppo.
+- **Bearded Theme Ports** (vufly) ha aggiunto ulteriori importazioni di file `tmtheme`, consentendo così a temi terminal come Tokyo Night di fluire continuamente verso Codex.
 
-## Perché i preset dei prompt contano
+## Perché i preset di prompt sono importanti
 
-I preset sono il percorso "provalo in cinque secondi". Invece di scaricare un file e configurare un motore, incollate una frase. Il compromesso è la precisione — un prompt è una descrizione, non una specifica — che la [confronto del formato](/blog/codex-theme-file-vs-prompt-preset/) approfondisce. Per esplorare umori rapidamente, niente batte questo.
+I preset rappresentano il percorso “provalo in cinque secondi”. Invece di dover scaricare un file e configurare un motore, basta incollare una sola frase. Il compromesso riguarda la precisione: un prompt è una descrizione, non una specifica tecnica — un aspetto approfondito nell’articolo [format comparison](/blog/codex-theme-file-vs-prompt-preset/). Per esplorare rapidamente diverse atmosfere ed emozioni, nulla lo batte.
 
-## Come provare i preset di Dream Skin
+## Come provare i preset Dream Skin
 
-1. Apri la pagina di un preset del tema — [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) o [Dasiming Soul Passage](/skins/dasiming-soul-passage/) funzionano bene.
+1. Apri la pagina di un preset — ad esempio [Cyra Sacred Radiance](/skins/cyra-sacred-radiance/) o [Dasiming Soul Passage](/skins/dasiming-soul-passage/), entrambi ottimi punti di partenza.
 2. Copia il prompt di installazione.
 3. Incollalo in Codex con il motore Dream Skin attivo.
-4. Fatto — torna al preset predefinito quando vuoi.
+4. Fatto — puoi tornare al preset predefinito in qualunque momento.
 
-L'ecosistema del motore sta assumendo una forma chiara: motori basati sui prompt per velocità, gestori basati su file per precisione, strumenti CLI per gli utenti terminali. Ogni nuova contribuzione come questa batch di Fei-Away rende l'ecosistema un po' più completo. Esplora l'[indice dei temi](/skins/) per vedere tutti i nuovi preset.
+L’ecosistema dei motori sta assumendo una forma chiara: motori basati su prompt per la velocità, gestori basati su file per la precisione, strumenti CLI per gli utenti terminal. Ogni nuovo contributo come questo batch di Fei-Away rende l’ecosistema un po’ più completo. Esplora l’[indice delle skin](/skins/) per vedere tutti i nuovi preset.

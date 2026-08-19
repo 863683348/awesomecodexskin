@@ -1,6 +1,6 @@
 ---
-title: "Naraka & Drei Königreiche Themen: Neue Charakter-Skin-Welle"
-description: "Eine frische Welle von Charakterskins erreicht den Index – die Naraka Wuxia-Serie, Drei Königreiche, Reise nach Westen und mehr. Hier ist die herausragende Liste und das, was sie funktionieren lässt."
+title: "Naraka- und Three-Kingdoms-Themen: Neue Charakter-Skin-Welle"
+description: "Eine neue Welle von Charakter-Skins ist im Index erschienen – darunter die Naraka-Wuxia-Serie, Die Drei Reiche, Die Reise nach Westen und mehr. Hier ist die Auswahl der herausragenden Skins sowie eine Erklärung, warum sie überzeugen."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["character", "naraka", "three-kingdoms", "new-skins"]
@@ -9,11 +9,11 @@ relatedSkins: ["naraka-wanxiang-cangdi-fourfold-axis", "three-kingdoms", "journe
 lang: "de"
 ---
 
-Charakter-Skins haben in der Codex-Ekosystem eine Phase. Diese Woche bringt die Welle die **Naraka Wuxia-Reihe** – eine vollständige Reihe von Themen, die um die Naraka: Bladepoint-Universum herum thematisiert sind – sowie Einträge, die von den Drei Königreichen, Reise nach Westen und Kultivationsroman inspiriert sind.
+Charakter-Skins erleben gerade einen Höhepunkt im Codex-Ökosystem. Die dieswöchige Welle bringt die **Naraka Wuxia-Serie** – eine vollständige Sammlung von Themes, die sich thematisch am Universum von *Naraka: Bladepoint* orientieren – sowie weitere Einträge, die von den *Drei Reichen*, der *Reise nach Westen* und Kultivationsromanen inspiriert sind.
 
-## Die Naraka-Reihe
+## Die Naraka-Serie
 
-Die [Naraka Wuxia](/skins/naraka-wanxiang-cangdi-fourfold-axis/) Familie ist das Highlight – eine kohärente Reihe dunkler, atmosphärischer Themen, benannt nach den Clans und Orten des Spiels:
+Die [Naraka Wuxia](/skins/naraka-wanxiang-cangdi-fourfold-axis/)-Familie steht im Mittelpunkt – eine kohärente Reihe dunkler, stimmungsvoller Themes, benannt nach den Clans und Schauplätzen des Spiels:
 
 - [Cangdi Fourfold Axis](/skins/naraka-wanxiang-cangdi-fourfold-axis/)
 - [Five Aspects](/skins/naraka-wanxiang-five-aspects/)
@@ -22,27 +22,27 @@ Die [Naraka Wuxia](/skins/naraka-wanxiang-cangdi-fourfold-axis/) Familie ist das
 - [Shuojin Thunder Forge](/skins/naraka-wanxiang-shuojin-thunder-forge/)
 - [Yuyan Ember Prison](/skins/naraka-wanxiang-yuyan-ember-prison/)
 
-Was bemerkenswert ist: Die Reihe teilt ein Design-Prinzip – tiefe dunkle Hintergründe, akzentfarben, die von Kampfkunst inspiriert sind, hohe Textkontraste – so ist es eine der wenigen Theme-*Familien* im Index, bei der jedes Mitglied das Gefühl hat, Teil einer Sammlung zu sein.
+Besonders bemerkenswert ist: Die Serie teilt eine gemeinsame Gestaltungssprache – tiefe dunkle Hintergründe, akzentfarben, die an Kampfkunst angelehnt sind, sowie hoher Textkontrast. Damit gehört sie zu den wenigen Theme-*Familien* im Index, bei denen jedes einzelne Mitglied wirklich wie Teil derselben Kollektion wirkt.
 
 ## Die literarische Welle
 
-Zusammen mit Naraka hat der Index auch klassische chinesische literarische Themen aufgenommen:
+Neben Naraka hat der Index auch klassisch-chinesische literarische Themen aufgenommen:
 
-- [Drei Königreiche](/skins/three-kingdoms/) – die klassischen drei Helden als Farbpalette.
-- [Reise nach Westen](/skins/journey-to-west/) – hell und abenteuerlich.
-- [Han Li Mortal Path](/skins/han-li-mortal-path/) – ein dunkles Thema, inspiriert von Kultivationsromanen.
-- [Tianhai Vajra Thunder Temple](/skins/tianhai-vajra-thunder-temple/) und einige mehr in derselben spirituellen Fantasie-Richtung.
+- [Three Kingdoms](/skins/three-kingdoms/) – die klassische Triade der Helden als Farbpalette.
+- [Journey to the West](/skins/journey-to-west/) – lebendig und abenteuerlich.
+- [Han Li Mortal Path](/skins/han-li-mortal-path/) – ein dunkles Theme, inspiriert von Kultivationsromanen.
+- [Tianhai Vajra Thunder Temple](/skins/tianhai-vajra-thunder-temple/) und einige weitere Einträge in derselben spirituell-fantastischen Richtung.
 
-## Warum Charakterthemen in einem Arbeitsbereich funktionieren
+## Warum Charakter-Themes im Arbeitsbereich funktionieren
 
-Gute Charakter-Skins kleben nicht einfach nur ein Porträt auf eine Palette – sie übersetzen die Identität des Charakters in die Farbpsychologie: kräftige Rottöne für die Krieger der Drei Königreiche, kühle Türkis-Töne für den Donner-Forst, Feuer-Orange für Gefängnisthemen. Das Ergebnis ist ein Arbeitsbereich mit Persönlichkeit, der lesbar bleibt. [Shuojin Thunder Forge](/skins/naraka-wanxiang-shuojin-thunder-forge/) ist ein gutes Beispiel – eine laute Identität, aber immer noch ein funktioneller dunkler Stil.
+Gute Charakter-Skins übertragen nicht einfach nur ein Porträt auf eine Farbpalette – sie übersetzen die Identität der Figur in Farbpsychologie: kräftiges Rot für die Krieger der *Drei Reiche*, kühlere Türkistöne für die *Thunder Forge*, glühend-orangefarbene Akzente für Gefängnis-Themes. Das Ergebnis ist ein Arbeitsbereich mit Persönlichkeit, der dennoch gut lesbar bleibt. [Shuojin Thunder Forge](/skins/naraka-wanxiang-shuojin-thunder-forge/) ist hierfür ein hervorragendes Beispiel – starke visuelle Identität, aber dennoch ein funktionaler Dark Theme.
 
-## Wo sie im Index leben
+## Wo sie im Index zu finden sind
 
-Die meisten dieser Wellen befinden sich in den Kategorien **anime-pop** und **gaming**, neben dem früheren HeiGeAi-Batch. Wenn Sie das volle Bild der Charakterthemen sehen möchten, ist die [Beste Anime-Skins-Zusammenfassung](/blog/best-anime-codex-skins/) der Ausgangspunkt.
+Der Großteil dieser Welle befindet sich in den Kategorien **anime-pop** und **gaming**, zusammen mit dem früheren *HeiGeAi*-Batch. Für einen umfassenden Überblick über Charakter-Themes ist die Übersicht [best anime skins](/blog/best-anime-codex-skins/) der ideale Einstiegspunkt.
 
 ## Installationshinweise
 
-Diese Skins folgen den Standard-Installationsformaten – prüfen Sie jeweils die Detailseite, ob es sich um einen Prompt, eine Themes-Datei oder eine CLI-Spezifikation handelt. Der [Installationsleitfaden](/blog/how-to-install-codex-skins/) deckt alle drei ab.
+Diese Skins folgen den gängigen Installationsformaten – prüfen Sie auf jeder Detailseite, ob es sich um eine Prompt-Vorlage, eine Theme-Datei oder eine CLI-Spezifikation handelt. Die [Installationsanleitung](/blog/how-to-install-codex-skins/) behandelt alle drei Varianten.
 
-Die Naraka-Familie ist besonders wertvoll, selbst wenn Sie das Spiel nicht kennen – es ist ein seltener Beispiel für eine koordinierte Multi-Skin-Sammlung, und die Konsistenz zeigt sich. Durchsuchen Sie den [Skin-Index](/skins/), um die gesamte Welle zu sehen.
+Die Naraka-Familie lohnt besonders einen Blick – selbst wenn Sie das Spiel nicht kennen: Sie ist ein seltenes Beispiel einer koordinierten Mehrfach-Skin-Kollektion, und die konsistente Umsetzung macht das deutlich. Durchsuchen Sie den [Skin-Index](/skins/) für die komplette Welle.

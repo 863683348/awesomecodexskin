@@ -1,6 +1,6 @@
 ---
-title: "Codex Skin Engines vergeleken: Dream Skin vs Skin Manager vs ReTheme vs CLI vs Codepilot"
-description: "Vijf manieren om Codex te schminken, een duidelijke vergelijking. Welk engine past bij jou — installatiestijl, voorinstellingen ondersteuning, platforms en hoe makkelijk het is om te wisselen of te verwijderen."
+title: "Vergelijking van Codex-skinengines: Dream Skin versus Skin Manager versus ReTheme versus CLI versus Codepilot"
+description: "Vijf manieren om Codex te ‘verhullen’, één duidelijke vergelijking. Welke engine past bij u — installatiestijl, ondersteuning voor voorinstellingen, platforms en hoe eenvoudig het is om over te schakelen of te verwijderen."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["engines", "comparison", "tools"]
@@ -9,72 +9,72 @@ relatedSkins: ["clear-glass", "gothic-void-expedition", "monokai-stone", "cyber-
 lang: "nl"
 ---
 
-Er zijn vijf mainstream manieren om een thema op Codex te zetten, en ze werken volledig anders. Kies de verkeerde en je zult er weken mee worstelen. Kies de juiste en het reskinnen duurt tien seconden. Deze vergelijking zet alle vijf naast elkaar zodat je in één keer kunt kiezen.
+Er zijn vijf mainstream manieren om een skin op Codex toe te passen, en ze werken volkomen anders. Kies de verkeerde en je zult er weken mee worstelen. Kies de juiste en het aanpassen van de skin duurt tien seconden. Deze vergelijking zet alle vijf naast elkaar, zodat je in één keer kunt kiezen.
 
-## De vijf engines op een rij
+## De vijf engines in één oogopslag
 
-| Engine | Platforms | Installatie stijl | Best voor |
+| Engine | Platforms | Installatiestijl | Ideaal voor |
 |---|---|---|---|
-| Codex Dream Skin | macOS, Windows | Agent prompt / voorinstelling | Personen die geen configuratie willen |
-| Codex Skin Manager | macOS, Windows | Ingebouwde manager UI | Personen die een visuele keuze willen |
-| ReTheme | macOS, Windows | Ondertekende gemeenschaps-thema's | Personen die gecurated, gecontroleerde thema's willen |
-| Codex Themes CLI | Cross-platform | CLI `/theme` commando | Terminalgebruikers |
-| Codepilot | Cross-platform (npm) | Ingebouwde TUI `/skin` | Power users die in de terminal werken |
+| Codex Dream Skin | macOS, Windows | Agent-prompt / voorinstelling | Mensen die géén configuratie willen |
+| Codex Skin Manager | macOS, Windows | Ingebouwde manager-gebruikersinterface | Mensen die een visuele keuzemogelijkheid willen |
+| ReTheme | macOS, Windows | Gesigneerde community-themes | Mensen die gecuratoreerde, gecontroleerde themes willen |
+| Codex Themes CLI | Platformonafhankelijk | CLI `/theme`-commando | Terminalgebruikers |
+| Codepilot | Platformonafhankelijk (npm) | Ingebouwde TUI `/skin` | Powergebruikers die voornamelijk in de terminal werken |
 
-## Codex Dream Skin — de "gewoon plakken" optie
+## Codex Dream Skin — de optie ‘plak het gewoon in’
 
-Dream Skin (van het Fei-Away project, dat ook verschillende thema's in deze index heeft geschreven) installeert thema's vanuit een natuurtaal prompt. Je kopieert een regel zoals "pas het Clear Glass lichtthema toe", plakt het en de engine past de kleurenpalet toe. Geen bestanden om te beheren, geen commando's om te leren.
+Dream Skin (van het Fei-Away-project, dat ook meerdere skins in deze index heeft ontwikkeld) installeert skins op basis van een prompt in natuurlijke taal. Je kopieert een regel zoals *‘pas het Clear Glass-lichtthema toe’*, plakt die in, en de engine past de kleurenpaletten toe. Geen bestanden om te beheren, geen commando’s om te leren.
 
-**Voordelen:** snelste weg naar een nieuw uiterlijk; voorinstellingen worden opgeslagen zodat je standaardinstellingen in één klik kunt herstellen.
-**Nadelen:** minder nauwkeurig dan bestandsgebaseerde thema's — je beschrijft een uiterlijk, niet een specifieke definitie.
+**Sterktes:** snelste weg naar een nieuwe uitstraling; voorinstellingen worden opgeslagen, zodat je standaardwaarden met één klik kunt herstellen.  
+**Zwaktes:** minder precies dan bestandsgebaseerde themes — je beschrijft een uitstraling, in plaats van een specifieke definitie te laden.
 
 ## Codex Skin Manager — de visuele keuzemogelijkheid
 
-Een desktopbeheerder met een ingebouwde galerij: doorzoeken, voorvertonen, toepassen, terugdraaien. Het is het dichtst bij een "app store voor thema's". Als je graag vooraf voorvertoningen bekijkt voordat je iets toepast, is dit jouw engine.
+Een desktopmanager met een ingebouwde galerij: blader, bekijk een voorbeeld, pas toe, maak ongedaan. Het komt het dichtst bij een *‘app store voor skins’*. Als je graag door voorbeelden wilt bladeren voordat je een keuze maakt, is dit jouw engine.
 
-**Voordelen:** visuele voorvertoning voordat je het toepast; goed voor niet-technische gebruikers.
-**Nadelen:** beperkt tot zijn eigen galerij; het importeren van derdenbestanden is onhandiger dan met CLI-tools.
+**Sterktes:** visueel voorbeeld voordat je toepast; geschikt voor niet-technische gebruikers.  
+**Zwaktes:** beperkt tot de eigen galerij; het importeren van externe bestanden is omslachtiger dan met CLI-tools.
 
-## ReTheme — de gecurated optie
+## ReTheme — de gecuratoreerde optie
 
-ReTheme distribueert ondertekende gemeenschaps-thema's, wat betekent dat elk thema is gecontroleerd voordat het bij jou aankomt. Minder risico op een defect of schadelijk bestand, tegen de prijs van een kleiner catalogus.
+ReTheme verspreidt gesigneerde community-themes, wat betekent dat elk theme is gecontroleerd voordat het jou bereikt. Dit verlaagt het risico op defecte of schadelijke bestanden, maar ten koste van een kleinere verzameling.
 
-**Voordelen:** veiligheid en curatie; ondertekende thema's installeren netjes.
-**Nadelen:** kleinere selectie dan de open-source ecosystemen.
+**Sterktes:** veiligheid en curatie; gesigneerde themes installeren probleemloos.  
+**Zwaktes:** kleinere selectie dan in open-source-ecosystemen.
 
 ## Codex Themes CLI — de klassieke terminaloptie
 
-De CLI-aanpak (zoals ychampion/codex-themes, die thema's zoals Tokyo Night en Monokai Stone porteerdt) behandelt thema's als een pakket dat je installeert en met een commando verandert: `/theme monokai-stone`. Het is snel, scriptbaar en werkt goed samen met dotfiles.
+De CLI-aanpak (zoals ychampion/codex-themes, die themes zoals Tokyo Night en Monokai Stone poort) behandelt skins als een pakket dat je installeert en wisselt met een commando: `/theme monokai-stone`. Het is snel, scriptbaar en integreert goed met dotfiles.
 
-**Voordelen:** scriptbaar; versiebeheerbaar; dezelfde workflow als je andere CLI-tools.
-**Nadelen:** geen visuele voorvertoning gebouwd; steilere opstap voor niet-terminalgebruikers.
+**Sterktes:** scriptbaar; onder versiebeheer te plaatsen; dezelfde werkwijze als je andere CLI-tools.  
+**Zwaktes:** geen ingebouwd visueel voorbeeld; steilere instap voor gebruikers die niet gewend zijn aan de terminal.
 
-## Codepilot — de TUI krachttool
+## Codepilot — de krachtige TUI-tool
 
-Codepilot (npm-installable) brengt een volledige TUI-thema-beheerder met `/skin` commando's, validatie, voorvertoning en terugdraaien, plus terminalkleurenpalet export. Het is de meest functionele terminaloptie.
+Codepilot (te installeren via npm) biedt een volledige TUI-skinmanager met `/skin`-commando’s, validatie, voorbeeldweergave, terugdraaifunctie én export van terminalkleurenpaletten. Het is de meest functierijke optie onder de terminaltools.
 
-**Voordelen:** validatie, voorvertoning, terugdraaien en paletexport in één tool; cross-platform.
-**Nadelen:** meer onderdelen dan de gewone CLI; overkill als je alleen maar één thema wilt.
+**Sterktes:** validatie, voorbeeldweergave, terugdraaifunctie en paletexport in één tool; platformonafhankelijk.  
+**Zwaktes:** meer onderdelen dan de eenvoudige CLI; overkill als je slechts één skin nodig hebt.
 
-## Welke moet je kiezen?
+## Welke moet jij kiezen?
 
-- **Wilt u snel een mooi uiterlijk?** Dream Skin.
-- **Prefer je het klikken door voorvertoningen?** Codex Skin Manager.
-- **Zorgt u voor gecurated, ondertekende thema's?** ReTheme.
-- **Woon je in de terminal, wil je scriptabiliteit?** Codex Themes CLI.
-- **Wil je de volledige krachttool?** Codepilot.
+- **Wil je snel een mooie uitstraling?** → Dream Skin.  
+- **Geef je de voorkeur aan klikken door voorbeelden?** → Codex Skin Manager.  
+- **Is het belangrijk dat themes zijn gecontroleerd en gesigneerd?** → ReTheme.  
+- **Werk je voornamelijk in de terminal en wil je scriptbaarheid?** → Codex Themes CLI.  
+- **Wil je de volledige krachttool?** → Codepilot.
 
-Alle vijf engines zijn compatibel met de thema's in deze index — de meeste thema's hier zijn beschikbaar als prompts of themabestanden die elke engine kan verwerken. Begin met een thema dat je leuk vindt, zoals [Clear Glass](/skins/clear-glass/) of [Gothic Void Expedition](/skins/gothic-void-expedition/), en kies de engine die bij jouw werkstijl past.
+Alle vijf engines zijn compatibel met de skins in deze index — de meeste skins hier worden verspreid als prompts of themabestanden die elke engine kan verwerken. Begin met een skin die je leuk vindt, zoals [Clear Glass](/skins/clear-glass/) of [Gothic Void Expedition](/skins/gothic-void-expedition/), en kies de engine die het beste aansluit bij jouw werkwijze.
 
 ## Snelle FAQ
 
-**Kan ik twee engines tegelijk uitvoeren?**
-Ja, maar houd er één als actieve beheerder. Twee engines die tegelijk presets aanpassen kunnen elkaar overschrijven. Kies er één als primaire, gebruik de rest alleen voor import.
+**Kan ik twee engines tegelijk draaien?**  
+Ja, maar houd er één als actieve manager. Twee engines die tegelijkertijd voorinstellingen schrijven, kunnen elkaar overschrijven. Kies één primaire engine en gebruik de andere uitsluitend voor import.
 
-**Werken engines met alle thema's?**
-Niet altijd. Promptgebaseerde engines hebben een prompt nodig; bestandsgebaseerde engines hebben het juiste bestandsformaat nodig. Het veld 'installatieformaat' van het thema vertelt je welke engine het doelt.
+**Werken engines met alle skins?**  
+Niet altijd. Op prompts gebaseerde engines hebben een prompt nodig; bestandsgebaseerde engines vereisen het bijbehorende bestandsformaat. Het veld *installatieformaat* op de detailpagina van een skin geeft aan welke engine het doelwit is.
 
-**Welke engine heeft de grootste themabibliotheek?**
-De open-source ecosystemen — Dream Skin voorinstellingen en de CLI-ports — hebben de grootste catalogi omdat iedereen kan bijdragen. Gecurated managers hebben kleinere, maar veiligere bibliotheken.
+**Welke engine heeft de grootste themabibliotheek?**  
+De open-source-ecosystemen — Dream Skin-voorinstellingen en CLI-poorten — hebben de grootste catalogi, omdat iedereen kan bijdragen. Gecuratoreerde managers hebben kleinere, maar veiligere bibliotheken.
 
-Kies je engine op basis van je werkstijl, niet op basis van hype. Blijf daarna de [volledige themaindex](/skins/) verkennen — op elk themadetailpagina staat aangegeven welk installatieformaat het gebruikt, zodat je nooit het verkeerde bestand downloadt. Nieuw met al dit? Begin met de [installatiehandleiding](/blog/how-to-install-codex-skins/).
+Kies je engine op basis van jouw werkwijze, niet op basis van hype. Blader daarna door de [volledige skinindex](/skins/) — op elke detailpagina van een skin staat aangegeven welk installatieformaat wordt gebruikt, zodat je nooit meer het verkeerde bestand downloadt. Nieuw met al dit materiaal? Begin dan met de [installatiehandleiding](/blog/how-to-install-codex-skins/).

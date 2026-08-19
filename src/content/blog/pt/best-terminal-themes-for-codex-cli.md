@@ -1,6 +1,6 @@
 ---
-title: "Melhores Temas para Terminal para Codex CLI em 2026 (Classificados para Legibilidade)"
-description: "Os melhores temas para terminal para Codex CLI em 2026 — Tokyo Night, Monokai Stone, Solarizado e mais, classificados por legibilidade, baixo estresse ocular e compatibilidade com o terminal."
+title: "Melhores temas de terminal para o Codex CLI em 2026 (classificados pela legibilidade)"
+description: "Os melhores temas de terminal para o Codex CLI em 2026 — Tokyo Night, Monokai Stone, Solarized e outros, classificados conforme legibilidade, baixo esforço visual e compatibilidade com terminal."
 pubDate: "2026-08-19"
 updatedDate: "2026-08-19"
 tags: ["best", "terminal", "themes", "cli"]
@@ -9,47 +9,40 @@ relatedSkins: ["tokyo-night-cli", "monokai-stone-cli", "solarized-cli", "vivid-p
 lang: "pt"
 ---
 
-REGRAS RIGOROSAS:
-1. Traduza todo o texto legível por humanos, títulos, texto de tabelas e texto de links.
-2. NUNCA traduza: blocos de código, código inline, caminhos de arquivos, comandos de shell, URLs, nomes de produtos (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), tokens numéricos/versão ou nomes de skins.
-3. Mantenha a estrutura de markdown idêntica: mesmos títulos, listas, tabelas, negrito/itálico, citações e destinos de links. Um link como [Monokai Stone](/skins/monokai-stone/) mantém seu caminho /path/ inalterado; apenas o texto visível pode ser traduzido.
-4. Mantenha qualquer HTML/JSX bruto exatamente como está.
-5. Saída APENAS o corpo traduzido do markdown. Nenhum pré-ambiente, nenhuma nota, nenhum código cercando a resposta.
+A paleta do seu Codex CLI é a superfície em que você olha o dia inteiro, portanto merece mais atenção do que a configuração padrão. Esta seleção classifica os melhores temas de terminal para o Codex CLI em 2026 — todos disponíveis como paletas de sintaxe instaláveis — com base em legibilidade, fadiga visual e compatibilidade com seu terminal.
 
-A paleta do seu Codex CLI é a superfície que você olha o dia todo, então merece mais atenção do que a padrão. Esta lista classifica os melhores temas para terminal do Codex CLI em 2026 — todos disponíveis como paletas de sintaxe instaladas — em legibilidade, fadiga ocular e quão bem eles combinam com seu terminal.
+## Como fizemos a classificação
 
-## Como classificamos
+Cada tema foi avaliado em quatro critérios:
 
-Cada tema foi pontuado em quatro critérios:
-
-1. **Contraste e legibilidade** — separação entre primeiro plano e fundo durante a programação.
-2. **Fadiga ocular** — redução de brilho para sessões longas.
-3. **Compatibilidade com o terminal** — se a mesma paleta existe como tema de terminal real.
-4. **Durabilidade** — paletas que resistiram ao tempo.
+1. **Contraste e legibilidade** — separação entre primeiro plano e fundo durante a programação.  
+2. **Fadiga visual** — redução de ofuscamento em sessões prolongadas.  
+3. **Compatibilidade com terminal** — se a mesma paleta está disponível como um tema real de terminal.  
+4. **Longevidade** — paletas que resistiram ao teste do tempo.
 
 ## 1. Tokyo Night — melhor opção geral
 
-Tokyo Night (a paleta escura azulada de baixo brilho) lidera a lista. Seu fundo escuro com tom azulado reduz o brilho em comparação com o preto puro, e as cores da sintaxe são separadas cuidadosamente, então ela permanece legível tanto em um prompt de 80 colunas quanto em listagens de arquivos longas. Ele tem uma versão conhecida para terminal e VS Code, tornando-o fácil de sincronizar com toda sua configuração.
+Tokyo Night (a paleta escura azulada de baixo ofuscamento) lidera a lista. Seu fundo escuro com leve tonalidade azul reduz o ofuscamento em comparação ao preto puro, e as cores de sintaxe são cuidadosamente diferenciadas, mantendo a legibilidade tanto em prompts de 80 colunas quanto em listagens extensas de arquivos. Possui versões conhecidas para terminal e VS Code, tornando-a a mais fácil de sincronizar em toda a sua configuração.
 
-## 2. Monokai Stone — melhor para destaque de sintaxe
+## 2. Monokai Stone — melhor para realce de sintaxe
 
-Monokai Stone é a escolha clássica para trabalho com sintaxe intensa. Seu fundo quente e suave mantém as cores de sintaxe brilhantes legíveis sem o contraste forte do Monokai original. Se você passa o dia lendo diffs e código, esta é a paleta que parecerá mais "certa" após alguns minutos.
+Monokai Stone é a escolha clássica para trabalhos intensivos em sintaxe. Seu fundo quente e suavizado mantém as cores vibrantes da sintaxe legíveis, sem o alto contraste do Monokai original. Se você passa o dia analisando diffs e código-fonte, essa paleta será a que parecerá mais “certa” após alguns minutos de uso.
 
-## 3. Solarized — melhor para sessões longas
+## 3. Solarized — melhor para sessões prolongadas
 
-Solarized foi projetado em torno do *espaço de cor lab* para minimizar a fadiga de contraste — e ainda funciona. A paleta retrô suave é amigável aos olhos por horas, e ela existe como tema de terminal em todos os plataformas. O equilíbrio: menos "impacto" se você gosta de cores vívidas.
+Solarized foi projetado com base no *espaço de cores Lab* para minimizar a fadiga causada pelo contraste — e ainda hoje se mostra eficaz. A paleta retro suavizada é confortável para os olhos por horas seguidas e está disponível como tema de terminal em todas as plataformas. A desvantagem: menos “impacto visual” se você prefere cores vivas.
 
-## 4. Purple Viva — melhor para personalidade
+## 4. Vivid Purple — melhor para personalidade
 
-Se você quiser que seu CLI pareça menos como padrão e mais como *seu*, Purple Viva traz uma identidade roxa saturada, enquanto mantém o contraste do primeiro plano alto o suficiente para leitura confortável. É um segundo tema excelente para mudar de ritmo.
+Se você quer que seu CLI pareça menos uma configuração padrão e mais uma extensão *sua*, Vivid Purple traz uma identidade roxa saturada, mantendo o contraste do primeiro plano suficientemente alto para leitura confortável. É uma excelente segunda opção para alternar quando quiser mudar o ritmo.
 
-## 5. Nocturne Âmbar — melhor opção escura quente
+## 5. Amber Nocturne — melhor opção escura quente
 
-Nocturne Âmbar é a escolha para tons escuros quentes — uma paleta de âmbar suave sobre fundo escuro que é mais gentil com os olhos do que temas azuis frios em ambientes com pouca luz. Ela combina perfeitamente com um tema de terminal âmbar para um ambiente coeso e futurista retro.
+Amber Nocturne é a escolha escura quente — uma paleta suave de âmbar sobre fundo escuro, mais gentil aos olhos do que temas azulados em ambientes com pouca iluminação. Combina perfeitamente com um tema de terminal âmbar, criando um espaço de trabalho coeso e com toque retro-futurista.
 
-## Como instalar qualquer um desses
+## Como instalar qualquer um desses temas
 
-Todo tema acima instala-se como uma paleta de sintaxe do Codex CLI em um único comando, depois aplica-se via `/theme`:
+Cada tema acima é instalado como paleta de sintaxe do Codex CLI com um único comando e aplicado via `/theme`:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh
@@ -58,9 +51,9 @@ curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/sc
 
 ## Qual você deve escolher?
 
-- **Recomendação padrão:** Tokyo Night — melhor equilíbrio entre legibilidade e compatibilidade.
-- **Trabalho com sintaxe intensa:** Monokai Stone.
-- **Sessões do dia todo ou olhos sensíveis:** Solarized.
-- **Personalidade:** Purple Viva ou Nocturne Âmbar.
+- **Recomendação padrão:** Tokyo Night — melhor equilíbrio entre legibilidade e compatibilidade.  
+- **Trabalho intenso com sintaxe:** Monokai Stone.  
+- **Sessões contínuas ou olhos sensíveis:** Solarized.  
+- **Personalidade:** Vivid Purple ou Amber Nocturne.
 
-Veja todas as opções na categoria [Mono & Terminal](/skins/category/mono-terminal/), ou aprenda o fluxo completo em [como alterar o tema do Codex CLI](/blog/how-to-change-codex-cli-theme/).
+Veja todas as opções na [categoria Mono & Terminal](/skins/category/mono-terminal/), ou aprenda o fluxo completo em [como alterar o tema do Codex CLI](/blog/how-to-change-codex-cli-theme/).

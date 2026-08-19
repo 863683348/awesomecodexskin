@@ -1,6 +1,6 @@
 ---
-title: "Beste Neon Cyberpunk Codex-vels: 4 Thema's Die Opvallen"
-description: "Neon cyberpunk Codex skins gerangschikt voor persoonlijkheid en leesbaarheid. Blue Enchantress, Cyber Neon, Rood-Wit Sci-Fi, en Vivid Purple (CLI) — kies de een die bij jouw sfeer past zonder je ogen te beschadigen."
+title: "Beste Neon Cyberpunk Codex-skins: 4 thema’s die opvallen"
+description: "Neon cyberpunk Codex-skins gerangschikt op persoonlijkheid en leesbaarheid. Blue Enchantress, Cyber Neon, Red-White Sci-Fi en Vivid Purple (CLI) — kies degene die het beste bij jouw vibe past, zonder je ogen te belasten."
 pubDate: "2026-08-19"
 updatedDate: "2026-08-19"
 tags: ["best-of", "neon-cyberpunk", "skin-guide", "colorful"]
@@ -9,50 +9,43 @@ relatedSkins: ["blue-enchantress", "cyber-neon", "red-white-scifi", "vivid-purpl
 lang: "nl"
 ---
 
-STRICTE REGELS:
-1. Vertaal alle menselijke leesbare tekst, koppen, tabeltekst en linktekst.
-2. NOOIT vertalen: codeblokken, inline code, bestandspaden, shellcommando's, URLs, productnamen (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), numerieke/version tokens, of huidennamen.
-3. Houd de markdown-structuur identiek: dezelfde koppen, lijsten, tabellen, bold/italic, blockquotes, en linkdoelen. Een link zoals [Monokai Stone](/skins/monokai-stone/) behoudt zijn /pad/ URL ongewijzigd; alleen het zichtbare tekst kan worden vertaald.
-4. Houd elke ruwe HTML/JSX precies zo.
-5. Geef ALLEEN de vertaalde markdown-body. Geen voorwoord, geen opmerkingen, geen codevouchers om het antwoord te omringen.
+De categorie ‘neon cyberpunk’ is waar Codex-skins ophouden met te doen alsof ze productief zijn en beginnen te pronken. Deze vier thema’s gaan volledig op in verzadigde kleuren: elektrisch blauw, heet roze, waarschuwingsrood en levendig paars. Als je de hele dag naar een editor kijkt, is een beetje spektakel een legitieme functie — geen bug.
 
-De neon cyberpunk-categorie is waar Codex-thema's ophouden met het voorkomen van productiviteit en beginnen met tonen. Deze vier thema's gaan volledig in op verzadigde kleuren: elektrische blauwen, heet roze, waarschuwingsrood, levendige paars. Als je je dag doorbrengt met kijken naar een editor, is een beetje spectaculair een legitieme functie, geen fout.
+Er zijn precies vier skins in deze categorie. Ze splitsen zich in twee groepen: twee zijn desktop-voorinstellingen die de gehele Codex-interface opnieuw kleuren, en twee zijn syntaxisgerichte thema’s met een sterke identiteit. Geen van hen is subtiel, maar ze zijn ook niet onderling uitwisselbaar.
 
-Er zijn precies vier thema's in deze categorie. Ze delen zich in twee kampen: twee zijn desktop-instellingen die het hele Codex-interface herkleuren, en twee zijn syntax-erste thema's met sterke identiteit. Geen ervan is subtiel, maar ze zijn ook niet uitwisselbaar.
+## Blue Enchantress: de strakke neon
 
-## Blue Enchantress: het zuivere neon
+Blue Enchantress, van codexthemes.ai, is een blauwe neon-galerijskin. Het thema baseert zich op één dominante tint: een helder elektrisch blauw rond #2D7DF6, terwijl de rest van het kleurenpalet een ondersteunende rol vervult. Het resultaat is een thema dat cyberpunk aanvoelt, zonder chaotisch over te komen.
 
-Blue Enchantress, van codexthemes.ai, is een blauw neon-galerijthema. Het leunt op een enkele dominante toon, een helder elektrisch blauw rond #2D7DF6, en houdt de rest van het kleurenpalet in ondersteunende rollen. Het resultaat is een thema dat zich cyberpunk voelt zonder chaotisch te zijn.
+Dit is de veiligste keuze binnen deze categorie. Als je wel de neon-look wilt, maar nog steeds acht uur per dag code moet lezen, dan blijft Blue Enchantress goed leesbaar. Het blauw fungeert als rode draad: syntaxis-kleuren springen er tegenop in plaats van ermee te concurreren.
 
-Dit is de veiligste keuze in deze categorie. Als je de neon-look wilt, maar nog steeds acht uur code moet lezen, is Blue Enchantress het thema dat leesbaar blijft. Het blauw werkt als een doorlopende lijn: syntaxiskleuren springen er tegenop in plaats van ermee te vechten.
+## Cyber Neon: de abstracte voorinstelling met een echte achtergrond
 
-## Cyber Neon: het abstracte preset met een echte achtergrond
+Cyber Neon komt uit de Codex Cidala Tiger Skin-repo (MIT-licentie), gebouwd door gh283248009. Het is een engine-voorinstelling, wat betekent dat het op de thema-engine van Codex draait en een neon cyberpunk-uitzicht toepast op de gehele werkruimte. De ankerkleur is een heet roze, #FF2A6D.
 
-Cyber Neon komt uit de Codex Cidala Tiger Skin repo (MIT-licentie), gemaakt door gh283248009. Het is een engine-preset, wat betekent dat het rijdt op Codex' thema-engine en een neon cyberpunk-uitstraling toepast over het werkplek. Zijn aanhouderkleur is een heet roze, #FF2A6D.
+Wat Cyber Neon van de rest van de categorie onderscheidt, is de herkomst. Het is open source, de repo is publiek toegankelijk, en je kunt de broncode van de voorinstelling lezen voordat je hem installeert. Voor mensen die graag weten wat ze uitvoeren, is dat een duidelijk voordeel. Bovendien installeer je het via één regel opdracht — de instelkosten zijn dus bijna nihil.
 
-Wat Cyber Neon onderscheidt van de rest van de categorie is de afkomst. Het is open source, de repo is publiekelijk, en je kunt de presetbron lezen voordat je het installeert. Voor mensen die willen weten wat ze lopen, is dat een echt voordeel. Het installeert ook als een enkele promptregel, dus de setup-kosten zijn bijna nul.
+## Red-White Sci-Fi: mecha-lijnen en waarschuwingskleuren
 
-## Rood-Wit Sci-Fi: mecha-lijnen en waarschuwingskleuren
+Red-White Sci-Fi is een bijdrage van Fei-Away en maakt deel uit van het Codex Dream Skin-project. De beschrijving zegt het al: mecha-lijnen met waarschuwingsrood en witte futuristische accenten. Het kleurenpalet is gebaseerd op #E63946, een rood dat industrieel en urgent aanvoelt, niet romantisch.
 
-Rood-Wit Sci-Fi is het bijdrage van Fei-Away, en komt uit het Codex Dream Skin-project. De beschrijving treft het: mecha-lijnen met waarschuwingsrood en witte futurisme. Het kleurenpalet is gebouwd rond #E63946, een rood dat leest als industriële en dringende in plaats van romantisch.
+Dit is de meest karaktervolle skin van de groep. Het lijkt op een gebruikersinterface uit een mecha-hangar — een sterke keuze als je wilt dat je editor aanvoelt als een cockpit. Het nadeel is dat rood-dominante paletten sneller oogvermoeidheid veroorzaken dan blauwe of paarse paletten, dus het is beter geschikt voor kortere sessies of voor mensen die de look gewoon geweldig vinden.
 
-Dit is het meest karaktervolle thema in de groep. Het ziet eruit alsof het uit een mecha-hangar UI komt, wat het een sterke keuze maakt als je je editor wil laten voelen als een cockpit. De wissel is dat rood-gebruik paletten de ogen sneller vermoeien dan blauw of paars, dus het is beter voor kortere sessies of mensen die al de look leuk vinden.
+## Vivid Purple (CLI): de terminal-native optie
 
-## Vivid Purple (CLI): de terminal-native inbreng
+Vivid Purple is de uitsuiter en juist daarom de moeite waard om te kennen. Het is een paarse syntaxis-skin, geporteerd naar Codex CLI uit de Bearded Theme Ports-collectie van vufly. De kleur ligt rond #A020F0 en wordt geïnstalleerd als een `tmtheme`, wat betekent dat het via de CLI-themapipeline gaat, in plaats van via de desktop-voorinstellingengine.
 
-Vivid Purple is het uitzonderlijke en verdient het om daarom bekend te zijn. Het is een paarse syntaxis-thema, geporteer naar Codex CLI vanaf de Bearded Theme Ports collectie door vufly. Zijn kleur zit rond #A020F0, en het installeert als een tmtheme, wat betekent dat het door de CLI-thema-pijplijn gaat in plaats van de desktop-preset-engine.
+Als je Codex via de terminal uitvoert, dan is dit jouw neon-optie. De andere drie skins zijn bedoeld voor de desktop-app; Vivid Purple is de enige die specifiek is gebouwd voor het CLI-themasysteem. Dat maakt het de natuurlijke keuze voor mensen die helemaal geen gebruik maken van de desktopinterface.
 
-Als je Codex via de terminal gebruikt, is dit je neon-optie. De andere drie thema's richten zich op de desktop-app; Vivid Purple is het enige dat is gebouwd voor het CLI-thema-systeem. Dat maakt het de natuurlijke keuze voor mensen die het bureau-gebruik helemaal niet gebruiken.
+## Hoe kies je tussen de vier?
 
-## Hoe kies je tussen de vier
+- **Blue Enchantress**, als je neon wilt die de hele werkdag leesbaar blijft  
+- **Cyber Neon**, als je een open-source voorinstelling wilt met installatie via één regel  
+- **Red-White Sci-Fi**, als je de cockpit-look wilt en bereid bent het oogvermoeidheidsrisico te aanvaarden  
+- **Vivid Purple (CLI)**, als je volledig in de terminal werkt en toch kleur wilt
 
-- **Blue Enchantress** als je neon wilt dat leesbaar blijft voor een volle werkdag
-- **Cyber Neon** als je een open-source preset wilt met een eenregel installatie
-- **Rood-Wit Sci-Fi** als je de cockpit-look wilt en de oogvermoeiende wisselaccepteert
-- **Vivid Purple (CLI)** als je in de terminal woont en toch kleur wilt
-
-Alle vier zijn momenteel te installeren. De [installatiegids](/blog/how-to-install-codex-skins/) dekt de preset en prompt routes, en de [CLI vs themamanager vergelijking](/blog/codex-themes-cli-vs-codepilot/) verklaart welke installatiepad past bij hoe je Codex draait. Als neon niet jouw ritme is, de [donker](/blog/best-dark-codex-skins/) en [licht](/blog/best-light-codex-skins/) beste lijsten dekken de rustiger eind van de bibliotheek.
+Alle vier zijn direct installeerbaar. De [installatiehandleiding](/blog/how-to-install-codex-skins/) behandelt zowel de voorinstellings- als de promptmethode, en de [vergelijking CLI vs. themabeheerder](/blog/codex-themes-cli-vs-codepilot/) legt uit welke installatiemethode het beste past bij jouw manier van Codex gebruiken. Als neon niet jouw ding is, dan dekken de ‘best-of’-lijsten voor [donkere](/blog/best-dark-codex-skins/) en [lichte](/blog/best-light-codex-skins/) Codex-skins het rustiger uiteinde van de bibliotheek.
 
 ---
 
-**Bekijk alle neon cyberpunk-thema's →** [neon-cyberpunk categorie](/skins/?category=neon-cyberpunk)
+**Bekijk alle neon cyberpunk-skins →** [neon-cyberpunk categorie](/skins/?category=neon-cyberpunk)

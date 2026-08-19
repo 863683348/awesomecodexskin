@@ -1,6 +1,6 @@
 ---
-title: "Beheer Je Codex Skin Bibliotheek: Backup, Dubbele Verwijderen, Snel Wisselen"
-description: "Skins nemen snel toe. Een klein systeem — archiveren, duplicaten verwijderen, bestanden goed noemen — houdt je Codex-skinbibliotheek netjes en je switchtijd onder de tien seconden."
+title: "Beheer uw Codex-huidbibliotheek: maak back-ups, verwijder duplicaten en wissel snel"
+description: "Skins verzamelen zich snel. Een klein systeem — archiveren, duplicaten verwijderen, bestanden correct benoemen — houdt je Codex-skinbibliotheek netjes en houdt je wisseltijd onder de tien seconden."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["management", "backup", "organization"]
@@ -9,63 +9,63 @@ relatedSkins: ["sakura-pink-dawn", "hatsune-miku", "cyber-neon", "berry-light"]
 lang: "nl"
 ---
 
-Drie maanden na het verzamelen van Codex-thema's was mijn instelling een chaos: 40 thema's in een map, drie ervan bijna identiek, geen idee welk ik eigenlijk gebruikte. Het schakelgereedschap liet alles zien, dus het kiezen duurde langer dan het gebruiken. Daarna heb ik twintig minuten besteed aan het bouwen van een systeem dat het voor altijd oplost.
+Drie maanden nadat ik begon met het verzamelen van Codex-skins was mijn setup een puinhoop: 40 thema’s in één map, drie ervan bijna identiek, en geen idee welke ik daadwerkelijk gebruikte. De wisseltool toonde ze allemaal, dus het kiezen duurde langer dan het daarna gebruiken. Daarna besteedde ik twintig minuten aan het bouwen van een systeem dat het voor goed oplost.
 
-Als je op dat punt bent — of wil voorkomen — hier is het hele systeem. Het is klein: archiveren, duplicaten verwijderen, goed noemen.
+Als u op dit punt bent — of het wilt voorkomen — dan volgt hier het complete systeem. Het is klein: archiveren, verwijderen van duplicaten, en goed benoemen.
 
-## Stap 1: één map, één bestand per thema
+## Stap 1: Één map, één bestand per skin
 
-Houd elk themabestand in één map, één bestand per thema. De meeste engines doen dit al. De regel die je later redt: **nooit de gedeelde kopie bewerken**. Als je een thema wilt aanpassen, kopieer het eerst naar een "persoonlijke" submap en bewerk de kopie. Zo blijft je bibliotheek netjes en worden je aanpassingen niet overschreven door updates.
+Plaats elk skinbestand in één enkele map, met één bestand per thema. De meeste engines doen dit al standaard. De regel die u later bespaart: **bewerk nooit de gedeelde kopie**. Als u een skin wilt aanpassen, kopieer deze dan eerst naar een submap zoals “persoonlijk” en pas de kopie aan. Op die manier blijft uw bibliotheek schoon en worden uw aanpassingen niet overschreven door updates.
 
-## Stap 2: noem bestanden als een inventaris
+## Stap 2: Geef bestanden een naam alsof het een inventaris is
 
-Een bestandsnaam zoals `theme-final-2.md` is een val. Gebruik een consistente notatie:
+Een bestand genaamd `theme-final-2.md` is een val. Gebruik een consistente naamgevingsconventie:
 
 ```
-[familie]-[variant]-[bron].codextheme
+[familie]-[variantie]-[bron].codextheme
 ```
 
-Voorbeelden uit deze index, goed gedaan: [Sakura Pink Dawn](/skins/sakura-pink-dawn/), [Hatsune Miku](/skins/hatsune-miku/), [Cyber Neon](/skins/cyber-neon/), [Berry (light)](/skins/berry-light/). Wanneer de bestandsnaam overeenkomt met wat het thema eruitziet, wordt de map zoekbaar — je hoeft niet meer bestanden te openen om te onthouden welk dat is.
+Voorbeelden uit deze index, correct benoemd: [Sakura Pink Dawn](/skins/sakura-pink-dawn/), [Hatsune Miku](/skins/hatsune-miku/), [Cyber Neon](/skins/cyber-neon/), [Berry (light)](/skins/berry-light/). Wanneer de bestandsnaam overeenkomt met hoe het thema eruitziet, wordt de map doorzoekbaar — u hoeft geen bestanden meer te openen om te herinneren welk thema welk is.
 
-## Stap 3: verwijder duplicaten maandelijks
+## Stap 3: Verwijder duplicaten één keer per maand
 
-Mensen leggen geen duplicaten opzettelijk aan; thema's worden gekopieerd, opnieuw gedownload, hernoemd. Maandelijks een snelle passering:
+Mensen verzamelen duplicaten niet bewust; skins worden gekopieerd, opnieuw gedownload of hernoemd. Eenmaal per maand voert u een snelle controle uit:
 
-- Sorteer op bestandsgrootte — bijna identieke groottes met vergelijkbare namen zijn de gewone verdachten.
-- Open twee kandidaten naast elkaar en vergelijk de kleurhexwaarden.
-- Houd het thema van de oorspronkelijke bron; verwijder of archiveer de kopie.
+- Sorteer op bestandsgrootte — bijna identieke groottes met vergelijkbare namen zijn vaak verdacht.
+- Open twee kandidaat-bestanden naast elkaar en vergelijk de kleurpalet-hexwaarden.
+- Behoud de versie van de oorspronkelijke bron; verwijder of archiveer de kopie.
 
-Tijdens mijn opruiming vond ik drie "donkere blauwe" thema's die dezelfde kleurenpalet hadden onder verschillende namen. Een bleef over.
+Tijdens mijn opruimactie vond ik drie “donkerblauwe” thema’s met exact hetzelfde palet onder verschillende namen. Eén bleef over.
 
-## Stap 4: back-up de configuratie, niet alleen de bestanden
+## Stap 4: Maak een back-up van de configuratie, niet alleen van de bestanden
 
-Thema's zijn gewoon bestanden — maar de *actieve thema* die je koos, zit in je Codex-configuratie. Back-up beide:
+Skins zijn gewoon bestanden — maar het *actieve thema* dat u hebt gekozen, staat opgeslagen in uw Codex-configuratie. Maak daarom een back-up van beide:
 
-1. De themamap (een zip of een git repo werkt).
-2. Het configuratiebestand dat opslaat welk thema actief is (het is klein — plak het ergens).
+1. De skins-map (een zip-bestand of een git-repo werkt prima).
+2. Het configuratiebestand waarin staat welk thema actief is (het is klein — plak het overal waar u wilt).
 
-Als je machines verandert, herstel beide en ben je precies waar je was gebleven. Dit maakt het verschil tussen "ik heb mijn instelling verloren" en "tien minuten om te herstellen".
+Als u van machine wisselt, herstelt u beide en bent u precies waar u gebleven was. Dit is het verschil tussen “Ik heb mijn setup kwijt” en “tien minuten om alles te herstellen”.
 
-## Stap 5: houd een kort schakellijstje
+## Stap 5: Houd een korte wissellijst bij
 
-Je dagelijks realiteit is 3–5 thema's, niet 40. Kies ze op humeur:
+Uw dagelijkse realiteit is 3–5 skins, niet 40. Kies ze op basis van uw stemming:
 
-- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) — pastel, zachtaardig, voor creatieve sessies.
-- [Hatsune Miku](/skins/hatsune-miku/) — helder, energiek, wanneer je een impuls nodig hebt.
-- [Cyber Neon](/skins/cyber-neon/) — lawaai, voor demonstraties en late nachten.
-- [Berry (light)](/skins/berry-light/) — het rustige daglichtstandaard.
+- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) — pastel, zacht, voor creatieve sessies.
+- [Hatsune Miku](/skins/hatsune-miku/) — helder, energiek, als u een vonk nodig hebt.
+- [Cyber Neon](/skins/cyber-neon/) — luid, voor demo’s en late-nachtfocus.
+- [Berry (light)](/skins/berry-light/) — de rustige daglichtstandaard.
 
-Alles andere leeft in de archiefmap. Minder keuzes = sneller schakelen, wat het hele doel is van een themasysteem.
+Alles wat daarbuiten valt, leeft in het archief. Minder keuzes = snellere wisseling — en dat is immers het hele doel van een themasysteem.
 
 ## Snelle FAQ
 
-**Waar slaat Codex mijn thema's en configuratie op?**
-Hangt af van je engine en OS, maar meestal onder je gebruikersconfiguratiemap (bijv. `~/.config/codex` of `~/Library/Application Support/Codex`). Controleer de documentatie van je engine — en back-up die map, niet alleen individuele bestanden.
+**Waar slaat Codex mijn skins en configuratie op?**  
+Dat hangt af van uw engine en besturingssysteem, maar meestal in de gebruikersconfiguratiemap (bijv. `~/.config/codex` of `~/Library/Application Support/Codex`). Raadpleeg de documentatie van uw engine — en maak een back-up van die map, niet alleen van individuele bestanden.
 
-**Moet ik mijn thema's in git versiebeheren?**
-Ja, als je al git gebruikt. Een privé-repo die de themamap plus de configuratie bevat is de goedkoopste perfecte back-up. Push na elke betekenisvolle wijziging.
+**Moet ik mijn skins in git opnemen?**  
+Ja, als u al met git werkt. Een privé-repo met de skins-map én de configuratie is de goedkoopste en perfecte back-up. Push na elke inhoudelijke wijziging.
 
-**Kan ik te veel thema's hebben?**
-Alleen als ze je vertraging veroorzaken of de opstarttijd verlengen — zie onze [prestatietips](/blog/codex-skin-performance/). In termen van opslagruimte is 40 thema's niets. Wat betreft keuze, moet je schakellijst kort blijven.
+**Kan ik te veel skins hebben?**  
+Alleen als ze uw werk vertragen of de opstarttijd verlengen — zie onze [prestatietips](/blog/codex-skin-performance/). Wat betreft opslagruimte is 40 skins niets. Wat betreft keuze: uw wissellijst moet kort blijven.
 
-Een uur van opruimen nu bespaart je een "welk thema gebruikte ik eigenlijk" zoektocht later. Archiveer de oude, houd de favorieten — zoals [Sakura Pink Dawn](/skins/sakura-pink-dawn/) en [Cyber Neon](/skins/cyber-neon/) — en back-up zowel bestanden als configuratie. Blader door de [volledige index](/skins/) om je korte lijst op te bouwen, of controleer de [installatiehandleiding](/blog/how-to-install-codex-skins/) als je net begint.
+Een uur opruimen nu bespaart u later op zoek te moeten gaan naar “welk thema gebruikte ik ook alweer?”. Archiveer de oude skins, behoud uw favorieten — zoals [Sakura Pink Dawn](/skins/sakura-pink-dawn/) en [Cyber Neon](/skins/cyber-neon/) — en maak een back-up van zowel de bestanden als de configuratie. Blader door de [volledige index](/skins/) om uw korte lijst samen te stellen, of bekijk de [installatiehandleiding](/blog/how-to-install-codex-skins/) als u net begint.

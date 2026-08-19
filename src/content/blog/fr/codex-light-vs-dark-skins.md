@@ -1,6 +1,6 @@
 ---
-title: "Éclair vs Sombre Cagoules Codex : Choisissez en fonction de la manière dont vous travaillez"
-description: "Sombre pour une concentration intense, clair pour la lumière du jour et les démonstrations — mais ce n'est pas si simple. La luminosité, l'éclairage de la pièce, la taille de l'écran, et les thèmes Codex adaptés à chaque situation."
+title: "Skins Codex clairs contre sombres : choisissez en fonction de votre façon de travailler"
+description: "Sombre pour une concentration profonde, clair pour la lumière du jour et les démonstrations — mais ce n’est pas aussi simple. Luminance, éclairage de la pièce, taille de l’écran et compatibilité des skins Codex avec chaque scénario."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["light", "dark", "choosing"]
@@ -9,61 +9,54 @@ relatedSkins: ["berry-light-journal", "clear-glass", "gothic-void-expedition", "
 lang: "fr"
 ---
 
-Les règles strictes:
-1. Traduire toute la prose lisible par les humains, les titres, le texte des tableaux et le texte des liens.
-2. NE JAMAIS traduire : les blocs de code, le code en ligne, les chemins de fichiers, les commandes shell, les URLs, les noms de produits (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), les tokens numériques/version, ou les noms d'habillages.
-3. Conserver la structure markdown identique : mêmes titres, listes, tableaux, gras/italique, citations, et destinations de liens. Un lien comme [Monokai Stone](/skins/monokai-stone/) conserve son URL /chemin/ inchangée ; seul le texte visible peut être traduit.
-4. Conserver tout HTML/JSX tel quel.
-5. Sortir UNIQUEMENT le corps traduit en markdown. Aucune introduction, aucun commentaire, aucune barre de code autour de la réponse.
-
-Le débat entre clair et sombre est le plus ancien argument dans l'esthétique des développeurs, et la réponse est la même que pour la plupart des arguments esthétiques : cela dépend. Mais "cela dépend" est inutile sans critères. Voici les vraies facteurs, et quels habillages Codex dans cet index correspondent à chaque scénario.
+Le débat entre thèmes clairs et sombres est la plus ancienne querelle esthétique parmi les développeurs, et la réponse est la même que pour la plupart des questions esthétiques : cela dépend. Mais « cela dépend » est inutile sans critères précis. Voici les facteurs réels à considérer, ainsi que les skins Codex de cet index qui correspondent à chaque scénario.
 
 ## La science réelle, brièvement
 
-- **Les thèmes sombres** réduisent la luminosité de l'écran, ce qui aide dans les pièces à faible luminosité et pour les personnes sensibles aux surfaces lumineuses. Le hic : dans une pièce éclairée, un écran sombre réfléchit davantage de reflets et peut rendre le texte plus difficile à lire.
-- **Les thèmes clairs** reflètent la lumière ambiante au lieu de lutter contre celle-ci, donc ils lisent souvent mieux en plein jour. Le hic : une surface blanche vive dans une pièce sombre est difficile pour les yeux.
-- **Le noir pur n'est pas votre ami** dans aucun mode — les arrière-plans `#000` créent un halo ; le texte blanc pur sur un noir pur est vraiment pire pour la lisibilité qu'une paire de gris sombre.
+- **Les thèmes sombres** réduisent la luminosité de l’écran, ce qui aide dans les pièces peu éclairées et pour les personnes sensibles aux surfaces lumineuses. L’inconvénient : dans une pièce bien éclairée, un écran sombre reflète davantage les reflets et peut rendre la lecture du texte plus difficile.
+- **Les thèmes clairs** réfléchissent la lumière ambiante au lieu de la contrer, ce qui facilite souvent la lecture en plein jour. L’inconvénient : une surface blanche éclatante dans une pièce sombre fatigue fortement les yeux.
+- **Le noir pur n’est pas votre allié**, quelle que soit la configuration — un fond `#000` provoque un effet de halo ; du texte blanc pur sur fond noir pur est effectivement moins lisible qu’une combinaison gris foncé.
 
-La règle générale : **adaptez la luminance de votre thème à celle de votre pièce.** Pièce lumineuse → thème clair. Pièce sombre → thème sombre. C'est la même raison pour laquelle les téléphones ont des modes automatiques clair/sombre.
+Règle générale : **adaptez la luminance de votre thème à celle de votre pièce.** Pièce lumineuse → thème clair. Pièce sombre → thème sombre. C’est la même raison pour laquelle les smartphones disposent de modes clair/sombre automatiques.
 
-## Thèmes Codex sombres : idéaux pour
+## Skins Codex sombres : idéaux pour
 
-- **Des sessions de concentration profonde la nuit.** Un thème sombre comme [Gothic Void Expedition](/skins/gothic-void-expedition/) empêche l'écran de dominer votre vision périphérique.
-- **Bureaux à faible luminosité.** Même raisonnement.
-- **Sensibilité aux lumières bleues.** Les thèmes sombres chauds — [Amber Nocturne](/skins/amber-nocturne/) en est un bon exemple — sont plus doux pour les yeux du soir que les thèmes froids.
+- **Des sessions de concentration profonde la nuit.** Un thème sombre comme [Gothic Void Expedition](/skins/gothic-void-expedition/) évite que l’écran ne domine votre champ visuel périphérique.
+- **Les bureaux peu éclairés.** Même raisonnement.
+- **La sensibilité à la lumière bleue.** Les thèmes sombres chauds — [Amber Nocturne](/skins/amber-nocturne/) en est un bon exemple — sont plus doux pour les yeux le soir que les thèmes froids.
 
-**Faites attention :** les thèmes sombres dans les pièces lumineuses. Si vous êtes près d'une fenêtre, un écran sombre devient un miroir.
+**Attention :** les thèmes sombres dans les pièces lumineuses. Si vous travaillez près d’une fenêtre, un écran sombre se transforme en miroir.
 
-## Thèmes Codex clairs : idéaux pour
+## Skins Codex clairs : idéaux pour
 
-- **Jour, près des fenêtres.** [Berry (journal clair)](/skins/berry-light-journal/) ou [Clear Glass](/skins/clear-glass/) lisent proprement contre la lumière du jour.
-- **Captures d'écran et démos.** Les thèmes clairs photographient mieux et donnent un sentiment plus "par défaut" aux spectateurs.
-- **Personnes souffrant d'astigmatisme.** Beaucoup rapportent moins de fatigue oculaire avec les thèmes clairs car les bords du texte sont plus nets contre un arrière-plan lumineux.
+- **La journée, près des fenêtres.** [Berry (light journal)](/skins/berry-light-journal/) ou [Clear Glass](/skins/clear-glass/) se lisent parfaitement à la lumière du jour.
+- **Les captures d’écran et les démonstrations.** Les thèmes clairs se photographient mieux et donnent une impression de « valeur par défaut » plus naturelle aux observateurs.
+- **Les personnes atteintes d’astigmatisme.** Beaucoup rapportent une moindre fatigue oculaire avec les thèmes clairs, car les contours du texte apparaissent plus nets sur un fond lumineux.
 
-**Faites attention :** les thèmes clairs dans les pièces sombres. Un blanc à pleine luminosité à 2 heures du matin est la chose la plus dure pour vos yeux, à part fixer une lampe.
+**Attention :** les thèmes clairs dans les pièces sombres. Une luminosité maximale blanche à 2 h du matin est l’un des éléments les plus agressifs pour vos yeux — juste après fixer une lampe.
 
-## L'installation hybride
+## La configuration hybride
 
-Vous n'avez pas besoin de choisir. La meilleure configuration pour la plupart des gens :
+Vous n’êtes pas obligé de choisir. La meilleure configuration pour la plupart des utilisateurs :
 
-- **Défaut de jour :** un thème clair comme [Clear Glass](/skins/clear-glass/).
-- **Défaut de nuit :** un thème sombre comme [Gothic Void Expedition](/skins/gothic-void-expedition/).
-- **Changer** lorsque la pièce change — ou automatiser avec le mode nuit de votre système d'exploitation si votre moteur supporte le thème en fonction de l'heure.
+- **Par défaut le jour :** un thème clair comme [Clear Glass](/skins/clear-glass/).
+- **Par défaut la nuit :** un thème sombre comme [Gothic Void Expedition](/skins/gothic-void-expedition/).
+- **Basculez** dès que l’éclairage ambiant change — ou automatez-le via le mode nuit de votre système d’exploitation, si votre environnement prend en charge le changement de thème selon l’heure.
 
-C'est ce que fait votre téléphone tous les jours. Votre éditeur peut le faire aussi.
+C’est exactement ce que fait votre smartphone chaque jour. Votre éditeur peut faire pareil.
 
 ## FAQ rapide
 
-**Le mode sombre est-il meilleur pour la durée de vie de la batterie ?**
-Sur les écrans OLED, légèrement — les pixels sombres consomment moins d'énergie. Sur les écrans LCD (la plupart des moniteurs de bureau), pratiquement aucune différence.
+**Le mode sombre permet-il une meilleure autonomie batterie ?**  
+Sur les écrans OLED, légèrement — les pixels sombres consomment moins d’énergie. Sur les écrans LCD (la plupart des moniteurs de bureau), il n’y a pratiquement aucune différence.
 
-**Les thèmes sombres sont-ils meilleurs pour le codage en général ?**
-Aucun consensus scientifique. C'est une question de préférence plus la lumière de la pièce. La croyance que "le sombre = pro" est culturelle, pas physiologique.
+**Les thèmes sombres sont-ils meilleurs pour coder en général ?**  
+Aucun consensus scientifique. Il s’agit d’une question de préférence personnelle combinée à l’éclairage ambiant. La croyance selon laquelle « sombre = professionnel » est culturelle, non physiologique.
 
-**Puis-je utiliser un thème clair mais garder les panneaux sombres ?**
-Oui, mais une luminance mixte est le pire des deux mondes — vos yeux se réadaptent constamment. Choisissez un côté, ou un thème conçu comme un système clair cohérent comme [Berry (clair)](/skins/berry-light-journal/).
+**Puis-je utiliser un skin clair tout en gardant des panneaux sombres ?**  
+Techniquement oui, mais une luminance mixte représente le pire des deux mondes — vos yeux doivent constamment se réadapter. Préférez un choix cohérent, ou un thème conçu comme un système clair intégré, comme [Berry (light)](/skins/berry-light-journal/).
 
-**Quel est le meilleur choix unique si je ne peux en avoir qu'un seul ?**
-Un thème sombre équilibré — [Gothic Void Expedition](/skins/gothic-void-expedition/) — car le sombre fonctionne dans la plupart des pièces, et vous pouvez le combiner avec le mode nuit de votre système. Si vous êtes principalement en plein jour, choisissez plutôt [Clear Glass](/skins/clear-glass/).
+**Quel est le meilleur choix unique si je ne peux en avoir qu’un seul ?**  
+Un thème sombre équilibré — [Gothic Void Expedition](/skins/gothic-void-expedition/) — car le sombre fonctionne dans la plupart des environnements, et vous pouvez l’associer à la luminosité du mode nuit de votre système d’exploitation. Si vous travaillez surtout en plein jour, optez plutôt pour [Clear Glass](/skins/clear-glass/).
 
-Adaptez votre thème à votre pièce, pas à une tendance. Clair pour le jour et les démos, sombre pour la nuit et la concentration, et la configuration hybride si vous voulez les deux. Parcourez l'[index complet des thèmes](/skins/) — il est organisé par catégories claires et sombres, donc le choix est facile — ou lisez le [guide sur la santé des yeux](/blog/codex-skin-night-eye-care/) pour les paramètres qui comptent dans les deux cas.
+Adaptez votre thème à votre pièce, pas à une tendance. Clair pour la lumière du jour et les démonstrations, sombre pour la nuit et la concentration, hybride si vous souhaitez bénéficier des deux. Parcourez l’[index complet des skins](/skins/) — organisé par catégories clair/sombre pour simplifier le choix — ou consultez le [guide de protection oculaire](/blog/codex-skin-night-eye-care/) pour connaître les réglages essentiels, quel que soit votre choix.

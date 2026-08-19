@@ -1,6 +1,6 @@
 ---
-title: "Beste Terminal-Themen für Codex CLI im Jahr 2026 (Rangliste für Lesbarkeit)"
-description: "Die besten Terminal-Themen für Codex CLI im Jahr 2026 — Tokyo Night, Monokai Stone, Solarized und mehr, bewertet nach Lesbarkeit, geringer Augenbelastung und Terminal-Übereinstimmung."
+title: "Die besten Terminal-Themes für Codex CLI im Jahr 2026 (nach Lesbarkeit bewertet)"
+description: "Die besten Terminal-Themes für Codex CLI im Jahr 2026 – Tokyo Night, Monokai Stone, Solarized und mehr, bewertet nach Lesbarkeit, geringer Augenbelastung und Passgenauigkeit zum Terminal."
 pubDate: "2026-08-19"
 updatedDate: "2026-08-19"
 tags: ["best", "terminal", "themes", "cli"]
@@ -9,51 +9,51 @@ relatedSkins: ["tokyo-night-cli", "monokai-stone-cli", "solarized-cli", "vivid-p
 lang: "de"
 ---
 
-Ihr Codex CLI-Farbschema ist die Oberfläche, auf die Sie den ganzen Tag blicken, also verdient es mehr Aufmerksamkeit als das Standard-Theme. Diese Zusammenfassung listet die besten Terminal-Themen für Codex CLI im Jahr 2026 auf — alle als installierbare Syntax-Farbpaletten verfügbar — hinsichtlich Lesbarkeit, Augenbelastung und wie gut sie mit Ihrem Terminal harmonieren.
+Ihre Codex-CLI-Palette ist die Oberfläche, auf die Sie den ganzen Tag starren – sie verdient daher mehr Überlegung als die Standardauswahl. Dieser Überblick bewertet die besten Terminal-Themes für Codex CLI im Jahr 2026 – alle als installierbare Syntax-Paletten verfügbar – anhand von Lesbarkeit, Augenbelastung und ihrer Kompatibilität mit Ihrem Terminal.
 
 ## Wie wir bewertet haben
 
 Jedes Theme wurde anhand von vier Kriterien bewertet:
 
-1. **Kontrast und Lesbarkeit** — Trennung von Vorder- und Hintergrund beim Codieren.
-2. **Augenbelastung** — Reduzierung von Glanz für längere Sitzungen.
-3. **Terminal-Kompatibilität** — Ob dasselbe Farbschema auch als echtes Terminal-Theme existiert.
-4. **Zukunftsfähigkeit** — Farbpaletten, die sich über die Zeit bewährt haben.
+1. **Kontrast & Lesbarkeit** – klare Trennung von Vordergrund und Hintergrund beim Programmieren.  
+2. **Augenbelastung** – Reduzierung von Blendeffekten bei langen Sitzungen.  
+3. **Terminal-Kompatibilität** – ob dieselbe Palette auch als echtes Terminal-Theme verfügbar ist.  
+4. **Langlebigkeit** – Paletten, die sich über die Zeit hinweg bewährt haben.
 
-## 1. Tokyo Night — bester Alleskönner
+## 1. Tokyo Night – bestes Allround-Theme
 
-Tokyo Night (das niedrig-glänzende dunkelblaue Farbschema) führt die Liste an. Seine bläuliche dunkle Hintergrundfarbe reduziert den Glanz im Vergleich zu reinem Schwarz, und die Syntaxfarben sind sorgfältig getrennt, sodass es sowohl in einem 80-Spalten-Prompt als auch bei langen Dateilisten lesbar bleibt. Es hat ein bekanntes Terminal- und VS Code-Entsprechung, was es besonders einfach macht, es in Ihre gesamte Umgebung zu synchronisieren.
+Tokyo Night (die bläulich getönte, kontrastarme Dunkelpalette) belegt Platz eins. Der bläuliche Dunkelhintergrund reduziert Blendeffekte im Vergleich zu reinem Schwarz, und die Syntaxfarben sind sorgfältig voneinander abgesetzt – so bleibt das Theme sowohl bei einer 80-Zeichen-Breiten-Eingabeaufforderung als auch bei langen Dateilisten gut lesbar. Es verfügt über bekannte Entsprechungen als Terminal- und VS Code-Theme, wodurch es besonders einfach ist, es nahtlos in Ihre gesamte Entwicklungsumgebung einzubinden.
 
-## 2. Monokai Stone — bestes für Syntax-Hervorhebung
+## 2. Monokai Stone – bestes Theme für Syntax-Hervorhebung
 
-Monokai Stone ist die klassische Wahl für arbeitsintensive Syntax. Sein warmes, gedämpftes Hintergrundfarbschema hält helle Syntaxfarben lesbar, ohne den harten Kontrast des ursprünglichen Monokai. Wenn Sie den Tag damit verbringen, Diffs und Code zu lesen, wird dieses Farbschema nach ein paar Minuten am besten "passen".
+Monokai Stone ist die klassische Wahl für syntaxintensive Aufgaben. Der warme, gedämpfte Hintergrund gewährleistet, dass leuchtende Syntaxfarben gut lesbar bleiben – ohne den harten Kontrast des Original-Monokai. Wenn Sie den Großteil Ihres Tages mit Diffs und Quellcode verbringen, wird dieses Theme Ihnen nach wenigen Minuten am „richtigsten“ vorkommen.
 
-## 3. Solarized — bestes für lange Sitzungen
+## 3. Solarized – bestes Theme für lange Sitzungen
 
-Solarized wurde um den *Lab-Farbraum* herum entworfen, um Kontrast-Erschöpfung zu minimieren — und es hält bis heute. Das gedämpfte Retro-Farbschema ist für Stunden leicht auf die Augen, und es existiert als Terminal-Theme auf jeder Plattform. Der Kompromiss: Weniger "Popp" bei starken Farben.
+Solarized wurde speziell im *Lab-Farbraum* entworfen, um Kontrastmüdigkeit zu minimieren – und es überzeugt bis heute. Die gedämpfte, retro-inspirierte Farbpalette entlastet die Augen stundenlang, und als Terminal-Theme ist es auf allen Plattformen verfügbar. Der Kompromiss: weniger „Lebendigkeit“, falls Sie lebhafte Farben bevorzugen.
 
-## 4. Vivid Purple — bestes für Persönlichkeit
+## 4. Vivid Purple – bestes Theme für individuellen Ausdruck
 
-Wenn Sie Ihr CLI weniger wie ein Standard und mehr wie *Ihres* fühlen möchten, bringt Vivid Purple eine gesättigte Purpurtöne mit, während die Vordergrund-Kontraste hoch genug bleiben, um bequemes Lesen zu ermöglichen. Es ist ein großartiges zweites Thema, um bei Bedarf einen Wechsel zu machen.
+Wenn Sie möchten, dass Ihre CLI weniger wie eine Standardkonfiguration und stattdessen wie *Ihre persönliche Umgebung* wirkt, verleiht Vivid Purple Ihrer Konsole eine satte violettfarbene Identität – bei gleichzeitig ausreichend hohem Vordergrundkontrast für komfortables Lesen. Es eignet sich hervorragend als zweites Theme, um gelegentlich einen frischen Akzent zu setzen.
 
-## 5. Amber Nocturne — bestes warmes Dunkel-Theme
+## 5. Amber Nocturne – beste warme Dunkelpalette
 
-Amber Nocturne ist die Wahl für warme Dunkelthemen — ein weiches Amber-on-Dark-Farbschema, das sanfter auf die Augen wirkt als kühle Blau-Themen in gedämpftem Licht. Es passt wunderbar zu einem Amber-Terminal-Theme für ein zusammenhängendes, retro-futuristisches Arbeitsumfeld.
+Amber Nocturne ist die Wahl für alle, die eine warme Dunkelpalette bevorzugen – eine sanfte Amber-auf-Dunkel-Palette, die in gedimmten Räumen schonender für die Augen ist als kühlere Blautöne. In Kombination mit einem passenden Amber-Terminal-Theme entsteht ein stimmiges, retro-futuristisches Arbeitsumfeld.
 
-## So installieren Sie eines dieser Themen
+## So installieren Sie eines dieser Themes
 
-Jedes Thema oben installiert sich als Codex CLI-Syntax-Farbschema mit einem Befehl, dann wird es über `/theme` angewandt:
+Jedes der oben genannten Themes lässt sich mit einem einzigen Befehl als Codex-CLI-Syntax-Palette installieren und anschließend über `/theme` aktivieren:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh
 /theme
 ```
 
-## Welches sollten Sie wählen?
+## Welches Theme sollten Sie wählen?
 
-- **Empfehlung für den Alltag:** Tokyo Night — beste Balance aus Lesbarkeit und Kompatibilität.
-- **Arbeit mit viel Syntax:** Monokai Stone.
-- **Ganztägige Sitzungen oder empfindliche Augen:** Solarized.
-- **Persönlichkeit:** Vivid Purple oder Amber Nocturne.
+- **Standardempfehlung:** Tokyo Night – beste Balance aus Lesbarkeit und Kompatibilität.  
+- **Syntaxintensive Aufgaben:** Monokai Stone.  
+- **Ganztägige Sitzungen oder empfindliche Augen:** Solarized.  
+- **Persönlicher Ausdruck:** Vivid Purple oder Amber Nocturne.
 
-Sehen Sie sich alle Optionen in der [Mono & Terminal-Kategorie](/skins/category/mono-terminal/), oder lernen Sie den gesamten Workflow in [wie man das Codex CLI-Theme ändert](/blog/how-to-change-codex-cli-theme/).
+Alle verfügbaren Optionen finden Sie in der Kategorie [Mono & Terminal](/skins/category/mono-terminal/), oder erfahren Sie im Artikel [So ändern Sie das Codex-CLI-Theme](/blog/how-to-change-codex-cli-theme/) den vollständigen Workflow.

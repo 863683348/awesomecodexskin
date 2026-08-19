@@ -1,6 +1,6 @@
 ---
-title: "7 Oogzorginstellingen voor nachtcoderen in Codex"
-description: "Nachtwerk verlaagt je ogen meer dan dagelijkse werkzaamheden. Deze 7 instellingen — lage saturatie, zwakke blauwe licht, juiste helderheid — plus de donkere Codex skins die de test halen."
+title: "7 oogbeschermingsinstellingen voor nachtelijk programmeren in Codex"
+description: "’s Nachts programmeren belast je ogen meer dan overdag werken. Deze 7 instellingen — lage verzadiging, zwak blauw licht en juiste helderheid — plus de donkere Codex-skins die de test halen."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["eye-care", "night", "dark", "settings"]
@@ -9,45 +9,45 @@ relatedSkins: ["gothic-void-expedition", "amber-nocturne", "cyber-neon", "mythic
 lang: "nl"
 ---
 
-Twee uur nachtcodeerwerk laat mijn ogen droger zijn dan een volledige werkdag in het kantoor. Het scherm is hetzelfde. Het verschil is je lichaam: na zonsondergang zijn je pupillen groter, je brein leest de heldere rechthoek als "ochtend", en je knipperfrequentie daalt met een derde. Het kiezen van de juiste Codex-thema is een van de goedkoopste oplossingen voor alledrie.
+Twee uur ’s nachts coderen laat mijn ogen droger achter dan een volledige werkdag op kantoor. Het scherm is hetzelfde. Het verschil zit in je lichaam: na zonsondergang staan je pupillen wijter, leest je brein de felle rechthoek als ‘ochtend’, en daalt je knipperfrequentie met een derde. Het kiezen van de juiste Codex-skin is één van de goedkoopste oplossingen voor al deze drie effecten.
 
-Dit gaat niet om het volledig donker worden "omdat donkere thema's beter zijn". Het gaat over drie getallen: **luminantie, saturatie en blauwlichtverhouding**. Stel die goed in en stopt je oog met onderhandelen met het scherm.
+Dit gaat niet om volledig donker worden ‘omdat donkere thema’s beter zijn’. Het draait om drie getallen: **luminantie, verzadiging en blauwlichtverhouding**. Stel die juist in, en je ogen hoeven niet langer onderhandelingen met het scherm aan te gaan.
 
-## De drie getallen die echt belangrijk zijn
+## De drie getallen die echt uitmaken
 
-- **Achtergrondluminantie**: zuiver zwart (#000000) is slechter dan veel mensen denken — het veroorzaakt maximale contrast tegen alles op het scherm en veroorzaakt halatatie rond helder tekst. Een zeer donkere grijs (#111–#1A) leest comfortabeler.
-- **Saturatie**: krachtige accentkleuren zijn in kleine hoeveelheden in orde, maar een hele UI vol gesatureerde blauwen en rode kleuren maakt het oog op zoek naar focus. Nachts thema's moeten voornamelijk ongesatureerd zijn met één of twee beheerste accenten.
-- **Blauwlichtverhouding**: warmgetoneerde donkere thema's (amber, oranjebruin, zachte geel) signaleren "avond" aan je circadiaanse systeem veel zachter dan een koele blauwe thema doet.
+- **Achtergrondluminantie**: zuiver zwart (#000000) is slechter dan de meeste mensen denken — het dwingt tot maximale contrastverhouding ten opzichte van alle andere elementen op het scherm en veroorzaakt halo-effecten rond heldere tekst. Een zeer donkergrijs (#111–#1A) is comfortabeler leesbaar.
+- **Verzadiging**: levendige accentkleuren zijn prima in kleine hoeveelheden, maar een volledige gebruikersinterface vol verzadigde blauwen en rode kleuren dwingt het oog om continu focus te zoeken. Nachtskins moeten grotendeels onverzadigd zijn, met één of twee ingetogen accenten.
+- **Blauwlichtverhouding**: warmgetinte donkere thema’s (amber, oranjebruin, zacht geel) signaleren ‘avond’ aan je circadiane systeem veel zachter dan een koelblauw thema.
 
-Een thema is een filter, geen decoratie. Als het deze drie niet haalt, kan geen hoeveelheid externe blauwlichtbril het volledig compenseren.
+Een skin is een filter, niet alleen versiering. Als hij aan deze drie criteria tekortschiet, compenseert geen enkele externe blauwlichtbril dit volledig.
 
-## De 7 instellingen checklist
+## De checklist met 7 instellingen
 
-Ga door deze een keer heen, en je bent klaar voor het jaar:
+Werk deze lijst één keer door, en je bent klaar voor het hele jaar:
 
-1. **Schakel over naar een donker thema, maar niet zuiver zwart.** Zoek naar achtergronden rond `#111`–`#1A1A1A`, niet `#000000`. In deze index is [Gothic Void Expedition](/skins/gothic-void-expedition/) een goede basis — zijn ingebouwde standaard gebruikt een bijna zwart dat halatatie laag houdt.
-2. **Beperk de accent-saturatie.** Maximaal één of twee accenten. [Cyber Neon](/skins/cyber-neon/) is de verleidelijke extreem; bewaar het voor de dag, niet voor de nacht.
-3. **Kies warme neutralen na 21:00.** [Amber Nocturne](/skins/amber-nocturne/) bestaat precies voor dit doel — een amberbruine basis die leesbaar blijft zonder "blauwlicht" aan je brein te roepen.
-4. **Verlaag de Codex UI helderheid als je engine dat ondersteunt.** Sommige engines schalen het hele palet; een vermindering van 10–15% is meestal het perfecte punt.
-5. **Zorg dat je editor overeenkomt met je terminal.** Een ongelijk palet dwingt je ogen om telkens opnieuw te heradapteerden wanneer je paneels wisselt. Dezelfde kleurfamilie, dichtbij luminantie, klaar.
-6. **Schakel OS night shift / f.lux bovenop het thema in.** Het thema behandelt UI-kleuren; de OS-laag verwarmt het hele scherm. Ze zijn complementair, geen alternatieven.
-7. **Controleer je knipperfrequentie — serieus.** Een `20-20-20` herinnering (elke 20 minuten, kijk 20 voeten weg, 20 seconden) doet meer dan elk thema. Themaprofiel en knipperpauzes zijn de twee helften van de oplossing.
+1. **Schakel over naar een donkere skin, maar niet zuiver zwart.** Zoek naar achtergronden rond `#111`–`#1A1A1A`, niet `#000000`. In deze index is [Gothic Void Expedition](/skins/gothic-void-expedition/) een goede uitgangsbasis — de ingebouwde standaardgebruikt een bijna-zwart dat halo-effecten laag houdt.
+2. **Beperk de verzadiging van accentkleuren.** Maximaal één of twee accenten. [Cyber Neon](/skins/cyber-neon/) is de verleidelijke extreme optie; bewaar hem voor overdag, niet voor middernacht.
+3. **Geef warme neutrale tinten de voorkeur na 21.00 uur.** [Amber Nocturne](/skins/amber-nocturne/) bestaat precies voor dit doel — een amber-bruine basis die goed leesbaar blijft zonder tegen je brein te schreeuwen: ‘blauwlicht!’
+4. **Verminder de Codex-UI-helderheid als je engine dat ondersteunt.** Sommige engines schalen de volledige palet; een vermindering van 10–15% is meestal het optimale punt.
+5. **Pas je editor aan op je terminal.** Een niet-overeenkomend palet dwingt je ogen om zich telkens opnieuw aan te passen bij het wisselen tussen vensters. Dezelfde kleurfamilie, vergelijkbare luminantie — klaar.
+6. **Activeer OS Night Shift / f.lux bovenop de skin.** De skin regelt de UI-kleuren; de OS-laag verwarmt het gehele beeldscherm. Ze zijn complementair, geen alternatieven.
+7. **Controleer je knipperfrequentie — serieus.** Een `20-20-20`-herinnering (elke 20 minuten 20 seconden naar iets op 6 meter afstand kijken) werkt beter dan elk thema. Skin-kwaliteit en knipperpauzes vormen samen de twee helften van de oplossing.
 
-## Waarom somber donkere thema's de test passeren
+## Waarom ‘sfeervolle’ donkere skins aan de test voldoen
 
-[Mythic Guardian Noir](/skins/mythic-guardian-noir/) en andere donkere nacht-invoegingen in deze index delen een eigenschap: ze houden de luminantie laag en consistent over alle panelen, zodat je pupillen niet continu moeten herstellen. Die consistentie — niet "hoe cool het thema eruitziet" — maakt een thema nachtveilig.
+[Mythic Guardian Noir](/skins/mythic-guardian-noir/) en de andere donker-avondopties in deze index delen één eigenschap: ze houden de luminantie laag en consistent over alle panelen, zodat je pupil niet voortdurend opnieuw hoeft aan te passen. Die consistentie — niet ‘hoe cool het thema eruitziet’ — maakt een skin veilig voor gebruik ’s nachts.
 
-Een goede test: verduister de kamers, open een thema en knijp je ogen. Als de zijbalk en het codegebied zich voelen als één oppervlak, doet het thema zijn werk. Als de zijbalk gloeit als een bord, ga verder.
+Een eenvoudige test: dim het licht in de kamer, open een skin en knijp even met je ogen. Als de zijbalk en het codegebied als één vlak aanvoelen, doet de skin zijn werk. Als de zijbalk oplicht als een bord, ga dan verder.
 
 ## Snelle FAQ
 
-**Is een licht thema 's nachts altijd erger?**
-Niet altijd, maar meestal. Het probleem is het grote heldere oppervlak, niet de "temperatuur" van het thema. Een gedimde, lage contrast licht thema is in orde; een volledig helder wit thema om 2 uur 's nachts is het ergste voor je ogen.
+**Is een licht thema ’s nachts altijd slechter?**  
+Niet altijd, maar meestal wel. Het probleem zit in het enorme heldere oppervlak, niet in de ‘temperatuur’ van het thema. Een gedimde, laag-contrast lichtthema is prima; een volledig helder wit thema om 2.00 uur ’s ochtends belast je ogen het zwaarst.
 
-**Heb ik blauwlicht blokkeringsspectakels nodig als mijn thema warm is?**
-Het thema is een begin, geen genezing. Warme thema's verminderen de blauwlichtdosering; brillen en OS night shift verminderen het verder. Stapel ze als je elke avond laat codeert.
+**Heb ik blauwlichtfilterbrillen nodig als mijn skin warm is?**  
+De skin is een begin, geen genezing. Warme thema’s verminderen de dosis blauwlicht; brillen en OS Night Shift verminderen die nog verder. Combineer ze gerust als je elke avond laat programmeert.
 
-**Kan ik gewoon één van deze thema's kopiëren en aanpassen?**
-Ja — dat is de snelste weg. Neem [Amber Nocturne](/skins/amber-nocturne/) of [Gothic Void Expedition](/skins/gothic-void-expedition/), verlaag de saturatie en sla het op als je eigen "nachtmodus"-instelling.
+**Kan ik gewoon één van deze skins kopiëren en aanpassen?**  
+Ja — dat is de snelste weg. Neem [Amber Nocturne](/skins/amber-nocturne/) of [Gothic Void Expedition](/skins/gothic-void-expedition/), verlaag de verzadiging, en sla het op als jouw eigen ‘nachtmodesjabloon’.
 
-Kies een van de donkere thema's hierboven, pas de zeven instellingen één keer toe, en je 2 uur 's nachts codeer sessies stoppen met het kosten van de volgende ochtend. Blader door het volledige [themaindex](/skins/) voor meer donkere opties, of check onze [tutorial](/tutorial/) als je je eigen nachtpalet wilt bouwen vanaf nul.
+Kies één van de bovenstaande donkere skins, pas de zeven instellingen één keer toe, en je codessessies om 2.00 uur ’s ochtends kosten je de volgende ochtend niet meer. Blader door de volledige [skinindex](/skins/) voor meer donkere opties, of bekijk onze [handleiding](/tutorial/) als je je eigen nachtpalet vanaf nul wilt bouwen.

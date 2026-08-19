@@ -1,6 +1,6 @@
 ---
-title: "Fichier de thème vs Préréglage de prompt : Deux façons de personnaliser l'apparence de Codex"
-description: "Les peaux atteignent Codex de deux manières — en tant que fichier de thème que vous chargez, ou en tant que requête en langage naturel qu'un moteur prédéfini applique. Laquelle est plus portable, plus précise, plus fiable à long terme ?"
+title: "Fichier de thème vs préréglage d’invite : Deux façons de personnaliser Codex"
+description: "Les habillages atteignent Codex de deux manières : sous forme de fichier thème que vous chargez, ou sous forme d’invite en langage naturel appliquée par un moteur prédéfini. Laquelle est la plus portable, la plus précise et la plus résistante à l’avenir ?"
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["format", "prompt", "preset"]
@@ -9,76 +9,69 @@ relatedSkins: ["clear-glass", "monokai-stone", "solarized", "vivid-purple"]
 lang: "fr"
 ---
 
-DEUX RÈGLES STRICTES :
-1. Traduisez tout le texte lisible par un humain, les titres, le texte des tableaux et les textes des liens.
-2. NE traduisez jamais : les blocs de code, le code en ligne, les chemins de fichiers, les commandes shell, les URLs, les noms de produits (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), les tokens numériques/version, ou les noms d'habillages.
-3. Gardez la structure markdown identique : mêmes titres, listes, tableaux, gras/italique, citations, et destinations de lien. Un lien comme [Monokai Stone](/skins/monokai-stone/) garde son URL /chemin/ inchangée ; seul le texte visible peut être traduit.
-4. Gardez tout HTML/JSX tel quel.
-5. Sortez UNIQUEMENT le corps traduit en markdown. Aucune introduction, aucun commentaire, aucune barre de code autour de la réponse.
+Ouvrez deux pages de détails de thèmes dans cet index, et vous verrez deux boutons d’installation différents : « copier l’invite d’installation » sur l’une, « télécharger le fichier de thème » sur l’autre. Ils ne sont pas interchangeables, et cette différence compte davantage que ce que la plupart des gens imaginent.
 
-Ouvrez deux pages de détails de thèmes dans cet index et vous verrez deux boutons d'installation différents : "copier la commande d'installation" sur l'une, "télécharger le fichier de thème" sur l'autre. Ils ne sont pas interchangeables, et la différence est plus importante qu'on ne le pense.
+Voici la distinction : les **présélections d’invites** décrivent un style en langage naturel, pour qu’un moteur comme Dream Skin puisse l’interpréter ; les **fichiers de thème**, eux, sont des spécifications structurées (comme `.codedrobe-theme` ou `.codextheme`) qui s’appliquent de façon déterministe. Voici comment appréhender chacun d’eux.
 
-C'est la séparation : **les présélections de prompt** décrivent une apparence en langage naturel pour un moteur comme Dream Skin à interpréter ; **les fichiers de thème** sont des spécifications structurées (comme `.codedrobe-theme` ou `.codextheme`) qui s'appliquent de manière déterministe. Voici comment penser à chacun.
+## Comment fonctionnent les présélections d’invites
 
-## Comment fonctionnent les présélections de prompt
+Une présélection est une phrase : « Appliquer le thème clair Clear Glass — une interface épurée, vitrée et peu distrayante. » Le moteur la lit, la rapproche d’une palette stockée et l’applique. Dream Skin et des moteurs similaires reposent sur ce modèle.
 
-Une présélection est une phrase : "Appliquer le thème clair en verre — une surface propre et peu distrayante." Le moteur la lit, la compare à une palette stockée, puis l'applique. Les moteurs comme Dream Skin vivent sur ce modèle.
+**Points forts :**
+- Installation la plus rapide qui soit — collez, c’est terminé.
+- Lisible par un humain. Vous pouvez modifier la description pour obtenir une variante.
+- Idéal pour l’exploration : « rends-le légèrement plus chaud » est une instruction valide.
 
-**Avantages :**
-- Installation la plus rapide existante — coller, c'est fait.
-- Lisible par les humains. Vous pouvez modifier la description et obtenir une variation.
-- Idéal pour explorer : "rendre un peu plus chaud" est une instruction valide.
-
-**Inconvénients :**
-- Interprétation. Deux moteurs peuvent interpréter le même prompt différemment.
-- Moins précis. "Ressemblant au verre" n'est pas une valeur hexadécimale.
-- Dépendant du moteur. Votre présélection ne signifie rien pour un moteur qui ne comprend pas les prompts.
+**Points faibles :**
+- Interprétation variable. Deux moteurs peuvent restituer différemment la même invite.
+- Moins précis. « Vitreux » n’est pas une valeur hexadécimale.
+- Couplage au moteur. Votre présélection n’a aucun sens pour un moteur incapable d’interpréter les invites.
 
 ## Comment fonctionnent les fichiers de thème
 
-Un fichier de thème est une spécification : des valeurs hexadécimales exactes pour l'arrière-plan, le premier plan, les couleurs syntaxiques, les accents. Le moteur charge le fichier et applique exactement ce que le fichier indique. `.codedrobe-theme` (utilisé par des galeries comme codexskins.org) et `.codextheme` sont les formats courants.
+Un fichier de thème est une spécification : valeurs hexadécimales exactes pour l’arrière-plan, le premier plan, les couleurs de syntaxe, les accents, etc. Le moteur le charge et applique strictement ce que le fichier indique. Les formats `.codedrobe-theme` (utilisés par des galeries comme codexskins.org) et `.codextheme` sont les plus courants.
 
-**Avantages :**
-- Déterministe. Ce que vous voyez est ce que le fichier spécifie.
-- Portabilité entre les moteurs lisant le même format.
-- Facile à versionner, à comparer et à partager — c'est juste du texte.
+**Points forts :**
+- Déterminisme. Ce que vous voyez correspond exactement à ce que le fichier spécifie.
+- Portabilité entre moteurs compatibles avec ce même format.
+- Facile à versionner, comparer (diff) et partager — il s’agit simplement d’un fichier texte.
 
-**Inconvénients :**
-- Plus lent à créer. Quelqu'un doit écrire chaque valeur.
-- Fragmentation de format. `.codedrobe-theme` vs `.codextheme` vs configurations CLI ne sont pas tous compatibles.
-- Éditer nécessite de comprendre le format, pas seulement de reformuler.
+**Points faibles :**
+- Plus long à créer. Quelqu’un doit définir chaque valeur explicitement.
+- Fragmentation des formats. Les formats `.codedrobe-theme`, `.codextheme` et les configurations CLI ne sont pas tous compatibles entre eux.
+- La modification exige de comprendre la structure du format, pas seulement de reformuler une phrase.
 
-## Lequel est "meilleur"?
+## Lequel est « meilleur » ?
 
-Cela dépend de ce que vous optimisez :
+Cela dépend de vos priorités :
 
-- **Vitesse et exploration :** les présélections de prompt gagnent. Vous pouvez essayer cinq ambiances en cinq minutes.
-- **Consistance et portabilité :** les fichiers de thème gagnent. Un fichier signifie la même chose partout où il est chargé.
-- **Contrôle de version :** les fichiers de thème gagnent, proprement. Un prompt est du texte ; un fichier est une spécification diffable.
+- **Rapidité et exploration :** les présélections d’invites l’emportent. Vous pouvez tester cinq ambiances en cinq minutes.
+- **Cohérence et portabilité :** les fichiers de thème l’emportent. Un fichier signifie la même chose partout où il est chargé.
+- **Contrôle de version :** les fichiers de thème l’emportent nettement. Une invite est du texte libre ; un fichier est une spécification pouvant être comparée ligne à ligne.
 
-La plupart des gens finissent par avoir un mélange : des prompts pour trouver l'ambiance, puis un fichier de thème pour la fixer.
+La plupart des utilisateurs finissent par combiner les deux approches : ils utilisent des invites pour trouver l’ambiance souhaitée, puis un fichier de thème pour la figer définitivement.
 
-## Une règle pratique pour prendre une décision
+## Règle pratique de décision
 
-Utilisez cela avant d'installer quoi que ce soit :
+Appliquez cette règle avant toute installation :
 
-1. Voulez-vous essayer un look rapidement → copiez le prompt, collez-le, c'est fait.
-2. Vous avez trouvé un look que vous allez garder pendant des mois → téléchargez le fichier de thème afin qu'il soit stable et partageable.
-3. Synchroniser entre machines ou une équipe → fichier de thème, commité dans votre repo de dotfiles.
-4. Expérimenter des variations → prompt, car "plus chaud" est plus rapide que d'éditer les codes hexadécimaux.
+1. Vous voulez tester rapidement un style → copiez l’invite, collez-la, c’est fait.
+2. Vous avez trouvé un style que vous conserverez plusieurs mois → téléchargez le fichier de thème pour garantir sa stabilité et sa partageabilité.
+3. Vous synchronisez entre plusieurs machines ou au sein d’une équipe → privilégiez le fichier de thème, intégré à votre dépôt de fichiers de configuration (dotfiles).
+4. Vous expérimentez des variations → utilisez une invite, car « plus chaud » est plus rapide que de modifier manuellement des valeurs hexadécimales.
 
 ## FAQ rapide
 
-**Un prompt de présélection et un fichier de thème peuvent-ils produire le même look ?**
-Oui, si la palette stockée du moteur de présélection correspond aux valeurs hexadécimales du fichier. Certains moteurs offrent les deux représentations d'un même thème.
+**Une présélection d’invite et un fichier de thème peuvent-ils produire le même rendu ?**  
+Oui, à condition que la palette stockée dans le moteur correspondant à l’invite coïncide exactement avec les valeurs hexadécimales du fichier. Certains moteurs proposent d’ailleurs les deux représentations d’un même thème.
 
-**Quel format survit mieux aux mises à jour du moteur ?**
-Les fichiers de thème, généralement. Une spécification reste valide tant que le format est pris en charge ; un prompt dépend que le moteur comprenne encore cette formulation.
+**Lequel des deux formats résiste le mieux aux mises à jour du moteur ?**  
+Les fichiers de thème, en général. Une spécification reste valide tant que le format est pris en charge ; une invite dépend de la capacité continue du moteur à interpréter cette formulation précise.
 
-**L'un des formats est-il plus rapide au démarrage ?**
-Aucune différence négligeable. Les deux sont des configurations minuscules chargées en microsecondes.
+**Y a-t-il une différence notable de vitesse au démarrage ?**  
+Non, la différence est négligeable. Les deux types de configuration sont extrêmement légers et chargés en quelques microsecondes.
 
-**Quelle recommandation donne cet index ?**
-Consultez le champ de format d'installation de chaque thème — il vous indique lequel s'applique. [Monokai Stone](/skins/monokai-stone/) et [Solarized](/skins/solarized/) sont livrés en specs CLI/thème ; [Clear Glass](/skins/clear-glass/) et [Purple Vivid](/skins/vivid-purple/) sont amicaux aux prompts.
+**Que recommande cet index ?**  
+Consultez le champ « format d’installation » de chaque thème — il indique clairement le format applicable. [Monokai Stone](/skins/monokai-stone/) et [Solarized](/skins/solarized/) sont fournis sous forme de spécifications CLI/thème ; [Clear Glass](/skins/clear-glass/) et [Vivid Purple](/skins/vivid-purple/) sont conçus pour fonctionner avec les invites.
 
-Essayez les deux une fois et vous connaîtrez votre préférence en une après-midi. Parcourez l'[index de thèmes](/skins/) pour des exemples de chaque format, ou commencez par le [guide d'installation](/blog/how-to-install-codex-skins/) si vous n'avez encore rien installé.
+Essayez les deux une fois, et vous saurez très vite quelle approche vous convient, en une seule après-midi. Parcourez l’[index des thèmes](/skins/) pour voir des exemples de chaque format, ou commencez par le [guide d’installation](/blog/how-to-install-codex-skins/) si vous n’avez encore installé aucun thème.

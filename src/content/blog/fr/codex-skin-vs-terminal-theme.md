@@ -1,6 +1,6 @@
 ---
-title: "Coudex Skins vs Thèmes de Terminal : La famille Tokyo Night"
-description: "Tokyo Night est né en tant que thème de terminal, a ensuite rejoint les éditeurs, et vit maintenant dans Codex. Comment la même famille de palettes s'est migrée, et comment l'utiliser de manière cohérente dans tous les outils."
+title: "Habillages Codex contre thèmes de terminal : la famille Tokyo Night"
+description: "Tokyo Night a commencé comme un thème pour terminal, s’est étendu aux éditeurs, puis a trouvé sa place dans Codex. Comment cette même famille de couleurs s’est déplacée d’un outil à l’autre, et comment l’utiliser de façon cohérente dans chaque outil."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["tokyo-night", "terminal", "palette-family"]
@@ -9,60 +9,53 @@ relatedSkins: ["tokyo-night-cli", "tokyo-night-ychampion", "bearded-tokyo-night"
 lang: "fr"
 ---
 
-LES RÈGLES STRICTES :
-1. Traduire toutes les phrases lisibles par l'humain, les titres, le texte des tableaux et le texte des liens.
-2. JAMAIS traduire : les blocs de code, le code en ligne, les chemins de fichiers, les commandes shell, les URLs, les noms de produits (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), les chiffres ou versions, ou les noms d'écrans.
-3. Conserver la structure markdown identique : mêmes titres, listes, tableaux, gras/italique, citations, et destinations de liens. Un lien comme [Monokai Stone](/skins/monokai-stone/) conserve son URL /chemin/ inchangée ; seul le texte visible peut être traduit.
-4. Conserver exactement les HTML/JSX bruts.
-5. Afficher UNIQUEMENT le corps du markdown traduit. Aucune introduction, aucun commentaire, aucune barre de code autour de la réponse.
+Tokyo Night est un thème rare qui a su passer d’un simple outil à un écosystème entier. Il a commencé comme un thème populaire pour les terminaux, s’est imposé comme un favori dans VS Code, et compte désormais plusieurs déclinaisons dans cet index de skins Codex. Observer une même palette migrer d’un outil à l’autre constitue la meilleure étude de cas pour comprendre pourquoi la portabilité des skins est essentielle.
 
-Tokyo Night est le thème rare qui a sauté d'un outil à une écosystème entière. Il a commencé comme un thème de terminal populaire, est devenu une préférence pour VS Code, et maintenant possède plusieurs ports dans cet index de thèmes Codex. Observer une palette migrer entre les outils est le meilleur cas d'étude sur pourquoi la portabilité des thèmes compte.
+## L’arbre généalogique de Tokyo Night
 
-## L'arbre généalogique de la famille Tokyo Night
+La palette — fonds bleu nuit, accents lavande et cyan doux, excellente lisibilité — s’est répandue parce qu’elle allie à la fois beauté et praticité :
 
-La palette — fonds bleus nuit, accents lavande et cyan doux, haute lisibilité — s'est répandue car elle est à la fois belle et pratique :
+- **D’abord le terminal.** Lieu d’origine de Tokyo Night ; son fond gris-bleu foncé offre une excellente lisibilité en environnement terminal.  
+- **Ensuite l’éditeur.** Son adoption dans VS Code l’a propulsé au rang de référence parmi les développeurs.  
+- **Enfin Codex.** Des versions adaptées sont apparues dans cet index sous plusieurs formes : [Tokyo Night (CLI)](/skins/tokyo-night-cli/), [Tokyo Night (ychampion)](/skins/tokyo-night-ychampion/) et la version [Bearded Tokyo Night](/skins/bearded-tokyo-night/) issue de la série Bearded.
 
-- **Terminal en premier lieu.** La maison originale de Tokyo Night ; le fond bleu-gris lit bien dans un terminal.
-- **Éditeur en second lieu.** L'adoption par VS Code en a fait un nom connu parmi les développeurs.
-- **Codex en troisième lieu.** Des ports sont apparus dans cet index sous plusieurs formes : [Tokyo Night (CLI)](/skins/tokyo-night-cli/), [Tokyo Night (ychampion)](/skins/tokyo-night-ychampion/), et le port [Tokyo Night Bearded](/skins/bearded-tokyo-night/) de la série Bearded.
+Même famille chromatique, mais des implémentations légèrement différentes — voilà précisément ce que recouvre le concept d’écosystème thématique.
 
-Même famille de teintes, implementations légèrement différentes — et c'est toute l'histoire des écosystèmes de thèmes.
+## Ce que cette migration nous apprend sur les skins Codex
 
-## Ce que cette migration enseigne sur les thèmes Codex
+**1. La portabilité est une fonctionnalité.** Le fait que Tokyo Night existe sous trois formes différentes dans Codex tient au désir des utilisateurs de le retrouver partout. Lorsque vous choisissez un skin, privilégiez les palettes ayant déjà fait l’objet de multiples ports — [Monokai Stone](/skins/monokai-stone-cli/) et [Solarized](/skins/solarized-cli/) suivent exactement la même trajectoire. Elles seront facilement transférables vers tout nouvel outil que vous adopterez.
 
-**1. La portabilité est une fonctionnalité.** La raison pour laquelle Tokyo Night existe en trois formes Codex est que les gens voulaient le trouver partout. Quand vous choisissez un thème, privilégiez les palettes ayant une histoire de ports — [Monokai Stone](/skins/monokai-stone-cli/) et [Solarized](/skins/solarized-cli/) sont du même genre. Ils seront portables vers n'importe quel outil que vous adopterez ensuite.
+**2. Les ports diffèrent dans leurs détails.** [Tokyo Night (CLI)](/skins/tokyo-night-cli/) et [Tokyo Night (ychampion)](/skins/tokyo-night-ychampion/) ne sont pas identiques octet pour octet : des auteurs différents ont ajusté le contraste et le rendu des couleurs d’accent. Même famille, sensibilité légèrement différente. Cela est tout à fait normal ; choisissez la variante dont les détails correspondent le mieux à vos préférences.
 
-**2. Les ports diffèrent dans les détails.** [Tokyo Night (CLI)](/skins/tokyo-night-cli/) et [Tokyo Night (ychampion)](/skins/tokyo-night-ychampion/) ne sont pas identiques au niveau des octets — différents auteurs ont ajusté le contraste et la gestion des accents. Même famille, sentiment légèrement différent. Cela est normal ; choisissez la variante dont les détails correspondent à votre goût.
+**3. Les variantes CLI sont les plus durables.** Les thèmes nés dans le terminal sont distribués au format tmtheme/CLI, ce qui permet leur importation dans le plus grand nombre d’outils. Le [guide des formats](/blog/codex-skin-format-ecosystem/) explique pourquoi les formats structurés résistent mieux aux évolutions que les présélections basées sur du texte libre.
 
-**3. Les variantes CLI sont les plus durables.** Les thèmes originaux pour terminaux sont livrés sous forme de spécifications tmtheme/CLI, qui s'importent dans la plupart des outils. Le [guide de format](/blog/codex-skin-format-ecosystem/) explique pourquoi les formats structurés survivent aux présélections en prose.
+## Configurer Tokyo Night sur l’ensemble de vos outils
 
-## Créer une configuration Tokyo Night à travers les outils
+Vous souhaitez disposer de la « famille complète » ? Voici une configuration opérationnelle :
 
-Souhaitez-vous le portrait complet de la famille ? Voici une configuration fonctionnelle :
+1. **Codex :** installez [Tokyo Night (CLI)](/skins/tokyo-night-cli/) (ou la variante ychampion si vous préférez ses réglages).  
+2. **Terminal :** la même palette est disponible pour iTerm2, Windows Terminal, kitty, et bien d’autres émulateurs — téléchargez simplement le thème Tokyo Night original adapté à votre émulateur.  
+3. **VS Code :** l’installation du thème Tokyo Night original ne prend que deux secondes.  
+4. **Coloration syntaxique du shell :** si votre interpréteur de commandes prend en charge la coloration syntaxique, les couleurs ANSI de la palette s’appliquent directement.
 
-1. **Codex :** installez [Tokyo Night (CLI)](/skins/tokyo-night-cli/) (ou la variante ychampion si vous préférez son réglage).
-2. **Terminal :** la même palette existe pour iTerm2, Windows Terminal, kitty, et bien d'autres — téléchargez le thème original Tokyo Night pour votre émulateur.
-3. **VS Code :** le thème original Tokyo Night se installe en deux secondes.
-4. **Syntaxe de shell :** si votre shell utilise la coloration syntaxique, les couleurs ANSI de la palette s'appliquent directement.
+Résultat : une cohérence chromatique nocturne et bleutée sur chaque surface où vous codez. Le [guide de synchronisation terminal](/blog/codex-skin-terminal-sync/) détaille cette méthode pas à pas.
 
-Résultat : une famille bleue nuit sur chaque surface sur laquelle vous codez. Le [guide de synchronisation du terminal](/blog/codex-skin-terminal-sync/) couvre la méthode en détail.
+## Pourquoi cette famille fonctionne si bien
 
-## Pourquoi la famille fonctionne si bien
-
-La palette a été conçue pour la lisibilité dans les terminaux en premier lieu : haut contraste entre le premier plan et le fond bleu-gris profond, couleurs d'accent qui ne vibrent pas les unes contre les autres. Ces contraintes se traduisent bien dans les éditeurs. Ce n'est pas un hasard si la famille s'est propagée — elle a été conçue pour être lisible dans le contexte d'affichage le plus difficile, et tout le reste est plus facile.
+La palette a été conçue avant tout pour la lisibilité en terminal : fort contraste entre les éléments premiers plans et le fond gris-bleu profond, couleurs d’accent qui ne « vibrent » pas les unes contre les autres. Ces contraintes se transposent naturellement aux éditeurs. La diffusion de cette famille n’est donc pas le fruit du hasard : elle a été spécifiquement conçue pour rester lisible dans le contexte d’affichage le plus exigeant — tous les autres cas étant alors plus simples à traiter.
 
 ## FAQ rapide
 
-**Tokyo Night est-il uniquement en mode sombre ?**
-Le classique l'est ; il existe une variante Storm qui est plus claire. Cet index contient les formes sombres.
+**Tokyo Night est-il uniquement disponible en version sombre ?**  
+La version classique est effectivement sombre ; une variante appelée Storm propose une teinte plus claire. Cet index ne contient que les versions sombres.
 
-**Quel port Codex dois-je choisir ?**
-Essayez d'abord [Tokyo Night (CLI)](/skins/tokyo-night-cli/) — c'est le plus fidèle à l'original. Si vous préférez un contraste légèrement plus doux, le port [Bearded](/skins/bearded-tokyo-night/) vaut la peine d'être regardé.
+**Quel port Codex devrais-je choisir ?**  
+Commencez par [Tokyo Night (CLI)](/skins/tokyo-night-cli/) — c’est la version la plus fidèle à l’original. Si vous préférez un contraste légèrement plus doux, la version [Bearded](/skins/bearded-tokyo-night/) mérite également votre attention.
 
-**Plusieurs palettes suivront-elles ce modèle ?**
-Très probablement. Les écosystèmes de thèmes convergent toujours vers quelques familles portables — Tokyo Night, Monokai, Solarized, Dracula. Parier sur ceux-ci est sûr.
+**D’autres palettes suivront-elles ce modèle ?**  
+Très probablement. Les écosystèmes thématiques convergent inévitablement vers quelques familles largement portables — Tokyo Night, Monokai, Solarized, Dracula. Parier sur celles-ci est une stratégie sûre.
 
-**Le fait de correspondre le terminal + Codex affecte-t-il les performances ?**
-Aucun. C'est tout simplement une configuration visuelle.
+**Synchroniser mon terminal avec Codex a-t-il un coût en performance ?**  
+Aucun. Il ne s’agit que de configurations purement cosmétiques.
 
-La famille Tokyo Night prouve qu'une seule palette peut vivre dans tous les outils que vous utilisez. Prenez [Tokyo Night (CLI)](/skins/tokyo-night-cli/), synchronisez votre terminal, et votre espace de travail entier correspond enfin. Parcourez [l'index complet de thèmes](/skins/) pour d'autres familles portables, ou lisez la comparaison des [moteurs](/blog/codex-skin-engines-compared/) pour voir quel outil les applique le mieux.
+La famille Tokyo Night prouve qu’une seule palette peut s’incarner dans chacun des outils que vous utilisez. Installez [Tokyo Night (CLI)](/skins/tokyo-night-cli/), synchronisez votre terminal, et l’ensemble de votre espace de travail sera enfin parfaitement cohérent. Parcourez l’[index complet des skins](/skins/) pour découvrir d’autres familles portables, ou consultez la [comparaison des moteurs](/blog/codex-skin-engines-compared/) afin de savoir quel outil les applique le mieux.

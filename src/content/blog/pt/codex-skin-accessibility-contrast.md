@@ -1,6 +1,6 @@
 ---
-title: "Cores Altamente Contrastantes de Skins Codex: Acessibilidade que realmente parece bom"
-description: "Alto contraste não é cinza feio em fundo preto. Boas skins Codex acessíveis atendem às razões de contraste WCAG, mantendo o caráter — aqui está como escolher e verificar."
+title: "Skins Codex de Alto Contraste: Acessibilidade que realmente tem boa aparência"
+description: "Alto contraste não é simplesmente um cinza feio sobre preto. Boas skins acessíveis do Codex atendem às taxas de contraste WCAG sem perder personalidade — veja como escolhê-las e verificá-las."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["accessibility", "contrast", "wcag"]
@@ -9,49 +9,49 @@ relatedSkins: ["monokai-stone-cli", "vivid-purple", "forest-mist", "blue-enchant
 lang: "pt"
 ---
 
-"Accessível" soa como uma redução. Cinza sobre preto, fontes grandes, sem personalidade. Não precisa ser — algumas das skins do Codex mais impressionantes neste índice também passam nos testes de contraste do WCAG. A chave é saber o que procurar, e algumas skins aqui comprovam isso.
+“Accessible” soa como uma desvalorização. Cinza sobre preto, fontes grandes, sem personalidade. Mas não precisa ser assim — algumas das skins Codex mais marcantes deste índice também atendem aos critérios de contraste WCAG. O segredo está em saber o que procurar, e algumas skins listadas aqui comprovam exatamente isso.
 
-## O número que você realmente precisa: 4,5:1
+## O número de que você realmente precisa: 4,5:1
 
-O WCAG AA para texto normal exige uma razão de contraste de pelo menos **4,5:1** entre o texto e o fundo. Texto grande (18px ou mais, ou 14px em negrito) precisa apenas de 3:1. Código — seu conteúdo principal — é texto normal, então 4,5:1 é o padrão.
+O nível WCAG AA para texto normal exige uma razão de contraste de pelo menos **4,5:1** entre o texto e o fundo. Texto grande (18px ou mais, ou 14px em negrito) exige apenas 3:1. O código — seu conteúdo principal — é considerado texto normal, portanto 4,5:1 é o limite mínimo.
 
-Você não precisa ser um designer para verificar. Insira os códigos hex dos elementos de primeiro plano e de fundo de qualquer skin em qualquer verificador de contraste, e você obtém a razão em segundos. Se a cor do texto estiver abaixo de 4,5:1 em relação ao fundo, esse é o problema principal — corrija esse par e você estará em 90% do caminho.
+Você não precisa ser designer para verificar isso. Basta inserir os valores hexadecimais da cor de primeiro plano e do fundo de qualquer skin em qualquer verificador de contraste, e obterá a razão em segundos. Se sua cor de texto ficar abaixo de 4,5:1 em relação ao fundo, esse é exatamente o problema — corrija esse único par e você já resolveu 90% da questão.
 
-## O que torna uma skin acessível *se sentir* boa
+## O que faz uma skin acessível *parecer* boa
 
-Contraste alto falha quando está alto em todos os lugares. As boas skins mantêm uma hierarquia clara:
+Alta contraste falha apenas quando é alta em toda parte. As boas skins mantêm uma hierarquia clara:
 
-- **Texto de código no fundo: ≥ 4,5:1.** Não negociável.
-- **Elementos da interface com baixo contraste:** comentários, números de linha, rótulos de painéis podem ficar mais baixos (3:1+), para que o olho não esteja gritando com tudo de uma vez.
-- **Uma forte cor de destaque** para cursor/seleção, mantida acima de 3:1 em relação aos seus vizinhos.
+- **Texto de código sobre o fundo: ≥ 4,5:1.** Não negociável.
+- **Elementos de UI suavizados:** comentários, números de linha e rótulos de painéis podem ter contraste menor (≥ 3:1), para que os olhos não sejam sobrecarregados por estímulos intensos simultaneamente.
+- **Um único acento forte**, usado para cursor e seleção, mantido acima de 3:1 em relação aos elementos vizinhos.
 
-[Monokai Stone (CLI)](/skins/monokai-stone-cli/) faz isso bem — as cores da sintaxe permanecem suficientemente claras para leitura enquanto o quadro da interface fica tranquilo. [Forest Mist](/skins/forest-mist/) mostra uma paleta acessível que não precisa ser feia por causa do alto contraste; os verdes suaves ainda atendem ao requisito.
+A [Monokai Stone (CLI)](/skins/monokai-stone-cli/) faz isso bem — as cores de sintaxe permanecem brilhantes o suficiente para leitura, enquanto a estrutura da interface fica discreta. A [Forest Mist](/skins/forest-mist/) mostra uma paleta acessível que não precisa ser “feia” por causa do alto contraste; seus verdes suavizados ainda atendem ao requisito mínimo.
 
-## Cegueira às cores: a verificação extra
+## Daltonismo: a verificação extra
 
-A razão de contraste cobre apenas a luminosidade. Se você for daltônico — cerca de 8% dos homens — as distinções entre vermelho e verde desaparecem. Então:
+A razão de contraste avalia apenas o brilho, não as cores. Se você tem daltonismo — cerca de 8% dos homens —, distinções entre vermelho e verde desaparecem. Por isso:
 
-- **Não dependa apenas da cor** para distinguir estados (por exemplo, apenas um ponto vermelho/verde para erros). Combine com um ícone ou uma palavra.
-- **Prefira tons azuis/laranjas** em vez de pares vermelho/verde, se possível. [Blue Enchantress](/skins/blue-enchantress/) e [Vivid Purple](/skins/vivid-purple/) são opções seguras nesse aspecto.
+- **Não confie exclusivamente na cor** para diferenciar estados (por exemplo, usar apenas um ponto vermelho/verde para indicar erros). Combine-a com um ícone ou uma palavra.
+- **Prefira acentos azuis/laranjas** em vez de pares vermelho/verde sempre que possível. A [Blue Enchantress](/skins/blue-enchantress/) e a [Vivid Purple](/skins/vivid-purple/) são opções seguras nesse sentido.
 
-Se você compartilhar sua configuração ou publicar screenshots, essas verificações importam para seus leitores também, não apenas para você.
+Se você compartilha sua configuração ou publica capturas de tela, essas verificações importam tanto para seus leitores quanto para você.
 
 ## Como verificar uma skin em 30 segundos
 
-1. Abra a página detalhada da skin — os códigos hex da paleta estão listados lá.
-2. Pegue os códigos hex do fundo e do primeiro plano.
-3. Execute-os em um verificador de contraste (qualquer um gratuito funciona).
-4. Texto com razão menor que 4,5:1 → ajuste ou escolha outra skin deste índice.
+1. Acesse a página detalhada da skin — os valores hexadecimais da paleta estão listados lá.  
+2. Copie os valores hexadecimais do fundo e do primeiro plano.  
+3. Insira-os em qualquer verificador de contraste (qualquer ferramenta gratuita funciona).  
+4. Se o texto ficar abaixo de 4,5:1 → ajuste ou escolha outra skin deste índice.
 
-## Perguntas Frequentes Rápidas
+## Perguntas frequentes rápidas
 
-**Modo escuro é pior para acessibilidade?**
-Não necessariamente. A razão de contraste é o que importa, não a escuridão do fundo. Algumas pessoas com astigmatismo preferem o modo claro; outras não. Escolha com base nos seus olhos, depois verifique a razão.
+**O modo escuro é pior para acessibilidade?**  
+Não necessariamente. O que importa é a razão de contraste, não a luminosidade do fundo. Algumas pessoas com astigmatismo preferem o modo claro; outras, não. Escolha o que for mais confortável para seus olhos — e depois valide a razão de contraste.
 
-**Posso editar as cores de uma skin para corrigir o contraste?**
-Sim, se você estiver confortável editando o arquivo da tema. Aumente a luminosidade do primeiro plano ou escuras o fundo até que o par atinja 4,5:1, salve como uma variante própria.
+**Posso editar as cores de uma skin para corrigir o contraste?**  
+Sim, se você se sentir à vontade para editar o arquivo do tema. Ajuste a luminosidade da cor de primeiro plano ou escureça o fundo até que o par atinja 4,5:1, salve como sua própria variação.
 
-**Skins acessíveis parecem "chaticas"?**
-Apenas se a paleta for plana. As skins deste índice com tons fortes — [Vivid Purple](/skins/vivid-purple/), [Blue Enchantress](/skins/blue-enchantress/) — são chamativas e acessíveis ao mesmo tempo. Contraste e personalidade não são opostos.
+**Skins acessíveis parecem “sem graça”?**  
+Apenas se a paleta for plana e sem variação. As skins deste índice com acentos marcantes — como a [Vivid Purple](/skins/vivid-purple/) e a [Blue Enchantress](/skins/blue-enchantress/) — são vibrantes *e* acessíveis ao mesmo tempo. Contraste e personalidade não são opostos.
 
-Acessibilidade é uma lista de verificação, não uma estética. Verifique a razão de 4,5:1 na skin que você ama, corrija o único par que falha e mantenha o visual. Comece com [Monokai Stone](/skins/monokai-stone-cli/) se quiser uma base confiável, ou navegue pelo [índice completo](/skins/) — o [guia para criar uma skin](/blog/how-to-create-codex-skin/) também mostra onde editar os códigos hex.
+Acessibilidade é uma lista de verificação, não um estilo visual. Valide a razão de 4,5:1 na skin que você ama, corrija o único par que falhar e preserve o visual. Comece pela [Monokai Stone](/skins/monokai-stone-cli/) se quiser uma base já testada e confiável, ou explore o [índice completo](/skins/) — o [guia de criação de skins Codex](/blog/how-to-create-codex-skin/) também mostra exatamente onde editar os valores hexadecimais.

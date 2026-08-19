@@ -1,6 +1,6 @@
 ---
-title: "Wie man ein eigenes Codex-Skin erstellt (Anfängerleitfaden)"
-description: "Erfahren Sie, wie Sie ein benutzerdefiniertes Codex-Skin erstellen: wählen Sie eine Engine, wählen Sie Farben, schreiben Sie einen Themen-Präset und testen Sie es live. Ein praktischer Leitfaden für Anfänger, ohne Programmierkenntnisse erforderlich."
+title: "So erstellen Sie Ihre eigene Codex-Oberfläche (Anfängerhandbuch)"
+description: "Erfahren Sie, wie Sie eine benutzerdefinierte Codex-Oberfläche erstellen: Wählen Sie eine Engine, entscheiden Sie sich für Farben, schreiben Sie ein Theme-Preset und testen Sie es live. Eine praktische Anleitung für Einsteiger – ohne Programmierkenntnisse erforderlich."
 pubDate: "2026-08-14"
 updatedDate: "2026-08-14"
 tags: ["create", "custom", "beginner", "theme"]
@@ -9,20 +9,20 @@ relatedSkins: ["clear-glass", "sakura-pink-dawn", "amber-dusk"]
 lang: "de"
 ---
 
-Das Erstellen eines eigenen Codex-Skins ist überraschend einfach. Die meisten Engines akzeptieren ein Thema, das durch eine kleine Menge an Farben – Hintergrund, Oberfläche, Text, Akzent – ausgedrückt wird, entweder als Prompt oder als JSON-Datei. Sie müssen das Codex-App selbst nicht berühren.
+Das Erstellen Ihres eigenen Codex-Skins ist überraschend zugänglich. Die meisten Engines akzeptieren ein Theme, das durch eine kleine Farbpalette definiert ist – Hintergrund, Oberfläche, Text und Akzent – entweder als Prompt oder als JSON-Datei. Sie müssen die Codex-Anwendung selbst nicht modifizieren.
 
-## Schritt 1: Engine wählen
+## Schritt 1: Wählen Sie eine Engine
 
-Ihr Themenformat hängt von der Engine ab, die Sie verwenden:
+Das Format Ihres Themes hängt von der verwendeten Engine ab:
 
-- **Codex Dream Skin** — Themen sind Voreinstellungen oder Agenten-Prompts. Einfach zu beginnen: Beschreiben Sie das Farbschema in einem Satz.
-- **Codex Skin Manager** — enthält einen Themen-Ersteller mit visueller Farbauswahl.
-- **ReTheme** — signierte, aktualisierbare Themen; gut, wenn Sie öffentlich teilen möchten.
-- **Codex Themes (desktop)** — `.codextheme`-Dateien mit einem Creator-Center unter theme.codexguide.ai.
+- **Codex Dream Skin** – Themes sind vorgefertigte Presets oder Agent-Prompts. Am einfachsten für den Einstieg: Beschreiben Sie Ihre Farbpalette in einem Satz.
+- **Codex Skin Manager** – enthält einen Theme-Creator mit visuellem Farbwähler.
+- **ReTheme** – signierte, aktualisierbare Themes; ideal, wenn Sie Ihr Theme öffentlich teilen möchten.
+- **Codex Themes (desktop)** – `.codextheme`-Dateien mit einem Creator-Center unter theme.codexguide.ai.
 
-Für diesen Leitfaden verwenden wir den Prompt-Ansatz (funktioniert mit Dream Skin).
+In dieser Anleitung verwenden wir den Prompt-Ansatz (kompatibel mit Dream Skin).
 
-## Schritt 2: Ihre Farbpalette wählen
+## Schritt 2: Wählen Sie Ihre Farbpalette
 
 Ein Skin besteht meist aus 4–6 Farben:
 
@@ -33,37 +33,36 @@ Ein Skin besteht meist aus 4–6 Farben:
 | Text | `#1A1B26` | `#E4E4E7` |
 | Akzent | `#2DD4BF` | `#2DD4BF` |
 
-Bleiben Sie bei einem Akzent. Zu viele Akzente sind der #1 Fehler von Anfängern.
+Verwenden Sie nur einen Akzent. Zu viele Akzentfarben sind der häufigste Anfängerfehler.
 
-## Schritt 3: Das Thema als Prompt schreiben
+## Schritt 3: Formulieren Sie das Theme als Prompt
 
-Ein Dream Skin-Preset ist einfach ein beschreibender Satz:
+Ein Dream-Skin-Preset ist lediglich ein beschreibender Satz:
 
 ```text
-Codex, wende ein benutzerdefiniertes Thema an – ein warmes Amber-Dämmerungs-Farbschema mit dunklen Kohle-Oberflächen,
-weiche Amber-Akzente und hellen Cremetext. Ruhevoll, gemütlich, ideal für lange Lesesitzungen.
+Codex, wende ein benutzerdefiniertes Theme an – eine warme Bernstein-Dämmerungs-Palette mit dunklen Kohle-Oberflächen, sanften Bernstein-Akzenten und hellcremefarbenem Text. Ruhevolle, gemütliche Gestaltung, optimiert für lange Lese- und Arbeitsphasen.
 ```
 
-Speichern Sie es als Voreinstellung in der Engine und testen Sie es. Passen Sie die Wörter an, bis das Ergebnis Ihrem Ziel entspricht.
+Speichern Sie diesen Text als Preset in Ihrer Engine und testen Sie das Ergebnis. Passen Sie die Formulierung so lange an, bis das visuelle Ergebnis Ihren Vorstellungen entspricht.
 
-## Schritt 4: Auf echtem Inhalt testen
+## Schritt 4: Testen Sie am echten Inhalt
 
-Öffnen Sie eine belebte Seite (lange Codezeilen, viele Panels), bevor Sie sich entscheiden. Dunkle Themen sehen gut in Screenshots aus und versagen in der Praxis, wenn die Kontraste der Panels zu niedrig sind. Prüfen Sie:
+Öffnen Sie vor der endgültigen Entscheidung einen komplexen Bildschirm (z. B. mit langem Code oder vielen Panels). Dunkle Themes wirken in Screenshots oft sehr ansprechend, versagen aber in der Praxis häufig bei zu geringem Kontrast zwischen Panels. Prüfen Sie folgende Punkte:
 
-- Lesbarkeit des Code-Editors
-- Trennung von Sidebar / Panel
-- Sichtbarkeit des Akzents bei Buttons vs Links
+- Lesbarkeit im Code-Editor  
+- Abgrenzung von Sidebar / Panels  
+- Sichtbarkeit des Akzents auf Buttons im Vergleich zu Links  
 
-## Schritt 5: Teilen Sie es
+## Schritt 5: Teilen Sie Ihr Theme
 
-Engines wie ReTheme und Codex Skin Manager ermöglichen das Exportieren von Themen. Sie können Ihr Skin über die [Skin einreichen](/submit/) Seite in diese Index einreichen – fügen Sie ein Vorschau-Bild und den Installations-Prompt hinzu, damit andere es in einem Klick verwenden können.
+Engines wie ReTheme und Codex Skin Manager ermöglichen das Exportieren von Themes. Sie können Ihr Skin über die Seite [Submit a skin](/submit/) in diesen Index einreichen – fügen Sie bitte ein Vorschaubild sowie den Installations-Prompt hinzu, damit andere Nutzer es mit nur einem Klick installieren können.
 
-## Fertige Startpunkte
+## Fertige Ausgangspunkte
 
-Stehlen Sie Ideen aus bewährten Farbschemata:
+Nutzen Sie bewährte Paletten als Inspiration:
 
-- [Clear Glass](/skins/clear-glass/) — glasig leichte Oberfläche.
-- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) — weiche Pastellfarben.
-- [Amber Dusk](/skins/amber-dusk/) — warmes Amber-Programm-Preset.
+- [Clear Glass](/skins/clear-glass/) – glasklare helle Oberfläche.  
+- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) – zartes Pastell.  
+- [Amber Dusk](/skins/amber-dusk/) – warmes Bernstein-Programm-Preset.  
 
-Oder durchsuchen Sie den [vollen Index](/skins/) für mehr Inspiration. Und falls Sie bei den Installations-Schritten stecken bleiben, deckt der [Installationsleitfaden](/blog/how-to-install-codex-skins/) jede Methode ab.
+Oder stöbern Sie im [vollständigen Index](/skins/) nach weiteren Ideen. Falls Sie bei den Installations-Schritten unsicher sind, hilft Ihnen der [install guide](/blog/how-to-install-codex-skins/) weiter – darin werden alle Installationsmethoden detailliert beschrieben.

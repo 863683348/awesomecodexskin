@@ -1,6 +1,6 @@
 ---
-title: "Codex CLI vs skins para Desktop: Qual você deve usar?"
-description: "Codex CLI vs skins de Desktop comparados — paletas de cores vs temas visuais, diferenças na instalação e qual configuração se adequa ao seu fluxo de trabalho."
+title: "Codex CLI vs Skins Desktop: Qual Você Deve Usar?"
+description: "Comparação entre as skins Codex CLI e Desktop — paletas de cores versus temas visuais, diferenças de instalação e qual configuração se adapta melhor ao seu fluxo de trabalho."
 pubDate: "2026-08-19"
 updatedDate: "2026-08-19"
 tags: ["cli", "desktop", "comparison", "themes"]
@@ -9,43 +9,43 @@ relatedSkins: ["monokai-stone-cli", "clear-glass", "tokyo-night-cli", "gothic-vo
 lang: "pt"
 ---
 
-DOIS SISTEMAS DE TEMA MUITO DIFERENTES: **temas do Codex CLI** e **skins do Codex Desktop**. Eles parecem similares externamente (ambos mudam como o seu ambiente de trabalho parece) mas funcionam de forma completamente diferente por baixo dos panos — e escolher o certo depende de como você usa o Codex.
+O Codex possui dois sistemas de temas muito distintos: **temas para Codex CLI** e **temas para Codex Desktop**. Externamente, eles parecem semelhantes (ambos alteram a aparência do seu ambiente de trabalho), mas funcionam de maneira totalmente diferente por trás dos panos — e escolher o certo depende de como você usa o Codex.
 
-## Versão rápida
+## Resumo rápido
 
-- **Skins do Codex Desktop** mudam o *chrome da aplicação* — barra lateral, bordas, superfícies, cores de destaque. Eles são ricos visualmente e instalados com um prompt ou um arquivo de tema.
-- **Temas do Codex CLI** mudam a *paleta de cores do terminal* — cores de fundo, texto e sintaxe. Eles são leves, portáteis e instalados com um comando, aplicados via `/theme`.
+- **Temas para Codex Desktop** alteram o *chrome da aplicação* — barra lateral, bordas, superfícies e cores de destaque. São ricos visualmente e instalados por meio de um prompt ou de um arquivo de tema.
+- **Temas para Codex CLI** alteram a *paleta de cores do terminal* — fundo, primeiro plano e cores de sintaxe. São leves, portáteis e instalados via comando, sendo aplicados com `/theme`.
 
-Se você usar o app desktop, quer skins do Desktop. Se você vive no terminal, quer temas do CLI.
+Se você usa o aplicativo desktop, prefira os temas para Codex Desktop. Se vive no terminal, prefira os temas para Codex CLI.
 
-## O que cada sistema muda
+## O que cada sistema altera
 
-| Aspecto | Skin do Desktop | Tema do CLI |
+| Aspecto | Tema para Desktop | Tema para CLI |
 |---|---|---|
-| O que muda | Chrome da aplicação, bordas, destaque | Paleta de cores do terminal |
+| O que é alterado | Chrome da aplicação, bordas, destaques | Paleta de cores do terminal |
 | Método de instalação | Prompt de cópia e colagem / arquivo de tema | Script de instalação + `/theme` |
 | Riqueza visual | Alta (superfícies, bordas) | Baixa (apenas cores) |
-| Portabilidade | Vinculado ao engine do desktop | Funciona com qualquer paleta de terminal |
-| Reversibilidade | Restauração em um clique na maioria dos engines | Executar novamente `/theme` com outro nome |
+| Portabilidade | Ligada ao mecanismo desktop | Funciona com qualquer paleta de terminal |
+| Reversibilidade | Restauração em um clique na maioria dos mecanismos | Execute novamente `/theme` com outro nome |
 
-## Qual para o seu fluxo de trabalho?
+## Qual deles combina com seu fluxo de trabalho?
 
-**Escolha skins do Desktop se:**
-- Você usar o app Codex Desktop como seu ambiente principal.
-- Quiser uma identidade visual completa — escuro com baixa luz, pastel, neon, anime.
-- Gostar da ideia de temas pré-definidos que podem ser restaurados em um clique.
+**Escolha temas para Codex Desktop se você:**
+- Usa o aplicativo Codex Desktop como seu ambiente de trabalho principal.
+- Deseja uma identidade visual completa — modo escuro suave, tons pastel, neon, anime.
+- Gosta da ideia de temas predefinidos que podem ser restaurados com um único clique.
 
-**Escolha temas do CLI se:**
-- Trabalhar principalmente no terminal.
-- Quiser que seu shell e o Codex CLI compartilhem uma mesma paleta.
-- Preferir temas como configurações portáteis e controláveis por versão.
+**Escolha temas para Codex CLI se você:**
+- Trabalha principalmente no terminal.
+- Quer que seu shell e o Codex CLI compartilhem a mesma paleta.
+- Prefere temas como configurações portáteis e controláveis por versionamento.
 
 ## É possível usar ambos?
 
-Sim — são independentes. Muitas pessoas usam uma skin do Desktop escura para o app e uma paleta correspondente do CLI para o terminal, então todo o ambiente parece um sistema único. Como os temas do CLI são apenas paletas de cores, combiná-los é fácil: escolha uma paleta que exista nos dois mundos (Tokyo Night, Monokai Stone, Solarized) e aplique-a em todos os lugares.
+Sim — são sistemas independentes. Muitas pessoas usam um tema escuro para Codex Desktop no aplicativo e uma paleta correspondente para Codex CLI no terminal, fazendo com que todo o ambiente de trabalho pareça um único sistema. Como os temas para Codex CLI são apenas paletas de cores, combiná-los é fácil: basta escolher uma paleta disponível nos dois ambientes (Tokyo Night, Monokai Stone, Solarized) e aplicá-la em todos os lugares.
 
 ## Começando
 
-- **Desktop:** navegue pelo [índice completo de skins](/skins/) e abra qualquer página de skin — o prompt de instalação está pronto para copiar.
-- **CLI:** leia [como mudar o tema do Codex CLI](/blog/how-to-change-codex-cli-theme/) ou o [guia completo de temas do CLI](/blog/codex-cli-themes-guide/).
+- **Desktop:** navegue pelo [índice completo de temas](/skins/) e abra qualquer página de tema — o prompt de instalação já está pronto para cópia.
+- **CLI:** leia [como alterar o tema do Codex CLI](/blog/how-to-change-codex-cli-theme/) ou o [guia completo de temas para Codex CLI](/blog/codex-cli-themes-guide/).
 - **Ambos:** o [guia de instalação](/blog/how-to-install-codex-skins/) cobre todos os métodos lado a lado.

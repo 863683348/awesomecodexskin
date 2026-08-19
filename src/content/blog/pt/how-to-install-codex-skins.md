@@ -1,6 +1,6 @@
 ---
-title: "Como Instalar Skins Codex (Desktop e CLI): O Guia Completo"
-description: "Guia passo a passo para instalar skins Codex Desktop e CLI — prompts de cópia-colagem, motores de temas como Dream Skin, temas da CLI e como alternar ou desinstalar. Cobre macOS e Windows."
+title: "Como instalar temas Codex (Desktop e CLI): O guia completo"
+description: "Guia passo a passo para instalar os temas do Codex Desktop e CLI — comandos prontos para copiar e colar, mecanismos de temas como Dream Skin, temas para CLI e como alternar ou desinstalar. Abrange macOS e Windows."
 pubDate: "2026-08-14"
 updatedDate: "2026-08-14"
 tags: ["install", "guide", "desktop", "cli", "themes"]
@@ -9,79 +9,79 @@ relatedSkins: ["clear-glass", "gothic-void-expedition", "monokai-stone", "hatsun
 lang: "pt"
 ---
 
-Temas do Codex permitem redefinir o visual do Codex Desktop e Codex CLI para que o ambiente corresponda ao seu gosto — um esquema de cores escuro para sessões noturnas, uma superfície pastel para o dia ou um look neon apenas por diversão.
+As skins Codex permitem que você personalize a aparência do OpenAI Codex Desktop e do Codex CLI, fazendo com que o ambiente de trabalho reflita seu gosto pessoal — seja com uma paleta escura e suave para sessões noturnas, uma superfície pastel para o dia ou um visual neon só por diversão.
 
-Este guia aborda todas as formas de instalar um tema do Codex, desde o prompt de instalação de uma cópia até gerenciadores de temas da CLI.
+Este guia aborda todos os métodos disponíveis para instalar uma skin Codex, desde o prompt de instalação em um único passo até gerenciadores de temas via linha de comando.
 
-## Versão rápida
+## Versão resumida
 
-A maioria dos temas no índice do Codex é instalada da mesma forma:
+A maioria das skins deste índice é instalada da mesma forma:
 
-1. Escolha um tema e abra sua página de detalhes.
-2. Copie o prompt de instalação (ou baixe o arquivo do tema, para temas .codedrobe-theme).
-3. Cole o prompt no Codex Desktop ou execute o comando na Codex CLI.
-4. O motor de temas aplica a paleta imediatamente — não é necessário reiniciar na maioria dos motores.
+1. Escolha uma skin e abra sua página de detalhes.
+2. Copie o prompt de instalação (ou baixe o arquivo de tema, no caso de skins no formato `.codedrobe-theme`).
+3. Cole o prompt no Codex Desktop ou execute o comando no Codex CLI.
+4. O mecanismo de temas aplica imediatamente a paleta — na maioria dos mecanismos, nenhuma reinicialização é necessária.
 
-Pronto. Temas são configurações, não código, então a troca é rápida e reversível.
+É só isso. As skins são configurações, não código, portanto alternar entre elas é rápido e totalmente reversível.
 
-## Método 1: Prompt de instalação por cópia e colagem (mais rápido)
+## Método 1: Instalação por cópia e colagem do prompt (o mais rápido)
 
-A maioria dos temas do Codex — especialmente os presets do motor do [Codex Dream Skin](https://github.com/Fei-Away/Codex-Dream-Skin), o motor de injeção de código aberto — é instalada a partir de um único prompt em linguagem natural.
+A maioria das skins Codex — especialmente as predefinições de mecanismo provenientes do [Codex Dream Skin](https://github.com/Fei-Away/Codex-Dream-Skin), o mecanismo de injeção de código-fonte aberto — é instalada a partir de um único prompt em linguagem natural.
 
-Na página de detalhes de qualquer tema, a caixa **Prompt de instalação** contém uma instrução pronta para colar, como:
+Na página de detalhes de qualquer skin, a caixa **Prompt de instalação** contém uma instrução pronta para colar, como:
 
 ```text
-Codex, aplique o tema claro 'Clear Glass' — uma superfície limpa e sem distrações para meu ambiente de trabalho.
+Codex, aplique o tema claro 'Clear Glass' — uma superfície limpa, translúcida e com baixa distração para meu workspace.
 ```
 
-Copie-o, abra o Codex e cole. O motor lê o prompt e aplica a paleta, bordas e cores de destaque definidas no tema.
+Copie-o, abra o Codex e cole. O mecanismo lê o prompt e aplica a paleta, as bordas e as cores de destaque definidas no tema.
 
-> **Dica:** se o prompt aplicar um preset, o motor o armazena para que você possa voltar ao padrão posteriormente com um clique.
+> **Dica:** se o prompt aplicar uma predefinição, o mecanismo a armazena, permitindo que você volte ao tema padrão com um único clique posteriormente.
 
-## Método 2: Baixar um arquivo de tema (.codedrobe-theme)
+## Método 2: Baixar um arquivo de tema (`.codedrobe-theme`)
 
-Alguns temas são fornecidos como um arquivo .codedrobe-theme baixável. Para esses:
+Algumas skins são distribuídas como arquivos `.codedrobe-theme` para download. Para essas:
 
-1. Clique em **Baixar .codedrobe-theme** na página do tema.
+1. Clique em **Baixar .codedrobe-theme** na página da skin.
 2. Salve o arquivo em qualquer local conveniente.
-3. Abra-o no Codex Desktop — os motores compatíveis importam o tema automaticamente.
+3. Abra-o diretamente no Codex Desktop — mecanismos compatíveis importam automaticamente o tema.
 
-Este método é comum em galerias como codexskins.org que hospedam arquivos de tema prontos.
+Esse método é comum em galerias como codexskins.org, que hospedam arquivos de temas prontos para uso.
 
-## Método 3: Instalar um tema da CLI com um comando
+## Método 3: Instalar um tema CLI com um comando
 
-Temas da CLI do Codex usam um caminho diferente de instalação. Temas com o formato de instalação `tmtheme` (por exemplo, os Bearded Theme Ports) são instalados com um único comando:
+Temas para Codex CLI seguem um caminho de instalação distinto. Skins com o formato de instalação `tmtheme` (por exemplo, as versões adaptadas do Bearded Theme) são instaladas com um único comando:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh
-# depois, na Codex CLI execute:
+# depois, no Codex CLI, execute:
 /theme Tokyo Night
 ```
 
-Ferramentas como [Codex Themes CLI](https://github.com/ychampion/codex-themes) e [Codepilot](https://github.com/charzhu/codepilot) gerenciam temas da CLI para você — validar, pré-visualizar, aplicar, reverter e exportar paletas de terminal correspondentes.
+Ferramentas como [Codex Themes CLI](https://github.com/ychampion/codex-themes) e [Codepilot](https://github.com/charzhu/codepilot) gerenciam temas CLI para você — validando, visualizando, aplicando, revertendo e exportando paletas correspondentes para o terminal.
 
-## Quais motores suportam temas?
+## Quais mecanismos suportam skins?
 
-| Motor | Plataformas | Estilo de instalação |
+| Mecanismo | Plataformas | Estilo de instalação |
 |---|---|---|
-| Codex Dream Skin | macOS, Windows | Prompt / preset |
+| Codex Dream Skin | macOS, Windows | Prompt de agente / predefinição |
 | Codex Skin Manager | macOS, Windows | Gerenciador integrado |
-| Codex Themes (desktop) | macOS | Importação .codextheme |
-| ReTheme | macOS, Windows | Temas da comunidade assinados |
+| Codex Themes (desktop) | macOS | Importação de `.codextheme` |
+| ReTheme | macOS, Windows | Temas comunitários assinados |
 | Codex Themes CLI | Multiplataforma | CLI `/theme` |
-| Codepilot | Multiplataforma (npm) | TUI integrado `/skin` |
+| Codepilot | Multiplataforma (npm) | TUI integrada `/skin` |
 
-## Como alternar ou reverter um tema
+## Como alternar ou reverter uma skin
 
-- **Motores de preset (Dream Skin etc.):** o motor mantém o preset padrão — geralmente um botão "restaurar padrão" retorna a aparência original.
-- **CLI:** `/theme` lista os temas instalados; execute novamente o comando com outro nome para alternar.
-- **Arquivos de tema:** reimporte um .codedrobe-theme anterior ou execute novamente o padrão do motor.
+- **Mecanismos com predefinições (Dream Skin etc.):** o mecanismo mantém a predefinição original — normalmente, um botão “restaurar padrão” devolve sua aparência inicial.
+- **CLI:** o comando `/theme` lista os temas instalados; basta executá-lo novamente com outro nome para alternar.
+- **Arquivos de tema:** reimporte um arquivo `.codedrobe-theme` anterior ou execute novamente a restauração padrão do mecanismo.
 
-## Temas populares para começar
+## Skins populares para começar
 
-- [Gothic Void Expedition](/skins/gothic-void-expedition/) — o padrão escuro integrado do motor.
-- [Clear Glass](/skins/clear-glass/) — uma superfície clara para o dia.
-- [Monokai Stone](/skins/monokai-stone/) — a paleta clássica da CLI.
-- [Hatsune Miku](/skins/hatsune-miku/) — energia vocaloid azul-verde.
+- [Gothic Void Expedition](/skins/gothic-void-expedition/) — o tema escuro padrão integrado ao mecanismo.
+- [Clear Glass](/skins/clear-glass/) — uma superfície translúcida clara ideal para o dia.
+- [Monokai Stone](/skins/monokai-stone/) — a paleta clássica para CLI.
+- [Hatsune Miku](/skins/hatsune-miku/) — energia vocalóide em tons azul-esverdeados.
 
-Navegue pelo [índice completo](/skins/) para mais de 100, ou leia nosso [tutorial](/tutorial/) para detalhes sobre configuração de nível de motor.
+Explore o [índice completo](/skins/) com mais de 100 skins, ou leia nosso [tutorial](/tutorial/) para obter detalhes sobre a configuração avançada dos mecanismos.

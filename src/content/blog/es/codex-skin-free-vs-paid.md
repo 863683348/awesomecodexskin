@@ -1,6 +1,6 @@
 ---
-title: "Pielas de Codex gratuitas vs pagadas: Qué realmente obtienes"
-description: "La mayoría de las skins de Codex son gratuitas. Las de pago prometen pulimento, soporte y exclusividad. Aquí te explicamos qué compra realmente el dinero, y cuándo lo gratuito es suficiente de verdad."
+title: "Versiones gratuitas y de pago de las skins de Codex: qué obtienes realmente"
+description: "La mayoría de los temas de Codex son gratuitos. Los de pago prometen acabado, soporte y exclusividad. A continuación te explicamos qué obtienes realmente al pagar y cuándo lo gratuito es realmente suficiente."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["free", "paid", "pricing"]
@@ -9,59 +9,59 @@ relatedSkins: ["sakura-pink-dawn", "berry-light-journal", "hatsune-miku", "amber
 lang: "es"
 ---
 
-Ahorrarás dinero: la mejor piel de Codex que puedes instalar ahora mismo es casi con toda probabilidad gratuita. De las 99 pieles en este índice, la mayoría son de código abierto o gratuitas para usar. Existen pieles pagadas y no son un fraude, pero debes saber exactamente qué estás pagando antes de abrir tu billetera.
+Déjeme ahorrarle algo de dinero: la mejor piel de Codex que puede instalar ahora mismo es casi con toda seguridad gratuita. De las 99 pieles incluidas en este índice, la abrumadora mayoría son de código abierto o de uso gratuito. Existen pieles de pago, y no son una estafa, pero debe saber exactamente por qué está pagando antes de abrir su billetera.
 
 ## Qué ofrecen las pieles gratuitas de Codex
 
-Las pieles gratuitas provienen de tres fuentes: repositorios de código abierto (como la colección Wangnov, la fuente más grande en este índice), los autores del motor que incluyen sus propios ajustes predeterminados, y galerías de la comunidad. Lo que todas tienen en común:
+Las pieles gratuitas provienen de tres lugares: repositorios de código abierto (como la colección Wangnov, la fuente individual más grande de este índice), autores de motores que distribuyen sus propios ajustes predefinidos y galerías comunitarias. Lo que todas tienen en común es lo siguiente:
 
-- El tema completo - colores, prompts o archivos de tema, totalmente utilizables.
-- Mantenimiento por parte de la comunidad - los errores se arreglan por quien lo desee.
-- Riesgo cero - si no te gusta, desinstálalo y no pierdes nada.
+- El tema completo —colores, indicadores o archivos de tema— totalmente funcional y listo para usar.
+- Mantenimiento comunitario: los errores se corrigen por quienquiera que les preste atención.
+- Cero riesgo: si no le gusta, la desinstala y no pierde nada.
 
-Una piel gratuita como [Sakura Pink Dawn](/skins/sakura-pink-dawn/) o [Hatsune Miku](/skins/hatsune-miku/) es un producto completo y pulido. No hay nada "de prueba" en ello.
+Una piel gratuita como [Sakura Pink Dawn](/skins/sakura-pink-dawn/) o [Hatsune Miku](/skins/hatsune-miku/) es un producto completo y pulido. No tiene nada de «versión de prueba».
 
-## Qué añaden realmente las pieles pagadas de Codex
+## Qué añaden realmente las pieles de Codex de pago
 
-Las pieles pagadas (normalmente unos pocos dólares) suelen incluir cuatro cosas que las pieles gratuitas no garantizan:
+Las pieles de pago (normalmente unos pocos dólares) suelen incluir cuatro elementos que las pieles gratuitas no garantizan:
 
 1. **Actualizaciones garantizadas.** Una piel comercial promete compatibilidad con las actualizaciones del motor; una gratuita depende de la buena voluntad de la comunidad.
-2. **Soporte.** Un correo electrónico o Discord donde el autor responda tus preguntas de configuración.
-3. **Exclusividad.** El paleta no está en cada galería, por lo que tu espacio de trabajo no parece un modelo.
-4. **Coincidencia consistente entre herramientas múltiples.** Muchos paquetes pagados incluyen la misma paleta para Codex, tu terminal y tu editor - el trabajo de sincronización ya está hecho para ti.
+2. **Soporte técnico.** Un correo electrónico o un servidor de Discord donde el autor responde a sus dudas sobre la configuración.
+3. **Exclusividad.** La paleta no aparece en todas las galerías, por lo que su entorno de trabajo tendrá un aspecto menos genérico.
+4. **Coincidencia consistente entre múltiples herramientas.** Muchos paquetes de pago incluyen la misma paleta para Codex, su terminal y su editor —el trabajo de sincronización ya está hecho.
 
-Esa última es la única característica por la que pagaríamos genuinamente: una paleta profesionalmente coincidente en cada superficie en la que programes. [Berry (light journal)](/skins/berry-light/) en este índice muestra cuánto trabajo supone una paleta clara bien equilibrada - hacerlo a mano en cuatro herramientas es un trabajo real.
+Este último es el único rasgo por el que yo pagaría sinceramente: una paleta profesionalmente coordinada en cada superficie en la que programa. [Berry (light journal)](/skins/berry-light/) en este índice muestra cuánto esfuerzo requiere una paleta clara bien equilibrada; hacerlo manualmente para cuatro herramientas supone un verdadero trabajo.
 
-## Cuándo es suficiente lo gratuito
+## Cuándo es suficiente una piel gratuita
 
-- Quieres una buena piel para ti mismo.
-- Estás dispuesto a arreglar o cambiar una piel cuando se actualice el motor.
-- Te gusta navegar por galerías e intentar nuevas apariencias mensualmente.
+- Quiere una buena piel para uso personal.
+- Le parece aceptable corregir o cambiar una piel tras una actualización del motor.
+- Le gusta navegar por galerías y probar nuevos diseños cada mes.
 
-Lo gratuito no es un compromiso aquí. El ecosistema de código abierto para pieles de Codex es joven pero saludable, y los repositorios de la comunidad están activos.
+Aquí, lo gratuito no es una concesión. El ecosistema de código abierto para pieles de Codex es joven, pero sano, y los repositorios comunitarios están activos.
 
-## Cuándo vale la pena pagar
+## Cuándo merece la pena pagar
 
-- Resuelves una piel para todo un equipo y necesitas consistencia + soporte.
-- Quieres un paquete de Codex+terminal+editor coincidente y no quieres hacerlo tú mismo.
-- Usas un motor poco común donde las pieles de la comunidad son escasas - un tema comercial podría ser tu única opción pulida.
+- Aplica nuevas pieles a todo un equipo y necesita coherencia y soporte técnico.
+- Desea un paquete integrado para Codex + terminal + editor y no quiere montarlo usted mismo.
+- Usa un motor especializado para el que hay pocas pieles comunitarias —una piel comercial podría ser su única opción pulida.
 
 ## Cómo comprobar el precio de una piel antes de instalarla
 
-Cada página de detalles de una piel en este índice muestra su fuente y autor. Los repositorios de código abierto son gratuitos por definición. Para pieles pagadas, revisa el sitio de origen antes de instalarla - y evita cualquier cosa que exija pago por un conjunto básico. Ese patrón merece evitarlo.
+Cada página de detalles de piel en este índice muestra su origen y autor. Los repositorios de código abierto son gratuitos por definición. Para pieles de pago, revise el sitio de origen antes de instalarla —y evite cualquier producto que exija pago por un ajuste predefinido básico. Ese es un patrón que conviene evitar.
 
 ## Preguntas frecuentes rápidas
 
-**¿Son mejores las pieles pagadas de Codex?**
-No automáticamente. La calidad en las pieles depende de la disciplina del paleta y del mantenimiento, lo cual suelen tener muchos proyectos de código abierto. Pagar te da garantías, no colores inherentemente mejores.
+**¿Son de mejor calidad las pieles de Codex de pago?**  
+No necesariamente. La calidad en las pieles depende de la disciplina en la elección de la paleta y del mantenimiento, aspectos de los que muchos proyectos gratuitos de código abierto disponen ampliamente. Pagar le garantiza ciertas prestaciones, no necesariamente mejores colores.
 
-**¿Puedo obtener un reembolso si una piel pagada no funciona?**
-Depende de la tienda - la mayoría de tiendas de temas comerciales ofrecen reembolsos de 14 días. Revisa antes de comprar.
+**¿Puedo obtener un reembolso si una piel de pago no funciona?**  
+Depende de la tienda: la mayoría de tiendas comerciales de temas ofrecen reembolsos en un plazo de 14 días. Compruébelo antes de comprar.
 
-**¿Funcionan las pieles gratuitas con motores pagados?**
-Normalmente sí. Una piel es contenido; un motor es el software que la aplica. Las pieles gratuitas funcionan perfectamente en motores pagados como la versión pro de Dream Skin, a menos que el motor bloquee artificialmente las importaciones.
+**¿Funcionan las pieles gratuitas con motores de pago?**  
+Normalmente sí. Una piel es contenido; un motor es el software que la aplica. Las pieles gratuitas funcionan perfectamente en motores de pago como la versión profesional de Dream Skin, salvo que el motor bloquee artificialmente las importaciones.
 
-**¿Qué pieles gratuitas debo empezar con?**
-El [índice completo](/skins/) tiene docenas. Prueba [Sakura Pink Dawn](/skins/sakura-pink-dawn/) para un tono pastel suave, [Berry (light)](/skins/berry-light-journal/) para una apariencia limpia de día claro, o [Amber Nocturne](/skins/amber-nocturne/) para un tema oscuro cálido. Todas gratuitas, todas completas.
+**¿Con qué pieles gratuitas debería empezar?**  
+El [índice completo](/skins/) contiene decenas. Pruebe [Sakura Pink Dawn](/skins/sakura-pink-dawn/) para unos tonos pastel suaves, [Berry (light)](/skins/berry-light-journal/) para un aspecto limpio y diurno, o [Amber Nocturne](/skins/amber-nocturne/) para un tema oscuro cálido. Todas son gratuitas y completas.
 
-Empieza gratis. Solo paga cuando necesites garantías, soporte o un paquete coincidente multiherramienta que no quieras ensamblar tú mismo. Navega por el [índice de pieles](/skins/) para ver cuánta calidad ya es gratuita, o lee la [guía de instalación](/blog/how-to-install-codex-skins/) para poner en marcha tu primera piel.
+Empiece con lo gratuito. Solo pague cuando necesite garantías, soporte técnico o un paquete integrado para varias herramientas que no quiera ensamblar usted mismo. Explore el [índice de pieles](/skins/) para ver cuánta calidad ya está disponible sin costo, o lea la [guía de instalación](/blog/how-to-install-codex-skins/) para poner en marcha su primera piel.

@@ -1,6 +1,6 @@
 ---
-title: "Melhores Temas Codex para Terminal Mono: 5 Temas Minimalistas para Codificação Focada"
-description: "Cores de terminal Codex classificadas por foco e legibilidade — Monokai Stone, Solarized CLI, Tokyo Night (ychampion) e mais. Escolha a cor nativa do terminal que se adapta ao seu modo de trabalho real."
+title: "Melhores Temas Mono Terminal para Codex: 5 Temas Minimalistas para Programação Focada"
+description: "Temas Mono-terminal Codex classificados por foco e legibilidade — Monokai Stone, Solarized CLI, Tokyo Night (ychampion) e outros. Escolha o tema nativo do terminal que mais combina com a forma como você realmente trabalha."
 pubDate: "2026-08-17"
 updatedDate: "2026-08-17"
 tags: ["best-of", "mono-terminal", "skin-guide", "minimal"]
@@ -9,56 +9,56 @@ relatedSkins: ["monokai-stone", "solarized-cli", "ychampion-tokyo-night", "monok
 lang: "pt"
 ---
 
-A categoria mono-terminal é a coisa mais próxima do "sem decoração" que o Codex possui. Esses são temas que tratam o editor como um terminal: um fundo, algumas cores de sintaxe e nada mais que competindo por atenção. Para pessoas que vivem na linha de comando, não se trata de minimalismo por si só — é uma escolha funcional. Quanto menos cores na tela, mais rápido seu olho encontra o que importa.
+A categoria mono-terminal é o mais próximo que o Codex tem de “sem decoração”. São skins que tratam o editor como um terminal: um fundo único, uma pequena variedade de cores de sintaxe e nada mais competindo pela sua atenção. Para quem vive na linha de comando, isso não é minimalismo por mero capricho — é uma escolha funcional. Quanto menos cores aparecem na tela, mais rápido seus olhos se fixam no que realmente importa.
 
-Há cinco temas nessa categoria. Eles compartilham uma filosofia: as cores de sintaxe devem ser o elemento mais forte na janela, e tudo o resto deve ser silencioso.
+Há cinco skins nessa categoria. Elas compartilham uma filosofia: as cores de sintaxe devem ser o elemento mais marcante na janela, e todo o restante deve permanecer discreto.
 
-## Monokai Stone: o clássico, desaturado
+## Monokai Stone: o clássico, dessaturado
 
-O Monokai Stone é a abordagem nativa de terminal do fórmula Monokai. A paleta Monokai é de alto contraste e barulhenta; o Stone reduz a saturação, mantendo o fundo escuro e as cores de destaque reconhecíveis.
+Monokai Stone é a versão nativa de terminal da fórmula Monokai. A paleta icônica Monokai é de alto contraste e intensa; já Stone reduz a saturação mantendo o fundo escuro e as cores de destaque reconhecíveis.
 
-O que você obtém é um tema que ainda lê "Monokai" em um piscar de olhos — os literais de string rosa, os comentários verdes, as palavras-chave amarelas — mas sem a agressividade que faz o original parecer que está gritando com você. É o mesmo hábito, com bordas mais suaves.
+O resultado é um tema que ainda transmite imediatamente a identidade “Monokai” — literais de string em rosa, comentários em verde, palavras-chave em amarelo — mas sem a agressividade que faz a versão original parecer estar gritando com você. É a mesma memória muscular, mas com bordas suavizadas.
 
-Se você já conhece o Monokai, este é o caminho mais suave para atualizar-se na categoria. Se você nunca tentou, este é o versão que lhe dá a ideia sem a fadiga ocular.
+Se você já conhece Monokai, essa é a atualização mais suave disponível nesta categoria. Se nunca a experimentou, esta é a versão que lhe dá a ideia central sem causar fadiga visual.
 
-## Solarized CLI: a paleta baseada em pesquisa
+## Solarized CLI: a paleta embasada em pesquisa
 
-O Solarized é famoso por ter sido projetado com ciência da cor, e não com gosto. Ethan Schoonover escolheu 16 cores com luminância relativa precisa, por isso o tema permanece legível em ambientes drasticamente diferentes — escritório claro, quarto escuro, monitor barato, painel premium.
+Solarized é famosa por ter sido projetada com base em ciência das cores, não em gosto pessoal. Ethan Schoonover escolheu 16 cores com luminância relativa precisa — é por isso que o tema permanece legível em ambientes drasticamente diferentes: escritório iluminado, ambiente com pouca luz, monitor barato ou painel premium.
 
-A versão CLI mantém essa tradição técnica e a aplica à interface do Codex. O fundo é o azul-acinzentado suave pelo qual o Solarized é conhecido, e as cores de destaque permanecem na mesma faixa de luminância, então nada salta fora do lugar.
+A variante CLI preserva essa herança de engenharia e a aplica à interface do Codex. O fundo é o azul-acinzentado suave pelo qual Solarized é conhecido, e as cores de destaque permanecem na mesma faixa de luminância, de modo que nada se destaca de forma desproporcional.
 
-A compensação é real: o Solarized pode parecer mudo ao lado de temas com cores neon. É exatamente isso. Você está trocando espetáculo por consistência, e para longos dias de trabalho é uma boa escolha.
+O compromisso é real: Solarized pode parecer abafada ao lado de temas repletos de neon. E esse é exatamente o ponto. Você está trocando espetacularidade por consistência — e, para jornadas de trabalho prolongadas, trata-se de uma troca vantajosa.
 
 ## Tokyo Night (ychampion): neon, mas disciplinado
 
-O Tokyo Night começou como um tema do VS Code e se tornou uma família inteira. A variante ychampion na biblioteca do Codex é o membro com sabor de terminal dessa família.
+Tokyo Night começou como um tema para VS Code e evoluiu para uma família inteira. A variante ychampion na biblioteca do Codex é o membro dessa família adaptado ao estilo terminal.
 
-Enquanto o Solarized é mudo e o Monokai Stone é quente, o Tokyo Night busca um tom frio, levemente elétrico: fundo azul profundo, tons cianos e rosas brilhantes, destaque roxo. É o tema mais colorido da categoria mono-terminal, mas a disciplina está na colocação — o neon fica nas cores de sintaxe e nunca transborda para o chrome.
+Enquanto Solarized é suavizada e Monokai Stone é quente, Tokyo Night busca um clima frio e levemente elétrico: fundo azul profundo, destaques ciano e rosa brilhantes, realces roxos. É a skin mais colorida da categoria mono-terminal, mas a disciplina está na localização — o neon fica restrito às cores de sintaxe e nunca invade os elementos da interface (chrome).
 
-Se você quer os benefícios de foco de um tema minimalista, mas acha a desaturação pura chata, o Tokyo Night (ychampion) é o equilíbrio que ainda parece um editor moderno.
+Se você deseja os benefícios de foco oferecidos por uma skin minimalista, mas acha que a total dessaturação é entediante, Tokyo Night (ychampion) é o equilíbrio que ainda transmite a sensação de um editor moderno.
 
-## Monokai Stone (CLI): a mesma paleta, nativa de terminal
+## Monokai Stone (CLI): a mesma paleta, nativa para terminal
 
-A versão CLI do Monokai Stone existe porque a mesma paleta pode renderizar de forma diferente dependendo de como o tema é carregado. A versão CLI é ajustada para a experiência de Codex integrada ao terminal, onde a paleta interage com suas cores reais de shell.
+A versão rotulada como CLI de Monokai Stone existe porque a mesma paleta pode renderizar de forma diferente dependendo de como a skin é carregada. A versão CLI é ajustada especificamente para a experiência do Codex integrado ao terminal, onde a paleta interage com as cores reais do seu shell.
 
-Entre o Monokai Stone e o Monokai Stone (CLI), escolha com base em como você executa o Codex. Se você usa o aplicativo de desktop com a pele do editor, a versão principal é a certa. Se você passa tempo na interface voltada para o terminal, a versão CLI mantém a paleta consistente com o seu ambiente de shell.
+Entre Monokai Stone e Monokai Stone (CLI), escolha com base em como você executa o Codex. Se você usa o aplicativo desktop com a skin do editor, a versão principal é a adequada. Se você passa muito tempo na interface voltada ao terminal, a versão CLI mantém a paleta consistente com seu ambiente de shell.
 
-## Peles TUI embutidas no Codepilot: o padrão que é realmente bom
+## Skins TUI embutidas no Codepilot: o padrão que, de fato, é bom
 
-As peles TUI embutidas que vêm com o Codepilot são fáceis de descartar porque vêm gratuitamente com a ferramenta. Isso é um erro. Elas são a implementação de referência do que uma pele mono-terminal deve ser: chrome mínimo, hierarquia clara de sintaxe e zero surpresas.
+As skins TUI embutidas que acompanham o Codepilot são fáceis de subestimar, pois vêm gratuitamente com a ferramenta. Esse é um erro. Elas representam a implementação de referência do que uma skin mono-terminal deveria ser: interface mínima, hierarquia clara de sintaxe e absolutamente nenhuma surpresa.
 
-Elas também estabelecem o ponto de partida para toda a categoria. Quando você está comparando os outros quatro temas, a aparência TUI padrão é o ponto neutro — "pelo menos tão limpo quanto o padrão" é um padrão justo para qualquer tema mono-terminal atingir.
+Elas também estabelecem o ponto de referência para toda a categoria. Ao comparar as outras quatro skins, o visual TUI embutido funciona como o ponto neutro — “pelo menos tão limpo quanto o padrão” é um critério justo para avaliar qualquer skin mono-terminal.
 
-## Como escolher entre os cinco
+## Como escolher entre as cinco
 
-- **Monokai Stone** se você conhece o Monokai e quer algo mais suave
-- **Solarized CLI** se você quer uma paleta baseada em pesquisa para longos dias
-- **Tokyo Night (ychampion)** se você quer estrutura mínima com cores modernas
-- **Monokai Stone (CLI)** se você executa o Codex através do terminal
-- **Peles TUI embutidas no Codepilot** se você quer o padrão que funciona
+- **Monokai Stone**, se você já conhece Monokai e quer uma versão mais suave  
+- **Solarized CLI**, se você busca uma paleta embasada em pesquisa para longas jornadas de trabalho  
+- **Tokyo Night (ychampion)**, se você deseja estrutura minimalista com cores modernas  
+- **Monokai Stone (CLI)**, se você executa o Codex diretamente no terminal  
+- **Skins TUI embutidas no Codepilot**, se você prefere o padrão que simplesmente funciona  
 
-Todos os cinco são instaláveis pelo gerenciador de temas do Codex. O [guia de sincronização de terminal](/blog/codex-skin-terminal-sync/) cobre como manter as paletas do seu shell e editor alinhadas, o que é mais importante nessa categoria do que em qualquer outra — uma pele mono-terminal só se sente certa quando o terminal ao redor concorda. 
+Todas as cinco são instaláveis por meio do gerenciador de temas do Codex. O [guia de sincronização entre terminal e skin](/blog/codex-skin-terminal-sync/) explica como manter alinhadas as paletas do seu shell e do seu editor — algo que é especialmente relevante nesta categoria, mais do que em qualquer outra: uma skin mono-terminal só se sente certa quando o terminal ao seu redor concorda com ela.
 
 ---
 
-**Navegue por todas as peles mono-terminal →** [categoria mono-terminal](/skins/?category=mono-terminal)
+**Navegue por todas as skins mono-terminal →** [categoria mono-terminal](/skins/?category=mono-terminal)

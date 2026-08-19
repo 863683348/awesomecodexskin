@@ -1,6 +1,6 @@
 ---
 title: "Hochkontrast-Codex-Skins: Barrierefreiheit, die tatsächlich gut aussieht"
-description: "Hohe Kontrastverhältnisse sind nicht unschön. Gute zugängliche Codex-Skins erfüllen WCAG-Kontrastverhältnisse und bewahren den Charakter – so wählen und prüfen Sie sie."
+description: "Hoher Kontrast bedeutet nicht zwangsläufig unschönes Grau auf Schwarz. Gute, barrierefreie Codex-Skins erfüllen die WCAG-Kontrastverhältnisse und bewahren gleichzeitig ihren Charakter – hier erfahren Sie, wie Sie diese auswählen und überprüfen."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["accessibility", "contrast", "wcag"]
@@ -9,56 +9,49 @@ relatedSkins: ["monokai-stone-cli", "vivid-purple", "forest-mist", "blue-enchant
 lang: "de"
 ---
 
-STRICTE REGELN:
-1. Übersetze alle menschlich lesbaren Prosa, Überschriften, Tabellen-Text und Link-Text.
-2. NIEMALS übersetzen: Codeblöcke, Inline-Code, Dateipfade, Shell-Befehle, URLs, Produktbezeichnungen (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), numerische/Versionstoken oder Hautanzeigenamen.
-3. Halte die Markdown-Struktur identisch: gleiche Überschriften, Listen, Tabellen, fette/Kursivschreibweise, Zitate und Link-Ziele. Ein Link wie [Monokai Stone](/skins/monokai-stone/) behält seine /path/ URL unverändert; nur der sichtbare Text kann übersetzt werden.
-4. Halte jeglichen Roh-HTML/JSX genau so bei.
-5. Gib NUR den übersetzten Markdown-Body aus. Keine Einleitung, keine Notizen, keine Code-Fenster um die Antwort.
+„Barrierefrei“ klingt wie eine Abwertung: Grau auf Schwarz, große Schriftarten, keine Persönlichkeit. Doch das muss nicht sein – einige der eindrucksvollsten Codex-Skins in diesem Index erfüllen ebenfalls die WCAG-Kontrastanforderungen. Der Schlüssel liegt darin zu wissen, worauf es ankommt; ein paar Skins hier beweisen diese These.
 
-"Barrierefrei" klingt wie eine Abstufung. Grau auf Schwarz, große Schrift, kein Charakter. Es muss nicht so sein – einige der beeindruckendsten Codex-Hauten in diesem Index bestehen auch die WCAG-Kontrastprüfung. Das Geheimnis ist zu wissen, was man sucht, und ein paar Hauten hier beweisen das.
+## Die entscheidende Zahl: 4,5:1
 
-## Die Zahl, die Sie wirklich benötigen: 4,5:1
+Für normalen Text verlangt WCAG AA einen Kontrastverhältnis von mindestens **4,5:1** zwischen Text- und Hintergrundfarbe. Großer Text (18 px oder mehr bzw. fettgedruckter Text ab 14 px) benötigt lediglich 3:1. Da Code – Ihr Hauptinhalt – als normaler Text gilt, ist 4,5:1 die entscheidende Schwelle.
 
-WCAG AA für normalen Text erfordert ein Kontrastverhältnis von mindestens **4,5:1** zwischen Text und Hintergrund. Großer Text (18px oder größer oder 14px fett) benötigt nur 3:1. Code – Ihr Hauptinhalt – ist normaler Text, also ist 4,5:1 die Zielmarke.
+Sie müssen kein Designer sein, um dies zu prüfen: Geben Sie einfach die Hex-Werte für Vorder- und Hintergrundfarbe einer beliebigen Skin in einen beliebigen Kontrastprüfer ein – das Verhältnis erhalten Sie innerhalb von Sekunden. Liegt Ihr Textfarbwert bei dieser Hintergrundfarbe unter 4,5:1, ist das bereits das gesamte Problem: Korrigieren Sie dieses eine Farbpärchen, und Sie haben bereits 90 % erreicht.
 
-Sie müssen kein Designer sein, um es zu prüfen. Geben Sie einfach die Vordergrund- und Hintergrund-Hexwerte einer beliebigen Haut in einen Kontrastprüfer ein, und Sie erhalten das Verhältnis in Sekundenschnelle. Wenn Ihre Textfarbe unter 4,5:1 auf ihrem Hintergrund liegt, ist das das ganze Problem – beheben Sie dieses Paar und Sie sind 90 % fertig.
+## Was eine barrierefreie Skin *angenehm* wirken lässt
 
-## Was macht eine barrierefreie Haut *sich gut anfühlen*
+Ein hoher Kontrast scheitert nur dann, wenn er überall hoch ist. Die guten Skins bewahren stattdessen eine klare visuelle Hierarchie:
 
-Hochkontrast funktioniert nur, wenn es überall hoch ist. Gute Hauten halten eine klare Hierarchie:
+- **Code-Text auf Hintergrund: ≥ 4,5:1.** Unverhandelbar.  
+- **Gedämpfte UI-Elemente:** Kommentare, Zeilennummern, Panel-Bezeichnungen dürfen niedriger liegen (ab 3:1), damit das Auge nicht ständig „geschrien“ wird.  
+- **Ein starker Akzentfarbton** für Cursor und Auswahl – immer noch über 3:1 gegenüber seinen direkten Nachbarn.
 
-- **Code-Text auf Hintergrund: ≥ 4,5:1.** Unbedingt notwendig.
-- **Muted UI Chrome:** Kommentare, Zeilennummern, Panel-Bezeichnungen können niedriger liegen (3:1+), damit das Auge nicht ständig schreit.
-- **Ein starkes Akzent** für Cursor/Auswahl, das über 3:1 gegen seine Nachbarn bleibt.
+[Monokai Stone (CLI)](/skins/monokai-stone-cli/) macht das besonders gut: Die Syntax-Farben bleiben ausreichend lebhaft zum Lesen, während das UI-Rahmenwerk ruhig bleibt. [Forest Mist](/skins/forest-mist/) zeigt eine barrierefreie Farbpalette, die keineswegs „hochkontrastig-unschön“ sein muss – die gedämpften Grüntöne erfüllen den Mindeststandard problemlos.
 
-[Monokai Stone (CLI)](/skins/monokai-stone-cli/) macht das gut – die Syntaxfarben bleiben hell genug, um gelesen zu werden, während das UI-Feld ruhig bleibt. [Forest Mist](/skins/forest-mist/) zeigt eine barrierefreie Farbpalette, die nicht hässlich im Hochkontrast sein muss; die gedämpften Grüns erfüllen immer noch die Anforderung.
+## Farbenblindheit: der zusätzliche Check
 
-## Farbsinnstörung: die zusätzliche Prüfung
+Das Kontrastverhältnis berücksichtigt ausschließlich die Helligkeitsdifferenz. Bei Farbenblindheit – etwa 8 % der Männer sind betroffen – verschwinden Rot-/Grün-Unterschiede jedoch vollständig. Daher gilt:
 
-Das Kontrastverhältnis betrachtet nur die Helligkeit. Wenn Sie farbenblind sind – etwa 8 % der Männer –, verschwinden rote/grüne Unterschiede. Daher:
+- **Verlassen Sie sich niemals allein auf Farbe**, um Zustände zu unterscheiden (z. B. nur einen roten/grünen Punkt für Fehler). Kombinieren Sie sie stets mit einem Symbol oder einem Wort.  
+- **Bevorzugen Sie blau/orange Akzente** gegenüber Rot-/Grün-Kombinationen, wo immer möglich. [Blue Enchantress](/skins/blue-enchantress/) und [Vivid Purple](/skins/vivid-purple/) sind beide auf dieser Achse sichere Wahlmöglichkeiten.
 
-- **Verlassen Sie sich nicht allein auf Farbe**, um Zustände zu unterscheiden (z. B. nur ein rotes/grünes Punkt für Fehler). Kombinieren Sie es mit einem Symbol oder einem Wort.
-- **Wählen Sie blau/orange Akzente** gegenüber roten/grünen Paaren, wo immer möglich. [Blue Enchantress](/skins/blue-enchantress/) und [Vivid Purple](/skins/vivid-purple/) sind beide sichere Optionen auf dieser Achse.
+Falls Sie Ihre Einrichtung teilen oder Screenshots veröffentlichen, sind diese Checks nicht nur für Sie selbst, sondern auch für Ihre Leser relevant.
 
-Wenn Sie Ihre Einrichtung teilen oder Screenshots veröffentlichen, sind diese Prüfungen auch für Ihre Leser wichtig, nicht nur für Sie.
+## So prüfen Sie eine Skin in 30 Sekunden
 
-## Wie man eine Haut in 30 Sekunden prüft
+1. Öffnen Sie die Detailseite der Skin – dort sind die Farbpalette-Hex-Werte aufgelistet.  
+2. Kopieren Sie die Hex-Werte für Hintergrund und Vordergrund.  
+3. Geben Sie beide Werte in einen Kontrastprüfer ein (jeder kostenlose Prüfer funktioniert).  
+4. Liegt der Text unter 4,5:1? → Passen Sie die Farben an oder wählen Sie eine andere Skin aus diesem Index.
 
-1. Öffnen Sie die Detailseite der Haut – die Farbpalettenhexwerte sind dort aufgelistet.
-2. Nehmen Sie die Hintergrund- und Vordergrundhexwerte.
-3. Führen Sie sie durch einen Kontrastprüfer (irgendeiner kostenlosen funktioniert).
-4. Text unter 4,5:1 → anpassen oder eine andere Haut aus diesem Index wählen.
+## Schnelle FAQ
 
-## Kurzfassung FAQ
+**Ist Dark Mode grundsätzlich schlechter für Barrierefreiheit?**  
+Nein. Entscheidend ist allein das Kontrastverhältnis – nicht die Helligkeit des Hintergrunds. Manche Menschen mit Astigmatismus bevorzugen Light Mode, andere nicht. Wählen Sie nach Ihrem eigenen Sehgefühl – und überprüfen Sie anschließend das Verhältnis.
 
-**Ist dunkler Modus schlechter für Barrierefreiheit?**
-Nicht zwangsläufig. Das Kontrastverhältnis ist entscheidend, nicht die Helligkeit des Hintergrunds. Manche Menschen mit Astigmatismus bevorzugen den hellen Modus; andere nicht. Wählen Sie nach Ihren Augen, dann überprüfen Sie das Verhältnis.
+**Kann ich die Farben einer Skin bearbeiten, um den Kontrast zu verbessern?**  
+Ja – sofern Sie mit der Bearbeitung der Theme-Datei vertraut sind. Erhöhen Sie die Helligkeit der Vordergrundfarbe oder verdunkeln Sie den Hintergrund, bis das Farbpärchen 4,5:1 erreicht, und speichern Sie die Anpassung als eigene Variante.
 
-**Kann ich die Farben einer Haut bearbeiten, um den Kontrast zu verbessern?**
-Ja, wenn Sie sich mit dem Thema Theme-Datei auskennen. Erhöhen Sie die Lichtstärke des Vordergrundes oder verdunkeln Sie den Hintergrund, bis das Paar 4,5:1 erreicht, speichern Sie es als eigene Variante.
+**Wirken barrierefreie Skins „langweilig“?**  
+Nur, wenn die Farbpalette flach ist. Die Skins in diesem Index mit starken Akzenten – etwa [Vivid Purple](/skins/vivid-purple/) oder [Blue Enchantress](/skins/blue-enchantress/) – sind gleichermaßen lebendig und barrierefrei. Kontrast und Persönlichkeit schließen sich nicht aus.
 
-**Sind barrierefreie Hauten "langweilig"?**
-Nur, wenn die Farbpalette flach ist. Die Hauten in diesem Index mit starken Akzenten – [Vivid Purple](/skins/vivid-purple/), [Blue Enchantress](/skins/blue-enchantress/) – sind laut und barrierefrei zugleich. Kontrast und Persönlichkeit sind keine Gegensätze.
-
-Barrierefreiheit ist eine Checkliste, nicht ein ästhetisches Konzept. Überprüfen Sie das 4,5:1-Verhältnis bei jeder Haut, die Ihnen gefällt, beheben Sie das eine Paar, das fehlschlägt, und behalten Sie das Aussehen bei. Beginnen Sie mit [Monokai Stone](/skins/monokai-stone-cli/), falls Sie eine bekannte gute Basis wünschen, oder durchsuchen Sie den [vollen Index](/skins/) – der [Leitfaden zur Erstellung einer Haut](/blog/how-to-create-codex-skin/) zeigt auch, wo Sie die Hexwerte bearbeiten können.
+Barrierefreiheit ist eine Prüfliste – kein ästhetisches Dogma. Überprüfen Sie das 4,5:1-Verhältnis bei jeder Skin, die Ihnen gefällt; korrigieren Sie das eine Farbpärchen, das darunter liegt – und behalten Sie das gewünschte Erscheinungsbild bei. Beginnen Sie mit [Monokai Stone](/skins/monokai-stone-cli/) als bewährter Basis oder durchsuchen Sie den [vollen Index](/skins/); außerdem zeigt die [Anleitung zum Erstellen einer Codex-Skin](/blog/how-to-create-codex-skin/) genau, an welcher Stelle Sie die Hex-Werte anpassen können.

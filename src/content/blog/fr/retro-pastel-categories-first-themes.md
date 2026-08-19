@@ -1,6 +1,6 @@
 ---
-title: "Mise à jour de l'index : Les catégories Rétro et Pastel obtiennent leurs premiers thèmes dédiés"
-description: "L'index a ajouté cette semaine des thèmes rétro et pastel dédiés — QQ2007 rétro, Sakura Pink Dawn, Pink Custom et amis — remplissant les derniers coins rares du catalogue."
+title: "Mise à jour de l’index : les catégories « Rétro » et « Pastel » reçoivent leurs premiers thèmes dédiés"
+description: "L’index a ajouté cette semaine des skins rétro et pastel dédiés — QQ2007 retro, Sakura Pink Dawn, Pink Custom et autres — comblant ainsi les derniers espaces vides du catalogue."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["index-update", "retro", "pastel", "new-skins"]
@@ -9,37 +9,37 @@ relatedSkins: ["qq2007-retro", "heige-qq2007-retro", "sakura-pink-dawn", "pink-c
 lang: "fr"
 ---
 
-Les deux catégories les plus minces de l'index ont reçu leur première véritable attention. **Rétro-vintage** et **pastel-doux** étaient presque vides ; les importations de cette semaine donnent à chacune une équipe de départ appropriée.
+Les deux catégories les plus minces de l’index viennent de recevoir leur première véritable attention. **Rétro-vintage** et **Pastel-doux** étaient presque vides ; les importations de cette semaine dotent désormais chacune d’un alignement initial digne de ce nom.
 
-## Rétro-vintage : la renaissance de QQ2007
+## Rétro-vintage : la résurgence de QQ2007
 
-La vague rétro est dirigée par un morceau d'histoire d'internet : le thème QQ2007 — un jeu de couleurs chargé de nostalgie basé sur l'apparence classique de 2007. Deux entrées sont arrivées :
+La vague rétro est menée par un morceau d’histoire internet : le thème QQ2007 — une palette chargée de nostalgie, inspirée de l’apparence classique de l’ère 2007. Deux entrées ont été ajoutées :
 
-- [QQ2007 Rétro](/skins/qq2007-retro/) — la recréation fidèle.
-- [HeiGeAi QQ2007 Rétro](/skins/heige-qq2007-retro/) — une variante avec des tons légèrement ajustés.
+- [QQ2007 Retro](/skins/qq2007-retro/) — une reproduction fidèle.
+- [HeiGeAi QQ2007 Retro](/skins/heige-qq2007-retro/) — une variante aux teintes légèrement ajustées.
 
-Avec [Solarized](/skins/solarized/), qui a ses propres crédits d'époque, la catégorie rétro dispose désormais de trois options distinctes au lieu d'être un simple pied de page.
+Associé à [Solarized](/skins/solarized/), qui possède lui aussi des références « old-school », la catégorie rétro compte désormais trois options bien distinctes, au lieu d’être reléguée au rang de simple note en bas de page.
 
-## Pastel-doux : des thèmes doux arrivent
+## Pastel-doux : des thèmes doux font leur apparition
 
-Le coin pastel s'est également rempli avec un trio propre et doux :
+Le coin pastel s’est également enrichi avec un trio épuré et doux :
 
-- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) — le pastel aux fleurs de cerisier, immédiatement le meilleur de la catégorie.
+- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) — le pastel cerise en fleur, immédiatement le favori incontesté de la catégorie.
 - [Pink Custom](/skins/pink-custom/) — un rose plus doux et personnalisable.
-- [Hashimoto Arata](/skins/hashimoto-arata/) — une option douce et à faible saturation pour ceux qui veulent du pastel sans rose.
+- [Hashimoto Arata](/skins/hashimoto-arata/) — une option délicate, à faible saturation, destinée à celles et ceux qui souhaitent du pastel sans rose.
 
-Pour les fans de thèmes clairs, le pastel est le point d'entrée le plus amical — faible contraste par conception, facile sur les yeux en plein jour. Le [guide lumière contre obscurité](/blog/codex-light-vs-dark-skins/) explique pourquoi cela compte.
+Pour les amateurs de thèmes clairs, le pastel constitue l’entrée la plus accueillante — conçu pour offrir un faible contraste et être agréable à l’œil en plein jour. Le [guide clair vs sombre](/blog/codex-light-vs-dark-skins/) explique pourquoi cela compte.
 
-## Pourquoi remplir les catégories peu fournies est important
+## Pourquoi combler les catégories peu fournies est essentiel
 
-Un index n'est bon que s'il est aussi bon que sa catégorie la plus faible. Quand une catégorie a une ou deux entrées, les gens supposent que l'écosystème ne soutient pas ce style et passent leur chemin. Maintenant que rétro et pastel ont des options réelles, ils sont recherchables, comparables et découvrables — c'est tout l'objectif d'un index soigné.
+Un index n’est jamais meilleur que sa catégorie la plus faible. Lorsqu’une catégorie ne comporte qu’une ou deux entrées, les utilisateurs supposent que l’écosystème ne soutient pas ce style et passent à autre chose. Désormais que les styles rétro et pastel disposent d’options réelles, ils deviennent recherchables, comparables et découvrables — ce qui est précisément l’objectif d’un index soigneusement sélectionné.
 
 ## Ce que cela signifie pour la navigation
 
-- La navigation par catégorie du [skin index](/skins/) dispose maintenant de choix pertinents dans les huit groupes soignés.
-- Les thèmes pastel et rétro s'accordent bien avec le [guide d'accessibilité](/blog/codex-skin-accessibility-contrast/) — les thèmes à faible saturation sont souvent les plus faciles à vérifier par rapport aux exigences de contraste.
-- Les deux catégories restent ouvertes à plus de soumissions. Si vous créez un thème rétro ou pastel, la [page de soumission](/submit/) est le moyen d'y parvenir.
+- La barre de navigation par catégories de l’[index des thèmes](/skins/) propose désormais des choix significatifs dans chacun des huit groupes sélectionnés.
+- Les thèmes pastel et rétro s’accordent bien avec le [guide d’accessibilité](/blog/codex-skin-accessibility-contrast/) — les thèmes à faible saturation sont souvent les plus faciles à évaluer au regard des exigences de contraste.
+- Ces deux catégories restent ouvertes à de nouvelles contributions. Si vous créez un thème rétro ou pastel, la [page de soumission](/submit/) est le moyen idéal pour le faire connaître.
 
 ## À venir
 
-Le reste de la zone mince est le "autre" bac — le rassembleur pour les thèmes de la communauté qui ne correspondent pas clairement aux huit catégories. La curatition travaille dessus par lots, et chaque lot apporte plus de profondeur aux catégories réelles. Regardez le [skin index](/skins/) pour la prochaine mise à jour.
+Le dernier créneau encore peu fourni est le compartiment « Autres » — une catégorie fourre-tout destinée aux thèmes communautaires qui ne s’intègrent pas aisément dans les huit catégories sélectionnées. La curation avance progressivement, par lots, et chaque lot ajoute davantage de profondeur aux catégories principales. Suivez les mises à jour sur l’[index des thèmes](/skins/).

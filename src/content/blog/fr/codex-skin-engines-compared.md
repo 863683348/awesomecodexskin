@@ -1,6 +1,6 @@
 ---
-title: "Moteurs de thèmes Codex comparés : Dream Skin vs Gestionnaire de thèmes vs ReTheme vs CLI vs Codepilot"
-description: "Cinq façons de personnaliser Codex, une comparaison claire. Quel moteur vous convient — style d'installation, support des présélections, plateformes, et la facilité de basculer ou désinstaller."
+title: "Comparaison des moteurs de thèmes Codex : Dream Skin contre Skin Manager contre ReTheme contre CLI contre Codepilot"
+description: "Cinq façons de personnaliser Codex, une comparaison claire. Quel moteur vous convient le mieux — style d’installation, prise en charge des préréglages, plateformes compatibles, et facilité de changement ou de désinstallation."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["engines", "comparison", "tools"]
@@ -9,72 +9,72 @@ relatedSkins: ["clear-glass", "gothic-void-expedition", "monokai-stone", "cyber-
 lang: "fr"
 ---
 
-Il existe cinq méthodes principales pour appliquer un thème à Codex, et elles fonctionnent toutes très différemment. Choisissez la mauvaise et vous passerez des semaines à lutter contre. Choisissez la bonne et le changement de thème prendra dix secondes. Cette comparaison met les cinq en parallèle afin que vous puissiez choisir en une seule lecture.
+Il existe cinq méthodes principales pour appliquer un thème (« skin ») à Codex, et elles fonctionnent de manière totalement différente. Choisissez la mauvaise méthode, et vous devrez lutter contre elle pendant des semaines. Choisissez la bonne, et le changement de thème prendra dix secondes. Cette comparaison présente les cinq méthodes côte à côte afin que vous puissiez faire votre choix en une seule lecture.
 
-## Les cinq moteurs en un coup d'œil
+## Les cinq moteurs en un coup d’œil
 
-| Moteur | Plateformes | Style d'installation | Idéal pour |
+| Moteur | Plates-formes | Mode d’installation | Idéal pour |
 |---|---|---|---|
-| Codex Dream Skin | macOS, Windows | Prompt / préréglage | Les personnes souhaitant zéro configuration |
-| Codex Skin Manager | macOS, Windows | Interface graphique intégrée | Les personnes souhaitant un sélecteur visuel |
-| ReTheme | macOS, Windows | Thèmes communautaires signés | Les personnes souhaitant des thèmes soigneusement sélectionnés |
-| Codex Themes CLI | Multiplateforme | Commande CLI `/theme` | Les utilisateurs de terminal |
+| Codex Dream Skin | macOS, Windows | Invite de l’agent / préréglage | Les personnes qui souhaitent une configuration nulle |
+| Codex Skin Manager | macOS, Windows | Interface graphique intégrée | Les personnes qui préfèrent un sélecteur visuel |
+| ReTheme | macOS, Windows | Thèmes communautaires signés | Les personnes qui recherchent des thèmes soigneusement sélectionnés et vérifiés |
+| Codex Themes CLI | Multiplateforme | Commande CLI `/theme` | Les utilisateurs en ligne de commande |
 | Codepilot | Multiplateforme (npm) | TUI intégré `/skin` | Les utilisateurs avancés qui vivent dans le terminal |
 
-## Codex Dream Skin — l'option "copier-coller"
+## Codex Dream Skin — l’option « collez et c’est fait »
 
-Dream Skin (du projet Fei-Away, qui a également créé plusieurs thèmes dans cet index) installe des thèmes à partir d'un prompt en langage naturel. Vous copiez une ligne comme "appliquer le thème clair en verre", vous la collez, et le moteur applique la palette. Aucun fichier à gérer, aucune commande à apprendre.
+Dream Skin (projet Fei-Away, qui a également créé plusieurs thèmes répertoriés ici) installe les thèmes à partir d’une invite en langage naturel. Vous copiez une phrase comme « appliquer le thème clair Clear Glass », vous la collez, et le moteur applique la palette. Aucun fichier à gérer, aucune commande à apprendre.
 
-**Points forts :** le chemin le plus rapide vers une nouvelle apparence ; les préréglages sont stockés pour restaurer les paramètres par défaut en un clic.
-**Points faibles :** moins précis qu'un thème basé sur des fichiers — vous décrivez un look, pas un spécification.
+**Points forts :** chemin le plus rapide vers un nouveau look ; les préréglages sont sauvegardés, ce qui permet de restaurer les valeurs par défaut en un seul clic.  
+**Points faibles :** moins précis que les thèmes basés sur des fichiers — vous décrivez un style, plutôt que de charger une spécification précise.
 
 ## Codex Skin Manager — le sélecteur visuel
 
-Un gestionnaire de bureau avec une galerie intégrée : naviguez, prévisualisez, appliquez, revenez en arrière. C'est le plus proche d'une "boutique d'applications pour thèmes". Si vous aimez cliquer sur les prévisualisations avant de vous engager, c'est votre moteur.
+Un gestionnaire bureautique doté d’une galerie intégrée : naviguez, prévisualisez, appliquez, annulez. Il s’agit de la solution la plus proche d’une « boutique d’applications pour thèmes ». Si vous aimez parcourir les aperçus avant de valider un choix, ce moteur est fait pour vous.
 
-**Points forts :** prévisualisation visuelle avant d'appliquer ; idéal pour les utilisateurs non techniques.
-**Points faibles :** ne couvre que sa propre galerie ; importer des fichiers tiers est plus difficile qu'avec les outils CLI.
+**Points forts :** prévisualisation visuelle avant application ; adapté aux utilisateurs non techniques.  
+**Points faibles :** couvre uniquement sa propre galerie ; l’importation de fichiers tiers est plus lourde qu’avec les outils en ligne de commande.
 
-## ReTheme — l'option soignée
+## ReTheme — l’option soigneusement sélectionnée
 
-ReTheme distribue des thèmes communautaires signés, ce qui signifie que chaque thème a été examiné avant d'atteindre vos mains. Moins de risques de fichiers cassés ou malveillants, au prix d'un catalogue plus restreint.
+ReTheme distribue des thèmes communautaires signés, ce qui signifie que chaque thème a été examiné avant de vous être proposé. Moins de risques de recevoir un fichier corrompu ou malveillant, au prix d’un catalogue plus restreint.
 
-**Points forts :** sécurité et curation ; les thèmes signés s'installent proprement.
-**Points faibles :** sélection plus limitée que dans les écosystèmes open source.
+**Points forts :** sécurité et sélection rigoureuse ; les thèmes signés s’installent sans accroc.  
+**Points faibles :** choix plus limité que dans les écosystèmes open source.
 
-## Codex Themes CLI — le classique du terminal
+## Codex Themes CLI — la référence en ligne de commande
 
-L'approche CLI (comme ychampion/codex-themes, qui porte des thèmes comme Tokyo Night et Monokai Stone) traite les thèmes comme un package que vous installez et changez avec une commande : `/theme monokai-stone`. C'est rapide, scriptable et compatible avec vos dotfiles.
+L’approche CLI (comme ychampion/codex-themes, qui adapte des thèmes tels que Tokyo Night et Monokai Stone) traite les thèmes comme des paquets à installer et à activer via une commande : `/theme monokai-stone`. Elle est rapide, scriptable et s’intègre parfaitement aux fichiers de configuration (dotfiles).
 
-**Points forts :** scriptable ; contrôlable en version ; même workflow que vos autres outils CLI.
-**Points faibles :** pas de prévisualisation visuelle intégrée ; pente d'apprentissage plus raide pour les utilisateurs non terminaux.
+**Points forts :** scriptable ; contrôlable en version ; même flux de travail que vos autres outils CLI.  
+**Points faibles :** aucune prévisualisation graphique intégrée ; courbe d’apprentissage plus raide pour les utilisateurs non habitués au terminal.
 
-## Codepilot — l'outil puissant TUI
+## Codepilot — l’outil puissant en TUI
 
-Codepilot (installable via npm) apporte un gestionnaire complet de thèmes TUI avec des commandes `/skin`, validation, prévisualisation et retour arrière, ainsi qu'une exportation de palette de terminal. C'est l'option la plus complète parmi les outils de terminal.
+Codepilot (installable via npm) propose un gestionnaire complet en TUI avec les commandes `/skin`, ainsi que validation, prévisualisation, annulation et export de la palette du terminal. C’est l’option terminal la plus complète en termes de fonctionnalités.
 
-**Points forts :** validation, prévisualisation, retour arrière et exportation de palette dans un seul outil ; multiplateforme.
-**Points faibles :** plus de composants que la CLI simple ; trop lourd si vous voulez uniquement un seul thème.
+**Points forts :** validation, prévisualisation, annulation et export de palette regroupés dans un seul outil ; multiplateforme.  
+**Points faibles :** davantage de composants que la CLI simple ; surdimensionné si vous n’avez besoin que d’un seul thème.
 
 ## Lequel choisir ?
 
-- **Souhaitez-vous un bel aspect rapidement ?** Dream Skin.
-- **Préférez-vous cliquer sur les prévisualisations ?** Codex Skin Manager.
-- **Vous préoccupez-vous de thèmes vérifiés et signés ?** ReTheme.
-- **Vivez-vous dans le terminal, souhaitez-vous une automatisation ?** Codex Themes CLI.
-- **Souhaitez-vous l'outil complet ?** Codepilot.
+- **Vous voulez simplement un joli thème, rapidement :** Dream Skin.  
+- **Vous préférez naviguer parmi les aperçus avant de valider :** Codex Skin Manager.  
+- **Vous attachez de l’importance à des thèmes vérifiés et signés :** ReTheme.  
+- **Vous travaillez principalement dans le terminal et souhaitez une automatisation :** Codex Themes CLI.  
+- **Vous recherchez l’outil le plus complet :** Codepilot.
 
-Les cinq moteurs sont compatibles avec les thèmes de cet index — la plupart des thèmes ici sont distribués sous forme de prompts ou de fichiers de thèmes que n'importe quel moteur peut utiliser. Commencez par un thème que vous aimez, comme [Clear Glass](/skins/clear-glass/) ou [Gothic Void Expedition](/skins/gothic-void-expedition/), et choisissez le moteur correspondant à votre mode de travail.
+Les cinq moteurs sont compatibles avec tous les thèmes répertoriés ici — la plupart des thèmes sont distribués soit sous forme de prompts, soit sous forme de fichiers thématiques, que chacun des moteurs peut exploiter. Commencez par un thème qui vous plaît, comme [Clear Glass](/skins/clear-glass/) ou [Gothic Void Expedition](/skins/gothic-void-expedition/), puis choisissez le moteur qui correspond le mieux à votre façon de travailler.
 
 ## FAQ rapide
 
-**Puis-je exécuter deux moteurs en même temps ?**
-Oui, mais gardez-en un comme gestionnaire principal. Deux moteurs écrasant les préréglages en même temps peuvent se chevaucher. Choisissez-en un principal, utilisez les autres uniquement pour l'importation.
+**Puis-je exécuter deux moteurs simultanément ?**  
+Oui, mais désignez-en un comme gestionnaire actif. Deux moteurs écrivant des préréglages en même temps peuvent se remplacer mutuellement. Choisissez un moteur principal, et utilisez les autres uniquement pour l’importation.
 
-**Les moteurs fonctionnent-ils avec tous les thèmes ?**
-Pas toujours. Les moteurs basés sur des prompts ont besoin d'un prompt ; les moteurs basés sur des fichiers ont besoin du format de fichier correspondant. La colonne "format d'installation" du thème vous indique quel moteur il cible.
+**Les moteurs fonctionnent-ils avec tous les thèmes ?**  
+Pas toujours. Les moteurs basés sur des invites nécessitent une invite ; les moteurs basés sur des fichiers exigent le format de fichier correspondant. Le champ « Format d’installation » indiqué sur la fiche de chaque thème vous précise le moteur ciblé.
 
-**Quel moteur a la plus grande bibliothèque de thèmes ?**
-Les écosystèmes open source — les préréglages de Dream Skin et les ports CLI — ont les plus grands catalogues car tout le monde peut contribuer. Les gestionnaires curatifs ont des bibliothèques plus petites mais plus sûres.
+**Quel moteur propose la plus grande bibliothèque de thèmes ?**  
+Les écosystèmes open source — les préréglages Dream Skin et les ports CLI — disposent des catalogues les plus vastes, car toute personne peut y contribuer. Les gestionnaires sélectionnés offrent des bibliothèques plus petites, mais plus sûres.
 
-Choisissez votre moteur selon votre workflow, pas selon la hype. Puis explorez l'[index complet de thèmes](/skins/) — chaque page de détail d'un thème indique quel format d'installation il utilise, donc vous ne téléchargerez jamais le mauvais fichier à nouveau. Nouveau dans tout cela ? Commencez par le [guide d'installation](/blog/how-to-install-codex-skins/).
+Choisissez votre moteur en fonction de votre flux de travail, pas de la mode. Puis explorez l’[index complet des thèmes](/skins/) — la page détaillée de chaque thème indique clairement quel format d’installation il utilise, afin que vous ne téléchargiez plus jamais le mauvais fichier. Nouveau dans ce domaine ? Commencez par le [guide d’installation](/blog/how-to-install-codex-skins/).

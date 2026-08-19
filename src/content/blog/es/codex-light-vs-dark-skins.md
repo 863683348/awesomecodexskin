@@ -1,6 +1,6 @@
 ---
-title: "Fundas de Codex claro vs oscuro: Elige según cómo trabajas"
-description: "Oscuro para concentración profunda, claro para luz diurna y demostraciones — pero no es tan sencillo. Luminancia, iluminación del ambiente, tamaño de la pantalla y qué fundas de Codex se ajustan a cada escenario."
+title: "Codex: temas claros frente a oscuros: elige según tu forma de trabajar"
+description: "Oscuro para concentración profunda, claro para la luz del día y las demostraciones; pero no es tan sencillo. Luminancia, iluminación ambiental, tamaño de pantalla y qué skins de Codex se adaptan a cada escenario."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["light", "dark", "choosing"]
@@ -9,61 +9,54 @@ relatedSkins: ["berry-light-journal", "clear-glass", "gothic-void-expedition", "
 lang: "es"
 ---
 
-Las reglas estrictas:
-1. Traducir todo el texto legible por humanos, títulos, texto de tablas y texto de enlaces.
-2. NUNCA traduzcas: bloques de código, código en línea, rutas de archivos, comandos de shell, URLs, nombres de productos (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), tokens numéricos/versiones o nombres de skins.
-3. Mantener la estructura de markdown idéntica: mismos títulos, listas, tablas, negrita/itálica, citas, y destinos de enlaces. Un enlace como [Monokai Stone](/skins/monokai-stone/) mantiene su URL /path/ sin cambios; solo el texto visible puede ser traducido.
-4. Mantener cualquier HTML/JSX sin modificar.
-5. Salida SOLO el cuerpo traducido en markdown. Sin introducción, sin notas, sin delimitadores de código alrededor de la respuesta.
-
-La discusión entre claro y oscuro es el debate más antiguo en estética de desarrolladores, y la respuesta es la misma que la mayoría de los argumentos estéticos: depende. Pero "depende" es inútil sin criterios. Estos son los factores reales, y qué skins de Codex en este índice se ajustan a cada escenario.
+El debate entre temas claros y oscuros es la discusión más antigua en estética para desarrolladores, y la respuesta es la misma que para la mayoría de los debates estéticos: depende. Pero «depende» no sirve de nada sin criterios. A continuación se presentan los factores reales, y qué skins de Codex de este índice encajan en cada escenario.
 
 ## La ciencia real, brevemente
 
-- **Temas oscuros** reducen la luminancia de la pantalla, lo que ayuda en habitaciones con poca luz y para personas sensibles a superficies brillantes. El problema: en una habitación brillante, una pantalla oscura refleja más brillo y puede hacer que el texto sea más difícil de leer.
-- **Temas claros** reflejan la luz ambiental en lugar de luchar contra ella, por lo que suelen leer mejor en día. El problema: una superficie blanca brillante en una habitación oscura es difícil para los ojos.
-- **El negro puro no es tu amigo** en ningún modo — fondos `#000` crean halación; texto blanco puro sobre negro puro es realmente peor para la legibilidad que un par de grises oscuros.
+- **Los temas oscuros** reducen el brillo de la pantalla, lo cual ayuda en habitaciones con poca luz y para personas sensibles a las superficies brillantes. La contrapartida: en una habitación iluminada, una pantalla oscura refleja más deslumbramiento y puede dificultar la lectura del texto.
+- **Los temas claros** reflejan la luz ambiental en lugar de competir con ella, por lo que suelen leerse mejor a la luz del día. La contrapartida: una superficie blanca brillante en una habitación oscura resulta agresiva para los ojos.
+- **El negro puro no es tu aliado** en ninguno de los dos modos: los fondos `#000` generan halos; además, el texto blanco puro sobre fondo negro puro es objetivamente peor para la legibilidad que una combinación de grises oscuros.
 
-Regla general: **ajusta la luminancia de tu tema a la luminancia de tu habitación.** Habitación brillante → tema claro. Habitación oscura → tema oscuro. Es la misma razón por la que los teléfonos tienen modos automáticos de luz/oscuridad.
+Regla práctica: **ajusta la luminancia de tu tema a la luminancia de tu habitación.** Habitación iluminada → tema claro. Habitación oscura → tema oscuro. Es la misma razón por la que los teléfonos tienen modos automáticos claro/oscuro.
 
-## Temas oscuros de Codex: mejores para
+## Skins oscuras de Codex: ideales para
 
 - **Sesiones de concentración profunda por la noche.** Un tema oscuro como [Gothic Void Expedition](/skins/gothic-void-expedition/) evita que la pantalla domine tu visión periférica.
-- **Oficinas con poca luz.** Mismo razonamiento.
-- **Sensibilidad a la luz azul.** Temas oscuros cálidos — [Amber Nocturne](/skins/amber-nocturne/) es un buen ejemplo — son más suaves para los ojos por la noche que los fríos.
+- **Oficinas con poca iluminación.** Por la misma razón.
+- **Sensibilidad a la luz azul.** Los temas oscuros cálidos —como [Amber Nocturne](/skins/amber-nocturne/)— son más suaves para los ojos por la noche que los temas fríos.
 
-**Cuidado con:** temas oscuros en habitaciones brillantes. Si estás cerca de una ventana, una pantalla oscura se convierte en un espejo.
+**Precaución:** los temas oscuros en habitaciones muy iluminadas. Si trabajas junto a una ventana, una pantalla oscura se convierte en un espejo.
 
-## Temas claros de Codex: mejores para
+## Skins claras de Codex: ideales para
 
-- **Día, cerca de ventanas.** [Berry (light journal)](/skins/berry-light-journal/) o [Clear Glass](/skins/clear-glass/) leen limpiamente contra la luz del día.
-- **Capturas de pantalla y demostraciones.** Los temas claros fotografían mejor y tienen un aspecto más "por defecto" para los espectadores.
-- **Personas con astigmatismo.** Muchos informan menos fatiga ocular con temas claros porque los bordes del texto son más nítidos contra un fondo brillante.
+- **Horario diurno, cerca de ventanas.** [Berry (light journal)](/skins/berry-light-journal/) o [Clear Glass](/skins/clear-glass/) se leen con nitidez frente a la luz natural.
+- **Capturas de pantalla y demostraciones.** Los temas claros se fotografían mejor y transmiten una sensación más «predeterminada» al espectador.
+- **Personas con astigmatismo.** Muchos usuarios reportan menos fatiga visual con temas claros, ya que los bordes del texto se perciben con mayor nitidez sobre un fondo brillante.
 
-**Cuidado con:** temas claros en habitaciones oscuras. Blanco a máxima intensidad a las 2 de la mañana es lo más duro para tus ojos, excepto mirar directamente a una lámpara.
+**Precaución:** los temas claros en habitaciones oscuras. El blanco al máximo brillo a las 2 de la madrugada es lo más agresivo para tus ojos, solo superado por mirar directamente una lámpara.
 
 ## Configuración híbrida
 
-No tienes que elegir. La mejor configuración para la mayoría:
+No tienes que elegir uno u otro. La mejor configuración para la mayoría de las personas es:
 
-- **Predeterminado de día:** un tema claro como [Clear Glass](/skins/clear-glass/).
-- **Predeterminado de noche:** un tema oscuro como [Gothic Void Expedition](/skins/gothic-void-expedition/).
-- **Cambiar** cuando cambie la habitación — o automatizarlo con el modo nocturno de tu sistema si tu motor soporta tema por hora.
+- **Tema predeterminado diurno:** un tema claro como [Clear Glass](/skins/clear-glass/).
+- **Tema predeterminado nocturno:** un tema oscuro como [Gothic Void Expedition](/skins/gothic-void-expedition/).
+- **Cambia de tema** cuando cambie la iluminación de la habitación —o automatiza el cambio mediante el modo nocturno del sistema operativo, si tu entorno lo soporta.
 
-Esto es lo que hace tu teléfono cada día. Tu editor también puede hacerlo.
+Esto es exactamente lo que hace tu teléfono cada día. Tu editor también puede hacerlo.
 
 ## Preguntas frecuentes rápidas
 
-**¿Es mejor el modo oscuro para la duración de la batería?**
-En pantallas OLED, ligeramente — los píxeles oscuros usan menos energía. En LCD (la mayoría de monitores de escritorio), prácticamente ninguna diferencia.
+**¿Es el modo oscuro mejor para la duración de la batería?**  
+En pantallas OLED, sí, ligeramente: los píxeles oscuros consumen menos energía. En pantallas LCD (la mayoría de los monitores de escritorio), prácticamente no hay diferencia.
 
-**¿Son mejores los temas oscuros para programar en general?**
-No hay consenso científico. Es preferencia más la iluminación de la habitación. La creencia de que "oscuro = profesional" es cultural, no fisiológica.
+**¿Son los temas oscuros mejores para programar en general?**  
+No existe consenso científico. Se trata de preferencia personal más la iluminación del entorno. La creencia de que «oscuro = profesional» es cultural, no fisiológica.
 
-**¿Puedo usar un tema claro pero mantener paneles oscuros?**
-Puedes, pero una luminancia mixta es lo peor de ambos mundos — tus ojos se readapten constantemente. Elige un lado, o un tema diseñado como un sistema claro coherente como [Berry (light)](/skins/berry-light-journal/).
+**¿Puedo usar una skin clara pero mantener paneles oscuros?**  
+Sí puedes, pero mezclar luminancias es lo peor de ambos mundos: tus ojos deben readaptarse constantemente. Opta por un solo modo, o bien elige un tema diseñado como un sistema coherente claro, como [Berry (light)](/skins/berry-light-journal/).
 
-**¿Cuál es la mejor elección si solo puedo tener uno?**
-Un tema oscuro equilibrado — [Gothic Void Expedition](/skins/gothic-void-expedition/) — porque el oscuro funciona en la mayoría de habitaciones, y puedes combinarlo con el brillo del modo nocturno del sistema. Si estás principalmente en días, hazlo [Clear Glass](/skins/clear-glass/) en su lugar.
+**¿Cuál es la mejor opción única si solo puedo elegir una?**  
+Un tema oscuro equilibrado —como [Gothic Void Expedition](/skins/gothic-void-expedition/)— porque funciona bien en la mayoría de las habitaciones, y puedes combinarlo con el brillo del modo nocturno del sistema operativo. Si pasas la mayor parte del tiempo a la luz del día, opta entonces por [Clear Glass](/skins/clear-glass/).
 
-Ajusta tu tema a tu habitación, no a una tendencia. Claro para días y demostraciones, oscuro para noches y concentración, y la configuración híbrida si quieres ambas cosas. Explora el [índice completo de skins](/skins/) — está organizado por categorías claras y oscuras para que la elección sea fácil — o lee la [guía de cuidado ocular](/blog/codex-skin-night-eye-care/) para los ajustes que importan de cualquier manera.
+Ajusta tu tema a la iluminación de tu habitación, no a una tendencia. Temas claros para la luz diurna y demostraciones, temas oscuros para la noche y la concentración, y una configuración híbrida si necesitas ambas opciones. Explora el [índice completo de skins](/skins/): está organizado por categorías claras y oscuras para facilitar la elección, o consulta la [guía de cuidado ocular](/blog/codex-skin-night-eye-care/) para conocer los ajustes que realmente importan en cualquier caso.

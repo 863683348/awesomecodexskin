@@ -1,6 +1,6 @@
 ---
-title: "Index-Update: Retro- und Pastell-Kategorien erhalten ihre ersten spezialisierten Themen"
-description: "Der Index fügte diese Woche spezielle retro- und Pastell-Skins hinzu – QQ2007 Retro, Sakura Pink Dawn, Pink Custom und Freunde – und füllte die letzten lückenhaften Ecken des Katalogs."
+title: "Index-Aktualisierung: Die Kategorien „Retro“ und „Pastel“ erhalten ihre ersten eigenständigen Themes"
+description: "Der Index erhielt diese Woche spezielle Retro- und Pastell-Skins – darunter QQ2007 Retro, Sakura Pink Dawn, Pink Custom und weitere – und füllte damit die letzten lückenhaften Bereiche des Katalogs."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["index-update", "retro", "pastel", "new-skins"]
@@ -9,37 +9,37 @@ relatedSkins: ["qq2007-retro", "heige-qq2007-retro", "sakura-pink-dawn", "pink-c
 lang: "de"
 ---
 
-Die beiden dünnsten Kategorien im Index bekamen nun ihre erste echte Aufmerksamkeit. **Retro-vintage** und **pastel-soft** waren fast leer; die Importe dieser Woche geben beiden eine ordentliche Startmannschaft.
+Die beiden dünnsten Kategorien im Index erhielten gerade ihre erste echte Aufmerksamkeit. **Retro-vintage** und **pastel-soft** waren nahezu leer; die dieswöchentlichen Importe verleihen beiden nun eine ordentliche Startauswahl.
 
-## Retro-vintage: die QQ2007-Wiederbelebung
+## Retro-vintage: Die Wiederbelebung von QQ2007
 
-Die Retro-Welle wird durch ein Stück Internetgeschichte angeführt: das QQ2007-Thema – ein Nostalgie-orientiertes Farbschema, basierend auf dem klassischen Aussehen aus dem Jahr 2007. Zwei Einträge kamen hinzu:
+Die Retro-Welle wird angeführt von einem Stück Internetgeschichte: dem QQ2007-Theme – einer stark nostalgischen Farbpalette, die sich am klassischen Look aus dem Jahr 2007 orientiert. Zwei Einträge kamen hinzu:
 
-- [QQ2007 Retro](/skins/qq2007-retro/) – die treue Nachbildung.
-- [HeiGeAi QQ2007 Retro](/skins/heige-qq2007-retro/) – eine Variante mit leicht angepassten Tönen.
+- [QQ2007 Retro](/skins/qq2007-retro/) — die treue Rekonstruktion.
+- [HeiGeAi QQ2007 Retro](/skins/heige-qq2007-retro/) — eine Variante mit leicht angepassten Farbtönen.
 
-Zusammen mit [Solarized](/skins/solarized/), das seine eigenen alten Schule-Referenzen hat, verfügt die Retro-Kategorie nun über drei unterschiedliche Optionen statt nur als Fußnote zu dienen.
+Zusammen mit [Solarized](/skins/solarized/), das ebenfalls über altbewährte Qualitäten verfügt, umfasst die Retro-Kategorie nun drei deutlich voneinander abweichende Optionen statt lediglich als Fußnote zu erscheinen.
 
-## Pastel-soft: sanfte Themen kommen
+## Pastel-soft: Sanfte Themes sind da
 
-Der Pastel-Bereich wurde ebenfalls mit einem sauberen, weichen Dreier ergänzt:
+Auch die Pastel-Ecke wurde mit einem klaren, sanften Trio aufgefüllt:
 
-- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) – das Kirschblüten-Pastell, sofort der Star der Kategorie.
-- [Pink Custom](/skins/pink-custom/) – ein weicher, anpassbarer Pinkton.
-- [Hashimoto Arata](/skins/hashimoto-arata/) – eine sanfte, niedrig gesättigte Option für Menschen, die Pastell ohne Pink bevorzugen.
+- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) — das Kirschblüten-Pastel, sofort der herausragende Vertreter dieser Kategorie.
+- [Pink Custom](/skins/pink-custom/) — ein weicherer, anpassbarer Rosa-Ton.
+- [Hashimoto Arata](/skins/hashimoto-arata/) — eine sanfte, niedrig gesättigte Option für alle, die Pastel-Farben ohne Rosa bevorzugen.
 
-Für Fans von hellen Themen ist Pastell der freundlichste Einstiegspunkt – niedrige Kontraste nach Design, gut für die Augen bei Tageslicht. Der [Leitfaden zum Licht vs Dunkel](/blog/codex-light-vs-dark-skins/) erklärt, warum das wichtig ist.
+Für Fans von Light-Themes ist Pastel der freundlichste Einstiegspunkt – bewusst geringer Kontrast, augenschonend bei Tageslicht. Der [Leitfaden zu Light- vs. Dark-Skins](/blog/codex-light-vs-dark-skins/) erklärt, warum dies wichtig ist.
 
-## Warum das Füllen von dünnen Kategorien wichtig ist
+## Warum das Auffüllen dünner Kategorien zählt
 
-Ein Index ist nur so gut wie seine schwächste Kategorie. Wenn eine Kategorie nur einen oder zwei Einträge hat, nehmen Menschen an, dass das Ökosystem diesen Stil nicht unterstützt und wechseln weiter. Jetzt, da Retro und Pastel echte Optionen haben, sind sie suchbar, vergleichbar und entdeckbar – was der ganze Sinn eines kuratierten Indexes ist.
+Ein Index ist nur so gut wie seine schwächste Kategorie. Sobald eine Kategorie nur ein oder zwei Einträge enthält, gehen Nutzer davon aus, dass das Ökosystem diesen Stil nicht unterstützt – und ziehen weiter. Nun, da Retro und Pastel echte Optionen bieten, sind sie durchsuchbar, vergleichbar und auffindbar – genau das ist der Sinn eines sorgfältig kuratierten Index.
 
-## Was dies für das Durchstöbern bedeutet
+## Was dies für die Navigation bedeutet
 
-- Die Kategorie-Navigation im [Skin-Index](/skins/) bietet jetzt in allen acht kuratierten Gruppen sinnvolle Wahlmöglichkeiten.
-- Die Pastel- und Retro-Themen passen gut zum [Zugänglichkeitsleitfaden](/blog/codex-skin-accessibility-contrast/) – niedrig gesättigte Skins sind oft am einfachsten, um Kontrastanforderungen zu prüfen.
-- Beide Kategorien sind weiterhin für mehr Einreichungen offen. Wenn Sie ein Retro- oder Pastel-Thema erstellen, ist die [Einreichseite](/submit/) der Weg dafür.
+- Die Kategorienavigation im [Skin-Index](/skins/) bietet nun in allen acht kuratierten Gruppen aussagekräftige Auswahlmöglichkeiten.
+- Die Pastel- und Retro-Themes passen gut zum [Leitfaden zur Barrierefreiheit von Codex-Skins](/blog/codex-skin-accessibility-contrast/) – niedrig gesättigte Skins lassen sich oft besonders einfach anhand der Kontrastanforderungen prüfen.
+- Beide Kategorien bleiben weiterhin für weitere Einsendungen geöffnet. Falls Sie ein Retro- oder Pastel-Theme erstellt haben, führt der [Einsendungs-Link](/submit/) direkt dorthin.
 
-## Was kommt als nächstes
+## Als Nächstes
 
-Der verbleibende dünne Bereich ist das „Other“-Fach – das Sammelbecken für Community-Skins, die sich nicht sauber in die acht kuratierten Kategorien einordnen lassen. Die Kuration arbeitet daran in Chargen, und jede Charge fügt mehr Tiefe den echten Kategorien hinzu. Achten Sie auf den [Skin-Index](/skins/) auf dem nächsten Update.
+Der verbleibende „dünne“ Bereich ist der „other“-Bereich – ein Sammelbehälter für Community-Skins, die sich nicht eindeutig einer der acht kuratierten Kategorien zuordnen lassen. Die Kuratierung arbeitet diesen Bereich schrittweise ab, wobei jede neue Runde zusätzliche Tiefe in die eigentlichen Kategorien bringt. Halten Sie den [Skin-Index](/skins/) für das nächste Update im Auge.

@@ -1,6 +1,6 @@
 ---
-title: "سمات كودكس CLI: كيف تستخدم /theme وسمات المحطات"
-description: "كل ما يتعلق بمواضيع Codex CLI: تثبيت سمات الصياغة مثل Tokyo Night، Monokai Stone وSolarized، واستخدام الأمر /theme، وإدارة الألوان باستخدام أدوات CLI."
+title: "سمات Codex CLI: كيفية استخدام الأمر `/theme` وسمات الطرفية"
+description: "كل ما يتعلَّق بسمات Codex CLI: تثبيت سمات التصنيف النحوي مثل Tokyo Night وMonokai Stone وSolarized، واستخدام أمر `/theme`، وإدارة palettes باستخدام أدوات CLI."
 pubDate: "2026-08-14"
 updatedDate: "2026-08-14"
 tags: ["cli", "terminal", "themes", "syntax"]
@@ -9,29 +9,22 @@ relatedSkins: ["monokai-stone", "solarized", "bearded-tokyo-night", "amber-noctu
 lang: "ar"
 ---
 
-قواعد صارمة:
-1. قم بترجمة جميع النصوص المُقروءة من قبل البشر، والعناوين، ونصوص الجداول والنصوص المرتبطة.
-2. لا تُترجم أبداً: كتل الشيفرة، الشيفرة المدمجة، مسارات الملفات، الأوامر في سطر الأوامر، عناوين URLs، أسماء المنتجات (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme)، الرموز العددية أو الإصدار، أو أسماء السمات العرضية.
-3. احتفظ بالهيكل الترميدي نفسه: نفس العناوين، القوائم، الجداول، الخط الدهني/المائل، والاقتباسات، وعناوين الروابط. يبقى الرابط مثل [Monokai Stone](/skins/monokai-stone/) بنفس URL /path/؛ فقط النص المرئي يمكن أن يتم ترجمته.
-4. احتفظ بأي HTML/JSX خام كما هي.
-5. قم بإخراج فقط جسم markdown المترجم. لا تقدم مقدمة، ولا ملاحظات، ولا أكواف للكود.
+لا يستخدم Codex CLI نفس نظام السكينات الخاص بـ Codex Desktop. بل بدلًا من ذلك، تُغيّر سكينات واجهة سطر الأوامر (CLI) **لوحة ألوان الطرفية** — أي لون الخلفية، ولون المقدمة، وألوان التصنيف النحوي — بحيث يظل موجهك ومخرجاتك مقروءَيْن داخل الطرفية.
 
-لا يستخدم Codex CLI نفس نظام السمات الذي يستخدمه Codex Desktop. بدلًا من ذلك، تغير سمات CLI **لوحة ألوان المحرك** - الخلفية، اللون الأمامي وألوان الصياغة - حتى يبقى نصك ونتائجك قابلة للقراءة في المحرك.
+## أمر `/theme`
 
-## الأمر /theme
-
-الطريقة الأسرع لاستخدام سمة CLI هو الأمر المضمن /theme:
+أسرع طريقة لاستخدام سكينة CLI هي الأمر المدمج `/theme`:
 
 ```bash
-# في Codex CLI:
+# داخل Codex CLI:
 /theme
 ```
 
-هذا يعرض السمات المثبتة. اختر واحدة لتطبيقها فورًا.
+وهذا يعرض قائمة بالسكينات المُثبَّتة. اختر إحداها لتطبيقها فورًا.
 
-## تثبيت سمة صياغة
+## تثبيت سكينة للتصنيف النحوي
 
-تثبيت سمات الصياغة (مثل Monokai Stone, Tokyo Night, Solarized) يتم من خلال برنامج يقوم بنقل لوحة الألوان إلى دليل السمات في Codex CLI:
+تُثبَّت سكينات التصنيف النحوي (مثل Monokai Stone وTokyo Night وSolarized) عبر نص برمجي يقوم بتحويل لوحة الألوان إلى دليل السكينات الخاص بـ Codex CLI:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh
@@ -39,35 +32,35 @@ curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/sc
 /theme Tokyo Night
 ```
 
-تحتوي مكتبة Bearded Theme Ports على أكثر من 50 نسخة من Bearded - بما في ذلك Solarized, Tokyo Night, Monokai Stone وغيرها.
+ويحتوي مستودع Bearded Theme Ports على أكثر من ٥٠ متغيرًا من سكينات Bearded — منها Solarized وTokyo Night وMonokai Stone وغيرها.
 
-## إدارة السمات باستخدام أدوات CLI
+## إدارة السكينات باستخدام أدوات سطر الأوامر
 
-أداتان تجعل إدارة السمات CLI سهلة:
+توجد أداوتان تجعلان إدارة سكينات سطر الأوامر سهلة للغاية:
 
-- **Codex Themes CLI** (`ychampion/codex-themes`) - CLI بلغة Go: التحقق، الاستعراض، التطبيق، التراجع وإخراج لوحة الألوان المتناسقة. مثالية إذا كنت تريد أن يشارك محركك وCodex CLI نفس لوحة الألوان.
-- **Codepilot** (`charzhu/codepilot`) - نسخة من Codex CLI تحتوي على واجهة TUI مدمجة للشخصنة:
+- **Codex Themes CLI** (`ychampion/codex-themes`) — أداة سطر أوامر مكتوبة بلغة Go: تُستخدم للتحقق من صحة السكينات، ومعاينتها، وتطبيقها، والعودة عنها، وتصدير لوائح ألوان الطرفية المتوافقة. وهي الخيار الأمثل إذا رغبت في أن تشترك الطرفية وCodex CLI في نفس لوحة الألوان.
+- **Codepilot** (`charzhu/codepilot`) — توزيعة خاصة بـ Codex CLI تتضمن واجهة مستخدم تفاعلية (TUI) مدمجة لتخصيص المظهر:
 
 ```bash
 npm i -g @charzhu/codepilot
-# ثم قم بتشغيل /skin داخل واجهة TUI لاختيار سمة مبنية
+# ثم شغّل /skin داخل الواجهة التفاعلية لاختيار إحدى السكينات المدمجة
 ```
 
-يأتي Codepilot مع 16 سمة TUI مبنية (الألوان الخلفية + السطح).
+ويشمل Codepilot ١٦ سكينة مدمجة للواجهة التفاعلية (تشمل ألوان الخلفية وألوان السطح).
 
-## سمات CLI شائعة في المؤشر
+## أبرز سكينات سطر الأوامر في الفهرس
 
-| السمة | الأسلوب | التثبيت |
+| السكينة | النمط | التثبيت |
 |---|---|---|
-| [Monokai Stone](/skins/monokai-stone/) | لوحة ألوان صياغة كلاسيكية | `/theme Monokai Stone` |
-| [Solarized](/skins/solarized/) | لوحة ألوان ريترو شهيرة | `/theme Solarized` |
-| [Tokyo Night](/skins/bearded-tokyo-night/) | ليلية طوكيو داكنة | `/theme Tokyo Night` |
-| [amber-nocturne](/skins/amber-nocturne/) | هوية محرك داكنة دافئة | `codex-theme apply amber-nocturne` |
+| [Monokai Stone](/skins/monokai-stone/) | لوحة ألوان كلاسيكية للتصنيف النحوي | `/theme Monokai Stone` |
+| [Solarized](/skins/solarized/) | لوحة ألوان رجعية أيقونية | `/theme Solarized` |
+| [Tokyo Night](/skins/bearded-tokyo-night/) | نسخة داكنة زرقاء من Tokyo Night | `/theme Tokyo Night` |
+| [amber-nocturne](/skins/amber-nocturne/) | هوية طرفية دافئة-داكنة | `codex-theme apply amber-nocturne` |
 
-## حل مشاكل
+## استكشاف الأخطاء وإصلاحها
 
-- **يقول /theme أنه لا توجد سمات مثبتة** - قم بتشغيل برنامج التثبيت أولًا، ثم إعادة فتح المدخل.
-- **تبدو لوحة الألوان خاطئة** - أعد تشغيل Codex CLI بعد تطبيقها؛ بعض البرامج تستخدم ذاكرة تخزين مؤقتة للألوان عند بدء التشغيل.
-- **تريد أن يتطابق محركك** - استخدم تصدير Codex Themes CLI لكتابة نفس لوحة الألوان في ملف إعدادات محركك.
+- **يظهر رسالة «لم تُثبَّت أي سكينات» عند تنفيذ `/theme`** — قم أولًا بتشغيل نص التثبيت، ثم أعد فتح موجه الأوامر.
+- **تبدو لوحة الألوان غير صحيحة** — أعد تشغيل Codex CLI بعد التطبيق؛ إذ قد تقوم بعض الإصدارات المُحوَّلة بتخزين ألوان عند بدء التشغيل مؤقتًا.
+- **ترغب في جعل إعدادات طرفية النظام متطابقة مع لوحة الألوان** — استخدم خاصية التصدير في Codex Themes CLI لكتابة نفس لوحة الألوان إلى ملف تعريف طرفية النظام.
 
-تصفح جميع [السمات المونو والمحرك](/skins/category/mono-terminal/) أو ابدأ بدليل [التثبيت](/blog/how-to-install-codex-skins/).
+تصفح جميع [السكينات الأحادية والطرفية](/skins/category/mono-terminal/) أو ابدأ بالاطلاع على [دليل التثبيت](/blog/how-to-install-codex-skins/).

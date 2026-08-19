@@ -1,6 +1,6 @@
 ---
-title: "Como Criar Seu Próprio Skin Codex (Guia para Iniciantes)"
-description: "Aprenda como criar uma skin personalizada para Codex: escolha um motor, selecione cores, escreva um preset de tema e teste-o em tempo real. Um guia prático para iniciantes sem necessidade de programação."
+title: "Como Criar Seu Próprio Tema Codex (Guia para Iniciantes)"
+description: "Aprenda como criar uma skin personalizada do Codex: escolha um mecanismo, selecione as cores, escreva uma predefinição de tema e teste-a em tempo real. Um guia prático para iniciantes, sem necessidade de programação."
 pubDate: "2026-08-14"
 updatedDate: "2026-08-14"
 tags: ["create", "custom", "beginner", "theme"]
@@ -9,61 +9,61 @@ relatedSkins: ["clear-glass", "sakura-pink-dawn", "amber-dusk"]
 lang: "pt"
 ---
 
-Criar seu próprio tema Codex é surpreendentemente acessível. A maioria dos motores aceita um tema definido por um pequeno conjunto de cores — fundo, superfície, texto, destaque — expresso como uma frase ou um arquivo JSON. Você não precisa tocar no aplicativo Codex.
+Criar sua própria skin Codex é surpreendentemente acessível. A maioria dos mecanismos aceita um tema definido por um pequeno conjunto de cores — fundo, superfície, texto e destaque — expresso como uma instrução textual (prompt) ou um arquivo JSON. Você não precisa modificar o aplicativo Codex em si.
 
-## Etapa 1: Escolha um motor
+## Etapa 1: Escolha um mecanismo
 
-O formato do seu tema depende do motor que você usar:
+O formato do seu tema depende do mecanismo que você utilizar:
 
-- **Codex Dream Skin** — temas são presets ou prompts de agente. Mais fácil de começar: descreva a paleta em uma frase.
-- **Codex Skin Manager** — vem com um criador de temas com um seletor visual.
-- **ReTheme** — temas assinados e atualizáveis; bom se você quiser compartilhar publicamente.
-- **Codex Themes (desktop)** — arquivos `.codextheme` com um centro de criação em theme.codexguide.ai.
+- **Codex Dream Skin** — temas são predefinições ou instruções textuais (prompts). O mais fácil para começar: descreva a paleta em uma única frase.
+- **Codex Skin Manager** — inclui um criador de temas com seletor visual interativo.
+- **ReTheme** — temas assinados e atualizáveis; ideal se você quiser compartilhá-los publicamente.
+- **Codex Themes (desktop)** — arquivos `.codextheme`, com centro de criação em theme.codexguide.ai.
 
-Para este guia, usaremos a abordagem de prompt (funciona com Dream Skin).
+Neste guia, usaremos a abordagem por instrução textual (funciona com o Dream Skin).
 
 ## Etapa 2: Escolha sua paleta
 
-Um tema é basicamente 4–6 cores:
+Uma skin é composta, na maior parte, por 4–6 cores:
 
-| Papel | Exemplo (claro) | Exemplo (escuro) |
+| Função | Exemplo (claro) | Exemplo (escuro) |
 |---|---|---|
 | Fundo | `#F5F7FA` | `#0A0A0B` |
 | Superfície (painéis) | `#FFFFFF` | `#16161A` |
 | Texto | `#1A1B26` | `#E4E4E7` |
 | Destaque | `#2DD4BF` | `#2DD4BF` |
 
-Mantenha apenas um destaque. Muitos destaques é o erro número 1 dos iniciantes.
+Mantenha apenas um único destaque. Usar muitos destaques é o erro nº 1 cometido por iniciantes.
 
-## Etapa 3: Escreva o tema como um prompt
+## Etapa 3: Escreva o tema como uma instrução textual (prompt)
 
-Um preset do Dream Skin é apenas uma frase descritiva:
+Uma predefinição do Dream Skin é simplesmente uma frase descritiva:
 
 ```text
-Codex, aplique um tema personalizado — uma paleta de crepúsculo âmbar quente com superfícies escuras de carvão,
-acents amarelos suaves e texto cremoso claro. Silencioso, acolhedor, feito para sessões longas de leitura.
+Codex, aplique um tema personalizado — uma paleta cálida de crepúsculo âmbar com superfícies em carvão escuro,
+acento âmbar suave e texto em creme claro. Tranquilo, acolhedor, projetado para longas sessões de leitura.
 ```
 
-Salve-o como um preset no motor, depois teste. Itere nas palavras até que o resultado corresponda ao seu objetivo.
+Salve-a como uma predefinição no mecanismo e teste-a. Ajuste as palavras até que o resultado corresponda à sua intenção.
 
 ## Etapa 4: Teste em conteúdo real
 
-Abra uma tela cheia (código longo, muitos painéis) antes de decidir. Temas escuros parecem ótimos em imagens e falham na prática quando o contraste dos painéis é muito baixo. Verifique:
+Abra uma tela movimentada (código extenso, muitos painéis) antes de tomar sua decisão final. Temas escuros parecem excelentes em capturas de tela, mas falham na prática quando o contraste entre os painéis é muito baixo. Verifique:
 
-- Legibilidade do editor de código
-- Separação da barra lateral / painel
-- Visibilidade do destaque em botões vs links
+- Legibilidade no editor de código  
+- Separação clara da barra lateral / painéis  
+- Visibilidade do destaque em botões versus links  
 
 ## Etapa 5: Compartilhe-o
 
-Motores como ReTheme e Codex Skin Manager permitem exportar temas. Você pode enviar seu tema para este índice através da página [Enviar um tema](/submit/) — inclua uma imagem de prévia e o prompt de instalação para que outros possam usá-lo em um clique.
+Mecanismos como ReTheme e Codex Skin Manager permitem exportar temas. Você pode enviar sua skin para este índice pela página [Enviar uma skin](/submit/) — inclua uma imagem de pré-visualização e a instrução textual (prompt) de instalação, para que outras pessoas possam instalá-la com um único clique.
 
-## Pontos de partida prontos
+## Pontos de partida prontos para uso
 
-Roube ideias de paletas comprovadas:
+Inspire-se em paletas já testadas:
 
-- [Clear Glass](/skins/clear-glass/) — superfície clara com aspecto de vidro.
-- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) — tons pastel suaves.
-- [Amber Dusk](/skins/amber-dusk/) — preset programático de âmbar quente.
+- [Clear Glass](/skins/clear-glass/) — superfície clara com efeito vítreo.  
+- [Sakura Pink Dawn](/skins/sakura-pink-dawn/) — tons pastel suaves.  
+- [Amber Dusk](/skins/amber-dusk/) — predefinição programática cálida em âmbar.  
 
-Ou navegue pelo [índice completo](/skins/) para mais inspiração. E se você ficar preso nos passos de instalação, o [guia de instalação](/blog/how-to-install-codex-skins/) cobre todos os métodos.
+Ou explore o [índice completo](/skins/) para mais inspiração. E, caso tenha dúvidas sobre os passos de instalação, o [guia de instalação](/blog/how-to-install-codex-skins/) cobre todos os métodos disponíveis.

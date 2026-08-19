@@ -1,6 +1,6 @@
 ---
-title: "Hoog-contrast Codex-thema's: Toegankelijkheid die er echt goed uitziet"
-description: "Hoge contrast is niet vervelend grijs op zwart. Goede toegankelijke Codex-thema's voldoen aan WCAG-contrastverhoudingen terwijl ze hun karakter behouden — zo kiest en controleert u ze."
+title: "Hoogcontrasterende Codex-skins: toegankelijkheid die er daadwerkelijk goed uitziet"
+description: "Hoge contrast is niet lelijk grijs op zwart. Goede toegankelijke Codex-skins voldoen aan de WCAG-contrastverhoudingen zonder hun karakter te verliezen — hier leest u hoe u ze kunt kiezen en controleren."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["accessibility", "contrast", "wcag"]
@@ -9,49 +9,49 @@ relatedSkins: ["monokai-stone-cli", "vivid-purple", "forest-mist", "blue-enchant
 lang: "nl"
 ---
 
-"Zichtbaar" klinkt als een afwaardering. Grijze tekst op donker, grote letters, geen persoonlijkheid. Het hoeft niet zo te zijn — sommige van de meest indrukwekkende Codex-thema's in deze index voldoen ook aan de WCAG-contrastcriteria. Het geheim is te weten wat je moet zoeken, en een paar thema's hier tonen dat aan.
+„Toegankelijk” klinkt als een verslechtering: grijs op zwart, grote lettertypen, geen karakter. Maar dat hoeft niet zo te zijn — sommige van de meest opvallende Codex-skins in deze index voldoen ook aan de WCAG-contrastvereisten. Het geheim zit hem in weten waarop je moet letten; een paar skins hieronder illustreren dit perfect.
 
-## Het getal dat echt belangrijk is: 4,5:1
+## Het getal dat echt telt: 4,5:1
 
-WCAG AA voor normale tekst vereist een contrastverhouding van minstens **4,5:1** tussen tekst en achtergrond. Grote tekst (18px of groter of 14px vet) heeft slechts 3:1 nodig. Code — uw hoofdinhoud — is normale tekst, dus 4,5:1 is het doel.
+Voor normale tekst vereist WCAG AA een contrastverhouding van minstens **4,5:1** tussen tekst en achtergrond. Voor grote tekst (18 px of groter, of 14 px vet) is slechts 3:1 vereist. Code — uw hoofdinhoud — wordt beschouwd als normale tekst, dus 4,5:1 is de maatstaf.
 
-U hoeft geen ontwerper te zijn om dit te controleren. Voeg elke voorgrond- en achtergrond-hexcode van een thema in een willekeurige contrastchecker, en u krijgt het verhouding binnen seconden. Als uw tekscolor onder 4,5:1 zit op zijn achtergrond, is dat het hele probleem — corrigeer die ene combinatie en u bent al 90% op weg.
+U hoeft geen ontwerper te zijn om dit te controleren. Voer eenvoudig de hexadecimale waarden voor voorgrond en achtergrond van elke skin in een willekeurige contrastchecker in, en u krijgt de verhouding binnen enkele seconden. Als uw tekstkleur op de achtergrond een verhouding lager dan 4,5:1 oplevert, dan is dat het enige probleem — pas die ene kleurencombinatie aan, en u bent al voor 90% klaar.
 
-## Wat maakt een zichtbaar thema er goed uit
+## Wat maakt een toegankelijke skin *aangenaam* om mee te werken?
 
-Hoge contrast faalt alleen wanneer het overal hoog is. Goede thema's houden een duidelijke hiërarchie:
+Hoog contrast mislukt alleen als het overal hoog is. De beste skins behouden een duidelijke hiërarchie:
 
-- **Code-tekst op achtergrond: ≥ 4,5:1.** Onbetwistbaar.
-- **Verdunde UI-chrome:** commentaren, regelnummers, paneellabels kunnen lager zitten (3:1+), zodat het oog niet meteen schreeuwt tegen alles tegelijk.
-- **Eén sterke accent** voor cursor/selectie, gehouden boven 3:1 ten opzichte van zijn buren.
+- **Codetekst op achtergrond: ≥ 4,5:1.** Onbespreekbaar.
+- **Gedempte UI-elementen:** commentaar, regelnummers en paneellabels mogen een lagere contrastverhouding hebben (≥ 3:1), zodat het oog niet constant wordt overweldigd.
+- **Één sterke accentkleur** voor cursor/selection, met een contrast van minstens 3:1 ten opzichte van naburige kleuren.
 
-[Monokai Stone (CLI)](/skins/monokai-stone-cli/) doet dit goed — de syntaxkleuren blijven helder genoeg om te lezen terwijl het UI-rammement stil blijft. [Forest Mist](/skins/forest-mist/) toont een zichtbare kleurenpalet dat niet hoefde te zijn high-contrast-erg; de gedempte groenen voldoen nog steeds aan de eis.
+[Monokai Stone (CLI)](/skins/monokai-stone-cli/) doet dit goed — de syntaxkleuren blijven helder genoeg om te lezen, terwijl het UI-kader rustig blijft. [Forest Mist](/skins/forest-mist/) laat een toegankelijke palet zien dat niet hoeft te bestaan uit onaantrekkelijk hoog-contrast materiaal; de gedempte groenen voldoen nog steeds aan de vereiste.
 
 ## Kleurenblindheid: de extra controle
 
-Contrastverhouding dekt alleen helderheid. Als u kleurenblind bent — ongeveer 8% van mannen — verdwijnen rode/groene onderscheidingen. Dus:
+De contrastverhouding houdt alleen rekening met helderheid. Bij kleurenblindheid — ongeveer 8% van de mannen — verdwijnen onderscheidingen tussen rood en groen. Daarom:
 
-- **Vertrouw niet alleen op kleur** om statussen te onderscheiden (bijvoorbeeld alleen een rode/groene punt voor fouten). Combineer het met een pictogram of een woord.
-- **Kies blauw/oranje accenten** in plaats van rode/groene paren waar mogelijk. [Blue Enchantress](/skins/blue-enchantress/) en [Vivid Purple](/skins/vivid-purple/) zijn beide veilige keuzes op die as.
+- **Vertrouw niet uitsluitend op kleur** om statussen te onderscheiden (bijv. alleen een rood/groen stipje voor fouten). Combineer het met een pictogram of een woord.
+- **Gebruik bij voorkeur blauwe of oranje accenten** in plaats van rode/groene combinaties, waar mogelijk. [Blue Enchantress](/skins/blue-enchantress/) en [Vivid Purple](/skins/vivid-purple/) zijn beide veilige keuzes op dit vlak.
 
-Als u uw instelling delen of screenshots publiceren, tellen deze controles ook voor uw lezers, niet alleen voor u.
+Als u uw instelling deelt of screenshots publiceert, zijn deze controles even belangrijk voor uw lezers als voor uzelf.
 
-## Hoe een thema in 30 seconden te controleren
+## Hoe u in 30 seconden een skin controleert
 
-1. Open de detailpagina van het thema — de kleurencodes staan daar vermeld.
-2. Haal de achtergrond- en voorgrondcodes op.
-3. Voer ze door een contrastchecker (elke gratis versie werkt).
-4. Tekst onder 4,5:1 → aanpassen of een ander thema kiezen uit deze index.
+1. Open de detailpagina van de skin — daar staan de hexwaarden van het kleurenpalet vermeld.
+2. Kopieer de hexwaarden voor achtergrond en voorgrond.
+3. Voer ze in een contrastchecker in (elke gratis tool werkt).
+4. Tekst met een verhouding lager dan 4,5:1 → pas aan of kies een andere skin uit deze index.
 
 ## Snelle FAQ
 
-**Is donkere modus slechter voor zichtbaarheid?**
-Niet per se. De contrastverhouding is wat belangrijk is, niet de helderheid van de achtergrond. Sommige mensen met astigmatisme prefereren lichte modus; anderen niet. Kies op basis van uw ogen, en controleer dan de verhouding.
+**Is donkere modus minder toegankelijk?**  
+Niet per se. Het is de contrastverhouding die telt, niet de lichtheid van de achtergrond. Sommige mensen met astigmatisme verkiezen juist lichte modus; anderen niet. Kies wat het beste bij uw ogen past, en controleer daarna de contrastverhouding.
 
-**Kan ik de kleuren van een thema aanpassen om het contrast te verbeteren?**
-Ja, als u comfortabel bent met het bewerken van het themabestand. Verhoog de helderheid van de voorgrond of verdonker de achtergrond tot de combinatie 4,5:1 bereikt, en sla het op als uw eigen variant.
+**Kan ik de kleuren van een skin aanpassen om het contrast te verbeteren?**  
+Ja, als u vertrouwd bent met het bewerken van het themabestand. Verhoog de lichtheid van de voorgrond of verdonker de achtergrond totdat de combinatie 4,5:1 haalt, en sla het op als uw eigen variant.
 
-**Lijken zichtbare thema's "saai"?**
-Alleen als de kleurenpalet plat is. De thema's in deze index met sterke accenten — [Vivid Purple](/skins/vivid-purple/), [Blue Enchantress](/skins/blue-enchantress/) — zijn luid en zichtbaar tegelijk. Contrast en persoonlijkheid zijn geen tegenstellingen.
+**Zien toegankelijke skins er „saai” uit?**  
+Alleen als het kleurenpalet vlak is. De skins in deze index met sterke accenten — zoals [Vivid Purple](/skins/vivid-purple/) en [Blue Enchantress](/skins/blue-enchantress/) — zijn zowel levendig als toegankelijk. Contrast en persoonlijkheid sluiten elkaar niet uit.
 
-Zichtbaarheid is een checklist, geen esthetiek. Controleer de 4,5:1-verhouding op welk thema u ook leuk vindt, corrigeer de ene combinatie die faalt, en houd de look. Begin bij [Monokai Stone](/skins/monokai-stone-cli/) als u een bekend goed uitgangspunt wilt, of blader door de [volledige index](/skins/) — de [gids voor het maken van een thema](/blog/how-to-create-codex-skin/) laat ook zien waar u de hexcodes kunt bewerken.
+Toegankelijkheid is een checklist, geen esthetische beperking. Controleer de 4,5:1-verhouding op elke skin die u graag gebruikt, pas de ene kleurencombinatie aan die tekort schiet, en behoud de gewenste uitstraling. Begin bij [Monokai Stone](/skins/monokai-stone-cli/) als u een betrouwbaar uitgangspunt wilt, of blader door de [volledige index](/skins/) — de [handleiding voor het maken van een Codex-skin](/blog/how-to-create-codex-skin/) laat ook zien waar u de hexwaarden kunt bewerken.

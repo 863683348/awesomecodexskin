@@ -1,6 +1,6 @@
 ---
-title: "Temas Naraka e Três Reinos: Nova Onda de Skin de Personagem"
-description: "Uma nova onda de skins de personagens chegou ao índice — a série Naraka Wuxia, Três Reinos, Viagem ao Oeste e muito mais. Aqui está a lista destacada e o que os torna funcionais."
+title: "Temas Naraka & Três Reinos: Nova Onda de Skins de Personagem"
+description: "Uma nova onda de skins de personagens chegou ao índice — a série Naraka Wuxia, Os Três Reinos, A Jornada para o Oeste e muito mais. Confira a lista em destaque e saiba o que as torna tão especiais."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["character", "naraka", "three-kingdoms", "new-skins"]
@@ -9,11 +9,11 @@ relatedSkins: ["naraka-wanxiang-cangdi-fourfold-axis", "three-kingdoms", "journe
 lang: "pt"
 ---
 
-Skins de personagens estão em alta na ecossistema Codex. A onda desta semana traz a série **Naraka Wuxia** — um conjunto completo de temas baseados na universo Naraka: Bladepoint — mais entradas inspiradas em Três Reinos, Viagem ao Oeste e romances de cultivação.
+As skins de personagens estão em alta no ecossistema Codex. A onda desta semana traz a série **Naraka Wuxia** — um conjunto completo de temas inspirados no universo de *Naraka: Bladepoint* — além de temas inspirados nos *Três Reinos*, na *Jornada ao Oeste* e em romances de cultivo.
 
 ## A série Naraka
 
-A família [Naraka Wuxia](/skins/naraka-wanxiang-cangdi-fourfold-axis/) é o destaque principal — um conjunto coeso de temas escuros e atmosféricos nomeados após as clãs e locais do jogo:
+A família [Naraka Wuxia](/skins/naraka-wanxiang-cangdi-fourfold-axis/) é a atração principal — um conjunto coerente de temas sombrios e atmosféricos, nomeados após clãs e locais do jogo:
 
 - [Cangdi Fourfold Axis](/skins/naraka-wanxiang-cangdi-fourfold-axis/)
 - [Five Aspects](/skins/naraka-wanxiang-five-aspects/)
@@ -22,27 +22,27 @@ A família [Naraka Wuxia](/skins/naraka-wanxiang-cangdi-fourfold-axis/) é o des
 - [Shuojin Thunder Forge](/skins/naraka-wanxiang-shuojin-thunder-forge/)
 - [Yuyan Ember Prison](/skins/naraka-wanxiang-yuyan-ember-prison/)
 
-O que chama atenção: a série compartilha uma linguagem de design — fundos escuros profundos, cores de destaque inspiradas em artes marciais, alto contraste de texto — então é uma das poucas famílias de temas no índice onde cada membro se sente parte da mesma coleção.
+O destaque: a série compartilha uma linguagem visual — fundos escuros profundos, cores de destaque inspiradas nas artes marciais e alto contraste de texto — tornando-a uma das poucas famílias de temas no índice em que todos os membros parecem realmente pertencer à mesma coleção.
 
 ## A onda literária
 
-Junto com Naraka, o índice incluiu temas literários clássicos chineses:
+Juntamente com Naraka, o índice incorporou temas inspirados em clássicos da literatura chinesa:
 
-- [Três Reinos](/skins/three-kingdoms/) — o trio clássico de heróis como paleta.
-- [Viagem ao Oeste](/skins/journey-to-west/) — brilhante e aventureiro.
-- [Han Li Mortal Path](/skins/han-li-mortal-path/) — um tema escuro inspirado em romances de cultivação.
-- [Tianhai Vajra Thunder Temple](/skins/tianhai-vajra-thunder-temple/) e alguns outros no mesmo estilo espiritual-fantástico.
+- [Three Kingdoms](/skins/three-kingdoms/) — a clássica tríade de heróis traduzida em paleta.
+- [Journey to the West](/skins/journey-to-west/) — vibrante e aventureira.
+- [Han Li Mortal Path](/skins/han-li-mortal-path/) — um tema escuro inspirado em romances de cultivo.
+- [Tianhai Vajra Thunder Temple](/skins/tianhai-vajra-thunder-temple/) e mais alguns na mesma linha de fantasia espiritual.
 
-## Por que skins de personagens funcionam no ambiente de trabalho
+## Por que temas de personagens funcionam no ambiente de trabalho
 
-Bons skins de personagens não apenas colocam uma imagem em uma paleta — eles traduzem a identidade do personagem em psicologia de cores: vermelhos fortes para guerreiros de Três Reinos, teal frio para o Thunder Forge, laranja de carvão para temas de prisão. O resultado é um ambiente de trabalho com personalidade que permanece legível. [Shuojin Thunder Forge](/skins/naraka-wanxiang-shuojin-thunder-forge/) é um exemplo excelente — identidade chamativa, ainda assim um tema escuro funcional.
+As boas skins de personagens não se limitam a sobrepor um retrato à paleta — elas traduzem a identidade do personagem em psicologia das cores: vermelhos ousados para os guerreiros dos *Três Reinos*, tons frios de verde-azulado para o *Thunder Forge*, laranja-brasa para temas prisionais. O resultado é um ambiente de trabalho com personalidade, mas ainda totalmente legível. [Shuojin Thunder Forge](/skins/naraka-wanxiang-shuojin-thunder-forge/) é um excelente exemplo — identidade marcante, mantendo plena funcionalidade como tema escuro.
 
-## Onde eles estão no índice
+## Onde eles aparecem no índice
 
-A maioria dessa onda está nas categorias **anime-pop** e **jogos**, junto com o lote anterior HeiGeAi. Se você quiser a visão completa dos temas de personagens, o resumo [melhores skins de anime](/blog/best-anime-codex-skins/) é o ponto de entrada.
+A maior parte dessa onda está categorizada como **anime-pop** e **gaming**, ao lado do lote anterior *HeiGeAi*. Para ter uma visão completa dos temas de personagens, o ponto de entrada ideal é a seleção dos [melhores skins anime para Codex](/blog/best-anime-codex-skins/).
 
-## Notas de instalação
+## Observações sobre instalação
 
-Esses skins seguem os formatos padrão de instalação — verifique cada página de detalhes para saber se é um prompt, arquivo de tema ou especificação de CLI. O [guia de instalação](/blog/how-to-install-codex-skins/) cobre os três.
+Essas skins seguem os formatos padrão de instalação — verifique, em cada página de detalhes, se se trata de um prompt, de um arquivo de tema ou de uma especificação CLI. O [guia de instalação](/blog/how-to-install-codex-skins/) cobre os três casos.
 
-A família Naraka, em particular, vale a pena olhar mesmo se você não conhece o jogo — é um raro exemplo de uma coleção multi-skin coordenada, e a consistência mostra. Navegue pelo [índice de skins](/skins/) para a onda completa.
+A família Naraka, em particular, merece atenção mesmo que você não conheça o jogo — trata-se de um exemplo raro de coleção coordenada com múltiplas skins, cuja consistência é evidente. Navegue pelo [índice de skins](/skins/) para ver a onda completa.

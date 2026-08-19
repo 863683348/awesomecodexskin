@@ -1,6 +1,6 @@
 ---
-title: "Synchronisieren Sie Ihr Terminal und das Codex-Skin: Eine Farbpalette überall"
-description: "Stoppen Sie, dass Ihre Augen sich jedes Mal neu anpassen, wenn Sie zwischen Fenstern wechseln. Passen Sie Ihre Terminal-Them und Codex-Skin auf dieselbe Farbpalette an – so geht’s, mit den CLI-Themen, die es einfach machen."
+title: "Synchronisieren Sie Ihr Terminal und das Codex-Design: Eine Farbpalette überall"
+description: "Verhindern Sie, dass sich Ihre Augen jedes Mal neu anpassen, wenn Sie zwischen Bereichen wechseln. Passen Sie Ihr Terminal-Theme und das Codex-Skin mit derselben Farbpalette an – so geht’s, mit den CLI-Themes, die dies besonders einfach machen."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["terminal", "sync", "palette", "cli"]
@@ -9,55 +9,48 @@ relatedSkins: ["monokai-stone-cli", "solarized-cli", "tokyo-night-ychampion", "b
 lang: "de"
 ---
 
-STRICTE REGELN:
-1. Übersetze alle menschlich lesbaren Prosa, Überschriften, Tabellentexte und Linktexte.
-2. NIEMALS übersetzen: Codeblöcke, Inline-Code, Dateipfade, Shell-Befehle, URLs, Produktbezeichnungen (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), numerische/Versionstoken oder Hautanzeigen.
-3. Halte die Markdown-Struktur identisch: gleiche Überschriften, Listen, Tabellen, fette/Kursivschreibweise, Zitierungen und Linkziele. Ein Link wie [Monokai Stone](/skins/monokai-stone/) behält seine /path/-URL unverändert; nur der sichtbare Text kann übersetzt werden.
-4. Halte jeglichen Roh-HTML/JSX genau so bei.
-5. Gib NUR den übersetzten Markdown-Text aus. Keine Einleitung, keine Notizen, keine Code-Fenster um die Antwort.
+Früher verwendete ich eine dunkle Codex-Haut und eine völlig andere Terminal-Palette nebeneinander. Jedes Mal, wenn ich zwischen ihnen wechselte, musste mein Blick kurz „zweimal hinsehen“ – anderer Hintergrund, andere Akzentfarbe, anderes Gefühl. Es schien unwichtig, doch summiert sich das über den Tag zu einer ständigen, leichten Ablenkung.
 
-Ich habe früher einen dunklen Codex-Skin und eine völlig andere Terminal-Palette nebeneinander verwendet. Jedes Mal, wenn ich zwischen ihnen wechselte, machte mein Auge einen kleinen Doppelschlag – unterschiedlicher Hintergrund, unterschiedliche Akzentfarbe, unterschiedliches Gefühl. Es fühlte sich an wie nichts, aber es summieren sich zu einer niedrigen Störung den ganzen Tag.
+Die Lösung ist langweilig, aber wirksam: **eine einzige Farbpalette – überall**. Derselbe Farbfamilie entstammend, ähnliche Helligkeit, derselbe Akzent. Auf dieser Seite erfahren Sie, wie Sie Ihr Terminal und Ihre Codex-Haut auf dieselbe Palette abstimmen – ausgehend von den CLI-Themes in diesem Index.
 
-Die Lösung ist langweilig, aber effektiv: **ein Farbschema, überall**. Gleiche Farbfamilie, nahe Helligkeit, gleicher Akzent. Diese Seite zeigt Ihnen, wie Sie Ihr Terminal und Ihren Codex-Skin auf dasselbe Farbschema bringen, beginnend mit den CLI-Themen in diesem Index.
+## Warum Abstimmung besser ist als die Auswahl zweier guter Themes
 
-## Warum Synchronisation besser ist als zwei schöne Themen auswählen
+Ihr visuelles System bevorzugt Kontinuität. Wenn Terminal, Editor und Browser denselben Hintergrundton und dieselbe Akzentfarbe teilen, kostet der Wechsel zwischen Fenstern Ihr Gehirn fast nichts. Bei Konflikten hingegen bedeutet jeder Wechsel eine kleine Neuorientierung. Dutzende solcher Wechsel pro Tag kosten Sie echte Konzentration – für nichts.
 
-Ihr visuelles System bevorzugt Kontinuität. Wenn Terminal, Editor und Browser ein gemeinsames Hintergrundton und Akzentfarbe teilen, kostet das Wechseln von Fenstern fast nichts für Ihr Gehirn. Wenn sie kontrastieren, ist jedes Wechseln eine kleine Neuausrichtung. Dutzende Wechsel am Tag und Sie haben realen Fokus auf nichts verschwendet.
+Ein zweiter Vorteil: Screenshots und Pair-Programming-Sessions wirken kohärent. „Ist das dieselbe Einrichtung?“ – Ja, und genau darum geht es.
 
-Es gibt einen zweiten Vorteil: Screenshots und Pair-Programmier-Sitzungen sehen kohärent aus. „Ist das dieselbe Umgebung?“ – Ja, und das ist der Punkt.
+## Der einfache Weg: Themes, die in beiden Welten verfügbar sind
 
-## Der einfache Weg: Themen, die in beiden Welten vorhanden sind
+Einige Paletten wurden für verschiedene Tools portiert, sodass die Abstimmung nahezu kostenlos ist:
 
-Einige Farbschemata wurden in beide Tools portiert, sodass die Synchronisierung fast kostenlos ist:
+- **[Tokyo Night](/skins/tokyo-night-ychampion/)** – ursprünglich ein VS Code-Theme, jetzt auch in diesem Index für Codex verfügbar, mit CLI-Varianten wie [Tokyo Night (CLI)](/skins/bearded-tokyo-night/) aus den Bearded-Ports. Dieselbe Nachtblau-Familie an beiden Stellen.
+- **[Monokai Stone](/skins/monokai-stone-cli/)** – die klassische Monokai-Palette in einer steingrauen Variante. Breit portiert, sodass Sie oft passende Konfigurationen für Ihren Terminal-Emulator finden.
+- **[Solarized](/skins/solarized-cli/)** – entworfen mit exakten CIELAB-Helligkeitswerten, um konsistent über alle Anwendungen hinweg wiederzugeben. Die am stärksten „überall identische“ Palette, die es gibt.
 
-- **[Tokyo Night](/skins/tokyo-night-ychampion/)** – ursprünglich ein VS Code-Thema, jetzt in diesem Index für Codex verfügbar, mit CLI-Varianten wie [Tokyo Night (CLI)](/skins/bearded-tokyo-night/) aus den Bearded-Ports. Dieselbe Nachthimmel-Blau-Familie in beiden Bereichen.
-- **[Monokai Stone](/skins/monokai-stone-cli/)** – das klassische Monokai-Farbschema in einer Stein-Grau-Variante. Weit verbreitet, sodass Sie oft passende Konfigurationen für Ihren Terminal-Emulator finden können.
-- **[Solarized](/skins/solarized-cli/)** – entworfen mit exakten CIELAB-Helligkeitswerten, damit es konsistent über Apps hinweg rendern kann. Das „gleich überall“-Farbschema, das existiert.
+Wählen Sie eines dieser Themes – dann sind Sie bereits zu 80 % fertig: Wenden Sie die Codex-Haut an und suchen Sie dieselbe Palette im Theme-Selektor Ihres Terminals.
 
-Wählen Sie eines dieser und Sie sind 80% fertig: wenden Sie das Codex-Thema an und suchen Sie dann dasselbe Farbschema in Ihrem Terminal-Themen-Selektor.
+## Der manuelle Weg: Abstimmung in vier Schritten
 
-## Der manuelle Weg: Manuell anpassen in 4 Schritten
+Falls Ihre bevorzugte Codex-Haut keine Terminal-Version besitzt, können Sie sie manuell abstimmen:
 
-Wenn Ihr Liebling-Codex-Skin kein Terminal-Port hat, machen Sie es manuell:
+1. **Lesen Sie die Palette der Haut.** Öffnen Sie die Detailseite der Haut – die Farbwerte sind dort aufgelistet. Notieren Sie die Hex-Werte für Hintergrund, Vordergrund und Akzentfarbe.
+2. **Erstellen Sie eine Terminal-Theme-Datei.** Die meisten Emulatoren (iTerm2, Windows Terminal, kitty, WezTerm) akzeptieren ein einfaches, hex-basiertes Theme. Zuordnung: Hintergrund → Terminal-Hintergrund, Vordergrund → Terminal-Text, Akzent → Terminal-Cursor / helle Farbe.
+3. **Halten Sie die Helligkeit eng beieinander.** Passen Sie die Farbton-Hexwerte nicht exakt an, aber lassen Sie den Terminal-Hintergrund nicht mehr als ca. 20 % heller oder dunkler werden – Ihr Auge bemerkt diesen Sprung sofort.
+4. **Testen Sie in einer echten Sitzung.** Führen Sie `ls`, ein `git log` und `vim` zwei Minuten lang aus. Sind die Übergänge zwischen den Hintergründen unsichtbar, sind Sie fertig.
 
-1. **Lesen Sie das Farbschema des Skins.** Öffnen Sie die Detailseite des Skins – die Farbwerte sind dort gelistet. Notieren Sie sich den Hintergrund, Vordergrund und Akzent-Hex-Werte.
-2. **Erstellen Sie eine Terminal-Themen-Datei.** Die meisten Emulatoren (iTerm2, Windows Terminal, kitty, WezTerm) akzeptieren ein einfaches Hex-basiertes Thema. Zuordnung: Hintergrund → Terminal-Hintergrund, Vordergrund → Terminal-Text, Akzent → Terminal-Cursor/heller Farbton.
-3. **Halten Sie die Helligkeit nahe.** Passen Sie nicht genau die Farbton an, sondern lassen Sie das Terminal leichter oder dunkler sein als mehr als ~20% – Ihre Augen werden den Sprung bemerken.
-4. **Testen Sie in einer echten Sitzung.** Führen Sie `ls`, einen git-Log und `vim` für zwei Minuten aus. Wenn die Hintergrund-Ränder unsichtbar sind, sind Sie fertig.
+## Wie „ausreichend ähnlich“ aussieht
 
-## Was „nahe genug“ aussieht
+Sie benötigen keine pixelgenaue Hex-Identität. Derselbe Hintergrundfamilie entstammend, dieselbe Vordergrund-Temperatur, derselbe Akzent – das reicht völlig aus. [Monokai Stone (CLI)](/skins/monokai-stone-cli/) neben einem Standard-Dark-Terminal mit warmgrauem Hintergrund wirkt durchaus harmonisch. Ziel ist Kontinuität – nicht Identität.
 
-Sie benötigen keine pixelgenaue Hex-Gleichheit. Gleiche Hintergrundfamilie, gleiche Vordergrund-Temperatur, gleicher Akzent – das reicht. [Monokai Stone (CLI)](/skins/monokai-stone-cli/) im Vergleich zu einem stockdunklen Terminal mit warmem Grau-Hintergrund sieht gut zusammen aus. Das Ziel ist Kontinuität, nicht Identität.
+## Schnelle FAQ
 
-## Kurzfassung FAQ
+**Muss ich auch den Browser abstimmen?**  
+Schön zu haben, aber nicht zwingend erforderlich. Die Kombination aus Terminal und Editor deckt den Großteil Ihrer Blickwechsel ab. Fügen Sie ggf. die Browser-Entwicklertools hinzu – dieselben Regeln gelten.
 
-**Muss ich auch den Browser synchronisieren?**
-Nice-to-have, nicht erforderlich. Das Terminal + Editor-Paar deckt den Großteil Ihres Augenwechselns ab. Fügen Sie Browser-Devtools hinzu, wenn Sie besessen sind – dieselben Regeln gelten.
+**Mein Terminal-Emulator unterstützt keine benutzerdefinierten Themes.**  
+Moderne Emulatoren unterstützen dies alle. Falls Sie in einer stark eingeschränkten Unternehmensumgebung feststecken, wählen Sie stattdessen die Codex-Haut, die am besten zur *Standard*-Palette Ihres Terminals passt – Reverse-Sync funktioniert ebenfalls.
 
-**Mein Terminal-Emulator unterstützt keine benutzerdefinierten Themen.**
-Moderne unterstützen alle. Wenn Sie mit einem eingeschränkten Unternehmenssetup feststecken, wählen Sie das Codex-Thema, das Ihrem Terminal-Emulators *Standard*-Farbschema entspricht – Reverse-Sync funktioniert ebenfalls.
+**Verlangsamt die Abstimmung meine Arbeit?**  
+Nein. Es handelt sich um eine einmalige Konfiguration. Die Palette besteht nur aus Farben – sie beeinflusst weder den Codex-Start noch dessen Leistung.
 
-**Wird die Synchronisierung mich verlangsamen?**
-Nein. Es ist eine einmalige Konfiguration. Das Farbschema besteht nur aus Farben; es beeinflusst den Start oder die Leistung von Codex überhaupt nicht.
-
-Holen Sie sich [Tokyo Night](/skins/tokyo-night-ychampion/) oder [Monokai Stone](/skins/monokai-stone-cli/), wenden Sie dasselbe Farbschema auf Ihr Terminal an und geben Sie Ihren Augen die Pause, die sie verdient haben. Vollständiges [Skin-Index](/skins/) und [Installationsanleitung](/blog/how-to-install-codex-skins/) falls Sie zuerst die Grundlagen benötigen.
+Greifen Sie zu [Tokyo Night](/skins/tokyo-night-ychampion/) oder [Monokai Stone](/skins/monokai-stone-cli/), wenden Sie dieselbe Palette auf Ihr Terminal an – und gönnen Sie Ihren Augen die Pause, die sie verdienen. Den vollständigen [Skin-Index](/skins/) und die [Installationsanleitung](/blog/how-to-install-codex-skins/) finden Sie, falls Sie zunächst die Grundlagen benötigen.
