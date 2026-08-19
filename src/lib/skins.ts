@@ -55,6 +55,8 @@ export function itemListJsonLd(skins: Skin[], name = 'Codex Skins Index'): objec
     itemListElement: skins.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
+      // Google requires both name and url on ListItem for ItemList rich results.
+      name: s.data.name,
       url: `${SITE_URL}/skins/${s.id}/`,
     })),
   };

@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import { ArrowRight, CalendarDays } from '@lucide/astro';
-import { SUPPORTED_LOCALES, type Locale, localizedPath } from '../../../i18n/config.ts';
+import { SUPPORTED_LOCALES, type Locale, DEFAULT_LOCALE, localizedPath } from '../../../i18n/config.ts';
 import { makeT } from '../../../i18n/index.ts';
 import { SITE } from '../../../lib/site.ts';
 
@@ -10,12 +10,16 @@ export async function getStaticPaths() {
   return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
 }
 
-const { lang = 'en' } = Astro.params as { lang?: Locale };
+const { lang = DEFAULT_LOCALE } = Astro.params as { lang?: Locale };
 const t = makeT(lang);
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
-);
+// Show posts in the active locale; fall back to English source posts for any
+// locale that doesn't have translations yet (no empty blog pages).
+const all = await getCollection('blog');
+const slugOf = (p: { id: string }) => p.id.split('/').pop();
+let posts = all.filter((p) => p.id.startsWith(`${lang}/`));
+if (posts.length === 0) posts = all.filter((p) => !p.id.includes('/'));
+posts = posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
 const categories = [...new Set(posts.map((p) => p.data.category))];
 
@@ -30,7 +34,9 @@ const jsonLd = {
     headline: p.data.title,
     description: p.data.description,
     datePublished: p.data.pubDate.toISOString(),
-    url: `${SITE.url}${localizedPath(`/blog/${p.id}/`, lang)}`,
+    author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+    mainEntityOfPage: `${SITE.url}${localizedPath(`/blog/${slugOf(p)}/`, lang)}`,
+    url: `${SITE.url}${localizedPath(`/blog/${slugOf(p)}/`, lang)}`,
   })),
 };
 ---
@@ -72,7 +78,7 @@ const jsonLd = {
             ))}
           </div>
           <h2 class="mt-3 font-display text-lg font-semibold leading-snug text-fg group-hover:text-accent">
-            <a href={localizedPath(`/blog/${p.id}`, lang)} class="after:absolute after:inset-0">{p.data.title}</a>
+            <a href={localizedPath(`/blog/${slugOf(p)}`, lang)} class="after:absolute after:inset-0">{p.data.title}</a>
           </h2>
           <p class="mt-2 text-sm text-muted">{p.data.description}</p>
           <span class="mt-4 inline-flex items-center gap-1 text-sm text-accent">

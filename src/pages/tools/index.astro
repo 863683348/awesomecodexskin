@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ArrowRight, Wand2, Palette } from '@lucide/astro';
+
+const tools = [
+  {
+    href: '/tools/theme-preview',
+    icon: Palette,
+    name: 'Theme previewer',
+    desc: 'Paste a Codex theme.json and preview how it reskins a mock Codex workspace. Runs 100% in your browser.',
+  },
+  {
+    href: '/tools/prompt-generator',
+    icon: Wand2,
+    name: 'Prompt generator',
+    desc: 'Build a copy-paste reskin prompt from your preferences — name, category, mood and accent color.',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Codex skin tools',
+  description: 'Free browser tools for Codex skin creators: theme previewer and reskin prompt generator.',
+  url: 'https://awesomecodexskin.com/tools/',
+};
+---
+<Base
+  title="Codex skin tools — preview themes & generate prompts"
+  description="Free browser tools for Codex skins: paste a theme.json to preview it live, or generate a copy-paste reskin prompt."
+  jsonLd={jsonLd}
+>
+  <div class="container-x max-w-5xl py-10">
+    <nav class="mb-2 text-sm text-meta" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-fg">Home</a> / <span class="text-fg">Tools</span>
+    </nav>
+    <h1 class="text-3xl font-semibold text-fg">Tools</h1>
+    <p class="mt-2 max-w-2xl text-muted">
+      Two free, browser-only tools for Codex skin creators. Nothing you paste is uploaded — everything runs on your machine.
+    </p>
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+      {tools.map((tool) => (
+        <a
+          href={tool.href}
+          class="group flex flex-col justify-between rounded-t-md border border-border bg-surface p-5 transition-colors hover:border-accent"
+        >
+          <div>
+            <tool.icon class="mb-3 h-6 w-6 text-accent" />
+            <h2 class="font-display text-lg font-semibold text-fg group-hover:text-accent">{tool.name}</h2>
+            <p class="mt-2 text-sm text-muted">{tool.desc}</p>
+          </div>
+          <span class="mt-4 inline-flex items-center gap-1 text-sm text-accent">
+            Open tool <ArrowRight size={14} />
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

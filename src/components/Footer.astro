@@ -10,6 +10,9 @@ interface Props {
 const { locale = DEFAULT_LOCALE } = Astro.props;
 const t = makeT(locale);
 const year = new Date().getFullYear();
+// Root-only pages (not yet multilingual) must keep their un-prefixed URL even
+// in non-English locales — otherwise /fr/install etc. would 404.
+const root = (p: string) => localizedPath(p, DEFAULT_LOCALE);
 const catLinks = [
   ['dark-midnight', 'Dark & Midnight'],
   ['light-airy', 'Light & Airy'],
@@ -51,14 +54,15 @@ const catLinks = [
       <h2 class="text-xs font-semibold tracking-caps text-meta uppercase">{t('misc.search')}</h2>
       <ul class="mt-3 space-y-2">
         <li><a href={localizedPath('/skins', locale)} class="text-sm text-muted hover:text-fg">{t('skins.title').split(' — ')[0]}</a></li>
-        <li><a href={localizedPath('/install', locale)} class="text-sm text-muted hover:text-fg">{t('install.h1')}</a></li>
-        <li><a href={localizedPath('/tutorial', locale)} class="text-sm text-muted hover:text-fg">{t('tutorial.h1')}</a></li>
-        <li><a href={localizedPath('/faq', locale)} class="text-sm text-muted hover:text-fg">FAQ</a></li>
-        <li><a href={localizedPath('/submit', locale)} class="text-sm text-muted hover:text-fg">{t('submit.h1')}</a></li>
-        <li><a href={localizedPath('/advertise', locale)} class="text-sm text-muted hover:text-fg">{t('nav.advertise')}</a></li>
-        <li><a href={localizedPath('/contact', locale)} class="text-sm text-muted hover:text-fg">{t('nav.contact')}</a></li>
-        <li><a href={localizedPath('/tools/theme-preview', locale)} class="text-sm text-muted hover:text-fg">Theme previewer</a></li>
-        <li><a href={localizedPath('/tools/prompt-generator', locale)} class="text-sm text-muted hover:text-fg">Prompt generator</a></li>
+        <li><a href={root('/install')} class="text-sm text-muted hover:text-fg">{t('install.h1')}</a></li>
+        <li><a href={root('/tutorial')} class="text-sm text-muted hover:text-fg">{t('tutorial.h1')}</a></li>
+        <li><a href={root('/faq')} class="text-sm text-muted hover:text-fg">FAQ</a></li>
+        <li><a href={root('/submit')} class="text-sm text-muted hover:text-fg">{t('submit.h1')}</a></li>
+        <li><a href={root('/advertise')} class="text-sm text-muted hover:text-fg">{t('nav.advertise')}</a></li>
+        <li><a href={root('/contact')} class="text-sm text-muted hover:text-fg">{t('nav.contact')}</a></li>
+        <li><a href={root('/tools')} class="text-sm text-muted hover:text-fg">Tools</a></li>
+        <li><a href={root('/tools/theme-preview')} class="text-sm text-muted hover:text-fg">Theme previewer</a></li>
+        <li><a href={root('/tools/prompt-generator')} class="text-sm text-muted hover:text-fg">Prompt generator</a></li>
       </ul>
     </div>
 

@@ -4,20 +4,25 @@ import Base from '../../../layouts/Base.astro';
 import { CalendarDays, ArrowLeft, ExternalLink } from '@lucide/astro';
 import { SITE } from '../../../lib/site.ts';
 import { absolutePreview } from '../../../lib/skins.ts';
-import { SUPPORTED_LOCALES, type Locale, localizedPath } from '../../../i18n/config.ts';
+import { SUPPORTED_LOCALES, type Locale, DEFAULT_LOCALE, localizedPath } from '../../../i18n/config.ts';
 import { makeT } from '../../../i18n/index.ts';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const all = await getCollection('blog');
+  // English source posts live at the blog root (id has no '/').
+  // Translated posts live at src/content/blog/{locale}/{slug}.md → id = '{locale}/{slug}'.
+  const enPosts = all.filter((p) => !p.id.includes('/'));
+  const localized = new Map(all.filter((p) => p.id.includes('/')).map((p) => [p.id, p]));
   return SUPPORTED_LOCALES.flatMap((lang) =>
-    posts.map((post) => ({
-      params: { lang, slug: post.id },
-      props: { post, lang },
-    }))
+    enPosts.map((post) => {
+      // Serve the translated post when it exists, otherwise fall back to English.
+      const target = lang === DEFAULT_LOCALE ? post : (localized.get(`${lang}/${post.id}`) ?? post);
+      return { params: { lang, slug: post.id }, props: { post: target, slug: post.id, lang } };
+    })
   );
 }
 
-const { post, lang = 'en' } = Astro.props as { post: any; lang?: Locale };
+const { post, slug, lang = DEFAULT_LOCALE } = Astro.props as { post: any; slug: string; lang?: Locale };
 const t = makeT(lang);
 const { Content } = await render(post);
 const d = post.data;
@@ -26,7 +31,7 @@ const d = post.data;
 const allSkins = await getCollection('skins');
 const skinBySlug = new Map(allSkins.map((s) => [s.id, s]));
 const related = d.relatedSkins
-  .map((slug) => skinBySlug.get(slug))
+  .map((skinSlug) => skinBySlug.get(skinSlug))
   .filter((s): s is NonNullable<typeof s> => Boolean(s))
   .slice(0, 4);
 
@@ -38,7 +43,7 @@ const jsonLd = {
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
         { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE.url}${localizedPath('/blog/', lang)}` },
-        { '@type': 'ListItem', position: 3, name: d.title, item: `${SITE.url}${localizedPath(`/blog/${post.id}/`, lang)}` },
+        { '@type': 'ListItem', position: 3, name: d.title, item: `${SITE.url}${localizedPath(`/blog/${slug}/`, lang)}` },
       ],
     },
     {
@@ -49,14 +54,14 @@ const jsonLd = {
       dateModified: (d.updatedDate ?? d.pubDate).toISOString(),
       author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
       publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
-      mainEntityOfPage: `${SITE.url}${localizedPath(`/blog/${post.id}/`, lang)}`,
+      mainEntityOfPage: `${SITE.url}${localizedPath(`/blog/${slug}/`, lang)}`,
       ...(d.coverImage ? { image: absolutePreview({ data: { previewImage: d.coverImage } } as any, SITE.url) } : {}),
     },
   ],
 };
 ---
 <Base
-  title={`${d.title} — Codex Skin Blog`}
+  title={`${d.title} | Codex Skin Blog`}
   description={d.description}
   image={d.coverImage}
   type="article"

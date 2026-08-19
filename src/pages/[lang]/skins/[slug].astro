@@ -63,7 +63,7 @@ const jsonLd = {
       review: [
         {
           '@type': 'Review',
-          author: { '@type': 'Organization', name: 'Codex Skin Index' },
+          author: { '@type': 'Organization', name: 'Codex Skin Index', url: SITE.url },
           reviewBody: `${d.name} is a ${d.mood} ${categoryLabel(d.category).toLowerCase()} skin for ${d.platform === 'codex-cli' ? 'Codex CLI' : 'Codex Desktop'}. ${d.description}`,
           reviewRating: { '@type': 'Rating', ratingValue: '4', bestRating: '5' },
         },
@@ -81,7 +81,7 @@ const jsonLd = {
 };
 ---
 <Base
-  title={`${d.name} — Codex skin`}
+  title={`${d.name} — ${d.platform === 'codex-cli' ? 'CLI' : 'Desktop'} Codex Skin | Download & Install`}
   description={d.description}
   image={d.previewImage}
   locale={lang}

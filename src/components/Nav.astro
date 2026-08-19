@@ -16,8 +16,9 @@ const nav = [
   { label: t('nav.skins'), href: localizedPath('/skins', locale) },
   { label: t('nav.categories'), href: localizedPath('/skins/category/dark-midnight', locale) },
   { label: t('nav.blog'), href: localizedPath('/blog', locale) },
-  { label: t('nav.advertise'), href: localizedPath('/advertise', locale) },
-  { label: t('nav.contact'), href: localizedPath('/contact', locale) },
+  // advertise/contact are root-only pages → never locale-prefix (avoids /fr/… 404)
+  { label: t('nav.advertise'), href: localizedPath('/advertise', DEFAULT_LOCALE) },
+  { label: t('nav.contact'), href: localizedPath('/contact', DEFAULT_LOCALE) },
 ];
 const sister = [
   { label: t('nav.sister.pets'), href: 'https://codexpetgenerator.com' },
@@ -56,7 +57,7 @@ const path = Astro.url.pathname;
       <LocaleSwitcher locale={locale} />
       <ThemeToggle />
       <a
-        href={localizedPath('/submit', locale)}
+        href={localizedPath('/submit', DEFAULT_LOCALE)}
         class="inline-flex items-center rounded-t-pill bg-accent px-4 py-2 text-sm font-medium text-accent-on hover:bg-accent-hover"
       >{t('nav.submit')}</a>
     </div>

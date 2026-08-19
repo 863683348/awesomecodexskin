@@ -123,6 +123,9 @@ const blog = defineCollection({
     coverImage: z.string().optional(),
     // Optional list of skin slugs this post recommends / links to
     relatedSkins: z.array(z.string()).default([]),
+    // Content language. English source posts sit at the blog root (default 'en');
+    // translated posts live in src/content/blog/{locale}/{slug}.md with lang = {locale}.
+    lang: z.string().default('en'),
   }),
 });
 
