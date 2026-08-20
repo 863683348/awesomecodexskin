@@ -77,3 +77,11 @@ Only if both are set as active appliers — the last one wins. Designate one pri
 Startup difference is negligible. Application speed differs: prompt paste beats gallery clicking.
 
 Try Dream Skin first if you want the fastest on-ramp — paste a prompt for [Cyber Neon](/skins/cyber-neon/) or [Sakura Pink Dawn](/skins/sakura-pink-dawn/) and see the look in seconds. Browse the [skin index](/skins/) to see which skins offer which install format, and the [engines comparison](/blog/codex-skin-engines-compared/) for the full five-engine picture.
+
+## Go deeper on Dream Skin & Skin Manager
+
+- [Codex Dream Skin Review](/blog/codex-dream-skin-review/) — an honest hands-on review of the prompt engine
+- [How to Install & Use Codex Dream Skin](/blog/how-to-install-dream-skin-codex/) — step-by-step setup on macOS and Windows
+- [Best Codex Dream Skin Alternatives](/blog/codex-dream-skin-alternatives/) — six other free engines compared
+- [Codex Skin Manager: The Complete Guide](/blog/codex-skin-manager-guide/) — browse, apply and manage with the gallery engine
+- [How to Remove / Uninstall Codex Dream Skin](/blog/how-to-remove-dream-skin-codex/) — clean uninstall and restore default

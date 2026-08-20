@@ -144,9 +144,14 @@ async function main() {
   const localesArg = args.find((a) => a.startsWith('--locales='));
   const locales = localesArg ? localesArg.split('=')[1].split(',') : ALL_LOCALES;
   const force = args.includes('--force');
+  const slugArg = args.find((a) => a.startsWith('--slug='));
+  const onlySlugs = slugArg ? slugArg.split('=')[1].split(',').map((s) => s.trim()).filter(Boolean) : null;
 
   // English source posts = files directly under blog root (no '/')
-  const enFiles = readdirSync(BLOG_DIR).filter((f) => f.endsWith('.md') && !f.includes('/'));
+  let enFiles = readdirSync(BLOG_DIR).filter((f) => f.endsWith('.md') && !f.includes('/'));
+  if (onlySlugs) {
+    enFiles = enFiles.filter((f) => onlySlugs.includes(f.replace(/\.md$/, '')));
+  }
   console.log(`EN source posts: ${enFiles.length}`);
   console.log(`Target locales: ${locales.join(', ')}`);
   if (force) console.log('Force mode: overwrites existing translations.');

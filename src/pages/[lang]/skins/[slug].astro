@@ -9,7 +9,7 @@ import ReportLink from '../../../components/ReportLink.astro';
 import { User, Download, Heart, CalendarDays, ExternalLink, Check, Sparkles, MonitorSmartphone, HelpCircle } from '@lucide/astro';
 import { operatingSystem, absolutePreview } from '../../../lib/skins.ts';
 import { categoryLabel, SITE } from '../../../lib/site.ts';
-import { categoryBlurb, derivedFeatures, derivedBestFor, buildSkinFaq } from '../../../lib/skin-content.ts';
+import { categoryBlurb, derivedFeatures, derivedBestFor, buildSkinFaq, buildSkinDescription, skinTitle } from '../../../lib/skin-content.ts';
 import { SUPPORTED_LOCALES, type Locale, localizedPath } from '../../../i18n/config.ts';
 import { makeT } from '../../../i18n/index.ts';
 
@@ -32,6 +32,7 @@ const d = skin.data;
 const features = d.features?.length ? d.features : derivedFeatures(skin);
 const bestFor = d.bestFor?.length ? d.bestFor : derivedBestFor(skin);
 const faq = d.faq?.length ? d.faq : buildSkinFaq(skin);
+const metaDescription = buildSkinDescription(skin);
 const screenshot = absolutePreview(skin, SITE.url);
 
 const jsonLd = {
@@ -81,8 +82,8 @@ const jsonLd = {
 };
 ---
 <Base
-  title={`${d.name} — ${d.platform === 'codex-cli' ? 'CLI' : 'Desktop'} Codex Skin | Download & Install`}
-  description={d.description}
+  title={skinTitle(skin)}
+  description={metaDescription}
   image={d.previewImage}
   locale={lang}
   jsonLd={jsonLd}

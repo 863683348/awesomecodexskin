@@ -1,6 +1,6 @@
 ---
-title: "Dream Skin frente a Codex Skin Manager: comparativa del motor de escritorio"
-description: "Los dos motores de skins para escritorio Codex más populares, cara a cara. Basado en indicaciones frente a selector visual: ruta de instalación, bibliotecas de preajustes, plataformas y cuál se adapta mejor a tu flujo de trabajo."
+title: "Dream Skin vs Codex Skin Manager: Enfrentamiento del Motor de Escritorio"
+description: "Los dos motores de skins de Codex para escritorio más populares, cara a cara. Basado en prompt vs selector visual — ruta de instalación, bibliotecas de configuraciones predeterminadas, plataformas y cuál se adapta a tu flujo de trabajo."
 pubDate: "2026-08-15"
 updatedDate: "2026-08-15"
 tags: ["dream-skin", "skin-manager", "desktop"]
@@ -9,72 +9,87 @@ relatedSkins: ["gothic-void-expedition", "cyber-neon", "sakura-pink-dawn", "ambe
 lang: "es"
 ---
 
-Si has personalizado Codex en escritorio, probablemente hayas oído hablar de dos nombres: **Codex Dream Skin** y **Codex Skin Manager**. Son los motores para escritorio más populares, y adoptan enfoques opuestos para realizar la misma tarea: uno te permite escribir lo que deseas; el otro te muestra una galería. A continuación, la comparación completa.
+REGLAS ESTRICTAS:
+1. Traduce todo el texto legible por humanos, títulos, texto de tablas y texto de enlaces.
+2. NUNCA traduzcas: bloques de código, código inline, rutas de archivos, comandos de shell, URLs, nombres de productos (Codex, Codex Desktop, Codex CLI, Tokyo Night, Monokai Stone, Solarized, Bearded, Codepilot, Codex Themes CLI, ReTheme, Dream Skin, Skin Manager, GitHub, VS Code, OpenAI, macOS, Windows, npm, CLI, TUI, tmtheme, codedrobe-theme), tokens numéricos/versiones o nombres de skins.
+3. Mantén la estructura de markdown idéntica: mismos títulos, listas, tablas, negrita/itálica, citas, y destinos de enlaces. Un enlace como [Monokai Stone](/skins/monokai-stone/) mantiene su URL /path/ sin cambios; solo el texto visible puede ser traducido.
+4. Mantén cualquier HTML/JSX sin modificar.
+5. Salida SOLO el cuerpo traducido en markdown. Sin introducción, notas ni delimitadores de código alrededor de la respuesta.
 
-## La diferencia fundamental
+Si te pones un skin a Codex en escritorio, probablemente hayas oído dos nombres: **Codex Dream Skin** y **Codex Skin Manager**. Son los motores de escritorio más populares, y toman enfoques opuestos para el mismo trabajo. Uno te permite escribir lo que quieras; el otro te muestra una galería. Aquí está la comparación completa.
+
+## La diferencia principal
 
 | | Dream Skin | Codex Skin Manager |
 |---|---|---|
-| Modelo de instalación | Prompt en lenguaje natural / preajuste | Selector visual + galería integrada |
+| Modelo de instalación | Solicitud de lenguaje natural / plantilla predefinida | Selector visual + galería integrada |
 | Plataformas | macOS, Windows | macOS, Windows |
 | Código abierto | Sí (Fei-Away/Codex-Dream-Skin) | Sí (hyhang915/Codex-Skin-Manager) |
-| Biblioteca de preajustes | Amplia, impulsada por la comunidad | Galería curada + importación |
-| Curva de aprendizaje | Casi nula | Casi nula |
+| Biblioteca de plantillas | Grandes, plantillas impulsadas por la comunidad | Galería curada + importación |
+| Curva de aprendizaje | Casi cero | Casi cero |
 | Precisión | Media (interpreta el lenguaje) | Alta (aplica archivos exactos) |
 
-## Dream Skin: el motor basado en prompts
+## Dream Skin: el motor de prompts
 
-Dream Skin trata la personalización como una conversación. Pegas o escribes un prompt que describa el aspecto que deseas, y aplica un preajuste coincidente. Es el motor que impulsa muchos de los botones de instalación basados en prompts que verás en este índice.
+Dream Skin trata el tema como una conversación. Pegas o escribes un prompt describiendo la apariencia que quieres, y aplica una plantilla coincidente. Es el motor detrás de muchos botones de instalación basados en prompts que verás en este índice.
 
-**Donde destaca:**
-- **Velocidad.** Probar un nuevo aspecto se reduce a copiar y pegar. Es realista probar cinco skins en cinco minutos.
-- **Iteración natural.** Frases como «hazlo más cálido» o «aumenta el contraste» son comandos válidos.
-- **Preajustes comunitarios.** El repositorio de Fei-Away cuenta con una biblioteca amplia y activa de preajustes, y ha creado varias skins incluidas en este índice.
+**Dónde brilla:**
+- **Velocidad.** Probar una nueva apariencia es copiar y pegar. Cinco skins en cinco minutos es realista.
+- **Iteración natural.** "Hacerlo más cálido" o "más contraste" es un comando válido.
+- **Plantillas de la comunidad.** El repositorio Fei-Away tiene una gran biblioteca activa de plantillas, y ha creado varios skins en este índice.
 
-**Donde tiene dificultades:**
-- **Variabilidad en la interpretación.** El mismo prompt puede generar resultados ligeramente distintos entre versiones.
-- **Menor determinismo.** Estás describiendo, no especificando.
+**Dónde tiene dificultades:**
+- **Variación en interpretación.** El mismo prompt puede renderizar ligeramente diferente entre versiones.
+- **Menos determinista.** Estás describiendo, no especificando.
 
 ## Codex Skin Manager: el motor visual
 
-Skin Manager sigue el enfoque de «tienda de aplicaciones»: una interfaz gráfica donde puedes navegar, previsualizar, aplicar y deshacer cambios en las skins. Sin prompts ni sintaxis: simplemente haz clic.
+Skin Manager es el enfoque "tienda de aplicaciones": una interfaz donde navegas, previzualizas, aplicas y reviertes skins. Sin prompts, sin sintaxis — solo haz clic.
 
-**Donde destaca:**
-- **Previsualización visual antes de aplicar.** Ves cómo queda la skin antes de confirmar su aplicación.
-- **Aplicación exacta.** Los archivos del tema se aplican con precisión tal como están especificados.
-- **Accesible para principiantes.** No hay nada que aprender; la galería lo explica todo.
+**Dónde brilla:**
+- **Vista previa visual antes de aplicar.** Ves el skin antes de comprometerte.
+- **Aplicación exacta.** Los archivos del tema se aplican exactamente como se especifican.
+- **Amigable para principiantes.** Nada que aprender; la galería hace el trabajo.
 
-**Donde tiene dificultades:**
-- **Dependencia de la galería.** Estás limitado a lo disponible en su catálogo, a menos que importes manualmente archivos externos.
-- **Exploración más lenta.** Navegar y previsualizar haciendo clic lleva más tiempo que pegar un prompt.
+**Dónde tiene dificultades:**
+- **Dependencia de la galería.** Estás limitado a lo que hay en su catálogo a menos que importes archivos manualmente.
+- **Exploración más lenta.** Hacer clic en las vistas previas toma más tiempo que pegar un prompt.
 
-## Comparación de flujos de trabajo reales
+## Comparación de flujo de trabajo real
 
-- **Probar rápidamente un estado de ánimo:** Gana Dream Skin. «Muéstrame un tema de terminal azul nocturno» se resuelve con un solo pegado.
-- **Comprometerse con un aspecto pulido:** Gana Skin Manager. Previsualizas, aplicas y obtienes exactamente lo que ves.
-- **Gestionar una biblioteca personal:** Gana Skin Manager: su vista de biblioteca es más útil que una carpeta llena de prompts.
-- **Automatización mediante scripts o dotfiles:** Ninguno de los dos — ese es el dominio de la CLI. Al menos los preajustes de Dream Skin son legibles como texto plano.
+- **Probar un estado de ánimo rápidamente:** Dream Skin gana. "Muestra un tema terminal azul noche" es un solo pegado.
+- **Comprometerte con una apariencia pulida:** Skin Manager gana. Vemos, aplicamos y se queda exactamente.
+- **Gestionar una biblioteca personal:** Skin Manager gana — su vista de biblioteca es mejor que una carpeta de prompts.
+- **Scripting o dotfiles:** ninguno realmente — ese es el mundo de la CLI. Las plantillas de Dream Skin son al menos legibles como texto.
 
 ## ¿Cuál debes instalar?
 
-**Elige Dream Skin si:** te gusta explorar, confías más en las descripciones que en los archivos y quieres acceder a la biblioteca de preajustes comunitarios más grande.
+**Elige Dream Skin si:** te gusta explorar, confías en descripciones en lugar de archivos, y quieres la mayor biblioteca de plantillas de la comunidad.
 
-**Elige Codex Skin Manager si:** prefieres ver antes de aplicar, te resulta más cómoda una interfaz tipo galería y deseas una aplicación exacta basada en archivos.
+**Elige Codex Skin Manager si:** quieres ver antes de aplicar, prefieres una interfaz de galería, y quieres aplicación basada en archivos exactos.
 
-**Elige ambos si:** tienes espacio disponible — muchas personas usan Dream Skin para explorar y Skin Manager para gestionar las skins que deciden conservar. No entran en conflicto siempre que designes uno como tu aplicador principal.
+**Elige ambos si:** tienes espacio — muchas personas usan Dream Skin para explorar y Skin Manager para gestionar los que conservan. No se conflictuan siempre que uno sea tu principal aplicador.
 
 ## Preguntas frecuentes rápidas
 
-**¿Comparten preajustes?**  
-No de forma nativa. Dream Skin usa preajustes basados en prompts; Skin Manager usa archivos de tema. Una skin como [Gothic Void Expedition](/skins/gothic-void-expedition/) puede incluir instrucciones de instalación para ambos.
+**¿Comparten plantillas?**
+No nativamente. Dream Skin usa plantillas de prompts; Skin Manager usa archivos de tema. Un skin como [Gothic Void Expedition](/skins/gothic-void-expedition/) podría tener instrucciones de instalación para ambos.
 
-**¿Cuál tiene mejor soporte comunitario?**  
-El repositorio de preajustes de Dream Skin es más grande y antiguo; Skin Manager es más reciente pero igualmente activo. Ambos están mantenidos actualmente.
+**¿Cuál tiene mejor soporte de la comunidad?**
+La biblioteca de plantillas de Dream Skin es más grande y antigua; Skin Manager es más nuevo pero activo. Ambos están mantenidos según el momento de redacción.
 
-**¿Pueden entrar en conflicto?**  
-Solo si ambos están configurados como aplicadores activos — gana el último en ejecutarse. Designa uno como principal.
+**¿Pueden conflicto?**
+Solo si ambos están establecidos como aplicadores activos — el último gana. Designa uno como principal.
 
-**¿Cuál es más rápido?**  
-La diferencia al iniciar es insignificante. En cuanto a la aplicación: pegar un prompt es más rápido que navegar por la galería haciendo clic.
+**¿Es uno más rápido?**
+La diferencia de inicio es insignificante. La velocidad de aplicación varía: pegar un prompt gana a hacer clic en la galería.
 
-Prueba primero Dream Skin si buscas la rampa de entrada más rápida: pega un prompt para [Cyber Neon](/skins/cyber-neon/) o [Sakura Pink Dawn](/skins/sakura-pink-dawn/) y verás el resultado en segundos. Explora el [índice de skins](/skins/) para identificar qué skins ofrecen cada formato de instalación, y consulta la [comparación de motores de skins](/blog/codex-skin-engines-compared/) para obtener la visión completa de los cinco motores disponibles.
+Prueba Dream Skin primero si quieres el camino más rápido — pega un prompt para [Cyber Neon](/skins/cyber-neon/) o [Sakura Pink Dawn](/skins/sakura-pink-dawn/) y ve la apariencia en segundos. Navega por el [índice de skins](/skins/) para ver qué skins ofrecen qué formato de instalación, y la [comparación de motores](/blog/codex-skin-engines-compared/) para ver la imagen completa de cinco motores.
+
+## Aprofundiza en Dream Skin & Skin Manager
+
+- [Revisión de Codex Dream Skin](/blog/codex-dream-skin-review/) — una revisión honesta de manos sobre el motor de prompts
+- [Cómo instalar y usar Codex Dream Skin](/blog/how-to-install-dream-skin-codex/) — configuración paso a paso en macOS y Windows
+- [Mejores alternativas de Codex Dream Skin](/blog/codex-dream-skin-alternatives/) — seis otros motores gratuitos comparados
+- [Codex Skin Manager: Guía completa](/blog/codex-skin-manager-guide/) — navega, aplica y gestiona con el motor de galería
+- [Cómo eliminar / desinstalar Codex Dream Skin](/blog/how-to-remove-dream-skin-codex/) — desinstalación limpia y restauración predeterminada

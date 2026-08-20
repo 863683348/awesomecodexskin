@@ -10,20 +10,20 @@ relatedSkins: ["clear-glass", "cyber-neon", "gothic-void-expedition", "solarized
 
 The Codex skin ecosystem has three competing engines, and picking the wrong one can cost you hours of frustration. Dream Skin is the most polished with the largest library, Codex Skin Manager is the most flexible for power users, and the CLI is the most lightweight for terminal purists. This comparison helps you choose based on your actual workflow — not marketing claims.
 
-## Dream Skin: the polished commercial engine
+## Dream Skin: the polished prompt engine
 
-Dream Skin is the reference implementation that most skin authors target first. It has the richest feature set: dynamic theming, per-project overrides, and a built-in marketplace with 99+ curated skins.
+Dream Skin is the open-source reference implementation that most skin authors target first (Fei-Away/Codex-Dream-Skin). It's prompt-based — you describe the look you want and it applies a matching community preset. It has the richest feature set: dynamic theming, per-project overrides, and a large community preset library.
 
 **Strengths:**
-- Largest skin library (99+ skins across 8 categories)
+- Largest community preset library (99+ skins across 8 categories)
 - Polished UI with preview pane and real-time feedback
-- Automatic update checks and version management
-- Integration with Codex's extension ecosystem
+- Fastest exploration loop — paste a prompt, see the look
+- Fully open source and free
 
 **Weaknesses:**
-- Paid model for premium features ($5/month or $40/year)
-- Heavier resource usage (Electron-based)
-- Less transparent about what each feature actually does
+- Interpretation variance — the same prompt can render slightly differently across versions
+- Less deterministic than exact file-based application
+- Weaker at managing a large personal library
 
 **Best for:** Users who want a set-and-forget experience with the broadest skin selection.
 
@@ -70,7 +70,7 @@ The Codex CLI theme system uses a single config file (`~/.codex/skins.json`) and
 | Customization depth | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 | Resource usage | ⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
 | Remote/SSH friendly | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Open source | ❌ | ✅ | ✅ |
+| Open source | ✅ | ✅ | ✅ |
 
 ## What I recommend
 

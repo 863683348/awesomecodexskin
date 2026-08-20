@@ -99,6 +99,37 @@ export function derivedBestFor(skin: Skin): string[] {
   return byCategory[d.category] ?? ['Everyday coding', 'Personalizing your workspace'];
 }
 
+export function skinTitle(skin: Skin): string {
+  const d = skin.data;
+  const p = d.platform === 'codex-cli' ? 'CLI' : 'Desktop';
+  const suffix = ` — Free ${p} Skin | Download & Install`;
+  const budget = 60 - suffix.length;
+  const name = d.name.trim();
+  if (name.length <= budget) return `${name}${suffix}`;
+  const keep = Math.max(10, budget - 1);
+  return `${name.slice(0, keep).trimEnd()}…${suffix}`;
+}
+
+export function buildSkinDescription(skin: Skin): string {
+  const d = skin.data;
+  const platform =
+    d.platform === 'both'
+      ? 'Codex Desktop & CLI'
+      : d.platform === 'codex-cli'
+        ? 'Codex CLI'
+        : 'Codex Desktop';
+  const fmt =
+    d.installFormat === 'tmtheme'
+      ? 'a single /theme command'
+      : d.installFormat === 'codedrobe-theme'
+        ? 'a downloadable theme file'
+        : 'a copy-paste install prompt';
+  const base = d.description.trim().replace(/[.…\s]+$/, '');
+  const hook = ` Free ${categoryLabel(d.category).toLowerCase()} skin for ${platform} — installs with ${fmt}, no paid license needed.`;
+  const full = `${base}.${hook}`;
+  return full.length > 158 ? `${full.slice(0, 155).trimEnd()}…` : full;
+}
+
 export function buildSkinFaq(skin: Skin): { q: string; a: string }[] {
   const d = skin.data;
   const fmtLabel =
@@ -125,6 +156,19 @@ export function buildSkinFaq(skin: Skin): { q: string; a: string }[] {
     {
       q: `Which platforms is ${d.name} compatible with?`,
       a: `${d.name} works on ${platformLabel}.`,
+    },
+    {
+      q: `Does ${d.name} work on macOS and Windows?`,
+      a:
+        d.platform === 'both'
+          ? `Yes — ${d.name} works on both macOS and Windows, so you can use the same skin across machines.`
+          : d.platform === 'codex-cli'
+            ? `${d.name} is a Codex CLI theme, which works on macOS, Windows and Linux wherever the CLI runs.`
+            : `Yes — ${d.name} is a Codex Desktop skin and works on both macOS and Windows.`,
+    },
+    {
+      q: `How do I switch away from ${d.name} or uninstall it?`,
+      a: `To switch to another skin, just apply a different one — most engines replace the active theme instantly and keep a "restore default" option. To fully uninstall, first restore the default theme, then remove the engine's files; the skin itself is just configuration and won't break Codex if left in place.`,
     },
   ];
 }
