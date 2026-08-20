@@ -48,10 +48,11 @@ function collectTypes(node, out) {
     });
   }
   Object.keys(node).forEach((k) => {
-    if (k.startsWith('@')) return;
+    if (k.startsWith('@') && k !== '@graph') return;
     if (k === 'offers' || k === 'aggregateRating' || k === 'review' || k === 'author' ||
         k === 'publisher' || k === 'mainEntity' || k === 'itemListElement' ||
-        k === 'acceptedAnswer' || k === 'reviewRating' || k === 'step' || k === 'blogPost') {
+        k === 'acceptedAnswer' || k === 'reviewRating' || k === 'step' || k === 'blogPost' ||
+        k === '@graph') {
       collectTypes(node[k], out);
     }
   });
