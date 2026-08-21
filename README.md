@@ -1,7 +1,10 @@
 # Awesome Codex Skin
 
-An English, overseas **index of themes & skins for OpenAI Codex Desktop / CLI** — a
-curated, searchable catalog with instant filtering, per-skin copy-paste install
+A **neutral index of OpenAI Codex Desktop & CLI skins, theme engines, and galleries** —
+filter by mood, color, and platform, then copy a single install prompt. Includes pets &
+workspace mods, available in **12 languages**.
+
+A curated, searchable catalog with instant filtering, per-skin copy-paste install
 prompts, a live theme previewer, and a prompt generator.
 
 Built with **Astro 6 + Tailwind CSS v4 + Lucide icons**, shipped as a static site
