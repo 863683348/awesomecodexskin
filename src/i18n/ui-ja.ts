@@ -130,7 +130,9 @@ export const ui = {
   'misc.404.body': 'お探しのページは存在しないか、移動されました。',
   'misc.404.cta': 'ホームへ戻る',
   'footer.tagline': 'Codex スキンの中立インデックス。',
-  'footer.copyright': '© {year} Codex Skin Index. OpenAI 非提携。',
+  'footer.copyright': '© {year} Codex Skin Index.',
+  'footer.legal': 'Legal',
+
 } as const;
 
 export type UIKey = keyof typeof ui;

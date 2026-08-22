@@ -78,7 +78,10 @@ const catLinks = [
   <div class="border-t border-border">
     <div class="container-x flex flex-wrap items-center justify-between gap-2 py-4 text-xs text-meta">
       <span>{t('footer.copyright', { year })}</span>
-      <span>{SITE.domain}</span>
+      <div class="flex items-center gap-4">
+        <a href={localizedPath('/privacy', locale)} class="hover:text-fg">{t('legal.privacy.title')}</a>
+        <a href={localizedPath('/terms', locale)} class="hover:text-fg">{t('legal.terms.title')}</a>
+      </div>
     </div>
   </div>
 </footer>

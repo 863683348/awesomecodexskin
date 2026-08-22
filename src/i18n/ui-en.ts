@@ -173,8 +173,9 @@ export const ui = {
   'misc.404.cta': 'Back to home',
 
   // Footer
-  'footer.tagline': 'A neutral index of Codex skins.',
   'footer.copyright': '© {year} Codex Skin Index. Not affiliated with OpenAI.',
+  'footer.legal': 'Legal',
+
 } as const;
 
 export type UIKey = keyof typeof ui;

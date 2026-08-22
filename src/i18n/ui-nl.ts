@@ -129,7 +129,9 @@ export const ui = {
   'misc.404.body': 'De pagina die je zoekt bestaat niet of is verplaatst.',
   'misc.404.cta': 'Terug naar home',
   'footer.tagline': 'Een neutrale index van Codex-skins.',
-  'footer.copyright': '© {year} Codex Skin Index. Niet gelieerd aan OpenAI.',
+  'footer.copyright': '© {year} Codex Skin Index.',
+  'footer.legal': 'Legal',
+
 } as const;
 
 export type UIKey = keyof typeof ui;

@@ -129,8 +129,9 @@ export const ui = {
   'misc.404.title': '404 — 页面未找到',
   'misc.404.body': '你访问的页面不存在或已被移动。',
   'misc.404.cta': '返回首页',
-  'footer.tagline': 'Codex 皮肤中立索引。',
   'footer.copyright': '© {year} Codex Skin Index. 与 OpenAI 无关。',
+  'footer.legal': '法律',
+
 } as const;
 
 export type UIKey = keyof typeof ui;

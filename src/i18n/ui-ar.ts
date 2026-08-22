@@ -129,7 +129,9 @@ export const ui = {
   'misc.404.body': 'الصفحة التي تبحث عنها غير موجودة أو تمّ نقلها.',
   'misc.404.cta': 'العودة إلى الرئيسية',
   'footer.tagline': 'فهرس محايد لجلود Codex.',
-  'footer.copyright': '© {year} Codex Skin Index. غير مرتبط بـ OpenAI.',
+  'footer.copyright': '© {year} Codex Skin Index.',
+  'footer.legal': 'Legal',
+
 } as const;
 
 export type UIKey = keyof typeof ui;

@@ -129,7 +129,9 @@ export const ui = {
   'misc.404.body': 'Страница, которую вы ищете, не существует или была перемещена.',
   'misc.404.cta': 'На главную',
   'footer.tagline': 'Нейтральный каталог скинов Codex.',
-  'footer.copyright': '© {year} Codex Skin Index. Не связан с OpenAI.',
+  'footer.copyright': '© {year} Codex Skin Index.',
+  'footer.legal': 'Legal',
+
 } as const;
 
 export type UIKey = keyof typeof ui;

@@ -1,0 +1,80 @@
+---
+import Base from '../../layouts/Base.astro';
+import { makeT } from '../../i18n/index.ts';
+import { type Locale, DEFAULT_LOCALE } from '../../i18n/config.ts';
+import { localizedPath } from '../../i18n/config.ts';
+import { SUPPORTED_LOCALES } from '../../i18n/config.ts';
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang = 'en' } = Astro.params as { lang?: Locale };
+const t = makeT(lang);
+const year = new Date().getFullYear();
+---
+
+<Base
+  title={`${t('legal.privacy.title')} — ${t('site.name')}`}
+  description={t('legal.privacy.description')}
+>
+  <div class="container-x py-12 max-w-3xl">
+    <h1 class="text-3xl font-semibold text-fg">{t('legal.privacy.title')}</h1>
+    <p class="mt-2 text-sm text-muted">{t('legal.privacy.updated')}</p>
+
+    <div class="mt-8 space-y-6 text-body text-muted leading-relaxed">
+      <p>{t('legal.privacy.intro')}</p>
+
+      <section>
+        <h2 class="text-xl font-semibold text-fg mt-6 mb-3">{t('legal.privacy.s1.title')}</h2>
+        <p>{t('legal.privacy.s1.body')}</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-fg mt-6 mb-3">{t('legal.privacy.s2.title')}</h2>
+        <p>{t('legal.privacy.s2.body')}</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-fg mt-6 mb-3">{t('legal.privacy.s3.title')}</h2>
+        <p>{t('legal.privacy.s3.body')}</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-fg mt-6 mb-3">{t('legal.privacy.s4.title')}</h2>
+        <p>{t('legal.privacy.s4.body')}</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-fg mt-6 mb-3">{t('legal.privacy.s5.title')}</h2>
+        <p>{t('legal.privacy.s5.body')}</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-fg mt-6 mb-3">{t('legal.privacy.s6.title')}</h2>
+        <p>{t('legal.privacy.s6.body')}</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-fg mt-6 mb-3">{t('legal.privacy.s7.title')}</h2>
+        <p>{t('legal.privacy.s7.body')}</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-fg mt-6 mb-3">{t('legal.privacy.s8.title')}</h2>
+        <p>{t('legal.privacy.s8.body')}</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-fg mt-6 mb-3">{t('legal.privacy.s9.title')}</h2>
+        <p>{t('legal.privacy.s9.body')}</p>
+      </section>
+    </div>
+
+    <div class="mt-12 pt-6 border-t border-border">
+      <p class="text-sm text-muted">
+        {t('legal.privacy.contact')} <a href="mailto:hi@awesomecodexskin.com" class="text-accent hover:underline">hi@awesomecodexskin.com</a>
+      </p>
+    </div>
+  </div>
+</Base>

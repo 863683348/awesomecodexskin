@@ -130,7 +130,9 @@ export const ui = {
   'misc.404.body': '찾으시는 페이지가 존재하지 않거나 이동되었습니다.',
   'misc.404.cta': '홈으로',
   'footer.tagline': 'Codex 스킨의 중립 인덱스.',
-  'footer.copyright': '© {year} Codex Skin Index. OpenAI와 무관.',
+  'footer.copyright': '© {year} Codex Skin Index.',
+  'footer.legal': 'Legal',
+
 } as const;
 
 export type UIKey = keyof typeof ui;
