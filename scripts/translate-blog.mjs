@@ -88,17 +88,41 @@ function parseFrontmatter(raw) {
   const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
   if (!m) return null;
   const fm = {};
-  for (const line of m[1].split(/\r?\n/)) {
+  const lines = m[1].split(/\r?\n/);
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
     const mm = line.match(/^([a-zA-Z]+):\s*(.*)$/);
-    if (!mm) continue;
+    if (!mm) { i++; continue; }
+    const key = mm[1];
     let val = mm[2].trim();
+    // Block-style FAQ array: "faq:" followed by indented "- q:" / "    a:" items
+    if (key === 'faq' && (val === '' || val.startsWith('|'))) {
+      const items = [];
+      i++;
+      while (i < lines.length && /^\s+- /.test(lines[i])) {
+        const qm = lines[i].match(/^\s*-\s*q:\s*(.*)$/);
+        let q = qm ? qm[1].replace(/^"|"$/g, '').trim() : null;
+        i++;
+        let a = null;
+        while (i < lines.length && /^\s+a:\s/.test(lines[i]) && !/^\s+- /.test(lines[i])) {
+          const am = lines[i].match(/^\s*a:\s*(.*)$/);
+          if (am) a = (a ? a + ' ' : '') + am[1].replace(/^"|"$/g, '').trim();
+          i++;
+        }
+        if (q && a) items.push({ q, a });
+      }
+      if (items.length) fm.faq = items;
+      continue;
+    }
     // quoted string
     const q = val.match(/^"([\s\S]*)"$/);
-    if (q) { fm[mm[1]] = q[1].replace(/\\"/g, '"'); continue; }
+    if (q) { fm[key] = q[1].replace(/\\"/g, '"'); i++; continue; }
     // array
     const a = val.match(/^\[(.*)\]$/);
-    if (a) { fm[mm[1]] = a[1].split(',').map((s) => s.trim().replace(/^"|"$/g, '')).filter(Boolean); continue; }
-    fm[mm[1]] = val;
+    if (a) { fm[key] = a[1].split(',').map((s) => s.trim().replace(/^"|"$/g, '')).filter(Boolean); i++; continue; }
+    fm[key] = val;
+    i++;
   }
   return { fm, body: m[2].replace(/^\n/, '') };
 }
@@ -107,10 +131,15 @@ function serializeFrontmatter(fm, extra) {
   const q = (v) => String(v).replace(/\\/g, '\\\\').replace(/"/g, '\\"');
   const lines = ['---'];
   for (const [k, v] of Object.entries(extra)) {
-    if (Array.isArray(v)) {
+    if (Array.isArray(v) && v.length && typeof v[0] === 'object') {
+      // object array (FAQ) → block-style YAML
+      lines.push(`${k}:`);
+      for (const item of v) {
+        lines.push(`  - q: "${q(item.q)}"`);
+        lines.push(`    a: "${q(item.a)}"`);
+      }
+    } else if (Array.isArray(v)) {
       lines.push(`${k}: [${v.map((x) => `"${q(x)}"`).join(', ')}]`);
-    } else if (typeof v === 'string' && /^[\w\s.,:&()\-/]+$/.test(v)) {
-      lines.push(`${k}: "${q(v)}"`);
     } else {
       lines.push(`${k}: "${q(v)}"`);
     }
@@ -177,10 +206,17 @@ async function main() {
       const { fm, body } = parsed;
 
       try {
-        const [title, description, tBody] = await Promise.all([
+        const faqEntries = fm.faq || [];
+        const [title, description, tBody, translatedFaq] = await Promise.all([
           translateMeta(loc, fm.title),
           translateMeta(loc, fm.description),
           translateBody(loc, body),
+          Promise.all(
+            faqEntries.map(async (f) => ({
+              q: (await translateMeta(loc, f.q)).replace(/^"|"$/g, ''),
+              a: (await translateMeta(loc, f.a)).replace(/^"|"$/g, ''),
+            })),
+          ),
         ]);
         mkdirSync(outDir, { recursive: true });
         const extra = {
@@ -192,6 +228,7 @@ async function main() {
           category: fm.category || 'guide',
           ...(fm.coverImage ? { coverImage: fm.coverImage } : {}),
           ...(fm.relatedSkins && fm.relatedSkins.length ? { relatedSkins: fm.relatedSkins } : {}),
+          ...(faqEntries.length ? { faq: translatedFaq } : {}),
           lang: loc,
         };
         writeFileSync(outFile, serializeFrontmatter(fm, extra) + '\n\n' + tBody + '\n', 'utf8');

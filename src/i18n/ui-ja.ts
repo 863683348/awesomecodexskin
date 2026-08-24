@@ -3,6 +3,7 @@
 // Missing keys will fall back to English at runtime.
 export const ui = {
   'site.name': 'Codex Skin Index',
+  'home.title': 'Codex スキン索引 — Codex Desktop / CLI スキンを無料でダウンロード・インストール',
   'site.tagline': 'Codex スキン・ペット・ワークスペース Mod の中立インデックス。プロンプトを 1 つコピーするだけでワークスペースを着せ替え。',
   'site.description': '1 つの中立なインデックスで、すべての OpenAI Codex Desktop / CLI スキン、テーマエンジン、ギャラリーを比較・検索。ムード・色・プラットフォームで絞り込んで、インストールプロンプトを 1 つコピーするだけで OK。',
   'nav.skins': 'スキン',

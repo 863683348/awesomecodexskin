@@ -3,6 +3,7 @@
 // Missing keys will fall back to English at runtime.
 export const ui = {
   'site.name': 'Codex Skin Index',
+  'home.title': 'Codex 스킨 인덱스 — 무료 Codex Desktop·CLI 스킨 다운로드 및 설치',
   'site.tagline': 'Codex 스킨, 펫, 워크스페이스 모드의 중립 인덱스 — 프롬프트 한 줄만 복사해 워크스페이스를 리스킨하세요.',
   'site.description': '하나의 중립 인덱스에서 모든 OpenAI Codex Desktop / CLI 스킨, 테마 엔진, 갤러리를 비교하고 도달하세요. 무드, 색상, 플랫폼으로 필터링한 뒤 설치 프롬프트 한 줄만 복사하세요.',
   'nav.skins': '스킨',

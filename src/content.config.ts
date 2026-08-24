@@ -126,6 +126,10 @@ const blog = defineCollection({
     // Content language. English source posts sit at the blog root (default 'en');
     // translated posts live in src/content/blog/{locale}/{slug}.md with lang = {locale}.
     lang: z.string().default('en'),
+    // Optional structured FAQ (rendered as FAQPage schema for PAA/rich-result capture)
+    faq: z
+      .array(z.object({ q: z.string(), a: z.string() }))
+      .optional(),
   }),
 });
 

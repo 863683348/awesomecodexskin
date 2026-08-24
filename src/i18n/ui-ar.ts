@@ -3,6 +3,7 @@
 // Missing keys will fall back to English at runtime.
 export const ui = {
   'site.name': 'Codex Skin Index',
+  'home.title': 'فهرس سكنات Codex — حمّل وثبّت سكنات مجانية لـ Desktop و CLI',
   'site.tagline': 'فهرس محايد لجلود Codex والرفقاء وإضافات مساحة العمل — انسخ تلميحًا واحدًا لتغيير مظهر مساحة عملك.',
   'site.description': 'تصفّح وقارن واعثر على كل جلد ومحرّك ثيمات ومعرض لـ OpenAI Codex Desktop وCLI من فهرس محايد واحد. فلتر حسب الأجواء واللون والمنصة، ثم انسخ تلميح تثبيت واحد.',
   'nav.skins': 'الجلود',

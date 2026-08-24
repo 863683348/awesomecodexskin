@@ -29,3 +29,4 @@ Thumbs.db
 
 # separate repo: the curated index lives here, do not bundle
 repo/
+.vercel

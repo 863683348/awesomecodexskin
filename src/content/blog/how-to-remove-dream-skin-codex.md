@@ -2,10 +2,17 @@
 title: "How to Remove / Uninstall Codex Dream Skin"
 description: "Cleanly uninstall Codex Dream Skin and restore the default Codex look on macOS and Windows — remove presets, reset the active theme, and clear leftover config."
 pubDate: 2026-08-20
-updatedDate: 2026-08-20
+updatedDate: 2026-08-24
 tags: ["dream-skin", "uninstall", "tips"]
 category: tips
 relatedSkins: ["clear-glass", "gothic-void-expedition", "monokai-stone", "solarized"]
+faq:
+  - q: "Will uninstalling Dream Skin delete my applied skin?"
+    a: "If you reset to default first, no — Codex returns to its built-in theme. Custom presets stored by Dream Skin are removed with the app."
+  - q: "Can I reinstall Codex Dream Skin later?"
+    a: "Yes, Dream Skin is free and open source; reinstall from the official repo and your skin pages' prompts still work."
+  - q: "Does removing Dream Skin affect other engines?"
+    a: "No, but only install one active applier at a time to avoid the last-one-wins conflict."
 ---
 
 Changed your mind, or switching to a different engine? Removing Codex Dream Skin is straightforward, but doing it *cleanly* matters — a half-uninstall leaves the active theme applied and can silently conflict with your next engine. Here's how to remove it properly on macOS and Windows.
@@ -44,7 +51,7 @@ After uninstalling, confirm:
 
 ## Switching engines instead?
 
-Most people uninstall Dream Skin to move to something else. The two common paths:
+Most people uninstall Dream Skin to move to something else. Not sure which engine fits? The [Dream Skin vs Skin Manager](/blog/codex-dream-skin-vs-skin-manager/) head-to-head breaks down the two desktop options. The two common paths:
 
 - **To a gallery UI:** [Codex Skin Manager guide](/blog/codex-skin-manager-guide/)
 - **To CLI theming:** the [engines comparison](/blog/codex-skin-engines-compared/) covers CLI options like Codex Themes CLI and Codepilot

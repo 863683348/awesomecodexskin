@@ -2,13 +2,30 @@
 title: "Codex CLI Themes: How to Use /theme and Terminal Skins"
 description: "Everything about Codex CLI themes: installing syntax themes like Tokyo Night, Monokai Stone and Solarized, using the /theme command, and managing palettes with CLI tools."
 pubDate: 2026-08-14
-updatedDate: 2026-08-14
+updatedDate: 2026-08-24
 tags: ["cli", "terminal", "themes", "syntax"]
 category: guide
 relatedSkins: ["monokai-stone", "solarized", "bearded-tokyo-night", "amber-nocturne"]
+faq:
+  - q: "What is a Codex CLI theme?"
+    a: "A Codex CLI theme is a terminal color palette — background, foreground and syntax colors — that keeps your prompt and output readable. Unlike Codex Desktop, CLI has no visual chrome; themes change colors only."
+  - q: "How do I apply a theme in Codex CLI?"
+    a: "Run the built-in /theme command inside Codex CLI to list installed themes, then pick one to apply it instantly."
+  - q: "How do I install syntax themes like Tokyo Night or Monokai Stone?"
+    a: "Install a theme port script (e.g. the Bearded Theme Ports installer), then run /theme Tokyo Night (or /theme Monokai Stone) to apply it."
+  - q: "Why doesn't /theme show any themes?"
+    a: "You haven't installed a theme yet. Run the install script first, then reopen the Codex CLI prompt — /theme will list the installed themes."
+  - q: "Can my terminal palette match my Codex CLI theme?"
+    a: "Yes — Codex Themes CLI (ychampion/codex-themes) can export the same palette to your terminal profile so terminal and Codex CLI stay in sync."
 ---
 
-Codex CLI doesn't use the same skin system as Codex Desktop. Instead of visual chrome, CLI themes change the **terminal color palette** — background, foreground and syntax colors — so your prompt and output stay readable in the terminal.
+Codex CLI themes change the **terminal color palette** — background, foreground and syntax colors — so your prompt and output stay readable in the terminal. You apply them with the built-in `/theme` command: run `/theme` to list installed themes, pick one, and it applies instantly. Unlike Codex Desktop, CLI has no visual chrome; a theme is purely the colors you see.
+
+## Quick start
+
+1. Install a theme port (one-time): `curl -fsSL https://raw.githubusercontent.com/vufly/bearded-theme-ports/master/scripts/install-codex.sh | sh`
+2. Open Codex CLI and run `/theme`.
+3. Pick a theme (e.g. `/theme Tokyo Night`) — it applies immediately.
 
 ## The /theme command
 

@@ -3,6 +3,7 @@
 // Missing keys will fall back to English at runtime.
 export const ui = {
   'site.name': 'Codex Skin Index',
+  'home.title': 'Codex 皮肤索引 — 免费下载 & 安装 Codex Desktop 与 CLI 皮肤',
   'site.tagline': 'Codex 皮肤、宠物与工作区改装的中立索引——复制一条提示，即可重塑你的工作区。',
   'site.description': '在一个中立索引中浏览、对比并触达所有 OpenAI Codex Desktop 与 CLI 皮肤、主题引擎与皮肤库。按氛围、颜色和平台筛选，然后复制单条安装提示即可。',
   'nav.skins': '皮肤',

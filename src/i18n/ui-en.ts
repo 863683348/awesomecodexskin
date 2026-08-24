@@ -5,6 +5,7 @@
 export const ui = {
   // Site-wide
   'site.name': 'Codex Skin Index',
+  'home.title': 'Codex Skin Index — Free Codex Desktop & CLI Skins',
   'site.tagline':
     'A neutral index of Codex skins, pets & workspace mods — copy one prompt, reskin your workspace.',
   'site.description':

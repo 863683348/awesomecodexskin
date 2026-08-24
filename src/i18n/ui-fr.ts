@@ -3,6 +3,7 @@
 // Missing keys will fall back to English at runtime.
 export const ui = {
   'site.name': 'Codex Skin Index',
+  'home.title': 'Index de skins Codex — Skins gratuites pour Desktop et CLI',
   'site.tagline': 'Un index neutre des skins, pets et mods d\'espace de travail Codex — copiez un prompt et re-skinez votre workspace.',
   'site.description': 'Parcourez, comparez et accédez à toutes les skins, moteurs de thèmes et galeries Codex Desktop et CLI d\'OpenAI depuis un index neutre. Filtrez par ambiance, couleur et plateforme, puis copiez un seul prompt d\'installation.',
   'nav.skins': 'Skins',

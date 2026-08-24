@@ -3,6 +3,7 @@
 // Missing keys will fall back to English at runtime.
 export const ui = {
   'site.name': 'Codex Skin Index',
+  'home.title': 'Каталог скинов Codex — бесплатно для Desktop и CLI',
   'site.tagline': 'Нейтральный каталог скинов, питомцев и модов рабочего пространства Codex — скопируйте промпт и перекрасьте свой workspace.',
   'site.description': 'Ищите, сравнивайте и находите все скины, движки тем и галереи OpenAI Codex Desktop и CLI в одном нейтральном каталоге. Фильтруйте по настроению, цвету и платформе, затем копируйте один промпт для установки.',
   'nav.skins': 'Скины',
