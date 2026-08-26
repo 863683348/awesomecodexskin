@@ -22,7 +22,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 980
   likes: 188
-previewImage: /previews/bearded-tokyo-night.svg
+previewImage: /previews/bearded-tokyo-night.webp
 ---
 
 Part of the Bearded Theme Ports collection (50+ variants), this CLI port drops a Tokyo Night .tmTheme into your Codex CLI and is selectable with the /theme command.

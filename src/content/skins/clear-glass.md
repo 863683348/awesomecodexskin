@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 1620
   likes: 305
-previewImage: /previews/clear-glass.svg
+previewImage: /previews/clear-glass.webp
 ---
 
 A light companion to the engine defaults, Clear Glass uses translucent panels and a high-key palette to keep the interface unobtrusive during daytime work.

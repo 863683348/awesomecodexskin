@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 2540
   likes: 521
-previewImage: /previews/hatsune-miku.jpg
+previewImage: /previews/hatsune-miku.webp
 ---
 
 One of the most-requested character skins, Hatsune Miku layers a teal vocaloid palette over the Dream Skin engine. Source art belongs to its respective owners.

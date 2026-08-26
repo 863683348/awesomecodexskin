@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 650
   likes: 121
-previewImage: /previews/pink-custom.svg
+previewImage: /previews/pink-custom.webp
 ---
 
 Pink Custom softens the default dark engine with a low-saturation pink wash aimed at comfortable late-night sessions.

@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 430
   likes: 79
-previewImage: /previews/kungfu-football.jpg
+previewImage: /previews/kungfu-football.webp
 ---
 
 Notable as the first machine-verified installable theme on codexskins.org, it ships as a .codedrobe-theme file that Codex Desktop applies directly.

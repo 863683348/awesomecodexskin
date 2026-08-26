@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 470
   likes: 81
-previewImage: /previews/ychampion-tokyo-night.svg
+previewImage: /previews/ychampion-tokyo-night.webp
 ---
 
 From the Go-based Codex Themes CLI, this Tokyo Night variant adds a branded status line on top of the standard palette.

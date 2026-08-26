@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 510
   likes: 84
-previewImage: /previews/blue-enchantress.svg
+previewImage: /previews/blue-enchantress.webp
 ---
 
 Distributed through codexthemes.ai, Blue Enchantress applies a saturated electric-blue neon scheme via the gallery install prompt.

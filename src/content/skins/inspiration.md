@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 940
   likes: 176
-previewImage: /previews/inspiration.jpg
+previewImage: /previews/inspiration.webp
 ---
 
 Designed to ease you into long sessions, Inspiration uses a warm amber glow that sits between the engine dark and light defaults.

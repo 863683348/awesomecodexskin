@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 2103
   likes: 412
-previewImage: /previews/gothic-void-expedition.svg
+previewImage: /previews/gothic-void-expedition.webp
 ---
 
 Bundled as the default preset of the Codex Dream Skin engine, Gothic Void Expedition leans on near-black surfaces and a faint horizon glow. It is the safest first skin to try because the same engine handles one-click restore.

@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 690
   likes: 102
-previewImage: /previews/jackson-yee.jpg
+previewImage: /previews/jackson-yee.webp
 ---
 
 Another codex-skin.dev concept entry, Jackson Yee pairs ink-plant motifs with light panels so the workspace stays readable across a full workday.

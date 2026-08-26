@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 890
   likes: 152
-previewImage: /previews/codepilot-skins.svg
+previewImage: /previews/codepilot-skins.webp
 ---
 
 Codepilot is a Codex CLI distribution with TUI personalization. It bundles 16 background/surface skins you switch with the /skin command, plus built-in terminal pets.

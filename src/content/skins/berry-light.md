@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 530
   likes: 97
-previewImage: /previews/berry-light.svg
+previewImage: /previews/berry-light.webp
 ---
 
 ReTheme is a Tauri-based theme engine for Codex and ChatGPT. Berry is one of its signed, updatable community themes with a soft handbook feel.

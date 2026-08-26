@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 410
   likes: 66
-previewImage: /previews/amber-nocturne.svg
+previewImage: /previews/amber-nocturne.webp
 ---
 
 Managed by the Go-based Codex Themes CLI, amber-nocturne applies a warm-dark branded prompt and status line through a single validate/apply command.

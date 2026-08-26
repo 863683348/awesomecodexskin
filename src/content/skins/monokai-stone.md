@@ -22,7 +22,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 1500
   likes: 290
-previewImage: /previews/monokai-stone.svg
+previewImage: /previews/monokai-stone.webp
 ---
 
 The familiar Monokai palette, ported for Codex CLI. Install the port script once, then select Monokai Stone with /theme.

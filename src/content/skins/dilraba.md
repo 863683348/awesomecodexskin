@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 870
   likes: 143
-previewImage: /previews/dilraba.jpg
+previewImage: /previews/dilraba.webp
 ---
 
 Built by the codex-skin.dev gallery, Dilraba is a fan-made concept skin applied by pasting the gallery install prompt directly into Codex.

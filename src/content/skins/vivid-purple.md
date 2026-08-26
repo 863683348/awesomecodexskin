@@ -22,7 +22,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 620
   likes: 115
-previewImage: /previews/vivid-purple.svg
+previewImage: /previews/vivid-purple.webp
 ---
 
 A bold purple entry in the Bearded Theme Ports set, Vivid Purple is installed as a CLI .tmTheme and selected with /theme.

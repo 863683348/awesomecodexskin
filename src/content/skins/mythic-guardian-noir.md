@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 740
   likes: 121
-previewImage: /previews/mythic-guardian-noir.svg
+previewImage: /previews/mythic-guardian-noir.webp
 ---
 
 Distributed through the ChannelerH skin pack and mirrored in the BigPizzaV3 theme set, Mythic Guardian Noir is a desaturated noir palette suited to late-night focus sessions.

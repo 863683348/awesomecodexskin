@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 760
   likes: 131
-previewImage: /previews/cartethyia.svg
+previewImage: /previews/cartethyia.webp
 ---
 
 Shipped inside the Codex Skin Manager as a built-in theme, Cartethyia uses a wind-tide blue palette drawn from a game character design.

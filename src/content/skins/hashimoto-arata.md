@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 770
   likes: 138
-previewImage: /previews/hashimoto-arata.svg
+previewImage: /previews/hashimoto-arata.webp
 ---
 
 The second machine-tested built-in preset of the Dream Skin engine, Hashimoto Arata is a light, rose-toned theme tuned for daytime readability.

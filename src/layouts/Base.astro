@@ -23,7 +23,7 @@ const canonicalURL = new URL(localizedPath(cleanPath, locale), Astro.site);
 // OG image: skin detail pages pass previewImage; everything else uses the themed default
 const ogImage = image
   ? new URL(localizedPath(image, locale), Astro.site)
-  : new URL('/og/default.svg', Astro.site);
+  : new URL('/og/default.png', Astro.site);
 const isRTL = RTL_LOCALES.has(locale);
 ---
 <!doctype html>

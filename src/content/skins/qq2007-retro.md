@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 560
   likes: 92
-previewImage: /previews/qq2007-retro.jpg
+previewImage: /previews/qq2007-retro.webp
 ---
 
 A playful throwback, QQ2007 Retro recreates the early-2000s instant-messenger window chrome inside the Codex workspace.

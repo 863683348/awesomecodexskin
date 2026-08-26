@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 1020
   likes: 199
-previewImage: /previews/sakura-pink-dawn.svg
+previewImage: /previews/sakura-pink-dawn.webp
 ---
 
 A gentle pink preset from Cidala Tiger Skin, Sakura Pink Dawn keeps saturation low so the workspace stays calm rather than candy-bright.

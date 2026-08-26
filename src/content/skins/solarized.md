@@ -22,7 +22,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 1340
   likes: 261
-previewImage: /previews/solarized.svg
+previewImage: /previews/solarized.webp
 ---
 
 The classic Ethan Schoonover palette, ported for Codex CLI. Install the port script once, then select Solarized with /theme.

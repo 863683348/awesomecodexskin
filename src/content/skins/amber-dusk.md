@@ -20,7 +20,7 @@ updatedAt: 2026-08-10
 stats:
   installs: 380
   likes: 58
-previewImage: /previews/amber-dusk.svg
+previewImage: /previews/amber-dusk.webp
 ---
 
 Generated programmatically by the Cidala Tiger Skin project, Amber Dusk favors a warm amber wash that reads well in low-light rooms without going fully dark.
