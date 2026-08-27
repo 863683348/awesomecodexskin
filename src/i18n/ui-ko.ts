@@ -40,6 +40,7 @@ export const ui = {
   'skin.highlights': '핵심 특징',
   'skin.bestFor': '이런 분께',
   'skin.faq': '자주 묻는 질문',
+  'skin.relatedArticles': "관련 가이드 및 아티클",
   'skin.breadcrumb.skins': '스킨',
   'skin.install': '설치',
   'skin.installPrompt': '설치 프롬프트',

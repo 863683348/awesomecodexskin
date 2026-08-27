@@ -40,6 +40,7 @@ export const ui = {
   'skin.highlights': 'أبرز الميّزات',
   'skin.bestFor': 'الأنسب لـ',
   'skin.faq': 'الأسئلة الشائعة',
+  'skin.relatedArticles': "أدلة ومقالات ذات صلة",
   'skin.breadcrumb.skins': 'الجلود',
   'skin.install': 'تثبيت',
   'skin.installPrompt': 'تلميح التثبيت',

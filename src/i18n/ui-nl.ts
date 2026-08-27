@@ -40,6 +40,7 @@ export const ui = {
   'skin.highlights': 'Highlights',
   'skin.bestFor': 'Ideaal voor',
   'skin.faq': 'FAQ',
+  'skin.relatedArticles': "Gerelateerde gidsen en artikelen",
   'skin.breadcrumb.skins': 'Skins',
   'skin.install': 'Installeren',
   'skin.installPrompt': 'Installatieprompt',

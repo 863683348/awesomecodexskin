@@ -44,8 +44,8 @@ export const ui = {
   'home.emptyState': 'No skins match the current filters.',
 
   // Skins list / category pages
-  'skins.title': 'All Codex skins — browse the full index',
-  'skins.description': 'Browse every Codex Desktop and CLI skin. Filter by category, mood, accent color, and platform, then sort by newest or popular.',
+  'skins.title': 'All Codex skins — free downloads & one-command install',
+  'skins.description': 'Browse every Codex Desktop and CLI skin, copy one command to install. Filter by category, mood, accent color, and platform, then sort by newest or popular.',
   'skins.quickNav': 'Browse by category',
   'skins.installGuide': 'Install guide',
   'skins.count': '{n} skins',
@@ -56,6 +56,7 @@ export const ui = {
   'skin.highlights': 'Highlights',
   'skin.bestFor': 'Best for',
   'skin.faq': 'FAQ',
+  'skin.relatedArticles': "Related guides & articles",
   'skin.breadcrumb.skins': 'Skins',
   'skin.install': 'Install',
   'skin.installPrompt': 'Install prompt',

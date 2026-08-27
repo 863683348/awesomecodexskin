@@ -15,15 +15,37 @@ import { makeT } from '../../../i18n/index.ts';
 
 export async function getStaticPaths() {
   const skins = await getCollection('skins');
+  const blogs = await getCollection('blog');
+  // Reverse index: which blog posts mention this skin via relatedSkins.
+  const slugOf = (p: { id: string }) => p.id.split('/').pop();
   return SUPPORTED_LOCALES.flatMap((lang) =>
-    skins.map((skin) => ({
-      params: { lang, slug: skin.id },
-      props: { skin, lang },
-    }))
+    skins.map((skin) => {
+      const relatedBySlug = new Map<string, any>();
+      for (const b of blogs) {
+        if (!(b.data.relatedSkins ?? []).includes(skin.id)) continue;
+        const slug = slugOf(b);
+        if (relatedBySlug.has(slug)) {
+          // Prefer the current-language version of a translated post.
+          if (b.id.startsWith(`${lang}/`)) relatedBySlug.set(slug, b);
+        } else {
+          relatedBySlug.set(slug, b);
+        }
+      }
+      const relatedPosts = [...relatedBySlug.values()].slice(0, 3);
+      return {
+        params: { lang, slug: skin.id },
+        props: { skin, lang, relatedPosts },
+      };
+    })
   );
 }
 
-const { skin, lang = 'en' } = Astro.props as { skin: any; lang?: Locale };
+const { skin, lang = 'en', relatedPosts = [] } = Astro.props as {
+  skin: any;
+  lang?: Locale;
+  relatedPosts: any[];
+};
+const slugOf = (p: { id: string }) => p.id.split('/').pop();
 const t = makeT(lang);
 const { Content } = await render(skin);
 const d = skin.data;
@@ -147,6 +169,23 @@ const jsonLd = {
         </div>
 
         <RelatedSkins skin={skin} all={await getCollection('skins')} locale={lang} />
+
+        {relatedPosts.length > 0 && (
+          <section class="mt-12" aria-label="Related articles">
+            <h2 class="mb-4 text-xl font-semibold text-fg">{t('skin.relatedArticles')}</h2>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((p) => (
+                <a
+                  href={localizedPath(`/blog/${slugOf(p)}`, lang)}
+                  class="group rounded-t-md border border-border bg-surface p-4 hover:border-accent"
+                >
+                  <h3 class="text-sm font-semibold text-fg group-hover:text-accent">{p.data.title}</h3>
+                  <p class="mt-1 line-clamp-2 text-xs text-meta">{p.data.description}</p>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
       </div>
 
       <aside class="space-y-5">
