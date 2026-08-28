@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { ArrowRight, Wand2, Palette } from '@lucide/astro';
+import { ArrowRight, Wand2, Palette, ExternalLink } from '@lucide/astro';
 
 const tools = [
   {
@@ -15,13 +15,20 @@ const tools = [
     name: 'Prompt generator',
     desc: 'Build a copy-paste reskin prompt from your preferences — name, category, mood and accent color.',
   },
+  {
+    href: 'https://codex-skin-studio.shop/gallery/',
+    external: true,
+    icon: Wand2,
+    name: 'AI Skin Studio',
+    desc: 'Generate and collect Codex skins with our companion studio — browse AI-crafted character & themed presets, or download the free engine to create your own.',
+  },
 ];
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Codex skin tools',
-  description: 'Free browser tools for Codex skin creators: theme previewer and reskin prompt generator.',
+  description: 'Free browser tools for Codex skin creators: theme previewer, reskin prompt generator, and the companion AI Skin Studio.',
   url: 'https://awesomecodexskin.com/tools/',
 };
 ---
@@ -36,13 +43,15 @@ const jsonLd = {
     </nav>
     <h1 class="text-3xl font-semibold text-fg">Tools</h1>
     <p class="mt-2 max-w-2xl text-muted">
-      Two free, browser-only tools for Codex skin creators. Nothing you paste is uploaded — everything runs on your machine.
+      Three tools for Codex skin creators. The two browser tools never upload what you paste — everything runs on your machine. The AI Skin Studio runs on a companion site.
     </p>
 
     <div class="mt-8 grid gap-4 sm:grid-cols-2">
       {tools.map((tool) => (
         <a
           href={tool.href}
+          target={tool.external ? '_blank' : undefined}
+          rel={tool.external ? 'noopener' : undefined}
           class="group flex flex-col justify-between rounded-t-md border border-border bg-surface p-5 transition-colors hover:border-accent"
         >
           <div>
@@ -51,7 +60,7 @@ const jsonLd = {
             <p class="mt-2 text-sm text-muted">{tool.desc}</p>
           </div>
           <span class="mt-4 inline-flex items-center gap-1 text-sm text-accent">
-            Open tool <ArrowRight size={14} />
+            Open tool {tool.external ? <ExternalLink size={14} /> : <ArrowRight size={14} />}
           </span>
         </a>
       ))}

@@ -71,7 +71,9 @@ const updatedISO = d.updatedAt.toISOString();
 
     <div class="mt-3 flex items-center gap-4 text-xs text-meta">
       <span class="inline-flex items-center gap-1"><User size={14} /> {d.author}</span>
-      <span class="inline-flex items-center gap-1"><Download size={14} /> {t('skin.installs', { n: d.stats.installs.toLocaleString() })}</span>
+      {d.stats.installs > 0 && (
+        <span class="inline-flex items-center gap-1" title="Community estimate"><Download size={14} /> {t('skin.installs', { n: d.stats.installs.toLocaleString() })}</span>
+      )}
     </div>
   </div>
 

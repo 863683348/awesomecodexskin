@@ -78,19 +78,9 @@ const jsonLd = {
       ...(screenshot ? { screenshot } : {}),
       downloadUrl: d.sourceUrl,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '0',
-        ratingCount: String(d.stats.likes),
-      },
-      review: [
-        {
-          '@type': 'Review',
-          author: { '@type': 'Organization', name: 'Codex Skin Index', url: SITE.url },
-          reviewBody: `${d.name} is a ${d.mood} ${categoryLabel(d.category).toLowerCase()} skin for ${d.platform === 'codex-cli' ? 'Codex CLI' : 'Codex Desktop'}. ${d.description}`,
-          reviewRating: { '@type': 'Rating', ratingValue: '4', bestRating: '5' },
-        },
-      ],
+      // Note: no aggregateRating / review markup — install counts are community
+      // estimates, not verified user ratings, so fabricated rating schema would
+      // violate Google's structured-data policies and risk a manual action.
     },
     {
       '@type': 'FAQPage',
@@ -202,8 +192,12 @@ const jsonLd = {
           <p class="mt-3 text-fg-2">{d.description}</p>
 
           <div class="mt-4 flex flex-wrap gap-4 text-sm text-meta">
-            <span class="inline-flex items-center gap-1"><Download size={16} /> {t('skin.installs', { n: d.stats.installs.toLocaleString() })}</span>
-            <span class="inline-flex items-center gap-1"><Heart size={16} /> {t('skin.likes', { n: d.stats.likes.toLocaleString() })}</span>
+            {d.stats.installs > 0 && (
+              <span class="inline-flex items-center gap-1" title="Community estimate"><Download size={16} /> {t('skin.installs', { n: d.stats.installs.toLocaleString() })}</span>
+            )}
+            {d.stats.likes > 0 && (
+              <span class="inline-flex items-center gap-1" title="Community estimate"><Heart size={16} /> {t('skin.likes', { n: d.stats.likes.toLocaleString() })}</span>
+            )}
             <span class="inline-flex items-center gap-1"><CalendarDays size={16} /> {t('skin.updated', { date: d.updatedAt.toISOString().slice(0, 10) })}</span>
           </div>
 

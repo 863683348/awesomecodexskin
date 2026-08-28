@@ -4,6 +4,7 @@ import Base from '../../../layouts/Base.astro';
 import { CalendarDays, ArrowLeft, ExternalLink } from '@lucide/astro';
 import { SITE } from '../../../lib/site.ts';
 import { absolutePreview } from '../../../lib/skins.ts';
+import { extractFaqFromBody } from '../../../lib/faq.ts';
 import { SUPPORTED_LOCALES, type Locale, DEFAULT_LOCALE, localizedPath } from '../../../i18n/config.ts';
 import { makeT } from '../../../i18n/index.ts';
 
@@ -35,6 +36,13 @@ const related = d.relatedSkins
   .filter((s): s is NonNullable<typeof s> => Boolean(s))
   .slice(0, 4);
 
+// FAQ items: prefer curated faq frontmatter, else auto-detect genuine
+// question/answer pairs ("**Question?**" + body) straight from the post body.
+// Language-agnostic — works for English source posts and all translations.
+const faqItems = (Array.isArray(d.faq) && d.faq.length)
+  ? d.faq
+  : extractFaqFromBody(post.body);
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -57,12 +65,13 @@ const jsonLd = {
       mainEntityOfPage: `${SITE.url}${localizedPath(`/blog/${slug}/`, lang)}`,
       ...(d.coverImage ? { image: absolutePreview({ data: { previewImage: d.coverImage } } as any, SITE.url) } : {}),
     },
-    // Optional FAQPage — emitted only when the post has structured faq frontmatter.
-    ...(Array.isArray(d.faq) && d.faq.length
+    // Optional FAQPage — emitted when the post has curated faq frontmatter or
+    // an on-page Q&A section is auto-detected from the body.
+    ...(faqItems.length
       ? [
           {
             '@type': 'FAQPage',
-            mainEntity: d.faq.map((f: { q: string; a: string }) => ({
+            mainEntity: faqItems.map((f: { q: string; a: string }) => ({
               '@type': 'Question',
               name: f.q,
               acceptedAnswer: { '@type': 'Answer', text: f.a },
