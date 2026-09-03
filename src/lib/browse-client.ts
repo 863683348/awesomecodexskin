@@ -39,6 +39,9 @@ function colorDistance(a: string, b: string): number {
 export function initBrowse(opts: BrowseOpts): void {
   const grid = document.querySelector<HTMLElement>(opts.grid);
   if (!grid) return;
+  // Hoisted function declarations below (apply/bump) do not inherit the null
+  // narrowing above, so keep a non-nullable alias for use inside them.
+  const gridEl: HTMLElement = grid;
   const resultCountEl = opts.resultCount
     ? document.querySelector<HTMLElement>(opts.resultCount)
     : null;
@@ -124,7 +127,7 @@ export function initBrowse(opts: BrowseOpts): void {
     // hide all, then show matched up to visibleCount in sorted order
     cards.forEach((c) => (c.style.display = 'none'));
     const shown = matched.slice(0, visibleCount);
-    shown.forEach((c) => grid.appendChild(c)); // re-append in sorted order
+    shown.forEach((c) => gridEl.appendChild(c)); // re-append in sorted order
     shown.forEach((c) => (c.style.display = ''));
 
     // result count
@@ -135,7 +138,7 @@ export function initBrowse(opts: BrowseOpts): void {
     if (emptyEl) {
       emptyEl.style.display = matched.length ? 'none' : '';
     }
-    grid.style.display = matched.length ? '' : 'none';
+    gridEl.style.display = matched.length ? '' : 'none';
     // load more
     if (loadMoreBtn) {
       loadMoreBtn.style.display = matched.length > visibleCount ? '' : 'none';
