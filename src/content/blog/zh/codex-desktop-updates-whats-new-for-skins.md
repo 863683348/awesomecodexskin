@@ -6,7 +6,6 @@ tags: ["codex desktop update", "codex skin changelog", "new skin features", "des
 category: "news"
 lang: "zh"
 relatedSkins: ["cyber-neon", "clear-glass", "monokai-stone", "berry-light-journal"]
-lang: "zh"
 ---
 
 一次 **Codex Desktop 更新**改动的可能不只是版本号。皮肤用户真正关心四件事：主题还能不能加载、本地改色有没有保留、新增界面是否套用了正确颜色，以及旧配置能不能迅速恢复。awesomecodexskin.com 的 2026 年 10 月快照现有 103 个皮肤文件，比最初规划时的 99 个多了 4 个。库变大之后，一套固定检查流程比只看截图更可靠。
